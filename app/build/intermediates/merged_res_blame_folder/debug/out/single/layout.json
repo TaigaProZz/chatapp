@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "E:\\Dev\\android\\chatApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_chat.xml",
+        "source": "E:\\Dev\\android\\chatApp\\app\\src\\main\\res\\layout\\activity_chat.xml"
+    },
+    {
+        "merged": "E:\\Dev\\android\\chatApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
+        "source": "E:\\Dev\\android\\chatApp\\app\\src\\main\\res\\layout\\activity_main.xml"
+    }
+]
