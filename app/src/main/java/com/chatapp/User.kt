@@ -1,6 +1,6 @@
 package com.chatapp
 
-class User(name: String, ) {
+class User(name: String) {
 
-    var name=
+    var name= "eze"
 }
