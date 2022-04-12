@@ -2,9 +2,10 @@ package com.chatapp
 
 import android.content.Intent
 import android.os.Bundle
-import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import com.chatapp.account.login.LoginActivity
+import com.chatapp.conversation.Chat
 
 
 class MainActivity : AppCompatActivity() {
@@ -23,6 +24,11 @@ class MainActivity : AppCompatActivity() {
         }
 
 
+
+        val text1= findViewById<TextView>(R.id.text1)
+        text1.setOnClickListener{
+            startActivity(Intent(applicationContext, LoginActivity::class.java))
+        }
 
     }
 }

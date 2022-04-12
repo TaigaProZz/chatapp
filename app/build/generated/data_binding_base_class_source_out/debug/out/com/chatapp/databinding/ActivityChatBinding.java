@@ -4,11 +4,13 @@ package com.chatapp.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 import android.widget.ImageView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.Toolbar;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.chatapp.R;
@@ -24,12 +26,25 @@ public final class ActivityChatBinding implements ViewBinding {
   public final ImageView backArrow;
 
   @NonNull
+  public final EditText msgBox;
+
+  @NonNull
+  public final RecyclerView recyclerViewChatXml;
+
+  @NonNull
+  public final ImageView sendMsgBtn;
+
+  @NonNull
   public final Toolbar toolbar;
 
   private ActivityChatBinding(@NonNull ConstraintLayout rootView, @NonNull ImageView backArrow,
-      @NonNull Toolbar toolbar) {
+      @NonNull EditText msgBox, @NonNull RecyclerView recyclerViewChatXml,
+      @NonNull ImageView sendMsgBtn, @NonNull Toolbar toolbar) {
     this.rootView = rootView;
     this.backArrow = backArrow;
+    this.msgBox = msgBox;
+    this.recyclerViewChatXml = recyclerViewChatXml;
+    this.sendMsgBtn = sendMsgBtn;
     this.toolbar = toolbar;
   }
 
@@ -66,13 +81,32 @@ public final class ActivityChatBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.msgBox;
+      EditText msgBox = ViewBindings.findChildViewById(rootView, id);
+      if (msgBox == null) {
+        break missingId;
+      }
+
+      id = R.id.recyclerViewChat_xml;
+      RecyclerView recyclerViewChatXml = ViewBindings.findChildViewById(rootView, id);
+      if (recyclerViewChatXml == null) {
+        break missingId;
+      }
+
+      id = R.id.sendMsgBtn;
+      ImageView sendMsgBtn = ViewBindings.findChildViewById(rootView, id);
+      if (sendMsgBtn == null) {
+        break missingId;
+      }
+
       id = R.id.toolbar;
       Toolbar toolbar = ViewBindings.findChildViewById(rootView, id);
       if (toolbar == null) {
         break missingId;
       }
 
-      return new ActivityChatBinding((ConstraintLayout) rootView, backArrow, toolbar);
+      return new ActivityChatBinding((ConstraintLayout) rootView, backArrow, msgBox,
+          recyclerViewChatXml, sendMsgBtn, toolbar);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

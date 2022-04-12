@@ -16,16 +16,16 @@
         "source": "E:\\Dev\\android\\chatApp\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "E:\\Dev\\android\\chatApp\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "E:\\Dev\\android\\chatApp\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.webp"
+        "merged": "E:\\Dev\\android\\chatApp\\app\\build\\intermediates\\merged_res\\debug\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "E:\\Dev\\android\\chatApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
     },
     {
         "merged": "E:\\Dev\\android\\chatApp\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_main.xml.flat",
         "source": "E:\\Dev\\android\\chatApp\\app\\src\\main\\res\\layout\\activity_main.xml"
     },
     {
-        "merged": "E:\\Dev\\android\\chatApp\\app\\build\\intermediates\\merged_res\\debug\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
-        "source": "E:\\Dev\\android\\chatApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
+        "merged": "E:\\Dev\\android\\chatApp\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "E:\\Dev\\android\\chatApp\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.webp"
     },
     {
         "merged": "E:\\Dev\\android\\chatApp\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
@@ -36,8 +36,20 @@
         "source": "E:\\Dev\\android\\chatApp\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.webp"
     },
     {
+        "merged": "E:\\Dev\\android\\chatApp\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_login.xml.flat",
+        "source": "E:\\Dev\\android\\chatApp\\app\\src\\main\\res\\layout\\activity_login.xml"
+    },
+    {
         "merged": "E:\\Dev\\android\\chatApp\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_launcher_background.xml.flat",
         "source": "E:\\Dev\\android\\chatApp\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "E:\\Dev\\android\\chatApp\\app\\build\\intermediates\\merged_res\\debug\\layout_chat_adapter.xml.flat",
+        "source": "E:\\Dev\\android\\chatApp\\app\\src\\main\\res\\layout\\chat_adapter.xml"
+    },
+    {
+        "merged": "E:\\Dev\\android\\chatApp\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_register.xml.flat",
+        "source": "E:\\Dev\\android\\chatApp\\app\\src\\main\\res\\layout\\activity_register.xml"
     },
     {
         "merged": "E:\\Dev\\android\\chatApp\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher.webp.flat",
