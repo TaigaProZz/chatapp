@@ -13,8 +13,8 @@ class Chat : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_chat)
 
-        val backArrow = findViewById<ImageView>(R.id.backArrow)
-        backArrow.setOnClickListener{
+        // back arrow
+        findViewById<ImageView>(R.id.backArrow).setOnClickListener{
             startActivity(Intent(applicationContext, MainActivity::class.java) )
         }
 

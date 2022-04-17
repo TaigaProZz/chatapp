@@ -4,6 +4,8 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageView
+import com.chatapp.MainActivity
 import com.chatapp.R
 
 class LoginMainActivity : AppCompatActivity() {
@@ -12,7 +14,12 @@ class LoginMainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_login_main)
 
 
-        val loginEmailButton = findViewById<Button>(R.id.login_email_button).setOnClickListener {
+        // back arrow
+        findViewById<ImageView>(R.id.backArrow).setOnClickListener{
+            startActivity(Intent(applicationContext, MainActivity::class.java))
+        }
+
+        findViewById<Button>(R.id.login_email_button).setOnClickListener {
             startActivity(Intent(applicationContext, LoginEmailActivity::class.java))
         }
 

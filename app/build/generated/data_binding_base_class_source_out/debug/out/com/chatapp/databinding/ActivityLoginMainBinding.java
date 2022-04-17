@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -20,11 +21,15 @@ public final class ActivityLoginMainBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
+  public final ImageView backArrow;
+
+  @NonNull
   public final Button loginEmailButton;
 
-  private ActivityLoginMainBinding(@NonNull ConstraintLayout rootView,
+  private ActivityLoginMainBinding(@NonNull ConstraintLayout rootView, @NonNull ImageView backArrow,
       @NonNull Button loginEmailButton) {
     this.rootView = rootView;
+    this.backArrow = backArrow;
     this.loginEmailButton = loginEmailButton;
   }
 
@@ -55,13 +60,19 @@ public final class ActivityLoginMainBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.backArrow;
+      ImageView backArrow = ViewBindings.findChildViewById(rootView, id);
+      if (backArrow == null) {
+        break missingId;
+      }
+
       id = R.id.login_email_button;
       Button loginEmailButton = ViewBindings.findChildViewById(rootView, id);
       if (loginEmailButton == null) {
         break missingId;
       }
 
-      return new ActivityLoginMainBinding((ConstraintLayout) rootView, loginEmailButton);
+      return new ActivityLoginMainBinding((ConstraintLayout) rootView, backArrow, loginEmailButton);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
