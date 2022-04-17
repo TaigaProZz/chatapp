@@ -10,10 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" >
         <activity
+            android:name=".account.login.LoginMainActivity"
+            android:exported="false" />
+        <activity
             android:name=".account.register.RegisterActivity"
             android:exported="false" />
         <activity
-            android:name=".account.login.LoginActivity"
+            android:name=".account.login.LoginEmailActivity"
             android:exported="false" />
         <activity
             android:name=".conversation.Chat"

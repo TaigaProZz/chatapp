@@ -17,32 +17,33 @@
     </androidx.appcompat.widget.Toolbar>
 
 
-
     <TextView
         android:id="@+id/text"
-        android:layout_width="199dp"
-        android:layout_height="155dp"
-        android:text="main"
+        android:layout_width="87dp"
+        android:layout_height="92dp"
+        android:text="conv"
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.864"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.125">
+        app:layout_constraintVertical_bias="0.404">
 
     </TextView>
 
     <TextView
         android:id="@+id/text1"
-        android:layout_width="199dp"
-        android:layout_height="155dp"
-        android:text="main"
+        android:layout_width="106dp"
+        android:layout_height="90dp"
+        android:text="login"
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.052"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.424">
+        app:layout_constraintVertical_bias="0.404">
 
     </TextView>
 
