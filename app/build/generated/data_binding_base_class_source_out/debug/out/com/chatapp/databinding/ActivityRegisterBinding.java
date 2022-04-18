@@ -13,6 +13,7 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.chatapp.R;
+import com.google.android.gms.common.SignInButton;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -25,6 +26,9 @@ public final class ActivityRegisterBinding implements ViewBinding {
   public final ImageView backArrow;
 
   @NonNull
+  public final SignInButton loginGoogleButton;
+
+  @NonNull
   public final EditText passwordRegister;
 
   @NonNull
@@ -34,10 +38,11 @@ public final class ActivityRegisterBinding implements ViewBinding {
   public final EditText usernameRegister;
 
   private ActivityRegisterBinding(@NonNull ConstraintLayout rootView, @NonNull ImageView backArrow,
-      @NonNull EditText passwordRegister, @NonNull Button registerButton,
-      @NonNull EditText usernameRegister) {
+      @NonNull SignInButton loginGoogleButton, @NonNull EditText passwordRegister,
+      @NonNull Button registerButton, @NonNull EditText usernameRegister) {
     this.rootView = rootView;
     this.backArrow = backArrow;
+    this.loginGoogleButton = loginGoogleButton;
     this.passwordRegister = passwordRegister;
     this.registerButton = registerButton;
     this.usernameRegister = usernameRegister;
@@ -76,6 +81,12 @@ public final class ActivityRegisterBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.login_google_button;
+      SignInButton loginGoogleButton = ViewBindings.findChildViewById(rootView, id);
+      if (loginGoogleButton == null) {
+        break missingId;
+      }
+
       id = R.id.password_register;
       EditText passwordRegister = ViewBindings.findChildViewById(rootView, id);
       if (passwordRegister == null) {
@@ -94,8 +105,8 @@ public final class ActivityRegisterBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityRegisterBinding((ConstraintLayout) rootView, backArrow, passwordRegister,
-          registerButton, usernameRegister);
+      return new ActivityRegisterBinding((ConstraintLayout) rootView, backArrow, loginGoogleButton,
+          passwordRegister, registerButton, usernameRegister);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

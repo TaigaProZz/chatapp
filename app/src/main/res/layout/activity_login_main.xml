@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".account.login.LoginMainActivity">
+    tools:context=".account.login.AccountMainActivity">
 
 
     <ImageView
@@ -16,8 +16,8 @@
         app:srcCompat="?attr/homeAsUpIndicator" />
 
 
-
     <ImageView
+        android:id="@+id/imageView"
         android:layout_width="163dp"
         android:layout_height="157dp"
         android:layout_marginTop="104dp"
@@ -25,24 +25,45 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.008">
+        app:layout_constraintTop_toTopOf="parent">
 
     </ImageView>
 
     <Button
         android:id="@+id/login_email_button"
-        android:layout_width="wrap_content"
+        android:layout_width="@dimen/button_width"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="120dp"
-        android:text="Se connecter par email"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="10dp"
+        android:text="@string/se_connecter_par_email"
+        app:layout_constraintBottom_toTopOf="@+id/register_email_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
     </Button>
 
+    <Button
+        android:id="@+id/register_email_button"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="@string/s_inscrire_par_email"
+        app:layout_constraintBottom_toTopOf="@+id/login_google_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
 
+    </Button>
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/login_google_button"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </com.google.android.gms.common.SignInButton>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

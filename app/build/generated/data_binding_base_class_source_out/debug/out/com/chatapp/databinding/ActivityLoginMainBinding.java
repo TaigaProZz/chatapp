@@ -12,6 +12,7 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.chatapp.R;
+import com.google.android.gms.common.SignInButton;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -24,13 +25,26 @@ public final class ActivityLoginMainBinding implements ViewBinding {
   public final ImageView backArrow;
 
   @NonNull
+  public final ImageView imageView;
+
+  @NonNull
   public final Button loginEmailButton;
 
+  @NonNull
+  public final SignInButton loginGoogleButton;
+
+  @NonNull
+  public final Button registerEmailButton;
+
   private ActivityLoginMainBinding(@NonNull ConstraintLayout rootView, @NonNull ImageView backArrow,
-      @NonNull Button loginEmailButton) {
+      @NonNull ImageView imageView, @NonNull Button loginEmailButton,
+      @NonNull SignInButton loginGoogleButton, @NonNull Button registerEmailButton) {
     this.rootView = rootView;
     this.backArrow = backArrow;
+    this.imageView = imageView;
     this.loginEmailButton = loginEmailButton;
+    this.loginGoogleButton = loginGoogleButton;
+    this.registerEmailButton = registerEmailButton;
   }
 
   @Override
@@ -66,13 +80,32 @@ public final class ActivityLoginMainBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.imageView;
+      ImageView imageView = ViewBindings.findChildViewById(rootView, id);
+      if (imageView == null) {
+        break missingId;
+      }
+
       id = R.id.login_email_button;
       Button loginEmailButton = ViewBindings.findChildViewById(rootView, id);
       if (loginEmailButton == null) {
         break missingId;
       }
 
-      return new ActivityLoginMainBinding((ConstraintLayout) rootView, backArrow, loginEmailButton);
+      id = R.id.login_google_button;
+      SignInButton loginGoogleButton = ViewBindings.findChildViewById(rootView, id);
+      if (loginGoogleButton == null) {
+        break missingId;
+      }
+
+      id = R.id.register_email_button;
+      Button registerEmailButton = ViewBindings.findChildViewById(rootView, id);
+      if (registerEmailButton == null) {
+        break missingId;
+      }
+
+      return new ActivityLoginMainBinding((ConstraintLayout) rootView, backArrow, imageView,
+          loginEmailButton, loginGoogleButton, registerEmailButton);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

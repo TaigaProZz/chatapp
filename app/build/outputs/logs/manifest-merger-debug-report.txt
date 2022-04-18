@@ -173,18 +173,18 @@ MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] C:\Users\tanki\.gradle
 		ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:6:9-35
 	android:theme
 		ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:11:9-68
-activity#com.chatapp.account.login.LoginMainActivity
+activity#com.chatapp.account.login.AccountMainActivity
 ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:12:9-14:40
 	android:exported
 		ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:14:13-37
 	android:name
-		ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:13:13-60
-activity#com.chatapp.account.register.RegisterActivity
+		ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:13:13-62
+activity#com.chatapp.account.register.RegisterEmailActivity
 ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:15:9-17:40
 	android:exported
 		ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:17:13-37
 	android:name
-		ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:16:13-62
+		ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:16:13-67
 activity#com.chatapp.account.login.LoginEmailActivity
 ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:18:9-20:40
 	android:exported

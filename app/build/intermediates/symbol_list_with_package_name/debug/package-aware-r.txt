@@ -1884,6 +1884,7 @@ dimen bannerContentWeight
 dimen bannerWeightSum
 dimen browser_actions_context_menu_max_width
 dimen browser_actions_context_menu_min_padding
+dimen button_width
 dimen cardview_compat_inset_shadow
 dimen cardview_default_elevation
 dimen cardview_default_radius
@@ -2787,6 +2788,7 @@ id ghost_view
 id ghost_view_holder
 id glide_custom_view_target_tag
 id gone
+id goto_register_button
 id graph
 id graph_wrap
 id group_divider
@@ -2806,6 +2808,7 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
+id imageView
 id image_content_root
 id image_root
 id image_view
@@ -2835,6 +2838,7 @@ id listMode
 id list_item
 id login_button
 id login_email_button
+id login_google_button
 id masked
 id match_constraint
 id match_parent
@@ -2945,6 +2949,7 @@ id ratio
 id rectangles
 id recyclerViewChat_xml
 id register_button
+id register_email_button
 id reverseSawtooth
 id right
 id rightToLeft
@@ -2983,6 +2988,7 @@ id shortcut
 id showCustom
 id showHome
 id showTitle
+id sign_out_button
 id sin
 id skipCollapsed
 id skipped
@@ -3454,6 +3460,7 @@ string mtrl_picker_toggle_to_day_selection
 string mtrl_picker_toggle_to_text_input_mode
 string mtrl_picker_toggle_to_year_selection
 string mtrl_timepicker_confirm
+string pas_encore_inscrit
 string password_toggle_content_description
 string path_password_eye
 string path_password_eye_mask_strike_through
@@ -3463,7 +3470,10 @@ string project_id
 string prompt_email
 string prompt_password
 string s_inscrire
+string s_inscrire_par_email
+string s_insrire_par_email
 string se_connecter
+string se_connecter_par_email
 string search_menu_title
 string status_bar_notification_info_overflow
 string title_activity_login

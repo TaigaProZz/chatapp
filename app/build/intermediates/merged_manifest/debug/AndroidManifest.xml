@@ -30,10 +30,10 @@
         android:testOnly="true"
         android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" >
         <activity
-            android:name="com.chatapp.account.login.LoginMainActivity"
+            android:name="com.chatapp.account.login.AccountMainActivity"
             android:exported="false" />
         <activity
-            android:name="com.chatapp.account.register.RegisterActivity"
+            android:name="com.chatapp.account.register.RegisterEmailActivity"
             android:exported="false" />
         <activity
             android:name="com.chatapp.account.login.LoginEmailActivity"

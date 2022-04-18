@@ -10,10 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" >
         <activity
-            android:name=".account.login.LoginMainActivity"
+            android:name=".account.login.AccountMainActivity"
             android:exported="false" />
         <activity
-            android:name=".account.register.RegisterActivity"
+            android:name=".account.register.RegisterEmailActivity"
             android:exported="false" />
         <activity
             android:name=".account.login.LoginEmailActivity"

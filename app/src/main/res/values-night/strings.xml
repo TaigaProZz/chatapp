@@ -3,4 +3,6 @@
     <string name="chat_text_adapter" />
     <string name="se_connecter">Se connecter</string>
     <string name="s_inscrire">S\'inscrire</string>
+    <string name="se_connecter_par_email">Se connecter par email</string>
+    <string name="s_insrire_par_email">S\'insrire par email</string>
 </resources>

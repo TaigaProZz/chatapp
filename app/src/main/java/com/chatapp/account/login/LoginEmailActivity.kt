@@ -7,8 +7,8 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageView
 import android.widget.Toast
-import com.chatapp.MainActivity
 import com.chatapp.R
+import com.chatapp.account.register.RegisterEmailActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
@@ -24,16 +24,22 @@ class LoginEmailActivity : AppCompatActivity() {
 
         auth = Firebase.auth
 
-        
-        val loginButton = findViewById<Button>(R.id.login_button).setOnClickListener {
+        // Login Button
+        findViewById<Button>(R.id.login_button).setOnClickListener {
 
-            val username = findViewById<EditText>(R.id.username_login).text.toString()
-            val password = findViewById<EditText>(R.id.password_login).text.toString()
+            val getUsername = findViewById<EditText>(R.id.username_login)
+            val getPassword = findViewById<EditText>(R.id.password_login)
 
             try {
+
+                val username = getUsername.text.toString()
+                val password = getPassword.text.toString()
+                println("test1 $username $password")
+
+
                 auth.signInWithEmailAndPassword(username, password).addOnCompleteListener {
                     if (it.isSuccessful){
-                        Toast.makeText(applicationContext, "Connexion réussie", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(applicationContext, "Connexion réussie $username $password", Toast.LENGTH_SHORT).show()
                     }
                     else {
 
@@ -44,15 +50,19 @@ class LoginEmailActivity : AppCompatActivity() {
 
             catch (e: Exception){
                 Toast.makeText(applicationContext, "Vide", Toast.LENGTH_SHORT).show()
-
             }
+        }
 
+
+        // goto register activity button
+        findViewById<Button>(R.id.goto_register_button).setOnClickListener {
+            startActivity(Intent(applicationContext, RegisterEmailActivity::class.java))
         }
 
 
         // back arrow
         findViewById<ImageView>(R.id.backArrow).setOnClickListener{
-            startActivity(Intent(applicationContext, LoginMainActivity::class.java))
+            startActivity(Intent(applicationContext, AccountMainActivity::class.java))
         }
 
     }
