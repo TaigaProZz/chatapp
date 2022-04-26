@@ -33,13 +33,18 @@ public final class ActivityMainBinding implements ViewBinding {
   @NonNull
   public final Toolbar toolbar;
 
+  @NonNull
+  public final TextView usernameConnected;
+
   private ActivityMainBinding(@NonNull ConstraintLayout rootView, @NonNull Button signOutButton,
-      @NonNull TextView text, @NonNull TextView text1, @NonNull Toolbar toolbar) {
+      @NonNull TextView text, @NonNull TextView text1, @NonNull Toolbar toolbar,
+      @NonNull TextView usernameConnected) {
     this.rootView = rootView;
     this.signOutButton = signOutButton;
     this.text = text;
     this.text1 = text1;
     this.toolbar = toolbar;
+    this.usernameConnected = usernameConnected;
   }
 
   @Override
@@ -93,8 +98,14 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.username_connected;
+      TextView usernameConnected = ViewBindings.findChildViewById(rootView, id);
+      if (usernameConnected == null) {
+        break missingId;
+      }
+
       return new ActivityMainBinding((ConstraintLayout) rootView, signOutButton, text, text1,
-          toolbar);
+          toolbar, usernameConnected);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

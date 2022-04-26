@@ -26,7 +26,7 @@ public final class ActivityRegisterBinding implements ViewBinding {
   public final ImageView backArrow;
 
   @NonNull
-  public final SignInButton loginGoogleButton;
+  public final SignInButton googleButton;
 
   @NonNull
   public final EditText passwordRegister;
@@ -38,11 +38,11 @@ public final class ActivityRegisterBinding implements ViewBinding {
   public final EditText usernameRegister;
 
   private ActivityRegisterBinding(@NonNull ConstraintLayout rootView, @NonNull ImageView backArrow,
-      @NonNull SignInButton loginGoogleButton, @NonNull EditText passwordRegister,
+      @NonNull SignInButton googleButton, @NonNull EditText passwordRegister,
       @NonNull Button registerButton, @NonNull EditText usernameRegister) {
     this.rootView = rootView;
     this.backArrow = backArrow;
-    this.loginGoogleButton = loginGoogleButton;
+    this.googleButton = googleButton;
     this.passwordRegister = passwordRegister;
     this.registerButton = registerButton;
     this.usernameRegister = usernameRegister;
@@ -81,9 +81,9 @@ public final class ActivityRegisterBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.login_google_button;
-      SignInButton loginGoogleButton = ViewBindings.findChildViewById(rootView, id);
-      if (loginGoogleButton == null) {
+      id = R.id.google_button;
+      SignInButton googleButton = ViewBindings.findChildViewById(rootView, id);
+      if (googleButton == null) {
         break missingId;
       }
 
@@ -105,7 +105,7 @@ public final class ActivityRegisterBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityRegisterBinding((ConstraintLayout) rootView, backArrow, loginGoogleButton,
+      return new ActivityRegisterBinding((ConstraintLayout) rootView, backArrow, googleButton,
           passwordRegister, registerButton, usernameRegister);
     }
     String missingId = rootView.getResources().getResourceName(id);

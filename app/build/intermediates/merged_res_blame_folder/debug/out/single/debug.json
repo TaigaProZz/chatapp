@@ -40,6 +40,10 @@
         "source": "E:\\Dev\\android\\chatApp\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.webp"
     },
     {
+        "merged": "E:\\Dev\\android\\chatApp\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_choise_avatar.xml.flat",
+        "source": "E:\\Dev\\android\\chatApp\\app\\src\\main\\res\\layout\\activity_choise_avatar.xml"
+    },
+    {
         "merged": "E:\\Dev\\android\\chatApp\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_launcher_background.xml.flat",
         "source": "E:\\Dev\\android\\chatApp\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
     },
@@ -70,6 +74,10 @@
     {
         "merged": "E:\\Dev\\android\\chatApp\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher.webp.flat",
         "source": "E:\\Dev\\android\\chatApp\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "E:\\Dev\\android\\chatApp\\app\\build\\intermediates\\merged_res\\debug\\drawable_avatar_circle.xml.flat",
+        "source": "E:\\Dev\\android\\chatApp\\app\\src\\main\\res\\drawable\\avatar_circle.xml"
     },
     {
         "merged": "E:\\Dev\\android\\chatApp\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_login_main.xml.flat",

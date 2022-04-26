@@ -15,4 +15,10 @@
     <string name="se_connecter_par_email">Se connecter par email</string>
     <string name="s_inscrire_par_email">S\'inscrire par email</string>
     <string name="pas_encore_inscrit"> <u>Pas encore inscrit?</u> </string>
+    <string name="username_connected">username</string>
+    <string name="choose_pic_text">Choisir une photo</string>
+    <string name="no_pics_text">Passer cette étape</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="sign_out">Déconnexion</string>
+
 </resources>

@@ -61,7 +61,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="start"
         android:text="@string/s_inscrire"
-        app:layout_constraintBottom_toTopOf="@+id/login_google_button"
+        app:layout_constraintBottom_toTopOf="@+id/google_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
@@ -70,7 +70,7 @@
 
 
     <com.google.android.gms.common.SignInButton
-        android:id="@+id/login_google_button"
+        android:id="@+id/google_button"
         android:layout_width="@dimen/button_width"
         android:layout_height="wrap_content"
         android:layout_marginBottom="28dp"

@@ -3,8 +3,9 @@
     <CLASSES>
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/4acfe0ce2ff86f0c1de8e716b6d16506/transformed/transport-runtime-3.1.1/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/db91033d36658ea5031cc27f09e32163/transformed/transport-runtime-3.1.1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/db91033d36658ea5031cc27f09e32163/transformed/transport-runtime-3.1.1/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/db91033d36658ea5031cc27f09e32163/transformed/transport-runtime-3.1.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/9b879f7bc95ac9ea666f5bc3051af8c1/transformed/transport-runtime-3.1.1/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/9b879f7bc95ac9ea666f5bc3051af8c1/transformed/transport-runtime-3.1.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/9b879f7bc95ac9ea666f5bc3051af8c1/transformed/transport-runtime-3.1.1/res" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.android.datatransport/transport-runtime/3.1.1/804948d975d169593a5a3b73de902020b5c2be55/transport-runtime-3.1.1-javadoc.jar!/" />

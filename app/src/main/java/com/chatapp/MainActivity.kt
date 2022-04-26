@@ -19,17 +19,27 @@ class MainActivity : AppCompatActivity() {
 
         val auth= Firebase.auth
 
-        // ****************** TOOLBAR ****************** \\
-        val toolbar = findViewById<androidx.appcompat.widget.Toolbar>(R.id.toolbar)
-        setSupportActionBar(toolbar)
-        supportActionBar?.setDisplayShowTitleEnabled(false)
+
+        val username = findViewById<TextView>(R.id.username_connected)
+        val user = auth.currentUser?.email
+
+        username.text = user
 
 
+
+        // sign out button
         findViewById<Button>(R.id.sign_out_button).setOnClickListener {
             Firebase.auth.signOut()
             Toast.makeText(applicationContext, "Signed out", Toast.LENGTH_SHORT).show()
             startActivity(Intent(applicationContext, AccountMainActivity::class.java))
         }
+
+
+        // ****************** TOOLBAR ****************** \\
+        val toolbar = findViewById<androidx.appcompat.widget.Toolbar>(R.id.toolbar)
+        setSupportActionBar(toolbar)
+        supportActionBar?.setDisplayShowTitleEnabled(false)
+
 
 
         val text= findViewById<TextView>(R.id.text)

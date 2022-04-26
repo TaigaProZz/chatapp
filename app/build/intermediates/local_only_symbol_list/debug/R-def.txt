@@ -1,6 +1,7 @@
 R_DEF: Internal format may change without notice
 local
 color black
+color grey
 color purple_200
 color purple_500
 color purple_700
@@ -8,15 +9,17 @@ color teal_200
 color teal_700
 color white
 dimen button_width
+drawable avatar_circle
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+id avatar_choice
 id backArrow
 id container
+id google_button
 id goto_register_button
 id imageView
 id login_button
 id login_email_button
-id login_google_button
 id msgBox
 id password_login
 id password_register
@@ -29,9 +32,11 @@ id taskAdapterText
 id text
 id text1
 id toolbar
+id username_connected
 id username_login
 id username_register
 layout activity_chat
+layout activity_choise_avatar
 layout activity_email_login
 layout activity_login_main
 layout activity_main
@@ -43,6 +48,7 @@ string action_sign_in
 string action_sign_in_in_short
 string app_name
 string chat_text_adapter
+string choose_pic_text
 string default_web_client_id
 string gcm_defaultSenderId
 string google_api_key
@@ -52,15 +58,18 @@ string google_storage_bucket
 string invalid_password
 string invalid_username
 string login_failed
+string no_pics_text
 string pas_encore_inscrit
 string project_id
 string prompt_email
 string prompt_password
 string s_inscrire
 string s_inscrire_par_email
-string s_insrire_par_email
 string se_connecter
 string se_connecter_par_email
+string sign_out
 string title_activity_login
+string title_activity_maps
+string username_connected
 string welcome
 style Theme.ChatApp
