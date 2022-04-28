@@ -8,12 +8,15 @@ color purple_700
 color teal_200
 color teal_700
 color white
+dimen button_height
 dimen button_width
 drawable avatar_circle
 drawable ic_launcher_background
 drawable ic_launcher_foreground
-id avatar_choice
+id avatar_btn
+id avatar_circle
 id backArrow
+id confirm_avatar_button
 id container
 id google_button
 id goto_register_button
@@ -28,10 +31,12 @@ id register_button
 id register_email_button
 id sendMsgBtn
 id sign_out_button
+id skip_avatar_choice_btn
 id taskAdapterText
 id text
 id text1
 id toolbar
+id username
 id username_connected
 id username_login
 id username_register
@@ -71,5 +76,6 @@ string sign_out
 string title_activity_login
 string title_activity_maps
 string username_connected
+string web_client_id
 string welcome
 style Theme.ChatApp

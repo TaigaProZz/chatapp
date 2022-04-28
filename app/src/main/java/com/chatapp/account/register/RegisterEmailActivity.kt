@@ -1,7 +1,10 @@
 package com.chatapp.account.register
 
+import android.content.ContentValues.TAG
 import android.content.Intent
+import android.content.IntentSender
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageView
@@ -9,8 +12,12 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.chatapp.MainActivity
 import com.chatapp.R
-import com.chatapp.account.login.AccountMainActivity
-import com.google.android.gms.auth.api.signin.GoogleSignInClient
+import com.chatapp.account.AccountMainActivity
+import com.google.android.gms.auth.api.identity.BeginSignInRequest
+import com.google.android.gms.auth.api.identity.Identity
+import com.google.android.gms.auth.api.identity.SignInClient
+import com.google.android.gms.common.SignInButton
+import com.google.android.gms.common.api.ApiException
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
@@ -18,15 +25,17 @@ import com.google.firebase.ktx.Firebase
 class RegisterEmailActivity : AppCompatActivity() {
 
     private lateinit var auth: FirebaseAuth
-    private lateinit var mGoogleSignIn: GoogleSignInClient
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register)
 
-
         auth = Firebase.auth
 
+
+        val googleButton = findViewById<SignInButton>(R.id.google_button).setOnClickListener {
+
+        }
 
         // create an account when register button is pressed
         val registerButton = findViewById<Button>(R.id.register_button).setOnClickListener {
@@ -44,6 +53,8 @@ class RegisterEmailActivity : AppCompatActivity() {
             startActivity(Intent(applicationContext, AccountMainActivity::class.java))
         }
     }
+
+
 
 
     // create account with firebase with email
@@ -75,6 +86,7 @@ class RegisterEmailActivity : AppCompatActivity() {
                     .show()
             }
     }
+
 
 
 }

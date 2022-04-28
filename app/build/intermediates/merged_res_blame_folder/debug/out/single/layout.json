@@ -26,9 +26,5 @@
     {
         "merged": "E:\\Dev\\android\\chatApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\chat_adapter.xml",
         "source": "E:\\Dev\\android\\chatApp\\app\\src\\main\\res\\layout\\chat_adapter.xml"
-    },
-    {
-        "merged": "E:\\Dev\\android\\chatApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_maps.xml",
-        "source": "E:\\Dev\\android\\chatApp\\app\\src\\main\\res\\layout\\activity_maps.xml"
     }
 ]

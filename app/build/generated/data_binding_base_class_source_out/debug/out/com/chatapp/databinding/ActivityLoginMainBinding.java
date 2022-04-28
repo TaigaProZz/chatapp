@@ -22,6 +22,9 @@ public final class ActivityLoginMainBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
+  public final Button avatarBtn;
+
+  @NonNull
   public final ImageView backArrow;
 
   @NonNull
@@ -36,10 +39,12 @@ public final class ActivityLoginMainBinding implements ViewBinding {
   @NonNull
   public final Button registerEmailButton;
 
-  private ActivityLoginMainBinding(@NonNull ConstraintLayout rootView, @NonNull ImageView backArrow,
-      @NonNull SignInButton googleButton, @NonNull ImageView imageView,
-      @NonNull Button loginEmailButton, @NonNull Button registerEmailButton) {
+  private ActivityLoginMainBinding(@NonNull ConstraintLayout rootView, @NonNull Button avatarBtn,
+      @NonNull ImageView backArrow, @NonNull SignInButton googleButton,
+      @NonNull ImageView imageView, @NonNull Button loginEmailButton,
+      @NonNull Button registerEmailButton) {
     this.rootView = rootView;
+    this.avatarBtn = avatarBtn;
     this.backArrow = backArrow;
     this.googleButton = googleButton;
     this.imageView = imageView;
@@ -74,6 +79,12 @@ public final class ActivityLoginMainBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.avatar_btn;
+      Button avatarBtn = ViewBindings.findChildViewById(rootView, id);
+      if (avatarBtn == null) {
+        break missingId;
+      }
+
       id = R.id.backArrow;
       ImageView backArrow = ViewBindings.findChildViewById(rootView, id);
       if (backArrow == null) {
@@ -104,8 +115,8 @@ public final class ActivityLoginMainBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityLoginMainBinding((ConstraintLayout) rootView, backArrow, googleButton,
-          imageView, loginEmailButton, registerEmailButton);
+      return new ActivityLoginMainBinding((ConstraintLayout) rootView, avatarBtn, backArrow,
+          googleButton, imageView, loginEmailButton, registerEmailButton);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

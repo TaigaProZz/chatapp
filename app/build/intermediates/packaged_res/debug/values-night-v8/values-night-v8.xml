@@ -1,22 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="http://schemas.android.com/tools">
+    <dimen name="button_height">55dp</dimen>
     <dimen name="button_width">200dp</dimen>
+    <string name="action_sign_in">Sign in </string>
+    <string name="action_sign_in_in_short">Sign in r</string>
+    <string name="app_name">Chat App</string>
     <string name="chat_text_adapter"/>
+    <string name="choose_pic_text">Choisir une photo</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="no_pics_text">Passer cette étape</string>
+    <string name="pas_encore_inscrit"> <u>Pas encore inscrit?</u> </string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
     <string name="s_inscrire">S\'inscrire</string>
-    <string name="s_inscrire_par_email">S\'insrire par email</string>
+    <string name="s_inscrire_par_email">S\'inscrire par email</string>
     <string name="se_connecter">Se connecter</string>
     <string name="se_connecter_par_email">Se connecter par email</string>
+    <string name="sign_out">Déconnexion</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="username_connected">username</string>
+    <string name="web_client_id" translatable="false">859618026888-98mt718g22e8l8gv328gqs897vv2bqmm.apps.googleusercontent.com</string>
+    <string name="welcome">"Welcome !"</string>
     <style name="Theme.ChatApp" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
-        <!-- Primary brand color. -->
+        
         <item name="colorPrimary">@color/purple_200</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
         <item name="colorOnPrimary">@color/black</item>
-        <!-- Secondary brand color. -->
+        
         <item name="colorSecondary">@color/teal_200</item>
         <item name="colorSecondaryVariant">@color/teal_200</item>
         <item name="colorOnSecondary">@color/black</item>
-        <!-- Status bar color. -->
+        
         <item name="android:statusBarColor" ns1:targetApi="l">?attr/colorPrimaryVariant</item>
-        <!-- Customize your theme here. -->
+        
     </style>
 </resources>

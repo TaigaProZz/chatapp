@@ -7,12 +7,11 @@
     tools:context=".account.avatar.ChoiseAvatar">
 
     <Button
-        android:id="@+id/avatar_choice"
+        android:id="@+id/avatar_circle"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_marginTop="200dp"
         android:background="@drawable/avatar_circle"
-        android:backgroundTint="@color/grey"
         android:text="@string/choose_pic_text"
         android:textColor="@color/white"
         android:textStyle="bold"
@@ -22,6 +21,7 @@
 
 
     <TextView
+        android:id="@+id/skip_avatar_choice_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
@@ -29,16 +29,28 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/avatar_choice" />
+        app:layout_constraintTop_toBottomOf="@+id/avatar_circle" />
 
     <TextView
+        android:id="@+id/username"
         android:layout_width="215dp"
         android:layout_height="103dp"
-        android:layout_marginBottom="284dp"
+        android:layout_marginBottom="680dp"
         android:gravity="center"
         android:text="@string/username_connected"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/confirm_avatar_button"
+        android:layout_width="113dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="180dp"
+        android:text="Appliquer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
         app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

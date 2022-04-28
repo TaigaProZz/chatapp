@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -28,7 +29,7 @@ public final class ActivityEmailLoginBinding implements ViewBinding {
   public final ConstraintLayout container;
 
   @NonNull
-  public final Button gotoRegisterButton;
+  public final TextView gotoRegisterButton;
 
   @NonNull
   public final Button loginButton;
@@ -41,7 +42,7 @@ public final class ActivityEmailLoginBinding implements ViewBinding {
 
   private ActivityEmailLoginBinding(@NonNull ConstraintLayout rootView,
       @NonNull ImageView backArrow, @NonNull ConstraintLayout container,
-      @NonNull Button gotoRegisterButton, @NonNull Button loginButton,
+      @NonNull TextView gotoRegisterButton, @NonNull Button loginButton,
       @NonNull EditText passwordLogin, @NonNull EditText usernameLogin) {
     this.rootView = rootView;
     this.backArrow = backArrow;
@@ -88,7 +89,7 @@ public final class ActivityEmailLoginBinding implements ViewBinding {
       ConstraintLayout container = (ConstraintLayout) rootView;
 
       id = R.id.goto_register_button;
-      Button gotoRegisterButton = ViewBindings.findChildViewById(rootView, id);
+      TextView gotoRegisterButton = ViewBindings.findChildViewById(rootView, id);
       if (gotoRegisterButton == null) {
         break missingId;
       }

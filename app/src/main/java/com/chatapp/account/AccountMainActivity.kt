@@ -1,6 +1,5 @@
-package com.chatapp.account.login
+package com.chatapp.account
 
-import android.content.ContentValues
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -10,7 +9,10 @@ import android.widget.ImageView
 import android.widget.Toast
 import com.chatapp.MainActivity
 import com.chatapp.R
+import com.chatapp.account.avatar.ChoiseAvatar
+import com.chatapp.account.login.LoginEmailActivity
 import com.chatapp.account.register.RegisterEmailActivity
+import com.google.android.gms.auth.api.identity.BeginSignInRequest
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
@@ -20,13 +22,13 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.GoogleAuthProvider
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
-import kotlin.math.sign
 
 class AccountMainActivity : AppCompatActivity() {
 
 
     private lateinit var auth: FirebaseAuth
-    private lateinit var mGoogleSignIn: GoogleSignInClient
+    private lateinit var googleSignInClient: GoogleSignInClient
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -34,6 +36,17 @@ class AccountMainActivity : AppCompatActivity() {
 
         auth = Firebase.auth
 
+
+        /*          BUTTONS           */
+
+        findViewById<Button>(R.id.avatar_btn).setOnClickListener {
+            startActivity(Intent(applicationContext, ChoiseAvatar::class.java))
+        }
+
+        // google button sign in
+        findViewById<SignInButton>(R.id.google_button).setOnClickListener {
+            createRequest()
+        }
 
 
         // goto login with email button
@@ -46,36 +59,35 @@ class AccountMainActivity : AppCompatActivity() {
             startActivity(Intent(applicationContext, RegisterEmailActivity::class.java))
         }
 
-        // TODO register with google button
-
-        findViewById<SignInButton>(R.id.google_button).setOnClickListener {
-            createRequest()
-            signIn()
-        }
-
-
         // back arrow
         findViewById<ImageView>(R.id.backArrow).setOnClickListener{
             startActivity(Intent(applicationContext, MainActivity::class.java))
         }
     }
 
+
+
+
     /*                  FUNCTIONS to login with GOOGLE                */
 
     private fun createRequest() {
+
         val gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-            .requestIdToken(getString(R.string.default_web_client_id))
+            .requestIdToken(getString(R.string.web_client_id))
             .requestEmail()
             .build()
-        mGoogleSignIn = GoogleSignIn.getClient(this, gso)
-    }
 
+        googleSignInClient = GoogleSignIn.getClient(this, gso)
+
+        signIn()
+
+
+    }
 
     private fun signIn() {
 
-        val intent = mGoogleSignIn.signInIntent
+        val intent = googleSignInClient.signInIntent
         startActivityForResult(intent, 123)
-
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
@@ -91,12 +103,13 @@ class AccountMainActivity : AppCompatActivity() {
                 Toast.makeText(applicationContext, "Connexion réussie", Toast.LENGTH_SHORT).show()
 
             } catch (e: ApiException) {
-                Toast.makeText(this, "échouée", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Connexion échouée", Toast.LENGTH_SHORT).show()
             }
         }
     }
 
     private fun firebaseAuthWithGoogle(idToken: String) {
+
         val credential = GoogleAuthProvider.getCredential(idToken, null)
         auth.signInWithCredential(credential)
             .addOnCompleteListener(this) { task ->

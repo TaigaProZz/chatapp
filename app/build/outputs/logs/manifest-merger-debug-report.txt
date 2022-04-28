@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:2:1-58:12
-INJECTED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:2:1-58:12
-INJECTED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:2:1-58:12
-INJECTED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:2:1-58:12
+ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:2:1-43:12
+INJECTED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:2:1-43:12
+INJECTED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:2:1-43:12
+INJECTED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:2:1-43:12
 MERGED from [androidx.databinding:viewbinding:7.1.2] C:\Users\tanki\.gradle\caches\transforms-3\7718397bf0f66732a284667f9b39f408\transformed\viewbinding-7.1.2\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.1] C:\Users\tanki\.gradle\caches\transforms-3\743c0d9fb37d65b5a2cc80b8f25c8cc8\transformed\lifecycle-viewmodel-ktx-2.4.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.4.1] C:\Users\tanki\.gradle\caches\transforms-3\1a5d1dc352b29b2645e45c517a024384\transformed\lifecycle-livedata-ktx-2.4.1\AndroidManifest.xml:17:1-24:12
@@ -13,14 +13,19 @@ MERGED from [com.google.firebase:firebase-inappmessaging-display-ktx:20.1.2] C:\
 MERGED from [com.google.firebase:firebase-inappmessaging-display:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\09fabbc34b62173ba2579c6136bae9b0\transformed\firebase-inappmessaging-display-20.1.2\AndroidManifest.xml:2:1-32:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.3] C:\Users\tanki\.gradle\caches\transforms-3\cbc0a0da639fa9bffed9b0787b9ad0e3\transformed\constraintlayout-2.1.3\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat:1.4.1] C:\Users\tanki\.gradle\caches\transforms-3\0141f330a36c3493b9223274d74e5a8c\transformed\appcompat-1.4.1\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.firebase:firebase-firestore-ktx:24.1.1] C:\Users\tanki\.gradle\caches\transforms-3\2c7efcc43ee1f1778bfe989865afdcaa\transformed\firebase-firestore-ktx-24.1.1\AndroidManifest.xml:2:1-21:12
+MERGED from [com.google.firebase:firebase-storage-ktx:20.0.1] C:\Users\tanki\.gradle\caches\transforms-3\06a861ba6a24726a655c7e888893a5a5\transformed\firebase-storage-ktx-20.0.1\AndroidManifest.xml:2:1-21:12
 MERGED from [com.google.android.gms:play-services-auth:20.1.0] C:\Users\tanki\.gradle\caches\transforms-3\75eff52485cd289f95c69f7a0dfeb27e\transformed\play-services-auth-20.1.0\AndroidManifest.xml:17:1-40:12
-MERGED from [com.google.android.gms:play-services-maps:18.0.2] C:\Users\tanki\.gradle\caches\transforms-3\2afa6efc94fd13e6f1c3fad925ba6236\transformed\play-services-maps-18.0.2\AndroidManifest.xml:17:1-44:12
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\tanki\.gradle\caches\transforms-3\7c736327705df84b47d9137adbb65689\transformed\viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
-MERGED from [com.google.firebase:firebase-auth-ktx:21.0.2] C:\Users\tanki\.gradle\caches\transforms-3\4e4d9503d115b4d48f4f577f96ae0467\transformed\firebase-auth-ktx-21.0.2\AndroidManifest.xml:2:1-17:12
-MERGED from [com.google.firebase:firebase-auth:21.0.2] C:\Users\tanki\.gradle\caches\transforms-3\156d0b670bb14d3ffa2112aae02c2c0e\transformed\firebase-auth-21.0.2\AndroidManifest.xml:17:1-73:12
+MERGED from [com.google.firebase:firebase-auth-ktx:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\435ab00baa46c4596e961f92b9b21713\transformed\firebase-auth-ktx-21.0.3\AndroidManifest.xml:2:1-17:12
+MERGED from [com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\3ad4e1fb525e7e1feb3b6ded164c30ec\transformed\firebase-auth-21.0.3\AndroidManifest.xml:17:1-73:12
 MERGED from [com.google.android.gms:play-services-auth-api-phone:18.0.1] C:\Users\tanki\.gradle\caches\transforms-3\e7cfedea3c76cd63bc3afbc628c52c42\transformed\play-services-auth-api-phone-18.0.1\AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.android.gms:play-services-auth-base:18.0.1] C:\Users\tanki\.gradle\caches\transforms-3\10a62fd5fde640ecd423e138e561ca68\transformed\play-services-auth-base-18.0.1\AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.firebase:firebase-firestore:24.1.1] C:\Users\tanki\.gradle\caches\transforms-3\81ebe1175682315aa2d58b3bc8535c8b\transformed\firebase-firestore-24.1.1\AndroidManifest.xml:2:1-26:12
+MERGED from [com.google.firebase:firebase-storage:20.0.1] C:\Users\tanki\.gradle\caches\transforms-3\838f17b21541e423181a230be1e97b34\transformed\firebase-storage-20.0.1\AndroidManifest.xml:15:1-39:12
 MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] C:\Users\tanki\.gradle\caches\transforms-3\cc1b02da4b16e3a661f347d7cdb878c9\transformed\play-services-safetynet-17.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.firebase:firebase-appcheck-interop:16.0.0-beta06] C:\Users\tanki\.gradle\caches\transforms-3\a26558c9e1a3db300b09c77587072423\transformed\firebase-appcheck-interop-16.0.0-beta06\AndroidManifest.xml:15:1-26:12
+MERGED from [com.google.firebase:firebase-database-collection:18.0.1] C:\Users\tanki\.gradle\caches\transforms-3\68bf6ad4f70b6a49e54ae369cffad855\transformed\firebase-database-collection-18.0.1\AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\tanki\.gradle\caches\transforms-3\c60f2ae0a15afcf6456228da39ed3b83\transformed\play-services-base-18.0.1\AndroidManifest.xml:16:1-24:12
 MERGED from [com.google.firebase:firebase-inappmessaging-ktx:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\76bac2ce4c0b6d0d70dac4c3a403e2d0\transformed\firebase-inappmessaging-ktx-20.1.2\AndroidManifest.xml:2:1-21:12
 MERGED from [com.google.firebase:firebase-common-ktx:20.1.0] C:\Users\tanki\.gradle\caches\transforms-3\de4de886eef9b07a3e1a70cf0614ffa8\transformed\firebase-common-ktx-20.1.0\AndroidManifest.xml:2:1-21:12
@@ -87,25 +92,30 @@ MERGED from [com.google.firebase:firebase-encoders-json:18.0.0] C:\Users\tanki\.
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\tanki\.gradle\caches\transforms-3\78183b454469afd87a6399e6b0e80bf7\transformed\annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\tanki\.gradle\caches\transforms-3\7f5d06193de645834c80cb259b2ff1ea\transformed\protolite-well-known-types-18.0.0\AndroidManifest.xml:2:1-11:12
 MERGED from [io.reactivex.rxjava2:rxandroid:2.0.2] C:\Users\tanki\.gradle\caches\transforms-3\8c1b24f441f534e87e46ef177ff60de6\transformed\rxandroid-2.0.2\AndroidManifest.xml:15:1-21:12
-INJECTED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:2:1-58:12
-INJECTED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:2:1-58:12
-INJECTED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:2:1-58:12
+MERGED from [io.grpc:grpc-android:1.44.1] C:\Users\tanki\.gradle\caches\transforms-3\41c6e8214f8b02d903fba41e63974aeb\transformed\grpc-android-1.44.1\AndroidManifest.xml:2:1-11:12
+INJECTED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:2:1-43:12
+INJECTED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:2:1-43:12
+INJECTED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:2:1-43:12
 	package
 		ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:3:5-26
 		INJECTED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml
 		INJECTED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml
-		ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:2:1-58:12
+		ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:2:1-43:12
 		INJECTED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml
-		ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:2:1-58:12
+		ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:2:1-43:12
 		INJECTED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:5:5-79
+	android:name
+		ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:5:22-77
 application
-ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:5:5-56:19
+ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:8:5-41:19
 MERGED from [com.google.android.material:material:1.5.0] C:\Users\tanki\.gradle\caches\transforms-3\628eb217d2dd3b45171f8accd2de24b9\transformed\material-1.5.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.5.0] C:\Users\tanki\.gradle\caches\transforms-3\628eb217d2dd3b45171f8accd2de24b9\transformed\material-1.5.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.firebase:firebase-inappmessaging-display-ktx:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\5940b63682e145031457a6af7e6b7530\transformed\firebase-inappmessaging-display-ktx-20.1.2\AndroidManifest.xml:11:5-19:19
@@ -114,16 +124,24 @@ MERGED from [com.google.firebase:firebase-inappmessaging-display:20.1.2] C:\User
 MERGED from [com.google.firebase:firebase-inappmessaging-display:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\09fabbc34b62173ba2579c6136bae9b0\transformed\firebase-inappmessaging-display-20.1.2\AndroidManifest.xml:22:5-30:19
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.3] C:\Users\tanki\.gradle\caches\transforms-3\cbc0a0da639fa9bffed9b0787b9ad0e3\transformed\constraintlayout-2.1.3\AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.3] C:\Users\tanki\.gradle\caches\transforms-3\cbc0a0da639fa9bffed9b0787b9ad0e3\transformed\constraintlayout-2.1.3\AndroidManifest.xml:9:5-20
+MERGED from [com.google.firebase:firebase-firestore-ktx:24.1.1] C:\Users\tanki\.gradle\caches\transforms-3\2c7efcc43ee1f1778bfe989865afdcaa\transformed\firebase-firestore-ktx-24.1.1\AndroidManifest.xml:11:5-19:19
+MERGED from [com.google.firebase:firebase-firestore-ktx:24.1.1] C:\Users\tanki\.gradle\caches\transforms-3\2c7efcc43ee1f1778bfe989865afdcaa\transformed\firebase-firestore-ktx-24.1.1\AndroidManifest.xml:11:5-19:19
+MERGED from [com.google.firebase:firebase-storage-ktx:20.0.1] C:\Users\tanki\.gradle\caches\transforms-3\06a861ba6a24726a655c7e888893a5a5\transformed\firebase-storage-ktx-20.0.1\AndroidManifest.xml:11:5-19:19
+MERGED from [com.google.firebase:firebase-storage-ktx:20.0.1] C:\Users\tanki\.gradle\caches\transforms-3\06a861ba6a24726a655c7e888893a5a5\transformed\firebase-storage-ktx-20.0.1\AndroidManifest.xml:11:5-19:19
 MERGED from [com.google.android.gms:play-services-auth:20.1.0] C:\Users\tanki\.gradle\caches\transforms-3\75eff52485cd289f95c69f7a0dfeb27e\transformed\play-services-auth-20.1.0\AndroidManifest.xml:22:5-38:19
 MERGED from [com.google.android.gms:play-services-auth:20.1.0] C:\Users\tanki\.gradle\caches\transforms-3\75eff52485cd289f95c69f7a0dfeb27e\transformed\play-services-auth-20.1.0\AndroidManifest.xml:22:5-38:19
-MERGED from [com.google.android.gms:play-services-maps:18.0.2] C:\Users\tanki\.gradle\caches\transforms-3\2afa6efc94fd13e6f1c3fad925ba6236\transformed\play-services-maps-18.0.2\AndroidManifest.xml:36:5-42:19
-MERGED from [com.google.android.gms:play-services-maps:18.0.2] C:\Users\tanki\.gradle\caches\transforms-3\2afa6efc94fd13e6f1c3fad925ba6236\transformed\play-services-maps-18.0.2\AndroidManifest.xml:36:5-42:19
-MERGED from [com.google.firebase:firebase-auth-ktx:21.0.2] C:\Users\tanki\.gradle\caches\transforms-3\4e4d9503d115b4d48f4f577f96ae0467\transformed\firebase-auth-ktx-21.0.2\AndroidManifest.xml:7:5-15:19
-MERGED from [com.google.firebase:firebase-auth-ktx:21.0.2] C:\Users\tanki\.gradle\caches\transforms-3\4e4d9503d115b4d48f4f577f96ae0467\transformed\firebase-auth-ktx-21.0.2\AndroidManifest.xml:7:5-15:19
-MERGED from [com.google.firebase:firebase-auth:21.0.2] C:\Users\tanki\.gradle\caches\transforms-3\156d0b670bb14d3ffa2112aae02c2c0e\transformed\firebase-auth-21.0.2\AndroidManifest.xml:26:5-71:19
-MERGED from [com.google.firebase:firebase-auth:21.0.2] C:\Users\tanki\.gradle\caches\transforms-3\156d0b670bb14d3ffa2112aae02c2c0e\transformed\firebase-auth-21.0.2\AndroidManifest.xml:26:5-71:19
+MERGED from [com.google.firebase:firebase-auth-ktx:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\435ab00baa46c4596e961f92b9b21713\transformed\firebase-auth-ktx-21.0.3\AndroidManifest.xml:7:5-15:19
+MERGED from [com.google.firebase:firebase-auth-ktx:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\435ab00baa46c4596e961f92b9b21713\transformed\firebase-auth-ktx-21.0.3\AndroidManifest.xml:7:5-15:19
+MERGED from [com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\3ad4e1fb525e7e1feb3b6ded164c30ec\transformed\firebase-auth-21.0.3\AndroidManifest.xml:26:5-71:19
+MERGED from [com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\3ad4e1fb525e7e1feb3b6ded164c30ec\transformed\firebase-auth-21.0.3\AndroidManifest.xml:26:5-71:19
+MERGED from [com.google.firebase:firebase-firestore:24.1.1] C:\Users\tanki\.gradle\caches\transforms-3\81ebe1175682315aa2d58b3bc8535c8b\transformed\firebase-firestore-24.1.1\AndroidManifest.xml:16:5-24:19
+MERGED from [com.google.firebase:firebase-firestore:24.1.1] C:\Users\tanki\.gradle\caches\transforms-3\81ebe1175682315aa2d58b3bc8535c8b\transformed\firebase-firestore-24.1.1\AndroidManifest.xml:16:5-24:19
+MERGED from [com.google.firebase:firebase-storage:20.0.1] C:\Users\tanki\.gradle\caches\transforms-3\838f17b21541e423181a230be1e97b34\transformed\firebase-storage-20.0.1\AndroidManifest.xml:29:5-37:19
+MERGED from [com.google.firebase:firebase-storage:20.0.1] C:\Users\tanki\.gradle\caches\transforms-3\838f17b21541e423181a230be1e97b34\transformed\firebase-storage-20.0.1\AndroidManifest.xml:29:5-37:19
 MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] C:\Users\tanki\.gradle\caches\transforms-3\cc1b02da4b16e3a661f347d7cdb878c9\transformed\play-services-safetynet-17.0.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] C:\Users\tanki\.gradle\caches\transforms-3\cc1b02da4b16e3a661f347d7cdb878c9\transformed\play-services-safetynet-17.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.firebase:firebase-appcheck-interop:16.0.0-beta06] C:\Users\tanki\.gradle\caches\transforms-3\a26558c9e1a3db300b09c77587072423\transformed\firebase-appcheck-interop-16.0.0-beta06\AndroidManifest.xml:24:5-20
+MERGED from [com.google.firebase:firebase-appcheck-interop:16.0.0-beta06] C:\Users\tanki\.gradle\caches\transforms-3\a26558c9e1a3db300b09c77587072423\transformed\firebase-appcheck-interop-16.0.0-beta06\AndroidManifest.xml:24:5-20
 MERGED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\tanki\.gradle\caches\transforms-3\c60f2ae0a15afcf6456228da39ed3b83\transformed\play-services-base-18.0.1\AndroidManifest.xml:19:5-23:19
 MERGED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\tanki\.gradle\caches\transforms-3\c60f2ae0a15afcf6456228da39ed3b83\transformed\play-services-base-18.0.1\AndroidManifest.xml:19:5-23:19
 MERGED from [com.google.firebase:firebase-inappmessaging-ktx:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\76bac2ce4c0b6d0d70dac4c3a403e2d0\transformed\firebase-inappmessaging-ktx-20.1.2\AndroidManifest.xml:11:5-19:19
@@ -169,77 +187,63 @@ MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] C:\Users\tanki\.gradle
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.7.0] C:\Users\tanki\.gradle\caches\transforms-3\fd8697bff347b48dca9713baf510e44e\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:10:9-35
+		ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:13:9-35
 	android:label
-		ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:8:9-41
+		ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:11:9-41
 	android:roundIcon
-		ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:9:9-54
+		ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:12:9-54
 	android:icon
-		ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:7:9-43
+		ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:10:9-43
 	android:allowBackup
-		ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:6:9-35
+		ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:9:9-35
 	android:theme
-		ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:11:9-68
-meta-data#com.google.android.geo.API_KEY
-ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:24:9-26:44
-	android:value
-		ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:26:13-41
-	android:name
-		ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:25:13-58
-activity#com.chatapp.MapsActivity
-ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:28:9-31:59
-	android:label
-		ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:31:13-56
-	android:exported
-		ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:30:13-37
-	android:name
-		ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:29:13-41
+		ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:14:9-68
 activity#com.chatapp.account.avatar.ChoiseAvatar
-ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:32:9-34:40
+ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:17:9-19:40
 	android:exported
-		ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:34:13-37
+		ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:19:13-37
 	android:name
-		ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:33:13-56
-activity#com.chatapp.account.login.AccountMainActivity
-ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:35:9-37:40
+		ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:18:13-56
+activity#com.chatapp.account.AccountMainActivity
+ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:20:9-22:40
 	android:exported
-		ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:37:13-37
+		ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:22:13-37
 	android:name
-		ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:36:13-62
+		ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:21:13-56
 activity#com.chatapp.account.register.RegisterEmailActivity
-ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:38:9-40:40
+ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:23:9-25:40
 	android:exported
-		ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:40:13-37
+		ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:25:13-37
 	android:name
-		ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:39:13-67
+		ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:24:13-67
 activity#com.chatapp.account.login.LoginEmailActivity
-ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:41:9-43:40
+ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:26:9-28:40
 	android:exported
-		ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:43:13-37
+		ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:28:13-37
 	android:name
-		ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:42:13-61
+		ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:27:13-61
 activity#com.chatapp.conversation.Chat
-ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:44:9-46:40
+ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:29:9-31:40
 	android:exported
-		ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:46:13-37
+		ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:31:13-37
 	android:name
-		ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:45:13-46
+		ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:30:13-46
 activity#com.chatapp.MainActivity
-ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:47:9-55:20
+ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:32:9-40:20
 	android:exported
-		ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:49:13-36
+		ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:34:13-36
 	android:name
-		ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:48:13-41
+		ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:33:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:50:13-54:29
+ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:35:13-39:29
 action#android.intent.action.MAIN
-ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:51:17-69
+ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:36:17-69
 	android:name
-		ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:51:25-66
+		ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:36:25-66
 category#android.intent.category.LAUNCHER
-ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:53:17-77
+ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:38:17-77
 	android:name
-		ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:53:27-74
+		ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:38:27-74
 uses-sdk
 INJECTED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml
@@ -262,22 +266,32 @@ MERGED from [androidx.constraintlayout:constraintlayout:2.1.3] C:\Users\tanki\.g
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.3] C:\Users\tanki\.gradle\caches\transforms-3\cbc0a0da639fa9bffed9b0787b9ad0e3\transformed\constraintlayout-2.1.3\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.appcompat:appcompat:1.4.1] C:\Users\tanki\.gradle\caches\transforms-3\0141f330a36c3493b9223274d74e5a8c\transformed\appcompat-1.4.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.appcompat:appcompat:1.4.1] C:\Users\tanki\.gradle\caches\transforms-3\0141f330a36c3493b9223274d74e5a8c\transformed\appcompat-1.4.1\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:firebase-firestore-ktx:24.1.1] C:\Users\tanki\.gradle\caches\transforms-3\2c7efcc43ee1f1778bfe989865afdcaa\transformed\firebase-firestore-ktx-24.1.1\AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-firestore-ktx:24.1.1] C:\Users\tanki\.gradle\caches\transforms-3\2c7efcc43ee1f1778bfe989865afdcaa\transformed\firebase-firestore-ktx-24.1.1\AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-storage-ktx:20.0.1] C:\Users\tanki\.gradle\caches\transforms-3\06a861ba6a24726a655c7e888893a5a5\transformed\firebase-storage-ktx-20.0.1\AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-storage-ktx:20.0.1] C:\Users\tanki\.gradle\caches\transforms-3\06a861ba6a24726a655c7e888893a5a5\transformed\firebase-storage-ktx-20.0.1\AndroidManifest.xml:6:5-8:41
 MERGED from [com.google.android.gms:play-services-auth:20.1.0] C:\Users\tanki\.gradle\caches\transforms-3\75eff52485cd289f95c69f7a0dfeb27e\transformed\play-services-auth-20.1.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-auth:20.1.0] C:\Users\tanki\.gradle\caches\transforms-3\75eff52485cd289f95c69f7a0dfeb27e\transformed\play-services-auth-20.1.0\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-maps:18.0.2] C:\Users\tanki\.gradle\caches\transforms-3\2afa6efc94fd13e6f1c3fad925ba6236\transformed\play-services-maps-18.0.2\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-maps:18.0.2] C:\Users\tanki\.gradle\caches\transforms-3\2afa6efc94fd13e6f1c3fad925ba6236\transformed\play-services-maps-18.0.2\AndroidManifest.xml:20:5-44
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\tanki\.gradle\caches\transforms-3\7c736327705df84b47d9137adbb65689\transformed\viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\tanki\.gradle\caches\transforms-3\7c736327705df84b47d9137adbb65689\transformed\viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [com.google.firebase:firebase-auth-ktx:21.0.2] C:\Users\tanki\.gradle\caches\transforms-3\4e4d9503d115b4d48f4f577f96ae0467\transformed\firebase-auth-ktx-21.0.2\AndroidManifest.xml:5:5-44
-MERGED from [com.google.firebase:firebase-auth-ktx:21.0.2] C:\Users\tanki\.gradle\caches\transforms-3\4e4d9503d115b4d48f4f577f96ae0467\transformed\firebase-auth-ktx-21.0.2\AndroidManifest.xml:5:5-44
-MERGED from [com.google.firebase:firebase-auth:21.0.2] C:\Users\tanki\.gradle\caches\transforms-3\156d0b670bb14d3ffa2112aae02c2c0e\transformed\firebase-auth-21.0.2\AndroidManifest.xml:21:5-44
-MERGED from [com.google.firebase:firebase-auth:21.0.2] C:\Users\tanki\.gradle\caches\transforms-3\156d0b670bb14d3ffa2112aae02c2c0e\transformed\firebase-auth-21.0.2\AndroidManifest.xml:21:5-44
+MERGED from [com.google.firebase:firebase-auth-ktx:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\435ab00baa46c4596e961f92b9b21713\transformed\firebase-auth-ktx-21.0.3\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-auth-ktx:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\435ab00baa46c4596e961f92b9b21713\transformed\firebase-auth-ktx-21.0.3\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\3ad4e1fb525e7e1feb3b6ded164c30ec\transformed\firebase-auth-21.0.3\AndroidManifest.xml:21:5-44
+MERGED from [com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\3ad4e1fb525e7e1feb3b6ded164c30ec\transformed\firebase-auth-21.0.3\AndroidManifest.xml:21:5-44
 MERGED from [com.google.android.gms:play-services-auth-api-phone:18.0.1] C:\Users\tanki\.gradle\caches\transforms-3\e7cfedea3c76cd63bc3afbc628c52c42\transformed\play-services-auth-api-phone-18.0.1\AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-auth-api-phone:18.0.1] C:\Users\tanki\.gradle\caches\transforms-3\e7cfedea3c76cd63bc3afbc628c52c42\transformed\play-services-auth-api-phone-18.0.1\AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-auth-base:18.0.1] C:\Users\tanki\.gradle\caches\transforms-3\10a62fd5fde640ecd423e138e561ca68\transformed\play-services-auth-base-18.0.1\AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-auth-base:18.0.1] C:\Users\tanki\.gradle\caches\transforms-3\10a62fd5fde640ecd423e138e561ca68\transformed\play-services-auth-base-18.0.1\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-firestore:24.1.1] C:\Users\tanki\.gradle\caches\transforms-3\81ebe1175682315aa2d58b3bc8535c8b\transformed\firebase-firestore-24.1.1\AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.firebase:firebase-firestore:24.1.1] C:\Users\tanki\.gradle\caches\transforms-3\81ebe1175682315aa2d58b3bc8535c8b\transformed\firebase-firestore-24.1.1\AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.firebase:firebase-storage:20.0.1] C:\Users\tanki\.gradle\caches\transforms-3\838f17b21541e423181a230be1e97b34\transformed\firebase-storage-20.0.1\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:firebase-storage:20.0.1] C:\Users\tanki\.gradle\caches\transforms-3\838f17b21541e423181a230be1e97b34\transformed\firebase-storage-20.0.1\AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] C:\Users\tanki\.gradle\caches\transforms-3\cc1b02da4b16e3a661f347d7cdb878c9\transformed\play-services-safetynet-17.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] C:\Users\tanki\.gradle\caches\transforms-3\cc1b02da4b16e3a661f347d7cdb878c9\transformed\play-services-safetynet-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-appcheck-interop:16.0.0-beta06] C:\Users\tanki\.gradle\caches\transforms-3\a26558c9e1a3db300b09c77587072423\transformed\firebase-appcheck-interop-16.0.0-beta06\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-appcheck-interop:16.0.0-beta06] C:\Users\tanki\.gradle\caches\transforms-3\a26558c9e1a3db300b09c77587072423\transformed\firebase-appcheck-interop-16.0.0-beta06\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-database-collection:18.0.1] C:\Users\tanki\.gradle\caches\transforms-3\68bf6ad4f70b6a49e54ae369cffad855\transformed\firebase-database-collection-18.0.1\AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.firebase:firebase-database-collection:18.0.1] C:\Users\tanki\.gradle\caches\transforms-3\68bf6ad4f70b6a49e54ae369cffad855\transformed\firebase-database-collection-18.0.1\AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\tanki\.gradle\caches\transforms-3\c60f2ae0a15afcf6456228da39ed3b83\transformed\play-services-base-18.0.1\AndroidManifest.xml:18:5-43
 MERGED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\tanki\.gradle\caches\transforms-3\c60f2ae0a15afcf6456228da39ed3b83\transformed\play-services-base-18.0.1\AndroidManifest.xml:18:5-43
 MERGED from [com.google.firebase:firebase-inappmessaging-ktx:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\76bac2ce4c0b6d0d70dac4c3a403e2d0\transformed\firebase-inappmessaging-ktx-20.1.2\AndroidManifest.xml:6:5-8:41
@@ -410,6 +424,8 @@ MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\tan
 MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\tanki\.gradle\caches\transforms-3\7f5d06193de645834c80cb259b2ff1ea\transformed\protolite-well-known-types-18.0.0\AndroidManifest.xml:7:5-9:41
 MERGED from [io.reactivex.rxjava2:rxandroid:2.0.2] C:\Users\tanki\.gradle\caches\transforms-3\8c1b24f441f534e87e46ef177ff60de6\transformed\rxandroid-2.0.2\AndroidManifest.xml:19:5-43
 MERGED from [io.reactivex.rxjava2:rxandroid:2.0.2] C:\Users\tanki\.gradle\caches\transforms-3\8c1b24f441f534e87e46ef177ff60de6\transformed\rxandroid-2.0.2\AndroidManifest.xml:19:5-43
+MERGED from [io.grpc:grpc-android:1.44.1] C:\Users\tanki\.gradle\caches\transforms-3\41c6e8214f8b02d903fba41e63974aeb\transformed\grpc-android-1.44.1\AndroidManifest.xml:5:5-7:41
+MERGED from [io.grpc:grpc-android:1.44.1] C:\Users\tanki\.gradle\caches\transforms-3\41c6e8214f8b02d903fba41e63974aeb\transformed\grpc-android-1.44.1\AndroidManifest.xml:5:5-7:41
 INJECTED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml
 INJECTED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion
@@ -424,10 +440,18 @@ service#com.google.firebase.components.ComponentDiscoveryService
 ADDED from [com.google.firebase:firebase-inappmessaging-display-ktx:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\5940b63682e145031457a6af7e6b7530\transformed\firebase-inappmessaging-display-ktx-20.1.2\AndroidManifest.xml:12:9-18:19
 MERGED from [com.google.firebase:firebase-inappmessaging-display:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\09fabbc34b62173ba2579c6136bae9b0\transformed\firebase-inappmessaging-display-20.1.2\AndroidManifest.xml:23:9-29:19
 MERGED from [com.google.firebase:firebase-inappmessaging-display:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\09fabbc34b62173ba2579c6136bae9b0\transformed\firebase-inappmessaging-display-20.1.2\AndroidManifest.xml:23:9-29:19
-MERGED from [com.google.firebase:firebase-auth-ktx:21.0.2] C:\Users\tanki\.gradle\caches\transforms-3\4e4d9503d115b4d48f4f577f96ae0467\transformed\firebase-auth-ktx-21.0.2\AndroidManifest.xml:8:9-14:19
-MERGED from [com.google.firebase:firebase-auth-ktx:21.0.2] C:\Users\tanki\.gradle\caches\transforms-3\4e4d9503d115b4d48f4f577f96ae0467\transformed\firebase-auth-ktx-21.0.2\AndroidManifest.xml:8:9-14:19
-MERGED from [com.google.firebase:firebase-auth:21.0.2] C:\Users\tanki\.gradle\caches\transforms-3\156d0b670bb14d3ffa2112aae02c2c0e\transformed\firebase-auth-21.0.2\AndroidManifest.xml:64:9-70:19
-MERGED from [com.google.firebase:firebase-auth:21.0.2] C:\Users\tanki\.gradle\caches\transforms-3\156d0b670bb14d3ffa2112aae02c2c0e\transformed\firebase-auth-21.0.2\AndroidManifest.xml:64:9-70:19
+MERGED from [com.google.firebase:firebase-firestore-ktx:24.1.1] C:\Users\tanki\.gradle\caches\transforms-3\2c7efcc43ee1f1778bfe989865afdcaa\transformed\firebase-firestore-ktx-24.1.1\AndroidManifest.xml:12:9-18:19
+MERGED from [com.google.firebase:firebase-firestore-ktx:24.1.1] C:\Users\tanki\.gradle\caches\transforms-3\2c7efcc43ee1f1778bfe989865afdcaa\transformed\firebase-firestore-ktx-24.1.1\AndroidManifest.xml:12:9-18:19
+MERGED from [com.google.firebase:firebase-storage-ktx:20.0.1] C:\Users\tanki\.gradle\caches\transforms-3\06a861ba6a24726a655c7e888893a5a5\transformed\firebase-storage-ktx-20.0.1\AndroidManifest.xml:12:9-18:19
+MERGED from [com.google.firebase:firebase-storage-ktx:20.0.1] C:\Users\tanki\.gradle\caches\transforms-3\06a861ba6a24726a655c7e888893a5a5\transformed\firebase-storage-ktx-20.0.1\AndroidManifest.xml:12:9-18:19
+MERGED from [com.google.firebase:firebase-auth-ktx:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\435ab00baa46c4596e961f92b9b21713\transformed\firebase-auth-ktx-21.0.3\AndroidManifest.xml:8:9-14:19
+MERGED from [com.google.firebase:firebase-auth-ktx:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\435ab00baa46c4596e961f92b9b21713\transformed\firebase-auth-ktx-21.0.3\AndroidManifest.xml:8:9-14:19
+MERGED from [com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\3ad4e1fb525e7e1feb3b6ded164c30ec\transformed\firebase-auth-21.0.3\AndroidManifest.xml:64:9-70:19
+MERGED from [com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\3ad4e1fb525e7e1feb3b6ded164c30ec\transformed\firebase-auth-21.0.3\AndroidManifest.xml:64:9-70:19
+MERGED from [com.google.firebase:firebase-firestore:24.1.1] C:\Users\tanki\.gradle\caches\transforms-3\81ebe1175682315aa2d58b3bc8535c8b\transformed\firebase-firestore-24.1.1\AndroidManifest.xml:17:9-23:19
+MERGED from [com.google.firebase:firebase-firestore:24.1.1] C:\Users\tanki\.gradle\caches\transforms-3\81ebe1175682315aa2d58b3bc8535c8b\transformed\firebase-firestore-24.1.1\AndroidManifest.xml:17:9-23:19
+MERGED from [com.google.firebase:firebase-storage:20.0.1] C:\Users\tanki\.gradle\caches\transforms-3\838f17b21541e423181a230be1e97b34\transformed\firebase-storage-20.0.1\AndroidManifest.xml:30:9-36:19
+MERGED from [com.google.firebase:firebase-storage:20.0.1] C:\Users\tanki\.gradle\caches\transforms-3\838f17b21541e423181a230be1e97b34\transformed\firebase-storage-20.0.1\AndroidManifest.xml:30:9-36:19
 MERGED from [com.google.firebase:firebase-inappmessaging-ktx:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\76bac2ce4c0b6d0d70dac4c3a403e2d0\transformed\firebase-inappmessaging-ktx-20.1.2\AndroidManifest.xml:12:9-18:19
 MERGED from [com.google.firebase:firebase-inappmessaging-ktx:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\76bac2ce4c0b6d0d70dac4c3a403e2d0\transformed\firebase-inappmessaging-ktx-20.1.2\AndroidManifest.xml:12:9-18:19
 MERGED from [com.google.firebase:firebase-common-ktx:20.1.0] C:\Users\tanki\.gradle\caches\transforms-3\de4de886eef9b07a3e1a70cf0614ffa8\transformed\firebase-common-ktx-20.1.0\AndroidManifest.xml:12:9-18:19
@@ -458,10 +482,12 @@ ADDED from [com.google.firebase:firebase-inappmessaging-display-ktx:20.1.2] C:\U
 		ADDED from [com.google.firebase:firebase-inappmessaging-display-ktx:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\5940b63682e145031457a6af7e6b7530\transformed\firebase-inappmessaging-display-ktx-20.1.2\AndroidManifest.xml:16:17-151
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from [com.google.firebase:firebase-inappmessaging-display:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\09fabbc34b62173ba2579c6136bae9b0\transformed\firebase-inappmessaging-display-20.1.2\AndroidManifest.xml:11:5-79
-MERGED from [com.google.android.gms:play-services-maps:18.0.2] C:\Users\tanki\.gradle\caches\transforms-3\2afa6efc94fd13e6f1c3fad925ba6236\transformed\play-services-maps-18.0.2\AndroidManifest.xml:23:5-79
-MERGED from [com.google.android.gms:play-services-maps:18.0.2] C:\Users\tanki\.gradle\caches\transforms-3\2afa6efc94fd13e6f1c3fad925ba6236\transformed\play-services-maps-18.0.2\AndroidManifest.xml:23:5-79
-MERGED from [com.google.firebase:firebase-auth:21.0.2] C:\Users\tanki\.gradle\caches\transforms-3\156d0b670bb14d3ffa2112aae02c2c0e\transformed\firebase-auth-21.0.2\AndroidManifest.xml:24:5-79
-MERGED from [com.google.firebase:firebase-auth:21.0.2] C:\Users\tanki\.gradle\caches\transforms-3\156d0b670bb14d3ffa2112aae02c2c0e\transformed\firebase-auth-21.0.2\AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\3ad4e1fb525e7e1feb3b6ded164c30ec\transformed\firebase-auth-21.0.3\AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\3ad4e1fb525e7e1feb3b6ded164c30ec\transformed\firebase-auth-21.0.3\AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-firestore:24.1.1] C:\Users\tanki\.gradle\caches\transforms-3\81ebe1175682315aa2d58b3bc8535c8b\transformed\firebase-firestore-24.1.1\AndroidManifest.xml:13:5-79
+MERGED from [com.google.firebase:firebase-firestore:24.1.1] C:\Users\tanki\.gradle\caches\transforms-3\81ebe1175682315aa2d58b3bc8535c8b\transformed\firebase-firestore-24.1.1\AndroidManifest.xml:13:5-79
+MERGED from [com.google.firebase:firebase-storage:20.0.1] C:\Users\tanki\.gradle\caches\transforms-3\838f17b21541e423181a230be1e97b34\transformed\firebase-storage-20.0.1\AndroidManifest.xml:26:5-79
+MERGED from [com.google.firebase:firebase-storage:20.0.1] C:\Users\tanki\.gradle\caches\transforms-3\838f17b21541e423181a230be1e97b34\transformed\firebase-storage-20.0.1\AndroidManifest.xml:26:5-79
 MERGED from [com.google.firebase:firebase-inappmessaging:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\218719d1ae64903496f8b725b1998a51\transformed\firebase-inappmessaging-20.1.2\AndroidManifest.xml:10:5-79
 MERGED from [com.google.firebase:firebase-inappmessaging:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\218719d1ae64903496f8b725b1998a51\transformed\firebase-inappmessaging-20.1.2\AndroidManifest.xml:10:5-79
 MERGED from [com.google.firebase:firebase-installations:17.0.1] C:\Users\tanki\.gradle\caches\transforms-3\1613d5014a1c4c19fb71798f17ebea38\transformed\firebase-installations-17.0.1\AndroidManifest.xml:10:5-79
@@ -470,14 +496,18 @@ MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.1] C:\Us
 MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.1] C:\Users\tanki\.gradle\caches\transforms-3\5ade623d0ba997b70faaadd2736e8037\transformed\transport-backend-cct-3.1.1\AndroidManifest.xml:25:5-79
 MERGED from [com.google.android.datatransport:transport-runtime:3.1.1] C:\Users\tanki\.gradle\caches\transforms-3\9b879f7bc95ac9ea666f5bc3051af8c1\transformed\transport-runtime-3.1.1\AndroidManifest.xml:22:5-79
 MERGED from [com.google.android.datatransport:transport-runtime:3.1.1] C:\Users\tanki\.gradle\caches\transforms-3\9b879f7bc95ac9ea666f5bc3051af8c1\transformed\transport-runtime-3.1.1\AndroidManifest.xml:22:5-79
+MERGED from [io.grpc:grpc-android:1.44.1] C:\Users\tanki\.gradle\caches\transforms-3\41c6e8214f8b02d903fba41e63974aeb\transformed\grpc-android-1.44.1\AndroidManifest.xml:9:5-79
+MERGED from [io.grpc:grpc-android:1.44.1] C:\Users\tanki\.gradle\caches\transforms-3\41c6e8214f8b02d903fba41e63974aeb\transformed\grpc-android-1.44.1\AndroidManifest.xml:9:5-79
 	android:name
 		ADDED from [com.google.firebase:firebase-inappmessaging-display:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\09fabbc34b62173ba2579c6136bae9b0\transformed\firebase-inappmessaging-display-20.1.2\AndroidManifest.xml:11:22-76
 uses-permission#android.permission.INTERNET
 ADDED from [com.google.firebase:firebase-inappmessaging-display:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\09fabbc34b62173ba2579c6136bae9b0\transformed\firebase-inappmessaging-display-20.1.2\AndroidManifest.xml:12:5-67
-MERGED from [com.google.android.gms:play-services-maps:18.0.2] C:\Users\tanki\.gradle\caches\transforms-3\2afa6efc94fd13e6f1c3fad925ba6236\transformed\play-services-maps-18.0.2\AndroidManifest.xml:24:5-67
-MERGED from [com.google.android.gms:play-services-maps:18.0.2] C:\Users\tanki\.gradle\caches\transforms-3\2afa6efc94fd13e6f1c3fad925ba6236\transformed\play-services-maps-18.0.2\AndroidManifest.xml:24:5-67
-MERGED from [com.google.firebase:firebase-auth:21.0.2] C:\Users\tanki\.gradle\caches\transforms-3\156d0b670bb14d3ffa2112aae02c2c0e\transformed\firebase-auth-21.0.2\AndroidManifest.xml:23:5-67
-MERGED from [com.google.firebase:firebase-auth:21.0.2] C:\Users\tanki\.gradle\caches\transforms-3\156d0b670bb14d3ffa2112aae02c2c0e\transformed\firebase-auth-21.0.2\AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\3ad4e1fb525e7e1feb3b6ded164c30ec\transformed\firebase-auth-21.0.3\AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\3ad4e1fb525e7e1feb3b6ded164c30ec\transformed\firebase-auth-21.0.3\AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-firestore:24.1.1] C:\Users\tanki\.gradle\caches\transforms-3\81ebe1175682315aa2d58b3bc8535c8b\transformed\firebase-firestore-24.1.1\AndroidManifest.xml:14:5-67
+MERGED from [com.google.firebase:firebase-firestore:24.1.1] C:\Users\tanki\.gradle\caches\transforms-3\81ebe1175682315aa2d58b3bc8535c8b\transformed\firebase-firestore-24.1.1\AndroidManifest.xml:14:5-67
+MERGED from [com.google.firebase:firebase-storage:20.0.1] C:\Users\tanki\.gradle\caches\transforms-3\838f17b21541e423181a230be1e97b34\transformed\firebase-storage-20.0.1\AndroidManifest.xml:27:5-67
+MERGED from [com.google.firebase:firebase-storage:20.0.1] C:\Users\tanki\.gradle\caches\transforms-3\838f17b21541e423181a230be1e97b34\transformed\firebase-storage-20.0.1\AndroidManifest.xml:27:5-67
 MERGED from [com.google.firebase:firebase-inappmessaging:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\218719d1ae64903496f8b725b1998a51\transformed\firebase-inappmessaging-20.1.2\AndroidManifest.xml:11:5-67
 MERGED from [com.google.firebase:firebase-inappmessaging:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\218719d1ae64903496f8b725b1998a51\transformed\firebase-inappmessaging-20.1.2\AndroidManifest.xml:11:5-67
 MERGED from [com.google.firebase:firebase-installations:17.0.1] C:\Users\tanki\.gradle\caches\transforms-3\1613d5014a1c4c19fb71798f17ebea38\transformed\firebase-installations-17.0.1\AndroidManifest.xml:11:5-67
@@ -488,8 +518,6 @@ MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.1] C:\Us
 		ADDED from [com.google.firebase:firebase-inappmessaging-display:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\09fabbc34b62173ba2579c6136bae9b0\transformed\firebase-inappmessaging-display-20.1.2\AndroidManifest.xml:12:22-64
 queries
 ADDED from [com.google.firebase:firebase-inappmessaging-display:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\09fabbc34b62173ba2579c6136bae9b0\transformed\firebase-inappmessaging-display-20.1.2\AndroidManifest.xml:14:5-20:15
-MERGED from [com.google.android.gms:play-services-maps:18.0.2] C:\Users\tanki\.gradle\caches\transforms-3\2afa6efc94fd13e6f1c3fad925ba6236\transformed\play-services-maps-18.0.2\AndroidManifest.xml:30:5-34:15
-MERGED from [com.google.android.gms:play-services-maps:18.0.2] C:\Users\tanki\.gradle\caches\transforms-3\2afa6efc94fd13e6f1c3fad925ba6236\transformed\play-services-maps-18.0.2\AndroidManifest.xml:30:5-34:15
 intent#action:name:android.intent.action.VIEW+data:scheme:https
 ADDED from [com.google.firebase:firebase-inappmessaging-display:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\09fabbc34b62173ba2579c6136bae9b0\transformed\firebase-inappmessaging-display-20.1.2\AndroidManifest.xml:15:9-19:18
 action#android.intent.action.VIEW
@@ -506,6 +534,18 @@ ADDED from [com.google.firebase:firebase-inappmessaging-display:20.1.2] C:\Users
 		ADDED from [com.google.firebase:firebase-inappmessaging-display:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\09fabbc34b62173ba2579c6136bae9b0\transformed\firebase-inappmessaging-display-20.1.2\AndroidManifest.xml:28:17-82
 	android:name
 		ADDED from [com.google.firebase:firebase-inappmessaging-display:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\09fabbc34b62173ba2579c6136bae9b0\transformed\firebase-inappmessaging-display-20.1.2\AndroidManifest.xml:27:17-144
+meta-data#com.google.firebase.components:com.google.firebase.firestore.ktx.FirebaseFirestoreKtxRegistrar
+ADDED from [com.google.firebase:firebase-firestore-ktx:24.1.1] C:\Users\tanki\.gradle\caches\transforms-3\2c7efcc43ee1f1778bfe989865afdcaa\transformed\firebase-firestore-ktx-24.1.1\AndroidManifest.xml:15:13-17:85
+	android:value
+		ADDED from [com.google.firebase:firebase-firestore-ktx:24.1.1] C:\Users\tanki\.gradle\caches\transforms-3\2c7efcc43ee1f1778bfe989865afdcaa\transformed\firebase-firestore-ktx-24.1.1\AndroidManifest.xml:17:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-firestore-ktx:24.1.1] C:\Users\tanki\.gradle\caches\transforms-3\2c7efcc43ee1f1778bfe989865afdcaa\transformed\firebase-firestore-ktx-24.1.1\AndroidManifest.xml:16:17-126
+meta-data#com.google.firebase.components:com.google.firebase.storage.ktx.FirebaseStorageKtxRegistrar
+ADDED from [com.google.firebase:firebase-storage-ktx:20.0.1] C:\Users\tanki\.gradle\caches\transforms-3\06a861ba6a24726a655c7e888893a5a5\transformed\firebase-storage-ktx-20.0.1\AndroidManifest.xml:15:13-17:85
+	android:value
+		ADDED from [com.google.firebase:firebase-storage-ktx:20.0.1] C:\Users\tanki\.gradle\caches\transforms-3\06a861ba6a24726a655c7e888893a5a5\transformed\firebase-storage-ktx-20.0.1\AndroidManifest.xml:17:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-storage-ktx:20.0.1] C:\Users\tanki\.gradle\caches\transforms-3\06a861ba6a24726a655c7e888893a5a5\transformed\firebase-storage-ktx-20.0.1\AndroidManifest.xml:16:17-122
 activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
 ADDED from [com.google.android.gms:play-services-auth:20.1.0] C:\Users\tanki\.gradle\caches\transforms-3\75eff52485cd289f95c69f7a0dfeb27e\transformed\play-services-auth-20.1.0\AndroidManifest.xml:23:9-27:75
 	android:excludeFromRecents
@@ -526,70 +566,66 @@ ADDED from [com.google.android.gms:play-services-auth:20.1.0] C:\Users\tanki\.gr
 		ADDED from [com.google.android.gms:play-services-auth:20.1.0] C:\Users\tanki\.gradle\caches\transforms-3\75eff52485cd289f95c69f7a0dfeb27e\transformed\play-services-auth-20.1.0\AndroidManifest.xml:36:13-107
 	android:name
 		ADDED from [com.google.android.gms:play-services-auth:20.1.0] C:\Users\tanki\.gradle\caches\transforms-3\75eff52485cd289f95c69f7a0dfeb27e\transformed\play-services-auth-20.1.0\AndroidManifest.xml:34:13-89
-uses-feature#0x00020000
-ADDED from [com.google.android.gms:play-services-maps:18.0.2] C:\Users\tanki\.gradle\caches\transforms-3\2afa6efc94fd13e6f1c3fad925ba6236\transformed\play-services-maps-18.0.2\AndroidManifest.xml:26:5-28:35
-	android:glEsVersion
-		ADDED from [com.google.android.gms:play-services-maps:18.0.2] C:\Users\tanki\.gradle\caches\transforms-3\2afa6efc94fd13e6f1c3fad925ba6236\transformed\play-services-maps-18.0.2\AndroidManifest.xml:27:9-41
-	android:required
-		ADDED from [com.google.android.gms:play-services-maps:18.0.2] C:\Users\tanki\.gradle\caches\transforms-3\2afa6efc94fd13e6f1c3fad925ba6236\transformed\play-services-maps-18.0.2\AndroidManifest.xml:28:9-32
-package#com.google.android.apps.maps
-ADDED from [com.google.android.gms:play-services-maps:18.0.2] C:\Users\tanki\.gradle\caches\transforms-3\2afa6efc94fd13e6f1c3fad925ba6236\transformed\play-services-maps-18.0.2\AndroidManifest.xml:33:9-64
-	android:name
-		ADDED from [com.google.android.gms:play-services-maps:18.0.2] C:\Users\tanki\.gradle\caches\transforms-3\2afa6efc94fd13e6f1c3fad925ba6236\transformed\play-services-maps-18.0.2\AndroidManifest.xml:33:18-61
-uses-library#org.apache.http.legacy
-ADDED from [com.google.android.gms:play-services-maps:18.0.2] C:\Users\tanki\.gradle\caches\transforms-3\2afa6efc94fd13e6f1c3fad925ba6236\transformed\play-services-maps-18.0.2\AndroidManifest.xml:39:9-41:40
-	android:required
-		ADDED from [com.google.android.gms:play-services-maps:18.0.2] C:\Users\tanki\.gradle\caches\transforms-3\2afa6efc94fd13e6f1c3fad925ba6236\transformed\play-services-maps-18.0.2\AndroidManifest.xml:41:13-37
-	android:name
-		ADDED from [com.google.android.gms:play-services-maps:18.0.2] C:\Users\tanki\.gradle\caches\transforms-3\2afa6efc94fd13e6f1c3fad925ba6236\transformed\play-services-maps-18.0.2\AndroidManifest.xml:40:13-50
 meta-data#com.google.firebase.components:com.google.firebase.auth.ktx.FirebaseAuthKtxRegistrar
-ADDED from [com.google.firebase:firebase-auth-ktx:21.0.2] C:\Users\tanki\.gradle\caches\transforms-3\4e4d9503d115b4d48f4f577f96ae0467\transformed\firebase-auth-ktx-21.0.2\AndroidManifest.xml:11:13-13:85
+ADDED from [com.google.firebase:firebase-auth-ktx:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\435ab00baa46c4596e961f92b9b21713\transformed\firebase-auth-ktx-21.0.3\AndroidManifest.xml:11:13-13:85
 	android:value
-		ADDED from [com.google.firebase:firebase-auth-ktx:21.0.2] C:\Users\tanki\.gradle\caches\transforms-3\4e4d9503d115b4d48f4f577f96ae0467\transformed\firebase-auth-ktx-21.0.2\AndroidManifest.xml:13:17-82
+		ADDED from [com.google.firebase:firebase-auth-ktx:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\435ab00baa46c4596e961f92b9b21713\transformed\firebase-auth-ktx-21.0.3\AndroidManifest.xml:13:17-82
 	android:name
-		ADDED from [com.google.firebase:firebase-auth-ktx:21.0.2] C:\Users\tanki\.gradle\caches\transforms-3\4e4d9503d115b4d48f4f577f96ae0467\transformed\firebase-auth-ktx-21.0.2\AndroidManifest.xml:12:17-116
+		ADDED from [com.google.firebase:firebase-auth-ktx:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\435ab00baa46c4596e961f92b9b21713\transformed\firebase-auth-ktx-21.0.3\AndroidManifest.xml:12:17-116
 activity#com.google.firebase.auth.internal.GenericIdpActivity
-ADDED from [com.google.firebase:firebase-auth:21.0.2] C:\Users\tanki\.gradle\caches\transforms-3\156d0b670bb14d3ffa2112aae02c2c0e\transformed\firebase-auth-21.0.2\AndroidManifest.xml:27:9-44:20
+ADDED from [com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\3ad4e1fb525e7e1feb3b6ded164c30ec\transformed\firebase-auth-21.0.3\AndroidManifest.xml:27:9-44:20
 	android:excludeFromRecents
-		ADDED from [com.google.firebase:firebase-auth:21.0.2] C:\Users\tanki\.gradle\caches\transforms-3\156d0b670bb14d3ffa2112aae02c2c0e\transformed\firebase-auth-21.0.2\AndroidManifest.xml:29:13-46
+		ADDED from [com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\3ad4e1fb525e7e1feb3b6ded164c30ec\transformed\firebase-auth-21.0.3\AndroidManifest.xml:29:13-46
 	android:launchMode
-		ADDED from [com.google.firebase:firebase-auth:21.0.2] C:\Users\tanki\.gradle\caches\transforms-3\156d0b670bb14d3ffa2112aae02c2c0e\transformed\firebase-auth-21.0.2\AndroidManifest.xml:31:13-44
+		ADDED from [com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\3ad4e1fb525e7e1feb3b6ded164c30ec\transformed\firebase-auth-21.0.3\AndroidManifest.xml:31:13-44
 	android:exported
-		ADDED from [com.google.firebase:firebase-auth:21.0.2] C:\Users\tanki\.gradle\caches\transforms-3\156d0b670bb14d3ffa2112aae02c2c0e\transformed\firebase-auth-21.0.2\AndroidManifest.xml:30:13-36
+		ADDED from [com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\3ad4e1fb525e7e1feb3b6ded164c30ec\transformed\firebase-auth-21.0.3\AndroidManifest.xml:30:13-36
 	android:theme
-		ADDED from [com.google.firebase:firebase-auth:21.0.2] C:\Users\tanki\.gradle\caches\transforms-3\156d0b670bb14d3ffa2112aae02c2c0e\transformed\firebase-auth-21.0.2\AndroidManifest.xml:32:13-72
+		ADDED from [com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\3ad4e1fb525e7e1feb3b6ded164c30ec\transformed\firebase-auth-21.0.3\AndroidManifest.xml:32:13-72
 	android:name
-		ADDED from [com.google.firebase:firebase-auth:21.0.2] C:\Users\tanki\.gradle\caches\transforms-3\156d0b670bb14d3ffa2112aae02c2c0e\transformed\firebase-auth-21.0.2\AndroidManifest.xml:28:13-80
+		ADDED from [com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\3ad4e1fb525e7e1feb3b6ded164c30ec\transformed\firebase-auth-21.0.3\AndroidManifest.xml:28:13-80
 intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:firebase.auth+data:path:/+data:scheme:genericidp
-ADDED from [com.google.firebase:firebase-auth:21.0.2] C:\Users\tanki\.gradle\caches\transforms-3\156d0b670bb14d3ffa2112aae02c2c0e\transformed\firebase-auth-21.0.2\AndroidManifest.xml:33:13-43:29
+ADDED from [com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\3ad4e1fb525e7e1feb3b6ded164c30ec\transformed\firebase-auth-21.0.3\AndroidManifest.xml:33:13-43:29
 category#android.intent.category.DEFAULT
-ADDED from [com.google.firebase:firebase-auth:21.0.2] C:\Users\tanki\.gradle\caches\transforms-3\156d0b670bb14d3ffa2112aae02c2c0e\transformed\firebase-auth-21.0.2\AndroidManifest.xml:36:17-76
+ADDED from [com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\3ad4e1fb525e7e1feb3b6ded164c30ec\transformed\firebase-auth-21.0.3\AndroidManifest.xml:36:17-76
 	android:name
-		ADDED from [com.google.firebase:firebase-auth:21.0.2] C:\Users\tanki\.gradle\caches\transforms-3\156d0b670bb14d3ffa2112aae02c2c0e\transformed\firebase-auth-21.0.2\AndroidManifest.xml:36:27-73
+		ADDED from [com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\3ad4e1fb525e7e1feb3b6ded164c30ec\transformed\firebase-auth-21.0.3\AndroidManifest.xml:36:27-73
 category#android.intent.category.BROWSABLE
-ADDED from [com.google.firebase:firebase-auth:21.0.2] C:\Users\tanki\.gradle\caches\transforms-3\156d0b670bb14d3ffa2112aae02c2c0e\transformed\firebase-auth-21.0.2\AndroidManifest.xml:37:17-78
+ADDED from [com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\3ad4e1fb525e7e1feb3b6ded164c30ec\transformed\firebase-auth-21.0.3\AndroidManifest.xml:37:17-78
 	android:name
-		ADDED from [com.google.firebase:firebase-auth:21.0.2] C:\Users\tanki\.gradle\caches\transforms-3\156d0b670bb14d3ffa2112aae02c2c0e\transformed\firebase-auth-21.0.2\AndroidManifest.xml:37:27-75
+		ADDED from [com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\3ad4e1fb525e7e1feb3b6ded164c30ec\transformed\firebase-auth-21.0.3\AndroidManifest.xml:37:27-75
 activity#com.google.firebase.auth.internal.RecaptchaActivity
-ADDED from [com.google.firebase:firebase-auth:21.0.2] C:\Users\tanki\.gradle\caches\transforms-3\156d0b670bb14d3ffa2112aae02c2c0e\transformed\firebase-auth-21.0.2\AndroidManifest.xml:45:9-62:20
+ADDED from [com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\3ad4e1fb525e7e1feb3b6ded164c30ec\transformed\firebase-auth-21.0.3\AndroidManifest.xml:45:9-62:20
 	android:excludeFromRecents
-		ADDED from [com.google.firebase:firebase-auth:21.0.2] C:\Users\tanki\.gradle\caches\transforms-3\156d0b670bb14d3ffa2112aae02c2c0e\transformed\firebase-auth-21.0.2\AndroidManifest.xml:47:13-46
+		ADDED from [com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\3ad4e1fb525e7e1feb3b6ded164c30ec\transformed\firebase-auth-21.0.3\AndroidManifest.xml:47:13-46
 	android:launchMode
-		ADDED from [com.google.firebase:firebase-auth:21.0.2] C:\Users\tanki\.gradle\caches\transforms-3\156d0b670bb14d3ffa2112aae02c2c0e\transformed\firebase-auth-21.0.2\AndroidManifest.xml:49:13-44
+		ADDED from [com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\3ad4e1fb525e7e1feb3b6ded164c30ec\transformed\firebase-auth-21.0.3\AndroidManifest.xml:49:13-44
 	android:exported
-		ADDED from [com.google.firebase:firebase-auth:21.0.2] C:\Users\tanki\.gradle\caches\transforms-3\156d0b670bb14d3ffa2112aae02c2c0e\transformed\firebase-auth-21.0.2\AndroidManifest.xml:48:13-36
+		ADDED from [com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\3ad4e1fb525e7e1feb3b6ded164c30ec\transformed\firebase-auth-21.0.3\AndroidManifest.xml:48:13-36
 	android:theme
-		ADDED from [com.google.firebase:firebase-auth:21.0.2] C:\Users\tanki\.gradle\caches\transforms-3\156d0b670bb14d3ffa2112aae02c2c0e\transformed\firebase-auth-21.0.2\AndroidManifest.xml:50:13-72
+		ADDED from [com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\3ad4e1fb525e7e1feb3b6ded164c30ec\transformed\firebase-auth-21.0.3\AndroidManifest.xml:50:13-72
 	android:name
-		ADDED from [com.google.firebase:firebase-auth:21.0.2] C:\Users\tanki\.gradle\caches\transforms-3\156d0b670bb14d3ffa2112aae02c2c0e\transformed\firebase-auth-21.0.2\AndroidManifest.xml:46:13-79
+		ADDED from [com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\3ad4e1fb525e7e1feb3b6ded164c30ec\transformed\firebase-auth-21.0.3\AndroidManifest.xml:46:13-79
 intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:firebase.auth+data:path:/+data:scheme:recaptcha
-ADDED from [com.google.firebase:firebase-auth:21.0.2] C:\Users\tanki\.gradle\caches\transforms-3\156d0b670bb14d3ffa2112aae02c2c0e\transformed\firebase-auth-21.0.2\AndroidManifest.xml:51:13-61:29
+ADDED from [com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\3ad4e1fb525e7e1feb3b6ded164c30ec\transformed\firebase-auth-21.0.3\AndroidManifest.xml:51:13-61:29
 meta-data#com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar
-ADDED from [com.google.firebase:firebase-auth:21.0.2] C:\Users\tanki\.gradle\caches\transforms-3\156d0b670bb14d3ffa2112aae02c2c0e\transformed\firebase-auth-21.0.2\AndroidManifest.xml:67:13-69:85
+ADDED from [com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\3ad4e1fb525e7e1feb3b6ded164c30ec\transformed\firebase-auth-21.0.3\AndroidManifest.xml:67:13-69:85
 	android:value
-		ADDED from [com.google.firebase:firebase-auth:21.0.2] C:\Users\tanki\.gradle\caches\transforms-3\156d0b670bb14d3ffa2112aae02c2c0e\transformed\firebase-auth-21.0.2\AndroidManifest.xml:69:17-82
+		ADDED from [com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\3ad4e1fb525e7e1feb3b6ded164c30ec\transformed\firebase-auth-21.0.3\AndroidManifest.xml:69:17-82
 	android:name
-		ADDED from [com.google.firebase:firebase-auth:21.0.2] C:\Users\tanki\.gradle\caches\transforms-3\156d0b670bb14d3ffa2112aae02c2c0e\transformed\firebase-auth-21.0.2\AndroidManifest.xml:68:17-109
+		ADDED from [com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\3ad4e1fb525e7e1feb3b6ded164c30ec\transformed\firebase-auth-21.0.3\AndroidManifest.xml:68:17-109
+meta-data#com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar
+ADDED from [com.google.firebase:firebase-firestore:24.1.1] C:\Users\tanki\.gradle\caches\transforms-3\81ebe1175682315aa2d58b3bc8535c8b\transformed\firebase-firestore-24.1.1\AndroidManifest.xml:20:13-22:85
+	android:value
+		ADDED from [com.google.firebase:firebase-firestore:24.1.1] C:\Users\tanki\.gradle\caches\transforms-3\81ebe1175682315aa2d58b3bc8535c8b\transformed\firebase-firestore-24.1.1\AndroidManifest.xml:22:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-firestore:24.1.1] C:\Users\tanki\.gradle\caches\transforms-3\81ebe1175682315aa2d58b3bc8535c8b\transformed\firebase-firestore-24.1.1\AndroidManifest.xml:21:17-111
+meta-data#com.google.firebase.components:com.google.firebase.storage.StorageRegistrar
+ADDED from [com.google.firebase:firebase-storage:20.0.1] C:\Users\tanki\.gradle\caches\transforms-3\838f17b21541e423181a230be1e97b34\transformed\firebase-storage-20.0.1\AndroidManifest.xml:33:13-35:85
+	android:value
+		ADDED from [com.google.firebase:firebase-storage:20.0.1] C:\Users\tanki\.gradle\caches\transforms-3\838f17b21541e423181a230be1e97b34\transformed\firebase-storage-20.0.1\AndroidManifest.xml:35:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-storage:20.0.1] C:\Users\tanki\.gradle\caches\transforms-3\838f17b21541e423181a230be1e97b34\transformed\firebase-storage-20.0.1\AndroidManifest.xml:34:17-107
 activity#com.google.android.gms.common.api.GoogleApiActivity
 ADDED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\tanki\.gradle\caches\transforms-3\c60f2ae0a15afcf6456228da39ed3b83\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
 	android:exported

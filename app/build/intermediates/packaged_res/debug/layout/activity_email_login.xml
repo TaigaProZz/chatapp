@@ -57,39 +57,26 @@
     <Button
         android:id="@+id/login_button"
         android:layout_width="@dimen/button_width"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/button_height"
         android:layout_gravity="start"
-        android:layout_marginBottom="64dp"
+        android:layout_marginBottom="4dp"
         android:text="@string/se_connecter"
         app:layout_constraintBottom_toTopOf="@+id/goto_register_button"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
+        android:id="@+id/goto_register_button"
         android:layout_width="165dp"
         android:layout_height="38dp"
         android:layout_marginBottom="4dp"
         android:gravity="center"
         android:text="@string/pas_encore_inscrit"
         android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/goto_register_button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/goto_register_button"
-        android:layout_width="@dimen/button_width"
-        android:layout_height="wrap_content"
-        android:layout_gravity="start"
-        android:layout_marginBottom="16dp"
-        android:text="@string/s_inscrire"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent" />
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

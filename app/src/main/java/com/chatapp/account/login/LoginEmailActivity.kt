@@ -2,12 +2,10 @@ package com.chatapp.account.login
 
 import android.content.Intent
 import android.os.Bundle
-import android.widget.Button
-import android.widget.EditText
-import android.widget.ImageView
-import android.widget.Toast
+import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import com.chatapp.R
+import com.chatapp.account.AccountMainActivity
 import com.chatapp.account.register.RegisterEmailActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
@@ -25,15 +23,10 @@ class LoginEmailActivity : AppCompatActivity() {
 
         // Login Button
         findViewById<Button>(R.id.login_button).setOnClickListener {
-
-
         }
 
-
-
-
         // goto register activity button
-        findViewById<Button>(R.id.goto_register_button).setOnClickListener {
+        findViewById<TextView>(R.id.goto_register_button).setOnClickListener {
             startActivity(Intent(applicationContext, RegisterEmailActivity::class.java))
         }
 

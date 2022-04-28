@@ -1,8 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Chat App</string>
     <string name="chat_text_adapter" />
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in </string>
+    <string name="action_sign_in_in_short">Sign in r</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
     <string name="se_connecter">Se connecter</string>
     <string name="s_inscrire">S\'inscrire</string>
     <string name="se_connecter_par_email">Se connecter par email</string>
-    <string name="s_inscrire_par_email">S\'insrire par email</string>
+    <string name="s_inscrire_par_email">S\'inscrire par email</string>
+    <string name="pas_encore_inscrit"> <u>Pas encore inscrit?</u> </string>
+    <string name="username_connected">username</string>
+    <string name="choose_pic_text">Choisir une photo</string>
+    <string name="no_pics_text">Passer cette étape</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="sign_out">Déconnexion</string>
+    <string name="web_client_id" translatable="false">859618026888-98mt718g22e8l8gv328gqs897vv2bqmm.apps.googleusercontent.com</string>
+
+
 </resources>
