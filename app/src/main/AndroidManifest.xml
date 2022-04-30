@@ -15,7 +15,7 @@
 
 
         <activity
-            android:name=".account.avatar.ChoiseAvatar"
+            android:name=".account.avatar.AvatarChoiceActivity"
             android:exported="false" />
         <activity
             android:name=".account.AccountMainActivity"

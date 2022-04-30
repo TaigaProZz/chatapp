@@ -12,6 +12,7 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.chatapp.R;
+import de.hdodenhof.circleimageview.CircleImageView;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -19,6 +20,9 @@ import java.lang.String;
 public final class ActivityChoiseAvatarBinding implements ViewBinding {
   @NonNull
   private final ConstraintLayout rootView;
+
+  @NonNull
+  public final CircleImageView avatarAvatarFinal;
 
   @NonNull
   public final Button avatarCircle;
@@ -33,9 +37,11 @@ public final class ActivityChoiseAvatarBinding implements ViewBinding {
   public final TextView username;
 
   private ActivityChoiseAvatarBinding(@NonNull ConstraintLayout rootView,
-      @NonNull Button avatarCircle, @NonNull Button confirmAvatarButton,
-      @NonNull TextView skipAvatarChoiceBtn, @NonNull TextView username) {
+      @NonNull CircleImageView avatarAvatarFinal, @NonNull Button avatarCircle,
+      @NonNull Button confirmAvatarButton, @NonNull TextView skipAvatarChoiceBtn,
+      @NonNull TextView username) {
     this.rootView = rootView;
+    this.avatarAvatarFinal = avatarAvatarFinal;
     this.avatarCircle = avatarCircle;
     this.confirmAvatarButton = confirmAvatarButton;
     this.skipAvatarChoiceBtn = skipAvatarChoiceBtn;
@@ -69,6 +75,12 @@ public final class ActivityChoiseAvatarBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.avatar_avatar_final;
+      CircleImageView avatarAvatarFinal = ViewBindings.findChildViewById(rootView, id);
+      if (avatarAvatarFinal == null) {
+        break missingId;
+      }
+
       id = R.id.avatar_circle;
       Button avatarCircle = ViewBindings.findChildViewById(rootView, id);
       if (avatarCircle == null) {
@@ -93,8 +105,8 @@ public final class ActivityChoiseAvatarBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityChoiseAvatarBinding((ConstraintLayout) rootView, avatarCircle,
-          confirmAvatarButton, skipAvatarChoiceBtn, username);
+      return new ActivityChoiseAvatarBinding((ConstraintLayout) rootView, avatarAvatarFinal,
+          avatarCircle, confirmAvatarButton, skipAvatarChoiceBtn, username);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

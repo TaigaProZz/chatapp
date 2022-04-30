@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
+import com.chatapp.MainActivity
 import com.chatapp.R
 import com.chatapp.account.AccountMainActivity
 import com.chatapp.account.register.RegisterEmailActivity
@@ -23,6 +24,10 @@ class LoginEmailActivity : AppCompatActivity() {
 
         // Login Button
         findViewById<Button>(R.id.login_button).setOnClickListener {
+            loginWithEmail()
+            val intent = Intent(applicationContext, MainActivity::class.java)
+            intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK.or(Intent.FLAG_ACTIVITY_CLEAR_TASK)
+            startActivity(intent)
         }
 
         // goto register activity button

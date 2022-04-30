@@ -31,7 +31,7 @@
         android:testOnly="true"
         android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" >
         <activity
-            android:name="com.chatapp.account.avatar.ChoiseAvatar"
+            android:name="com.chatapp.account.avatar.AvatarChoiceActivity"
             android:exported="false" />
         <activity
             android:name="com.chatapp.account.AccountMainActivity"

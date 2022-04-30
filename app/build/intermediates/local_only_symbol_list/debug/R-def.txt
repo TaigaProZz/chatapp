@@ -13,17 +13,21 @@ dimen button_width
 drawable avatar_circle
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+id avatar_avatar_final
 id avatar_btn
 id avatar_circle
 id backArrow
 id confirm_avatar_button
 id container
+id email_register
 id google_button
 id goto_register_button
 id imageView
+id list_of_conversation
 id login_button
 id login_email_button
 id msgBox
+id new_conversation_menu
 id password_login
 id password_register
 id recyclerViewChat.xml
@@ -36,6 +40,7 @@ id taskAdapterText
 id text
 id text1
 id toolbar
+id user_avatar
 id username
 id username_connected
 id username_login
@@ -47,6 +52,7 @@ layout activity_login_main
 layout activity_main
 layout activity_register
 layout chat_adapter
+menu nav_menu
 mipmap ic_launcher
 mipmap ic_launcher_round
 string action_sign_in
@@ -76,6 +82,7 @@ string sign_out
 string title_activity_login
 string title_activity_maps
 string username_connected
+string username_register
 string web_client_id
 string welcome
 style Theme.ChatApp

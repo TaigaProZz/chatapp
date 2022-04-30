@@ -26,6 +26,9 @@ public final class ActivityRegisterBinding implements ViewBinding {
   public final ImageView backArrow;
 
   @NonNull
+  public final EditText emailRegister;
+
+  @NonNull
   public final SignInButton googleButton;
 
   @NonNull
@@ -38,10 +41,12 @@ public final class ActivityRegisterBinding implements ViewBinding {
   public final EditText usernameRegister;
 
   private ActivityRegisterBinding(@NonNull ConstraintLayout rootView, @NonNull ImageView backArrow,
-      @NonNull SignInButton googleButton, @NonNull EditText passwordRegister,
-      @NonNull Button registerButton, @NonNull EditText usernameRegister) {
+      @NonNull EditText emailRegister, @NonNull SignInButton googleButton,
+      @NonNull EditText passwordRegister, @NonNull Button registerButton,
+      @NonNull EditText usernameRegister) {
     this.rootView = rootView;
     this.backArrow = backArrow;
+    this.emailRegister = emailRegister;
     this.googleButton = googleButton;
     this.passwordRegister = passwordRegister;
     this.registerButton = registerButton;
@@ -81,6 +86,12 @@ public final class ActivityRegisterBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.email_register;
+      EditText emailRegister = ViewBindings.findChildViewById(rootView, id);
+      if (emailRegister == null) {
+        break missingId;
+      }
+
       id = R.id.google_button;
       SignInButton googleButton = ViewBindings.findChildViewById(rootView, id);
       if (googleButton == null) {
@@ -105,8 +116,8 @@ public final class ActivityRegisterBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityRegisterBinding((ConstraintLayout) rootView, backArrow, googleButton,
-          passwordRegister, registerButton, usernameRegister);
+      return new ActivityRegisterBinding((ConstraintLayout) rootView, backArrow, emailRegister,
+          googleButton, passwordRegister, registerButton, usernameRegister);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -1,18 +1,18 @@
 package com.chatapp.account
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import com.chatapp.MainActivity
 import com.chatapp.R
-import com.chatapp.account.avatar.ChoiseAvatar
+import com.chatapp.account.avatar.AvatarChoiceActivity
+import com.chatapp.account.avatar.User
 import com.chatapp.account.login.LoginEmailActivity
 import com.chatapp.account.register.RegisterEmailActivity
-import com.google.android.gms.auth.api.identity.BeginSignInRequest
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
@@ -21,6 +21,7 @@ import com.google.android.gms.common.api.ApiException
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.GoogleAuthProvider
 import com.google.firebase.auth.ktx.auth
+import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 
 class AccountMainActivity : AppCompatActivity() {
@@ -36,11 +37,10 @@ class AccountMainActivity : AppCompatActivity() {
 
         auth = Firebase.auth
 
-
         /*          BUTTONS           */
 
         findViewById<Button>(R.id.avatar_btn).setOnClickListener {
-            startActivity(Intent(applicationContext, ChoiseAvatar::class.java))
+            startActivity(Intent(applicationContext, AvatarChoiceActivity::class.java))
         }
 
         // google button sign in
@@ -60,12 +60,10 @@ class AccountMainActivity : AppCompatActivity() {
         }
 
         // back arrow
-        findViewById<ImageView>(R.id.backArrow).setOnClickListener{
+        findViewById<ImageView>(R.id.backArrow).setOnClickListener {
             startActivity(Intent(applicationContext, MainActivity::class.java))
         }
     }
-
-
 
 
     /*                  FUNCTIONS to login with GOOGLE                */
@@ -78,17 +76,14 @@ class AccountMainActivity : AppCompatActivity() {
             .build()
 
         googleSignInClient = GoogleSignIn.getClient(this, gso)
-
         signIn()
-
-
     }
 
     private fun signIn() {
-
         val intent = googleSignInClient.signInIntent
         startActivityForResult(intent, 123)
     }
+
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
@@ -109,14 +104,14 @@ class AccountMainActivity : AppCompatActivity() {
     }
 
     private fun firebaseAuthWithGoogle(idToken: String) {
-
         val credential = GoogleAuthProvider.getCredential(idToken, null)
+
         auth.signInWithCredential(credential)
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
                     // Sign in success, update UI with the signed-in user's information
+                    //saveUserInfo()
                     startActivity(Intent(applicationContext, MainActivity::class.java))
-
                 } else {
                     // If sign in fails, display a message to the user.
                     Toast.makeText(applicationContext, "Connexion échouée", Toast.LENGTH_SHORT)
@@ -126,4 +121,24 @@ class AccountMainActivity : AppCompatActivity() {
             }
     }
 
+    private fun saveUserInfo(profileImage: String) {
+
+        val firebase = Firebase.auth.currentUser
+        val uid = Firebase.auth.uid ?: ""
+        Log.d(AvatarChoiceActivity.TAG, "uid: $uid")
+
+        val ref = Firebase.firestore.collection("/users").document("/$uid")
+        val user = User(firebase?.email, uid, profileImage)
+
+        ref.set(user)
+            .addOnSuccessListener {
+                Log.d(AvatarChoiceActivity.TAG, "user infos added")
+            }
+            .addOnFailureListener {
+                Log.d(AvatarChoiceActivity.TAG, "failed to add user infos")
+            }
+    }
+
 }
+
+class User(val email: String?, val uid: String, val profileImage: String)

@@ -54,8 +54,8 @@
 32-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:14:9-68
 33        <activity
 33-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:17:9-19:40
-34            android:name="com.chatapp.account.avatar.ChoiseAvatar"
-34-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:18:13-56
+34            android:name="com.chatapp.account.avatar.AvatarChoiceActivity"
+34-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:18:13-64
 35            android:exported="false" />
 35-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:19:13-37
 36        <activity

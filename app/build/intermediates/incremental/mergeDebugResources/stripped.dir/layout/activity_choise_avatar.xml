@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".account.avatar.ChoiseAvatar">
+    tools:context=".account.avatar.AvatarChoiceActivity">
 
     <Button
         android:id="@+id/avatar_circle"
@@ -19,6 +19,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/avatar_avatar_final"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/skip_avatar_choice_btn"
@@ -35,13 +44,14 @@
         android:id="@+id/username"
         android:layout_width="215dp"
         android:layout_height="103dp"
-        android:layout_marginBottom="680dp"
         android:gravity="center"
         android:text="@string/username_connected"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.091" />
 
     <Button
         android:id="@+id/confirm_avatar_button"

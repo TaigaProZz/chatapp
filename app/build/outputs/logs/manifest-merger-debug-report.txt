@@ -16,6 +16,7 @@ MERGED from [androidx.appcompat:appcompat:1.4.1] C:\Users\tanki\.gradle\caches\t
 MERGED from [com.google.firebase:firebase-firestore-ktx:24.1.1] C:\Users\tanki\.gradle\caches\transforms-3\2c7efcc43ee1f1778bfe989865afdcaa\transformed\firebase-firestore-ktx-24.1.1\AndroidManifest.xml:2:1-21:12
 MERGED from [com.google.firebase:firebase-storage-ktx:20.0.1] C:\Users\tanki\.gradle\caches\transforms-3\06a861ba6a24726a655c7e888893a5a5\transformed\firebase-storage-ktx-20.0.1\AndroidManifest.xml:2:1-21:12
 MERGED from [com.google.android.gms:play-services-auth:20.1.0] C:\Users\tanki\.gradle\caches\transforms-3\75eff52485cd289f95c69f7a0dfeb27e\transformed\play-services-auth-20.1.0\AndroidManifest.xml:17:1-40:12
+MERGED from [com.github.bumptech.glide:glide:4.13.0] C:\Users\tanki\.gradle\caches\transforms-3\9e369d592b8356aee661583c7ebc507a\transformed\glide-4.13.0\AndroidManifest.xml:2:1-12:12
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\tanki\.gradle\caches\transforms-3\7c736327705df84b47d9137adbb65689\transformed\viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.firebase:firebase-auth-ktx:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\435ab00baa46c4596e961f92b9b21713\transformed\firebase-auth-ktx-21.0.3\AndroidManifest.xml:2:1-17:12
 MERGED from [com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\3ad4e1fb525e7e1feb3b6ded164c30ec\transformed\firebase-auth-21.0.3\AndroidManifest.xml:17:1-73:12
@@ -40,7 +41,6 @@ MERGED from [com.google.android.gms:play-services-tasks:18.0.1] C:\Users\tanki\.
 MERGED from [com.google.firebase:firebase-measurement-connector:18.0.2] C:\Users\tanki\.gradle\caches\transforms-3\add93792ab885e031605b172918d9498\transformed\firebase-measurement-connector-18.0.2\AndroidManifest.xml:17:1-25:12
 MERGED from [com.google.android.gms:play-services-basement:18.0.0] C:\Users\tanki\.gradle\caches\transforms-3\5176a74ab33d28972d3fa6bf364c5af8\transformed\play-services-basement-18.0.0\AndroidManifest.xml:16:1-26:12
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\tanki\.gradle\caches\transforms-3\f76a046ca41d0022496882a2d0bfe806\transformed\legacy-support-v4-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [com.github.bumptech.glide:glide:4.11.0] C:\Users\tanki\.gradle\caches\transforms-3\3e4faf06efcd79acc63941b0154f7205\transformed\glide-4.11.0\AndroidManifest.xml:2:1-12:12
 MERGED from [androidx.fragment:fragment:1.3.6] C:\Users\tanki\.gradle\caches\transforms-3\5f83bbf8280a5f7b0c0c30276c6bd855\transformed\fragment-1.3.6\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.activity:activity:1.2.4] C:\Users\tanki\.gradle\caches\transforms-3\56010d4066908192cb56cca993e8fb2b\transformed\activity-1.2.4\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat-resources:1.4.1] C:\Users\tanki\.gradle\caches\transforms-3\34b70a631bbdd15981aad144443269fa\transformed\appcompat-resources-1.4.1\AndroidManifest.xml:17:1-24:12
@@ -70,10 +70,12 @@ MERGED from [androidx.savedstate:savedstate:1.1.0] C:\Users\tanki\.gradle\caches
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\tanki\.gradle\caches\transforms-3\bffcd9f3f0766b5c0fa5c33a4a31a049\transformed\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:firebase-components:17.0.0] C:\Users\tanki\.gradle\caches\transforms-3\73dbfd2876baea0070640ea33f761318\transformed\firebase-components-17.0.0\AndroidManifest.xml:15:1-23:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.4.1] C:\Users\tanki\.gradle\caches\transforms-3\433ce6ecfd1c4b2813fda7a2bfdd77e4\transformed\lifecycle-viewmodel-2.4.1\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\tanki\.gradle\caches\transforms-3\6831f9650b8f32249b2849fb4b6af9e5\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
+MERGED from [com.github.bumptech.glide:gifdecoder:4.13.0] C:\Users\tanki\.gradle\caches\transforms-3\540de452265a6eee3071bea14714da00\transformed\gifdecoder-4.13.0\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.exifinterface:exifinterface:1.2.0] C:\Users\tanki\.gradle\caches\transforms-3\eb0f102aa0a4a1b0103ddefffbdb0818\transformed\exifinterface-1.2.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\tanki\.gradle\caches\transforms-3\859f069c2120b7e73df200d6d805afd4\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:17:1-37:12
 MERGED from [androidx.startup:startup-runtime:1.0.0] C:\Users\tanki\.gradle\caches\transforms-3\9cf6bb6ef082cebc2e59bb04447bc633\transformed\startup-runtime-1.0.0\AndroidManifest.xml:17:1-33:12
 MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\tanki\.gradle\caches\transforms-3\2a41f1e70b1ea4be95d02a60266e2796\transformed\tracing-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\tanki\.gradle\caches\transforms-3\6831f9650b8f32249b2849fb4b6af9e5\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.4.1] C:\Users\tanki\.gradle\caches\transforms-3\85d1586b5e90aae324c6231f1d025246\transformed\lifecycle-livedata-2.4.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.4.1] C:\Users\tanki\.gradle\caches\transforms-3\1946954796947eb649c08ba9f84c31f4\transformed\lifecycle-livedata-core-ktx-2.4.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.4.1] C:\Users\tanki\.gradle\caches\transforms-3\cdca0f335c45be37f5e1e416a15cad00\transformed\lifecycle-livedata-core-2.4.1\AndroidManifest.xml:17:1-24:12
@@ -86,9 +88,8 @@ MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\User
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\tanki\.gradle\caches\transforms-3\addb494e9370c8137a8b1b541c9b5df3\transformed\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\tanki\.gradle\caches\transforms-3\c273ea8e545e060047a5d38a2e8d95c6\transformed\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] C:\Users\tanki\.gradle\caches\transforms-3\c81806c42e15f96e780773da9ab9bebd\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] C:\Users\tanki\.gradle\caches\transforms-3\f8b2f431f7d64746516ac0c4ba531461\transformed\gifdecoder-4.11.0\AndroidManifest.xml:2:1-11:12
-MERGED from [androidx.exifinterface:exifinterface:1.0.0] C:\Users\tanki\.gradle\caches\transforms-3\1f00609d90898f3189d67d65d490a9dc\transformed\exifinterface-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:firebase-encoders-json:18.0.0] C:\Users\tanki\.gradle\caches\transforms-3\6a101728c56b8806d8981dcf87b5f6f9\transformed\firebase-encoders-json-18.0.0\AndroidManifest.xml:15:1-23:12
+MERGED from [de.hdodenhof:circleimageview:3.1.0] C:\Users\tanki\.gradle\caches\transforms-3\82db072712c83f6cadf119ec99a5dc42\transformed\circleimageview-3.1.0\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\tanki\.gradle\caches\transforms-3\78183b454469afd87a6399e6b0e80bf7\transformed\annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\tanki\.gradle\caches\transforms-3\7f5d06193de645834c80cb259b2ff1ea\transformed\protolite-well-known-types-18.0.0\AndroidManifest.xml:2:1-11:12
 MERGED from [io.reactivex.rxjava2:rxandroid:2.0.2] C:\Users\tanki\.gradle\caches\transforms-3\8c1b24f441f534e87e46ef177ff60de6\transformed\rxandroid-2.0.2\AndroidManifest.xml:15:1-21:12
@@ -130,6 +131,8 @@ MERGED from [com.google.firebase:firebase-storage-ktx:20.0.1] C:\Users\tanki\.gr
 MERGED from [com.google.firebase:firebase-storage-ktx:20.0.1] C:\Users\tanki\.gradle\caches\transforms-3\06a861ba6a24726a655c7e888893a5a5\transformed\firebase-storage-ktx-20.0.1\AndroidManifest.xml:11:5-19:19
 MERGED from [com.google.android.gms:play-services-auth:20.1.0] C:\Users\tanki\.gradle\caches\transforms-3\75eff52485cd289f95c69f7a0dfeb27e\transformed\play-services-auth-20.1.0\AndroidManifest.xml:22:5-38:19
 MERGED from [com.google.android.gms:play-services-auth:20.1.0] C:\Users\tanki\.gradle\caches\transforms-3\75eff52485cd289f95c69f7a0dfeb27e\transformed\play-services-auth-20.1.0\AndroidManifest.xml:22:5-38:19
+MERGED from [com.github.bumptech.glide:glide:4.13.0] C:\Users\tanki\.gradle\caches\transforms-3\9e369d592b8356aee661583c7ebc507a\transformed\glide-4.13.0\AndroidManifest.xml:10:5-20
+MERGED from [com.github.bumptech.glide:glide:4.13.0] C:\Users\tanki\.gradle\caches\transforms-3\9e369d592b8356aee661583c7ebc507a\transformed\glide-4.13.0\AndroidManifest.xml:10:5-20
 MERGED from [com.google.firebase:firebase-auth-ktx:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\435ab00baa46c4596e961f92b9b21713\transformed\firebase-auth-ktx-21.0.3\AndroidManifest.xml:7:5-15:19
 MERGED from [com.google.firebase:firebase-auth-ktx:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\435ab00baa46c4596e961f92b9b21713\transformed\firebase-auth-ktx-21.0.3\AndroidManifest.xml:7:5-15:19
 MERGED from [com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\3ad4e1fb525e7e1feb3b6ded164c30ec\transformed\firebase-auth-21.0.3\AndroidManifest.xml:26:5-71:19
@@ -166,24 +169,24 @@ MERGED from [com.google.firebase:firebase-measurement-connector:18.0.2] C:\Users
 MERGED from [com.google.firebase:firebase-measurement-connector:18.0.2] C:\Users\tanki\.gradle\caches\transforms-3\add93792ab885e031605b172918d9498\transformed\firebase-measurement-connector-18.0.2\AndroidManifest.xml:22:5-23:19
 MERGED from [com.google.android.gms:play-services-basement:18.0.0] C:\Users\tanki\.gradle\caches\transforms-3\5176a74ab33d28972d3fa6bf364c5af8\transformed\play-services-basement-18.0.0\AndroidManifest.xml:20:5-24:19
 MERGED from [com.google.android.gms:play-services-basement:18.0.0] C:\Users\tanki\.gradle\caches\transforms-3\5176a74ab33d28972d3fa6bf364c5af8\transformed\play-services-basement-18.0.0\AndroidManifest.xml:20:5-24:19
-MERGED from [com.github.bumptech.glide:glide:4.11.0] C:\Users\tanki\.gradle\caches\transforms-3\3e4faf06efcd79acc63941b0154f7205\transformed\glide-4.11.0\AndroidManifest.xml:10:5-20
-MERGED from [com.github.bumptech.glide:glide:4.11.0] C:\Users\tanki\.gradle\caches\transforms-3\3e4faf06efcd79acc63941b0154f7205\transformed\glide-4.11.0\AndroidManifest.xml:10:5-20
 MERGED from [androidx.emoji2:emoji2:1.0.0] C:\Users\tanki\.gradle\caches\transforms-3\80cc77eaf61cfab093890cd797c4240f\transformed\emoji2-1.0.0\AndroidManifest.xml:25:5-35:19
 MERGED from [androidx.emoji2:emoji2:1.0.0] C:\Users\tanki\.gradle\caches\transforms-3\80cc77eaf61cfab093890cd797c4240f\transformed\emoji2-1.0.0\AndroidManifest.xml:25:5-35:19
 MERGED from [androidx.core:core:1.7.0] C:\Users\tanki\.gradle\caches\transforms-3\fd8697bff347b48dca9713baf510e44e\transformed\core-1.7.0\AndroidManifest.xml:24:5-89
 MERGED from [androidx.core:core:1.7.0] C:\Users\tanki\.gradle\caches\transforms-3\fd8697bff347b48dca9713baf510e44e\transformed\core-1.7.0\AndroidManifest.xml:24:5-89
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\tanki\.gradle\caches\transforms-3\6831f9650b8f32249b2849fb4b6af9e5\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\tanki\.gradle\caches\transforms-3\6831f9650b8f32249b2849fb4b6af9e5\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+MERGED from [com.github.bumptech.glide:gifdecoder:4.13.0] C:\Users\tanki\.gradle\caches\transforms-3\540de452265a6eee3071bea14714da00\transformed\gifdecoder-4.13.0\AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.13.0] C:\Users\tanki\.gradle\caches\transforms-3\540de452265a6eee3071bea14714da00\transformed\gifdecoder-4.13.0\AndroidManifest.xml:9:5-20
 MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\tanki\.gradle\caches\transforms-3\859f069c2120b7e73df200d6d805afd4\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:25:5-35:19
 MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\tanki\.gradle\caches\transforms-3\859f069c2120b7e73df200d6d805afd4\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:25:5-35:19
 MERGED from [androidx.startup:startup-runtime:1.0.0] C:\Users\tanki\.gradle\caches\transforms-3\9cf6bb6ef082cebc2e59bb04447bc633\transformed\startup-runtime-1.0.0\AndroidManifest.xml:25:5-31:19
 MERGED from [androidx.startup:startup-runtime:1.0.0] C:\Users\tanki\.gradle\caches\transforms-3\9cf6bb6ef082cebc2e59bb04447bc633\transformed\startup-runtime-1.0.0\AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\tanki\.gradle\caches\transforms-3\6831f9650b8f32249b2849fb4b6af9e5\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\tanki\.gradle\caches\transforms-3\6831f9650b8f32249b2849fb4b6af9e5\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
 MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.1] C:\Users\tanki\.gradle\caches\transforms-3\5ade623d0ba997b70faaadd2736e8037\transformed\transport-backend-cct-3.1.1\AndroidManifest.xml:28:5-36:19
 MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.1] C:\Users\tanki\.gradle\caches\transforms-3\5ade623d0ba997b70faaadd2736e8037\transformed\transport-backend-cct-3.1.1\AndroidManifest.xml:28:5-36:19
 MERGED from [com.google.android.datatransport:transport-runtime:3.1.1] C:\Users\tanki\.gradle\caches\transforms-3\9b879f7bc95ac9ea666f5bc3051af8c1\transformed\transport-runtime-3.1.1\AndroidManifest.xml:25:5-39:19
 MERGED from [com.google.android.datatransport:transport-runtime:3.1.1] C:\Users\tanki\.gradle\caches\transforms-3\9b879f7bc95ac9ea666f5bc3051af8c1\transformed\transport-runtime-3.1.1\AndroidManifest.xml:25:5-39:19
-MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] C:\Users\tanki\.gradle\caches\transforms-3\f8b2f431f7d64746516ac0c4ba531461\transformed\gifdecoder-4.11.0\AndroidManifest.xml:9:5-20
-MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] C:\Users\tanki\.gradle\caches\transforms-3\f8b2f431f7d64746516ac0c4ba531461\transformed\gifdecoder-4.11.0\AndroidManifest.xml:9:5-20
+MERGED from [de.hdodenhof:circleimageview:3.1.0] C:\Users\tanki\.gradle\caches\transforms-3\82db072712c83f6cadf119ec99a5dc42\transformed\circleimageview-3.1.0\AndroidManifest.xml:9:5-20
+MERGED from [de.hdodenhof:circleimageview:3.1.0] C:\Users\tanki\.gradle\caches\transforms-3\82db072712c83f6cadf119ec99a5dc42\transformed\circleimageview-3.1.0\AndroidManifest.xml:9:5-20
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.7.0] C:\Users\tanki\.gradle\caches\transforms-3\fd8697bff347b48dca9713baf510e44e\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
 	android:supportsRtl
@@ -198,12 +201,12 @@ MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] C:\Users\tanki\.gradle
 		ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:9:9-35
 	android:theme
 		ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:14:9-68
-activity#com.chatapp.account.avatar.ChoiseAvatar
+activity#com.chatapp.account.avatar.AvatarChoiceActivity
 ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:17:9-19:40
 	android:exported
 		ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:19:13-37
 	android:name
-		ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:18:13-56
+		ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:18:13-64
 activity#com.chatapp.account.AccountMainActivity
 ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:20:9-22:40
 	android:exported
@@ -272,6 +275,8 @@ MERGED from [com.google.firebase:firebase-storage-ktx:20.0.1] C:\Users\tanki\.gr
 MERGED from [com.google.firebase:firebase-storage-ktx:20.0.1] C:\Users\tanki\.gradle\caches\transforms-3\06a861ba6a24726a655c7e888893a5a5\transformed\firebase-storage-ktx-20.0.1\AndroidManifest.xml:6:5-8:41
 MERGED from [com.google.android.gms:play-services-auth:20.1.0] C:\Users\tanki\.gradle\caches\transforms-3\75eff52485cd289f95c69f7a0dfeb27e\transformed\play-services-auth-20.1.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-auth:20.1.0] C:\Users\tanki\.gradle\caches\transforms-3\75eff52485cd289f95c69f7a0dfeb27e\transformed\play-services-auth-20.1.0\AndroidManifest.xml:20:5-44
+MERGED from [com.github.bumptech.glide:glide:4.13.0] C:\Users\tanki\.gradle\caches\transforms-3\9e369d592b8356aee661583c7ebc507a\transformed\glide-4.13.0\AndroidManifest.xml:6:5-8:41
+MERGED from [com.github.bumptech.glide:glide:4.13.0] C:\Users\tanki\.gradle\caches\transforms-3\9e369d592b8356aee661583c7ebc507a\transformed\glide-4.13.0\AndroidManifest.xml:6:5-8:41
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\tanki\.gradle\caches\transforms-3\7c736327705df84b47d9137adbb65689\transformed\viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\tanki\.gradle\caches\transforms-3\7c736327705df84b47d9137adbb65689\transformed\viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.firebase:firebase-auth-ktx:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\435ab00baa46c4596e961f92b9b21713\transformed\firebase-auth-ktx-21.0.3\AndroidManifest.xml:5:5-44
@@ -320,8 +325,6 @@ MERGED from [com.google.android.gms:play-services-basement:18.0.0] C:\Users\tank
 MERGED from [com.google.android.gms:play-services-basement:18.0.0] C:\Users\tanki\.gradle\caches\transforms-3\5176a74ab33d28972d3fa6bf364c5af8\transformed\play-services-basement-18.0.0\AndroidManifest.xml:18:5-43
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\tanki\.gradle\caches\transforms-3\f76a046ca41d0022496882a2d0bfe806\transformed\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\tanki\.gradle\caches\transforms-3\f76a046ca41d0022496882a2d0bfe806\transformed\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.github.bumptech.glide:glide:4.11.0] C:\Users\tanki\.gradle\caches\transforms-3\3e4faf06efcd79acc63941b0154f7205\transformed\glide-4.11.0\AndroidManifest.xml:6:5-8:41
-MERGED from [com.github.bumptech.glide:glide:4.11.0] C:\Users\tanki\.gradle\caches\transforms-3\3e4faf06efcd79acc63941b0154f7205\transformed\glide-4.11.0\AndroidManifest.xml:6:5-8:41
 MERGED from [androidx.fragment:fragment:1.3.6] C:\Users\tanki\.gradle\caches\transforms-3\5f83bbf8280a5f7b0c0c30276c6bd855\transformed\fragment-1.3.6\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.fragment:fragment:1.3.6] C:\Users\tanki\.gradle\caches\transforms-3\5f83bbf8280a5f7b0c0c30276c6bd855\transformed\fragment-1.3.6\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.activity:activity:1.2.4] C:\Users\tanki\.gradle\caches\transforms-3\56010d4066908192cb56cca993e8fb2b\transformed\activity-1.2.4\AndroidManifest.xml:20:5-22:41
@@ -380,14 +383,18 @@ MERGED from [com.google.firebase:firebase-components:17.0.0] C:\Users\tanki\.gra
 MERGED from [com.google.firebase:firebase-components:17.0.0] C:\Users\tanki\.gradle\caches\transforms-3\73dbfd2876baea0070640ea33f761318\transformed\firebase-components-17.0.0\AndroidManifest.xml:19:5-21:41
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.4.1] C:\Users\tanki\.gradle\caches\transforms-3\433ce6ecfd1c4b2813fda7a2bfdd77e4\transformed\lifecycle-viewmodel-2.4.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.4.1] C:\Users\tanki\.gradle\caches\transforms-3\433ce6ecfd1c4b2813fda7a2bfdd77e4\transformed\lifecycle-viewmodel-2.4.1\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\tanki\.gradle\caches\transforms-3\6831f9650b8f32249b2849fb4b6af9e5\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\tanki\.gradle\caches\transforms-3\6831f9650b8f32249b2849fb4b6af9e5\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.13.0] C:\Users\tanki\.gradle\caches\transforms-3\540de452265a6eee3071bea14714da00\transformed\gifdecoder-4.13.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.13.0] C:\Users\tanki\.gradle\caches\transforms-3\540de452265a6eee3071bea14714da00\transformed\gifdecoder-4.13.0\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.exifinterface:exifinterface:1.2.0] C:\Users\tanki\.gradle\caches\transforms-3\eb0f102aa0a4a1b0103ddefffbdb0818\transformed\exifinterface-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.exifinterface:exifinterface:1.2.0] C:\Users\tanki\.gradle\caches\transforms-3\eb0f102aa0a4a1b0103ddefffbdb0818\transformed\exifinterface-1.2.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\tanki\.gradle\caches\transforms-3\859f069c2120b7e73df200d6d805afd4\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:21:5-23:41
 MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\tanki\.gradle\caches\transforms-3\859f069c2120b7e73df200d6d805afd4\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:21:5-23:41
 MERGED from [androidx.startup:startup-runtime:1.0.0] C:\Users\tanki\.gradle\caches\transforms-3\9cf6bb6ef082cebc2e59bb04447bc633\transformed\startup-runtime-1.0.0\AndroidManifest.xml:21:5-23:41
 MERGED from [androidx.startup:startup-runtime:1.0.0] C:\Users\tanki\.gradle\caches\transforms-3\9cf6bb6ef082cebc2e59bb04447bc633\transformed\startup-runtime-1.0.0\AndroidManifest.xml:21:5-23:41
 MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\tanki\.gradle\caches\transforms-3\2a41f1e70b1ea4be95d02a60266e2796\transformed\tracing-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\tanki\.gradle\caches\transforms-3\2a41f1e70b1ea4be95d02a60266e2796\transformed\tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\tanki\.gradle\caches\transforms-3\6831f9650b8f32249b2849fb4b6af9e5\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\tanki\.gradle\caches\transforms-3\6831f9650b8f32249b2849fb4b6af9e5\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.4.1] C:\Users\tanki\.gradle\caches\transforms-3\85d1586b5e90aae324c6231f1d025246\transformed\lifecycle-livedata-2.4.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.4.1] C:\Users\tanki\.gradle\caches\transforms-3\85d1586b5e90aae324c6231f1d025246\transformed\lifecycle-livedata-2.4.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.4.1] C:\Users\tanki\.gradle\caches\transforms-3\1946954796947eb649c08ba9f84c31f4\transformed\lifecycle-livedata-core-ktx-2.4.1\AndroidManifest.xml:20:5-22:41
@@ -412,12 +419,10 @@ MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\tanki\.gradle\ca
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\tanki\.gradle\caches\transforms-3\c273ea8e545e060047a5d38a2e8d95c6\transformed\documentfile-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.print:print:1.0.0] C:\Users\tanki\.gradle\caches\transforms-3\c81806c42e15f96e780773da9ab9bebd\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.print:print:1.0.0] C:\Users\tanki\.gradle\caches\transforms-3\c81806c42e15f96e780773da9ab9bebd\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] C:\Users\tanki\.gradle\caches\transforms-3\f8b2f431f7d64746516ac0c4ba531461\transformed\gifdecoder-4.11.0\AndroidManifest.xml:5:5-7:41
-MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] C:\Users\tanki\.gradle\caches\transforms-3\f8b2f431f7d64746516ac0c4ba531461\transformed\gifdecoder-4.11.0\AndroidManifest.xml:5:5-7:41
-MERGED from [androidx.exifinterface:exifinterface:1.0.0] C:\Users\tanki\.gradle\caches\transforms-3\1f00609d90898f3189d67d65d490a9dc\transformed\exifinterface-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.exifinterface:exifinterface:1.0.0] C:\Users\tanki\.gradle\caches\transforms-3\1f00609d90898f3189d67d65d490a9dc\transformed\exifinterface-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-encoders-json:18.0.0] C:\Users\tanki\.gradle\caches\transforms-3\6a101728c56b8806d8981dcf87b5f6f9\transformed\firebase-encoders-json-18.0.0\AndroidManifest.xml:19:5-21:41
 MERGED from [com.google.firebase:firebase-encoders-json:18.0.0] C:\Users\tanki\.gradle\caches\transforms-3\6a101728c56b8806d8981dcf87b5f6f9\transformed\firebase-encoders-json-18.0.0\AndroidManifest.xml:19:5-21:41
+MERGED from [de.hdodenhof:circleimageview:3.1.0] C:\Users\tanki\.gradle\caches\transforms-3\82db072712c83f6cadf119ec99a5dc42\transformed\circleimageview-3.1.0\AndroidManifest.xml:5:5-7:41
+MERGED from [de.hdodenhof:circleimageview:3.1.0] C:\Users\tanki\.gradle\caches\transforms-3\82db072712c83f6cadf119ec99a5dc42\transformed\circleimageview-3.1.0\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\tanki\.gradle\caches\transforms-3\78183b454469afd87a6399e6b0e80bf7\transformed\annotation-experimental-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\tanki\.gradle\caches\transforms-3\78183b454469afd87a6399e6b0e80bf7\transformed\annotation-experimental-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\tanki\.gradle\caches\transforms-3\7f5d06193de645834c80cb259b2ff1ea\transformed\protolite-well-known-types-18.0.0\AndroidManifest.xml:7:5-9:41

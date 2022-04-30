@@ -5,11 +5,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.Toolbar;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.chatapp.R;
@@ -20,6 +22,9 @@ import java.lang.String;
 public final class ActivityMainBinding implements ViewBinding {
   @NonNull
   private final ConstraintLayout rootView;
+
+  @NonNull
+  public final RecyclerView listOfConversation;
 
   @NonNull
   public final Button signOutButton;
@@ -34,16 +39,22 @@ public final class ActivityMainBinding implements ViewBinding {
   public final Toolbar toolbar;
 
   @NonNull
+  public final ImageView userAvatar;
+
+  @NonNull
   public final TextView usernameConnected;
 
-  private ActivityMainBinding(@NonNull ConstraintLayout rootView, @NonNull Button signOutButton,
+  private ActivityMainBinding(@NonNull ConstraintLayout rootView,
+      @NonNull RecyclerView listOfConversation, @NonNull Button signOutButton,
       @NonNull TextView text, @NonNull TextView text1, @NonNull Toolbar toolbar,
-      @NonNull TextView usernameConnected) {
+      @NonNull ImageView userAvatar, @NonNull TextView usernameConnected) {
     this.rootView = rootView;
+    this.listOfConversation = listOfConversation;
     this.signOutButton = signOutButton;
     this.text = text;
     this.text1 = text1;
     this.toolbar = toolbar;
+    this.userAvatar = userAvatar;
     this.usernameConnected = usernameConnected;
   }
 
@@ -74,6 +85,12 @@ public final class ActivityMainBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.list_of_conversation;
+      RecyclerView listOfConversation = ViewBindings.findChildViewById(rootView, id);
+      if (listOfConversation == null) {
+        break missingId;
+      }
+
       id = R.id.sign_out_button;
       Button signOutButton = ViewBindings.findChildViewById(rootView, id);
       if (signOutButton == null) {
@@ -98,14 +115,20 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.user_avatar;
+      ImageView userAvatar = ViewBindings.findChildViewById(rootView, id);
+      if (userAvatar == null) {
+        break missingId;
+      }
+
       id = R.id.username_connected;
       TextView usernameConnected = ViewBindings.findChildViewById(rootView, id);
       if (usernameConnected == null) {
         break missingId;
       }
 
-      return new ActivityMainBinding((ConstraintLayout) rootView, signOutButton, text, text1,
-          toolbar, usernameConnected);
+      return new ActivityMainBinding((ConstraintLayout) rootView, listOfConversation, signOutButton,
+          text, text1, toolbar, userAvatar, usernameConnected);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

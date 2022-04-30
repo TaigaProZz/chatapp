@@ -18,11 +18,11 @@
             android:id="@+id/sign_out_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/sign_out"
-            />
+            android:text="@string/sign_out" />
     </androidx.appcompat.widget.Toolbar>
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list_of_conversation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
@@ -66,12 +66,23 @@
         android:id="@+id/username_connected"
         android:layout_width="140dp"
         android:layout_height="67dp"
-        android:layout_marginBottom="244dp"
+        android:layout_marginBottom="88dp"
         android:text="@string/username_connected"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/user_avatar"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/username_connected"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

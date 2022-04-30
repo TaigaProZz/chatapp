@@ -4,6 +4,10 @@
         "source": "E:\\Dev\\android\\chatApp\\app\\src\\main\\res\\layout\\activity_chat.xml"
     },
     {
+        "merged": "E:\\Dev\\android\\chatApp\\app\\build\\intermediates\\merged_res\\debug\\menu_nav_menu.xml.flat",
+        "source": "E:\\Dev\\android\\chatApp\\app\\src\\main\\res\\menu\\nav_menu.xml"
+    },
+    {
         "merged": "E:\\Dev\\android\\chatApp\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
         "source": "E:\\Dev\\android\\chatApp\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },

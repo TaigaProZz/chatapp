@@ -21,6 +21,7 @@
     <string name="title_activity_maps">MapsActivity</string>
     <string name="sign_out">Déconnexion</string>
     <string name="web_client_id" translatable="false">859618026888-98mt718g22e8l8gv328gqs897vv2bqmm.apps.googleusercontent.com</string>
+    <string name="username_register">Username</string>
 
 
 </resources>
