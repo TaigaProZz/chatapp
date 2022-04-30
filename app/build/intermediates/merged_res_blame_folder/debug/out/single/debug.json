@@ -8,44 +8,12 @@
         "source": "E:\\Dev\\android\\chatApp\\app\\src\\main\\res\\menu\\nav_menu.xml"
     },
     {
-        "merged": "E:\\Dev\\android\\chatApp\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "E:\\Dev\\android\\chatApp\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
-    },
-    {
-        "merged": "E:\\Dev\\android\\chatApp\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "E:\\Dev\\android\\chatApp\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
-    },
-    {
-        "merged": "E:\\Dev\\android\\chatApp\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "E:\\Dev\\android\\chatApp\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.webp"
-    },
-    {
-        "merged": "E:\\Dev\\android\\chatApp\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_email_login.xml.flat",
-        "source": "E:\\Dev\\android\\chatApp\\app\\src\\main\\res\\layout\\activity_email_login.xml"
-    },
-    {
-        "merged": "E:\\Dev\\android\\chatApp\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_main.xml.flat",
-        "source": "E:\\Dev\\android\\chatApp\\app\\src\\main\\res\\layout\\activity_main.xml"
-    },
-    {
-        "merged": "E:\\Dev\\android\\chatApp\\app\\build\\intermediates\\merged_res\\debug\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
-        "source": "E:\\Dev\\android\\chatApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
-    },
-    {
         "merged": "E:\\Dev\\android\\chatApp\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher.webp.flat",
         "source": "E:\\Dev\\android\\chatApp\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.webp"
     },
     {
-        "merged": "E:\\Dev\\android\\chatApp\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "E:\\Dev\\android\\chatApp\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.webp"
-    },
-    {
         "merged": "E:\\Dev\\android\\chatApp\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
         "source": "E:\\Dev\\android\\chatApp\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.webp"
-    },
-    {
-        "merged": "E:\\Dev\\android\\chatApp\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_choise_avatar.xml.flat",
-        "source": "E:\\Dev\\android\\chatApp\\app\\src\\main\\res\\layout\\activity_choise_avatar.xml"
     },
     {
         "merged": "E:\\Dev\\android\\chatApp\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_launcher_background.xml.flat",
@@ -64,8 +32,12 @@
         "source": "E:\\Dev\\android\\chatApp\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.webp"
     },
     {
-        "merged": "E:\\Dev\\android\\chatApp\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "E:\\Dev\\android\\chatApp\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.webp"
+        "merged": "E:\\Dev\\android\\chatApp\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_choice_avatar.xml.flat",
+        "source": "E:\\Dev\\android\\chatApp\\app\\src\\main\\res\\layout\\activity_choice_avatar.xml"
+    },
+    {
+        "merged": "E:\\Dev\\android\\chatApp\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_new_conversation.xml.flat",
+        "source": "E:\\Dev\\android\\chatApp\\app\\src\\main\\res\\layout\\activity_new_conversation.xml"
     },
     {
         "merged": "E:\\Dev\\android\\chatApp\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher.webp.flat",
@@ -74,6 +46,42 @@
     {
         "merged": "E:\\Dev\\android\\chatApp\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher.webp.flat",
         "source": "E:\\Dev\\android\\chatApp\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "E:\\Dev\\android\\chatApp\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "E:\\Dev\\android\\chatApp\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "E:\\Dev\\android\\chatApp\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "E:\\Dev\\android\\chatApp\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "E:\\Dev\\android\\chatApp\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "E:\\Dev\\android\\chatApp\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "E:\\Dev\\android\\chatApp\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_email_login.xml.flat",
+        "source": "E:\\Dev\\android\\chatApp\\app\\src\\main\\res\\layout\\activity_email_login.xml"
+    },
+    {
+        "merged": "E:\\Dev\\android\\chatApp\\app\\build\\intermediates\\merged_res\\debug\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "E:\\Dev\\android\\chatApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "E:\\Dev\\android\\chatApp\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_main.xml.flat",
+        "source": "E:\\Dev\\android\\chatApp\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "E:\\Dev\\android\\chatApp\\app\\build\\intermediates\\merged_res\\debug\\layout_user_profile_activity.xml.flat",
+        "source": "E:\\Dev\\android\\chatApp\\app\\src\\main\\res\\layout\\user_profile_activity.xml"
+    },
+    {
+        "merged": "E:\\Dev\\android\\chatApp\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "E:\\Dev\\android\\chatApp\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "E:\\Dev\\android\\chatApp\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "E:\\Dev\\android\\chatApp\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.webp"
     },
     {
         "merged": "E:\\Dev\\android\\chatApp\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher.webp.flat",

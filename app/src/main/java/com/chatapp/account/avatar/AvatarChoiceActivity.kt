@@ -10,7 +10,7 @@ import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import com.chatapp.MainActivity
 import com.chatapp.R
-import com.chatapp.databinding.ActivityChoiseAvatarBinding
+import com.chatapp.databinding.ActivityChoiceAvatarBinding
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
@@ -20,7 +20,7 @@ import java.util.*
 
 class AvatarChoiceActivity : AppCompatActivity() {
 
-    private lateinit var root: ActivityChoiseAvatarBinding
+    private lateinit var root: ActivityChoiceAvatarBinding
 
     companion object {
         const val TAG = "AvatarChoice"
@@ -28,10 +28,11 @@ class AvatarChoiceActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        root = ActivityChoiseAvatarBinding.inflate(layoutInflater)
+        root = ActivityChoiceAvatarBinding.inflate(layoutInflater)
         val view = root.root
         setContentView(view)
 
+        supportActionBar?.title = "Avatar"
         val auth = Firebase.auth
 
         // show the username of the user

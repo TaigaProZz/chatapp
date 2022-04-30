@@ -4,7 +4,7 @@
             "outputFile": "E:\\Dev\\android\\chatApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v16\\values-v16.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\tanki\\.gradle\\caches\\transforms-3\\0141f330a36c3493b9223274d74e5a8c\\transformed\\appcompat-1.4.1\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\tanki\\.gradle\\caches\\transforms-3\\173b8d6cca050869f3b54d85d5e89275\\transformed\\appcompat-1.4.1\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\tanki\\.gradle\\caches\\transforms-3\\fd8697bff347b48dca9713baf510e44e\\transformed\\core-1.7.0\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\tanki\\.gradle\\caches\\transforms-3\\a97e268bfb8739d4f4ff81f0ae8069b9\\transformed\\core-1.7.0\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

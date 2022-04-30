@@ -4,7 +4,7 @@
             "outputFile": "E:\\Dev\\android\\chatApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-watch-v20\\values-watch-v20.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\tanki\\.gradle\\caches\\transforms-3\\0141f330a36c3493b9223274d74e5a8c\\transformed\\appcompat-1.4.1\\res\\values-watch-v20\\values-watch-v20.xml",
+                    "source": "C:\\Users\\tanki\\.gradle\\caches\\transforms-3\\173b8d6cca050869f3b54d85d5e89275\\transformed\\appcompat-1.4.1\\res\\values-watch-v20\\values-watch-v20.xml",
                     "from": {
                         "startLines": "2,5,8",
                         "startColumns": "4,4,4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\tanki\\.gradle\\caches\\transforms-3\\75eff52485cd289f95c69f7a0dfeb27e\\transformed\\play-services-auth-20.1.0\\res\\values-watch-v20\\values.xml",
+                    "source": "C:\\Users\\tanki\\.gradle\\caches\\transforms-3\\4a9bf989125ad4ee2ab3f4f50621d293\\transformed\\play-services-auth-20.1.0\\res\\values-watch-v20\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11",
                         "startColumns": "0,0,0,0,0,0,0,0",

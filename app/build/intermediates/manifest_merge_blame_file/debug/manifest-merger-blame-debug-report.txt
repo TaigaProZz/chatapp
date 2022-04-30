@@ -11,360 +11,386 @@
 9-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-11-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:5:5-79
+11-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:5:5-80
 11-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:5:22-77
 12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-12-->[com.google.firebase:firebase-inappmessaging-display:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\09fabbc34b62173ba2579c6136bae9b0\transformed\firebase-inappmessaging-display-20.1.2\AndroidManifest.xml:11:5-79
-12-->[com.google.firebase:firebase-inappmessaging-display:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\09fabbc34b62173ba2579c6136bae9b0\transformed\firebase-inappmessaging-display-20.1.2\AndroidManifest.xml:11:22-76
+12-->[com.google.firebase:firebase-inappmessaging-display:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\a545de50d3fa39729d13b4f453aa3500\transformed\firebase-inappmessaging-display-20.1.2\AndroidManifest.xml:11:5-79
+12-->[com.google.firebase:firebase-inappmessaging-display:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\a545de50d3fa39729d13b4f453aa3500\transformed\firebase-inappmessaging-display-20.1.2\AndroidManifest.xml:11:22-76
 13    <uses-permission android:name="android.permission.INTERNET" />
-13-->[com.google.firebase:firebase-inappmessaging-display:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\09fabbc34b62173ba2579c6136bae9b0\transformed\firebase-inappmessaging-display-20.1.2\AndroidManifest.xml:12:5-67
-13-->[com.google.firebase:firebase-inappmessaging-display:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\09fabbc34b62173ba2579c6136bae9b0\transformed\firebase-inappmessaging-display-20.1.2\AndroidManifest.xml:12:22-64
+13-->[com.google.firebase:firebase-inappmessaging-display:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\a545de50d3fa39729d13b4f453aa3500\transformed\firebase-inappmessaging-display-20.1.2\AndroidManifest.xml:12:5-67
+13-->[com.google.firebase:firebase-inappmessaging-display:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\a545de50d3fa39729d13b4f453aa3500\transformed\firebase-inappmessaging-display-20.1.2\AndroidManifest.xml:12:22-64
 14
 15    <queries>
-15-->[com.google.firebase:firebase-inappmessaging-display:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\09fabbc34b62173ba2579c6136bae9b0\transformed\firebase-inappmessaging-display-20.1.2\AndroidManifest.xml:14:5-20:15
+15-->[com.google.firebase:firebase-inappmessaging-display:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\a545de50d3fa39729d13b4f453aa3500\transformed\firebase-inappmessaging-display-20.1.2\AndroidManifest.xml:14:5-20:15
 16        <intent>
-16-->[com.google.firebase:firebase-inappmessaging-display:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\09fabbc34b62173ba2579c6136bae9b0\transformed\firebase-inappmessaging-display-20.1.2\AndroidManifest.xml:15:9-19:18
+16-->[com.google.firebase:firebase-inappmessaging-display:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\a545de50d3fa39729d13b4f453aa3500\transformed\firebase-inappmessaging-display-20.1.2\AndroidManifest.xml:15:9-19:18
 17            <action android:name="android.intent.action.VIEW" />
-17-->[com.google.firebase:firebase-inappmessaging-display:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\09fabbc34b62173ba2579c6136bae9b0\transformed\firebase-inappmessaging-display-20.1.2\AndroidManifest.xml:16:13-65
-17-->[com.google.firebase:firebase-inappmessaging-display:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\09fabbc34b62173ba2579c6136bae9b0\transformed\firebase-inappmessaging-display-20.1.2\AndroidManifest.xml:16:21-62
+17-->[com.google.firebase:firebase-inappmessaging-display:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\a545de50d3fa39729d13b4f453aa3500\transformed\firebase-inappmessaging-display-20.1.2\AndroidManifest.xml:16:13-65
+17-->[com.google.firebase:firebase-inappmessaging-display:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\a545de50d3fa39729d13b4f453aa3500\transformed\firebase-inappmessaging-display-20.1.2\AndroidManifest.xml:16:21-62
 18
 19            <data android:scheme="https" />
-19-->[com.google.firebase:firebase-inappmessaging-display:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\09fabbc34b62173ba2579c6136bae9b0\transformed\firebase-inappmessaging-display-20.1.2\AndroidManifest.xml:18:13-44
-19-->[com.google.firebase:firebase-inappmessaging-display:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\09fabbc34b62173ba2579c6136bae9b0\transformed\firebase-inappmessaging-display-20.1.2\AndroidManifest.xml:18:19-41
+19-->[com.google.firebase:firebase-inappmessaging-display:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\a545de50d3fa39729d13b4f453aa3500\transformed\firebase-inappmessaging-display-20.1.2\AndroidManifest.xml:18:13-44
+19-->[com.google.firebase:firebase-inappmessaging-display:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\a545de50d3fa39729d13b4f453aa3500\transformed\firebase-inappmessaging-display-20.1.2\AndroidManifest.xml:18:19-41
 20        </intent>
 21    </queries>
 22
 23    <application
-23-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:8:5-41:19
+23-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:7:5-52:19
 24        android:allowBackup="true"
-24-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:9:9-35
+24-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:8:9-35
 25        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-25-->[androidx.core:core:1.7.0] C:\Users\tanki\.gradle\caches\transforms-3\fd8697bff347b48dca9713baf510e44e\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
+25-->[androidx.core:core:1.7.0] C:\Users\tanki\.gradle\caches\transforms-3\a97e268bfb8739d4f4ff81f0ae8069b9\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
 26        android:debuggable="true"
 27        android:icon="@mipmap/ic_launcher"
-27-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:10:9-43
+27-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:9:9-43
 28        android:label="@string/app_name"
-28-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:11:9-41
+28-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:10:9-41
 29        android:roundIcon="@mipmap/ic_launcher_round"
-29-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:12:9-54
+29-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:11:9-54
 30        android:supportsRtl="true"
-30-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:13:9-35
+30-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:12:9-35
 31        android:testOnly="true"
-32        android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" >
-32-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:14:9-68
+32        android:theme="@style/Theme.AppCompat.DayNight" >
+32-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:13:9-56
 33        <activity
-33-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:17:9-19:40
-34            android:name="com.chatapp.account.avatar.AvatarChoiceActivity"
-34-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:18:13-64
-35            android:exported="false" />
-35-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:19:13-37
-36        <activity
-36-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:20:9-22:40
-37            android:name="com.chatapp.account.AccountMainActivity"
-37-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:21:13-56
-38            android:exported="false" />
-38-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:22:13-37
-39        <activity
-39-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:23:9-25:40
-40            android:name="com.chatapp.account.register.RegisterEmailActivity"
-40-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:24:13-67
-41            android:exported="false" />
-41-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:25:13-37
+33-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:14:9-22:20
+34            android:name="com.chatapp.MainActivity"
+34-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:15:13-41
+35            android:exported="true" >
+35-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:16:13-36
+36            <intent-filter>
+36-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:17:13-21:29
+37                <action android:name="android.intent.action.MAIN" />
+37-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:18:17-69
+37-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:18:25-66
+38
+39                <category android:name="android.intent.category.LAUNCHER" />
+39-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:20:17-77
+39-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:20:27-74
+40            </intent-filter>
+41        </activity>
 42        <activity
-42-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:26:9-28:40
-43            android:name="com.chatapp.account.login.LoginEmailActivity"
-43-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:27:13-61
-44            android:exported="false" />
-44-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:28:13-37
-45        <activity
-45-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:29:9-31:40
-46            android:name="com.chatapp.conversation.Chat"
-46-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:30:13-46
-47            android:exported="false" />
-47-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:31:13-37
-48        <activity
-48-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:32:9-40:20
-49            android:name="com.chatapp.MainActivity"
-49-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:33:13-41
-50            android:exported="true" >
-50-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:34:13-36
-51            <intent-filter>
-51-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:35:13-39:29
-52                <action android:name="android.intent.action.MAIN" />
-52-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:36:17-69
-52-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:36:25-66
-53
-54                <category android:name="android.intent.category.LAUNCHER" />
-54-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:38:17-77
-54-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:38:27-74
-55            </intent-filter>
-56        </activity>
-57
-58        <service
-58-->[com.google.firebase:firebase-inappmessaging-display-ktx:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\5940b63682e145031457a6af7e6b7530\transformed\firebase-inappmessaging-display-ktx-20.1.2\AndroidManifest.xml:12:9-18:19
-59            android:name="com.google.firebase.components.ComponentDiscoveryService"
-59-->[com.google.firebase:firebase-inappmessaging-display-ktx:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\5940b63682e145031457a6af7e6b7530\transformed\firebase-inappmessaging-display-ktx-20.1.2\AndroidManifest.xml:13:13-84
-60            android:directBootAware="true"
-60-->[com.google.firebase:firebase-common:20.1.0] C:\Users\tanki\.gradle\caches\transforms-3\d6f4c281710bc56d167b1cebc72850c2\transformed\firebase-common-20.1.0\AndroidManifest.xml:35:13-43
-61            android:exported="false" >
-61-->[com.google.firebase:firebase-inappmessaging-display-ktx:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\5940b63682e145031457a6af7e6b7530\transformed\firebase-inappmessaging-display-ktx-20.1.2\AndroidManifest.xml:14:13-37
-62            <meta-data
-62-->[com.google.firebase:firebase-inappmessaging-display-ktx:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\5940b63682e145031457a6af7e6b7530\transformed\firebase-inappmessaging-display-ktx-20.1.2\AndroidManifest.xml:15:13-17:85
-63                android:name="com.google.firebase.components:com.google.firebase.inappmessaging.display.ktx.FirebaseInAppMessagingDisplayKtxRegistrar"
-63-->[com.google.firebase:firebase-inappmessaging-display-ktx:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\5940b63682e145031457a6af7e6b7530\transformed\firebase-inappmessaging-display-ktx-20.1.2\AndroidManifest.xml:16:17-151
-64                android:value="com.google.firebase.components.ComponentRegistrar" />
-64-->[com.google.firebase:firebase-inappmessaging-display-ktx:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\5940b63682e145031457a6af7e6b7530\transformed\firebase-inappmessaging-display-ktx-20.1.2\AndroidManifest.xml:17:17-82
-65            <meta-data
-65-->[com.google.firebase:firebase-inappmessaging-display:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\09fabbc34b62173ba2579c6136bae9b0\transformed\firebase-inappmessaging-display-20.1.2\AndroidManifest.xml:26:13-28:85
-66                android:name="com.google.firebase.components:com.google.firebase.inappmessaging.display.FirebaseInAppMessagingDisplayRegistrar"
-66-->[com.google.firebase:firebase-inappmessaging-display:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\09fabbc34b62173ba2579c6136bae9b0\transformed\firebase-inappmessaging-display-20.1.2\AndroidManifest.xml:27:17-144
-67                android:value="com.google.firebase.components.ComponentRegistrar" />
-67-->[com.google.firebase:firebase-inappmessaging-display:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\09fabbc34b62173ba2579c6136bae9b0\transformed\firebase-inappmessaging-display-20.1.2\AndroidManifest.xml:28:17-82
-68            <meta-data
-68-->[com.google.firebase:firebase-firestore-ktx:24.1.1] C:\Users\tanki\.gradle\caches\transforms-3\2c7efcc43ee1f1778bfe989865afdcaa\transformed\firebase-firestore-ktx-24.1.1\AndroidManifest.xml:15:13-17:85
-69                android:name="com.google.firebase.components:com.google.firebase.firestore.ktx.FirebaseFirestoreKtxRegistrar"
-69-->[com.google.firebase:firebase-firestore-ktx:24.1.1] C:\Users\tanki\.gradle\caches\transforms-3\2c7efcc43ee1f1778bfe989865afdcaa\transformed\firebase-firestore-ktx-24.1.1\AndroidManifest.xml:16:17-126
-70                android:value="com.google.firebase.components.ComponentRegistrar" />
-70-->[com.google.firebase:firebase-firestore-ktx:24.1.1] C:\Users\tanki\.gradle\caches\transforms-3\2c7efcc43ee1f1778bfe989865afdcaa\transformed\firebase-firestore-ktx-24.1.1\AndroidManifest.xml:17:17-82
-71            <meta-data
-71-->[com.google.firebase:firebase-storage-ktx:20.0.1] C:\Users\tanki\.gradle\caches\transforms-3\06a861ba6a24726a655c7e888893a5a5\transformed\firebase-storage-ktx-20.0.1\AndroidManifest.xml:15:13-17:85
-72                android:name="com.google.firebase.components:com.google.firebase.storage.ktx.FirebaseStorageKtxRegistrar"
-72-->[com.google.firebase:firebase-storage-ktx:20.0.1] C:\Users\tanki\.gradle\caches\transforms-3\06a861ba6a24726a655c7e888893a5a5\transformed\firebase-storage-ktx-20.0.1\AndroidManifest.xml:16:17-122
-73                android:value="com.google.firebase.components.ComponentRegistrar" />
-73-->[com.google.firebase:firebase-storage-ktx:20.0.1] C:\Users\tanki\.gradle\caches\transforms-3\06a861ba6a24726a655c7e888893a5a5\transformed\firebase-storage-ktx-20.0.1\AndroidManifest.xml:17:17-82
-74            <meta-data
-74-->[com.google.firebase:firebase-auth-ktx:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\435ab00baa46c4596e961f92b9b21713\transformed\firebase-auth-ktx-21.0.3\AndroidManifest.xml:11:13-13:85
-75                android:name="com.google.firebase.components:com.google.firebase.auth.ktx.FirebaseAuthKtxRegistrar"
-75-->[com.google.firebase:firebase-auth-ktx:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\435ab00baa46c4596e961f92b9b21713\transformed\firebase-auth-ktx-21.0.3\AndroidManifest.xml:12:17-116
-76                android:value="com.google.firebase.components.ComponentRegistrar" />
-76-->[com.google.firebase:firebase-auth-ktx:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\435ab00baa46c4596e961f92b9b21713\transformed\firebase-auth-ktx-21.0.3\AndroidManifest.xml:13:17-82
-77            <meta-data
-77-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\3ad4e1fb525e7e1feb3b6ded164c30ec\transformed\firebase-auth-21.0.3\AndroidManifest.xml:67:13-69:85
-78                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
-78-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\3ad4e1fb525e7e1feb3b6ded164c30ec\transformed\firebase-auth-21.0.3\AndroidManifest.xml:68:17-109
-79                android:value="com.google.firebase.components.ComponentRegistrar" />
-79-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\3ad4e1fb525e7e1feb3b6ded164c30ec\transformed\firebase-auth-21.0.3\AndroidManifest.xml:69:17-82
-80            <meta-data
-80-->[com.google.firebase:firebase-firestore:24.1.1] C:\Users\tanki\.gradle\caches\transforms-3\81ebe1175682315aa2d58b3bc8535c8b\transformed\firebase-firestore-24.1.1\AndroidManifest.xml:20:13-22:85
-81                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
-81-->[com.google.firebase:firebase-firestore:24.1.1] C:\Users\tanki\.gradle\caches\transforms-3\81ebe1175682315aa2d58b3bc8535c8b\transformed\firebase-firestore-24.1.1\AndroidManifest.xml:21:17-111
-82                android:value="com.google.firebase.components.ComponentRegistrar" />
-82-->[com.google.firebase:firebase-firestore:24.1.1] C:\Users\tanki\.gradle\caches\transforms-3\81ebe1175682315aa2d58b3bc8535c8b\transformed\firebase-firestore-24.1.1\AndroidManifest.xml:22:17-82
-83            <meta-data
-83-->[com.google.firebase:firebase-storage:20.0.1] C:\Users\tanki\.gradle\caches\transforms-3\838f17b21541e423181a230be1e97b34\transformed\firebase-storage-20.0.1\AndroidManifest.xml:33:13-35:85
-84                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
-84-->[com.google.firebase:firebase-storage:20.0.1] C:\Users\tanki\.gradle\caches\transforms-3\838f17b21541e423181a230be1e97b34\transformed\firebase-storage-20.0.1\AndroidManifest.xml:34:17-107
-85                android:value="com.google.firebase.components.ComponentRegistrar" />
-85-->[com.google.firebase:firebase-storage:20.0.1] C:\Users\tanki\.gradle\caches\transforms-3\838f17b21541e423181a230be1e97b34\transformed\firebase-storage-20.0.1\AndroidManifest.xml:35:17-82
-86            <meta-data
-86-->[com.google.firebase:firebase-inappmessaging-ktx:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\76bac2ce4c0b6d0d70dac4c3a403e2d0\transformed\firebase-inappmessaging-ktx-20.1.2\AndroidManifest.xml:15:13-17:85
-87                android:name="com.google.firebase.components:com.google.firebase.inappmessaging.ktx.FirebaseInAppMessagingKtxRegistrar"
-87-->[com.google.firebase:firebase-inappmessaging-ktx:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\76bac2ce4c0b6d0d70dac4c3a403e2d0\transformed\firebase-inappmessaging-ktx-20.1.2\AndroidManifest.xml:16:17-136
-88                android:value="com.google.firebase.components.ComponentRegistrar" />
-88-->[com.google.firebase:firebase-inappmessaging-ktx:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\76bac2ce4c0b6d0d70dac4c3a403e2d0\transformed\firebase-inappmessaging-ktx-20.1.2\AndroidManifest.xml:17:17-82
-89            <meta-data
-89-->[com.google.firebase:firebase-common-ktx:20.1.0] C:\Users\tanki\.gradle\caches\transforms-3\de4de886eef9b07a3e1a70cf0614ffa8\transformed\firebase-common-ktx-20.1.0\AndroidManifest.xml:15:13-17:85
-90                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar"
-90-->[com.google.firebase:firebase-common-ktx:20.1.0] C:\Users\tanki\.gradle\caches\transforms-3\de4de886eef9b07a3e1a70cf0614ffa8\transformed\firebase-common-ktx-20.1.0\AndroidManifest.xml:16:17-113
-91                android:value="com.google.firebase.components.ComponentRegistrar" />
-91-->[com.google.firebase:firebase-common-ktx:20.1.0] C:\Users\tanki\.gradle\caches\transforms-3\de4de886eef9b07a3e1a70cf0614ffa8\transformed\firebase-common-ktx-20.1.0\AndroidManifest.xml:17:17-82
-92            <meta-data
-92-->[com.google.firebase:firebase-inappmessaging:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\218719d1ae64903496f8b725b1998a51\transformed\firebase-inappmessaging-20.1.2\AndroidManifest.xml:17:13-19:85
-93                android:name="com.google.firebase.components:com.google.firebase.inappmessaging.FirebaseInAppMessagingRegistrar"
-93-->[com.google.firebase:firebase-inappmessaging:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\218719d1ae64903496f8b725b1998a51\transformed\firebase-inappmessaging-20.1.2\AndroidManifest.xml:18:17-129
-94                android:value="com.google.firebase.components.ComponentRegistrar" />
-94-->[com.google.firebase:firebase-inappmessaging:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\218719d1ae64903496f8b725b1998a51\transformed\firebase-inappmessaging-20.1.2\AndroidManifest.xml:19:17-82
-95            <meta-data
-95-->[com.google.firebase:firebase-abt:21.0.1] C:\Users\tanki\.gradle\caches\transforms-3\072e5d1f5cc589f2e6851af182adf6dd\transformed\firebase-abt-21.0.1\AndroidManifest.xml:13:13-15:85
-96                android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar"
-96-->[com.google.firebase:firebase-abt:21.0.1] C:\Users\tanki\.gradle\caches\transforms-3\072e5d1f5cc589f2e6851af182adf6dd\transformed\firebase-abt-21.0.1\AndroidManifest.xml:14:17-109
-97                android:value="com.google.firebase.components.ComponentRegistrar" />
-97-->[com.google.firebase:firebase-abt:21.0.1] C:\Users\tanki\.gradle\caches\transforms-3\072e5d1f5cc589f2e6851af182adf6dd\transformed\firebase-abt-21.0.1\AndroidManifest.xml:15:17-82
-98            <meta-data
-98-->[com.google.firebase:firebase-datatransport:18.1.1] C:\Users\tanki\.gradle\caches\transforms-3\c408eeeb9ba417f70871934fabbc4337\transformed\firebase-datatransport-18.1.1\AndroidManifest.xml:28:13-30:85
-99                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
-99-->[com.google.firebase:firebase-datatransport:18.1.1] C:\Users\tanki\.gradle\caches\transforms-3\c408eeeb9ba417f70871934fabbc4337\transformed\firebase-datatransport-18.1.1\AndroidManifest.xml:29:17-115
-100                android:value="com.google.firebase.components.ComponentRegistrar" />
-100-->[com.google.firebase:firebase-datatransport:18.1.1] C:\Users\tanki\.gradle\caches\transforms-3\c408eeeb9ba417f70871934fabbc4337\transformed\firebase-datatransport-18.1.1\AndroidManifest.xml:30:17-82
-101            <meta-data
-101-->[com.google.firebase:firebase-installations:17.0.1] C:\Users\tanki\.gradle\caches\transforms-3\1613d5014a1c4c19fb71798f17ebea38\transformed\firebase-installations-17.0.1\AndroidManifest.xml:18:13-20:85
-102                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
-102-->[com.google.firebase:firebase-installations:17.0.1] C:\Users\tanki\.gradle\caches\transforms-3\1613d5014a1c4c19fb71798f17ebea38\transformed\firebase-installations-17.0.1\AndroidManifest.xml:19:17-127
-103                android:value="com.google.firebase.components.ComponentRegistrar" />
-103-->[com.google.firebase:firebase-installations:17.0.1] C:\Users\tanki\.gradle\caches\transforms-3\1613d5014a1c4c19fb71798f17ebea38\transformed\firebase-installations-17.0.1\AndroidManifest.xml:20:17-82
-104        </service>
-105
-106        <activity
-106-->[com.google.android.gms:play-services-auth:20.1.0] C:\Users\tanki\.gradle\caches\transforms-3\75eff52485cd289f95c69f7a0dfeb27e\transformed\play-services-auth-20.1.0\AndroidManifest.xml:23:9-27:75
-107            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
-107-->[com.google.android.gms:play-services-auth:20.1.0] C:\Users\tanki\.gradle\caches\transforms-3\75eff52485cd289f95c69f7a0dfeb27e\transformed\play-services-auth-20.1.0\AndroidManifest.xml:24:13-93
-108            android:excludeFromRecents="true"
-108-->[com.google.android.gms:play-services-auth:20.1.0] C:\Users\tanki\.gradle\caches\transforms-3\75eff52485cd289f95c69f7a0dfeb27e\transformed\play-services-auth-20.1.0\AndroidManifest.xml:25:13-46
-109            android:exported="false"
-109-->[com.google.android.gms:play-services-auth:20.1.0] C:\Users\tanki\.gradle\caches\transforms-3\75eff52485cd289f95c69f7a0dfeb27e\transformed\play-services-auth-20.1.0\AndroidManifest.xml:26:13-37
-110            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-110-->[com.google.android.gms:play-services-auth:20.1.0] C:\Users\tanki\.gradle\caches\transforms-3\75eff52485cd289f95c69f7a0dfeb27e\transformed\play-services-auth-20.1.0\AndroidManifest.xml:27:13-72
-111        <!--
-112            Service handling Google Sign-In user revocation. For apps that do not integrate with
-113            Google Sign-In, this service will never be started.
-114        -->
-115        <service
-115-->[com.google.android.gms:play-services-auth:20.1.0] C:\Users\tanki\.gradle\caches\transforms-3\75eff52485cd289f95c69f7a0dfeb27e\transformed\play-services-auth-20.1.0\AndroidManifest.xml:33:9-37:51
-116            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
-116-->[com.google.android.gms:play-services-auth:20.1.0] C:\Users\tanki\.gradle\caches\transforms-3\75eff52485cd289f95c69f7a0dfeb27e\transformed\play-services-auth-20.1.0\AndroidManifest.xml:34:13-89
-117            android:exported="true"
-117-->[com.google.android.gms:play-services-auth:20.1.0] C:\Users\tanki\.gradle\caches\transforms-3\75eff52485cd289f95c69f7a0dfeb27e\transformed\play-services-auth-20.1.0\AndroidManifest.xml:35:13-36
-118            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
-118-->[com.google.android.gms:play-services-auth:20.1.0] C:\Users\tanki\.gradle\caches\transforms-3\75eff52485cd289f95c69f7a0dfeb27e\transformed\play-services-auth-20.1.0\AndroidManifest.xml:36:13-107
-119            android:visibleToInstantApps="true" />
-119-->[com.google.android.gms:play-services-auth:20.1.0] C:\Users\tanki\.gradle\caches\transforms-3\75eff52485cd289f95c69f7a0dfeb27e\transformed\play-services-auth-20.1.0\AndroidManifest.xml:37:13-48
-120
-121        <activity
-121-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\3ad4e1fb525e7e1feb3b6ded164c30ec\transformed\firebase-auth-21.0.3\AndroidManifest.xml:27:9-44:20
-122            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
-122-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\3ad4e1fb525e7e1feb3b6ded164c30ec\transformed\firebase-auth-21.0.3\AndroidManifest.xml:28:13-80
-123            android:excludeFromRecents="true"
-123-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\3ad4e1fb525e7e1feb3b6ded164c30ec\transformed\firebase-auth-21.0.3\AndroidManifest.xml:29:13-46
-124            android:exported="true"
-124-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\3ad4e1fb525e7e1feb3b6ded164c30ec\transformed\firebase-auth-21.0.3\AndroidManifest.xml:30:13-36
-125            android:launchMode="singleTask"
-125-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\3ad4e1fb525e7e1feb3b6ded164c30ec\transformed\firebase-auth-21.0.3\AndroidManifest.xml:31:13-44
-126            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-126-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\3ad4e1fb525e7e1feb3b6ded164c30ec\transformed\firebase-auth-21.0.3\AndroidManifest.xml:32:13-72
-127            <intent-filter>
-127-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\3ad4e1fb525e7e1feb3b6ded164c30ec\transformed\firebase-auth-21.0.3\AndroidManifest.xml:33:13-43:29
-128                <action android:name="android.intent.action.VIEW" />
-128-->[com.google.firebase:firebase-inappmessaging-display:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\09fabbc34b62173ba2579c6136bae9b0\transformed\firebase-inappmessaging-display-20.1.2\AndroidManifest.xml:16:13-65
-128-->[com.google.firebase:firebase-inappmessaging-display:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\09fabbc34b62173ba2579c6136bae9b0\transformed\firebase-inappmessaging-display-20.1.2\AndroidManifest.xml:16:21-62
-129
-130                <category android:name="android.intent.category.DEFAULT" />
-130-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\3ad4e1fb525e7e1feb3b6ded164c30ec\transformed\firebase-auth-21.0.3\AndroidManifest.xml:36:17-76
-130-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\3ad4e1fb525e7e1feb3b6ded164c30ec\transformed\firebase-auth-21.0.3\AndroidManifest.xml:36:27-73
-131                <category android:name="android.intent.category.BROWSABLE" />
-131-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\3ad4e1fb525e7e1feb3b6ded164c30ec\transformed\firebase-auth-21.0.3\AndroidManifest.xml:37:17-78
-131-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\3ad4e1fb525e7e1feb3b6ded164c30ec\transformed\firebase-auth-21.0.3\AndroidManifest.xml:37:27-75
-132
-133                <data
-133-->[com.google.firebase:firebase-inappmessaging-display:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\09fabbc34b62173ba2579c6136bae9b0\transformed\firebase-inappmessaging-display-20.1.2\AndroidManifest.xml:18:13-44
-134                    android:host="firebase.auth"
-135                    android:path="/"
-136                    android:scheme="genericidp" />
-136-->[com.google.firebase:firebase-inappmessaging-display:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\09fabbc34b62173ba2579c6136bae9b0\transformed\firebase-inappmessaging-display-20.1.2\AndroidManifest.xml:18:19-41
-137            </intent-filter>
-138        </activity>
-139        <activity
-139-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\3ad4e1fb525e7e1feb3b6ded164c30ec\transformed\firebase-auth-21.0.3\AndroidManifest.xml:45:9-62:20
-140            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
-140-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\3ad4e1fb525e7e1feb3b6ded164c30ec\transformed\firebase-auth-21.0.3\AndroidManifest.xml:46:13-79
-141            android:excludeFromRecents="true"
-141-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\3ad4e1fb525e7e1feb3b6ded164c30ec\transformed\firebase-auth-21.0.3\AndroidManifest.xml:47:13-46
-142            android:exported="true"
-142-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\3ad4e1fb525e7e1feb3b6ded164c30ec\transformed\firebase-auth-21.0.3\AndroidManifest.xml:48:13-36
-143            android:launchMode="singleTask"
-143-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\3ad4e1fb525e7e1feb3b6ded164c30ec\transformed\firebase-auth-21.0.3\AndroidManifest.xml:49:13-44
-144            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-144-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\3ad4e1fb525e7e1feb3b6ded164c30ec\transformed\firebase-auth-21.0.3\AndroidManifest.xml:50:13-72
-145            <intent-filter>
-145-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\3ad4e1fb525e7e1feb3b6ded164c30ec\transformed\firebase-auth-21.0.3\AndroidManifest.xml:51:13-61:29
-146                <action android:name="android.intent.action.VIEW" />
-146-->[com.google.firebase:firebase-inappmessaging-display:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\09fabbc34b62173ba2579c6136bae9b0\transformed\firebase-inappmessaging-display-20.1.2\AndroidManifest.xml:16:13-65
-146-->[com.google.firebase:firebase-inappmessaging-display:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\09fabbc34b62173ba2579c6136bae9b0\transformed\firebase-inappmessaging-display-20.1.2\AndroidManifest.xml:16:21-62
-147
-148                <category android:name="android.intent.category.DEFAULT" />
-148-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\3ad4e1fb525e7e1feb3b6ded164c30ec\transformed\firebase-auth-21.0.3\AndroidManifest.xml:36:17-76
-148-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\3ad4e1fb525e7e1feb3b6ded164c30ec\transformed\firebase-auth-21.0.3\AndroidManifest.xml:36:27-73
-149                <category android:name="android.intent.category.BROWSABLE" />
-149-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\3ad4e1fb525e7e1feb3b6ded164c30ec\transformed\firebase-auth-21.0.3\AndroidManifest.xml:37:17-78
-149-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\3ad4e1fb525e7e1feb3b6ded164c30ec\transformed\firebase-auth-21.0.3\AndroidManifest.xml:37:27-75
-150
-151                <data
-151-->[com.google.firebase:firebase-inappmessaging-display:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\09fabbc34b62173ba2579c6136bae9b0\transformed\firebase-inappmessaging-display-20.1.2\AndroidManifest.xml:18:13-44
-152                    android:host="firebase.auth"
-153                    android:path="/"
-154                    android:scheme="recaptcha" />
-154-->[com.google.firebase:firebase-inappmessaging-display:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\09fabbc34b62173ba2579c6136bae9b0\transformed\firebase-inappmessaging-display-20.1.2\AndroidManifest.xml:18:19-41
-155            </intent-filter>
-156        </activity>
-157        <activity
-157-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\tanki\.gradle\caches\transforms-3\c60f2ae0a15afcf6456228da39ed3b83\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
-158            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-158-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\tanki\.gradle\caches\transforms-3\c60f2ae0a15afcf6456228da39ed3b83\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:19-85
-159            android:exported="false"
-159-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\tanki\.gradle\caches\transforms-3\c60f2ae0a15afcf6456228da39ed3b83\transformed\play-services-base-18.0.1\AndroidManifest.xml:22:19-43
-160            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-160-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\tanki\.gradle\caches\transforms-3\c60f2ae0a15afcf6456228da39ed3b83\transformed\play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+42-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:23:9-29:20
+43            android:name="com.chatapp.UserProfileActivity"
+43-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:24:13-48
+44            android:exported="false" >
+44-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:25:13-37
+45            <meta-data
+45-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:26:13-28:49
+46                android:name="android.support.PARENT_ACTIVITY"
+46-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:27:17-63
+47                android:value=".MainActivity" />
+47-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:28:17-46
+48        </activity>
+49        <activity
+49-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:30:9-36:20
+50            android:name="com.chatapp.NewConversationActivity"
+50-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:31:13-52
+51            android:exported="false" >
+51-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:32:13-37
+52            <meta-data
+52-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:26:13-28:49
+53                android:name="android.support.PARENT_ACTIVITY"
+53-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:27:17-63
+54                android:value=".MainActivity" />
+54-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:28:17-46
+55        </activity>
+56        <activity
+56-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:37:9-39:40
+57            android:name="com.chatapp.account.avatar.AvatarChoiceActivity"
+57-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:38:13-64
+58            android:exported="false" />
+58-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:39:13-37
+59        <activity
+59-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:40:9-42:40
+60            android:name="com.chatapp.account.AccountMainActivity"
+60-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:41:13-56
+61            android:exported="false" />
+61-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:42:13-37
+62        <activity
+62-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:43:9-45:40
+63            android:name="com.chatapp.account.register.RegisterEmailActivity"
+63-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:44:13-67
+64            android:exported="false" />
+64-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:45:13-37
+65        <activity
+65-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:46:9-48:40
+66            android:name="com.chatapp.account.login.LoginEmailActivity"
+66-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:47:13-61
+67            android:exported="false" />
+67-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:48:13-37
+68        <activity
+68-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:49:9-51:40
+69            android:name="com.chatapp.conversation.Chat"
+69-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:50:13-46
+70            android:exported="false" />
+70-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:51:13-37
+71
+72        <service
+72-->[com.google.firebase:firebase-inappmessaging-display-ktx:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\4d1ea50c159abda5b3be16659074844d\transformed\firebase-inappmessaging-display-ktx-20.1.2\AndroidManifest.xml:12:9-18:19
+73            android:name="com.google.firebase.components.ComponentDiscoveryService"
+73-->[com.google.firebase:firebase-inappmessaging-display-ktx:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\4d1ea50c159abda5b3be16659074844d\transformed\firebase-inappmessaging-display-ktx-20.1.2\AndroidManifest.xml:13:13-84
+74            android:directBootAware="true"
+74-->[com.google.firebase:firebase-common:20.1.0] C:\Users\tanki\.gradle\caches\transforms-3\f301db2a56b26e81f91c2ab82f6bb0c7\transformed\firebase-common-20.1.0\AndroidManifest.xml:35:13-43
+75            android:exported="false" >
+75-->[com.google.firebase:firebase-inappmessaging-display-ktx:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\4d1ea50c159abda5b3be16659074844d\transformed\firebase-inappmessaging-display-ktx-20.1.2\AndroidManifest.xml:14:13-37
+76            <meta-data
+76-->[com.google.firebase:firebase-inappmessaging-display-ktx:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\4d1ea50c159abda5b3be16659074844d\transformed\firebase-inappmessaging-display-ktx-20.1.2\AndroidManifest.xml:15:13-17:85
+77                android:name="com.google.firebase.components:com.google.firebase.inappmessaging.display.ktx.FirebaseInAppMessagingDisplayKtxRegistrar"
+77-->[com.google.firebase:firebase-inappmessaging-display-ktx:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\4d1ea50c159abda5b3be16659074844d\transformed\firebase-inappmessaging-display-ktx-20.1.2\AndroidManifest.xml:16:17-151
+78                android:value="com.google.firebase.components.ComponentRegistrar" />
+78-->[com.google.firebase:firebase-inappmessaging-display-ktx:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\4d1ea50c159abda5b3be16659074844d\transformed\firebase-inappmessaging-display-ktx-20.1.2\AndroidManifest.xml:17:17-82
+79            <meta-data
+79-->[com.google.firebase:firebase-inappmessaging-display:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\a545de50d3fa39729d13b4f453aa3500\transformed\firebase-inappmessaging-display-20.1.2\AndroidManifest.xml:26:13-28:85
+80                android:name="com.google.firebase.components:com.google.firebase.inappmessaging.display.FirebaseInAppMessagingDisplayRegistrar"
+80-->[com.google.firebase:firebase-inappmessaging-display:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\a545de50d3fa39729d13b4f453aa3500\transformed\firebase-inappmessaging-display-20.1.2\AndroidManifest.xml:27:17-144
+81                android:value="com.google.firebase.components.ComponentRegistrar" />
+81-->[com.google.firebase:firebase-inappmessaging-display:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\a545de50d3fa39729d13b4f453aa3500\transformed\firebase-inappmessaging-display-20.1.2\AndroidManifest.xml:28:17-82
+82            <meta-data
+82-->[com.google.firebase:firebase-firestore-ktx:24.1.1] C:\Users\tanki\.gradle\caches\transforms-3\80aae739719b9254c01aa4ef45f0ebea\transformed\firebase-firestore-ktx-24.1.1\AndroidManifest.xml:15:13-17:85
+83                android:name="com.google.firebase.components:com.google.firebase.firestore.ktx.FirebaseFirestoreKtxRegistrar"
+83-->[com.google.firebase:firebase-firestore-ktx:24.1.1] C:\Users\tanki\.gradle\caches\transforms-3\80aae739719b9254c01aa4ef45f0ebea\transformed\firebase-firestore-ktx-24.1.1\AndroidManifest.xml:16:17-126
+84                android:value="com.google.firebase.components.ComponentRegistrar" />
+84-->[com.google.firebase:firebase-firestore-ktx:24.1.1] C:\Users\tanki\.gradle\caches\transforms-3\80aae739719b9254c01aa4ef45f0ebea\transformed\firebase-firestore-ktx-24.1.1\AndroidManifest.xml:17:17-82
+85            <meta-data
+85-->[com.google.firebase:firebase-storage-ktx:20.0.1] C:\Users\tanki\.gradle\caches\transforms-3\5bb24f8a0823f20c715d9c1b34a131c4\transformed\firebase-storage-ktx-20.0.1\AndroidManifest.xml:15:13-17:85
+86                android:name="com.google.firebase.components:com.google.firebase.storage.ktx.FirebaseStorageKtxRegistrar"
+86-->[com.google.firebase:firebase-storage-ktx:20.0.1] C:\Users\tanki\.gradle\caches\transforms-3\5bb24f8a0823f20c715d9c1b34a131c4\transformed\firebase-storage-ktx-20.0.1\AndroidManifest.xml:16:17-122
+87                android:value="com.google.firebase.components.ComponentRegistrar" />
+87-->[com.google.firebase:firebase-storage-ktx:20.0.1] C:\Users\tanki\.gradle\caches\transforms-3\5bb24f8a0823f20c715d9c1b34a131c4\transformed\firebase-storage-ktx-20.0.1\AndroidManifest.xml:17:17-82
+88            <meta-data
+88-->[com.google.firebase:firebase-auth-ktx:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\d73f17faf742312162b30b9f0cdc0c01\transformed\firebase-auth-ktx-21.0.3\AndroidManifest.xml:11:13-13:85
+89                android:name="com.google.firebase.components:com.google.firebase.auth.ktx.FirebaseAuthKtxRegistrar"
+89-->[com.google.firebase:firebase-auth-ktx:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\d73f17faf742312162b30b9f0cdc0c01\transformed\firebase-auth-ktx-21.0.3\AndroidManifest.xml:12:17-116
+90                android:value="com.google.firebase.components.ComponentRegistrar" />
+90-->[com.google.firebase:firebase-auth-ktx:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\d73f17faf742312162b30b9f0cdc0c01\transformed\firebase-auth-ktx-21.0.3\AndroidManifest.xml:13:17-82
+91            <meta-data
+91-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\59f270cf43ed3adb6ae43161949f4d97\transformed\firebase-auth-21.0.3\AndroidManifest.xml:67:13-69:85
+92                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+92-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\59f270cf43ed3adb6ae43161949f4d97\transformed\firebase-auth-21.0.3\AndroidManifest.xml:68:17-109
+93                android:value="com.google.firebase.components.ComponentRegistrar" />
+93-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\59f270cf43ed3adb6ae43161949f4d97\transformed\firebase-auth-21.0.3\AndroidManifest.xml:69:17-82
+94            <meta-data
+94-->[com.google.firebase:firebase-firestore:24.1.1] C:\Users\tanki\.gradle\caches\transforms-3\9a80a8fe104cba9bdacc80388c8cb06a\transformed\firebase-firestore-24.1.1\AndroidManifest.xml:20:13-22:85
+95                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+95-->[com.google.firebase:firebase-firestore:24.1.1] C:\Users\tanki\.gradle\caches\transforms-3\9a80a8fe104cba9bdacc80388c8cb06a\transformed\firebase-firestore-24.1.1\AndroidManifest.xml:21:17-111
+96                android:value="com.google.firebase.components.ComponentRegistrar" />
+96-->[com.google.firebase:firebase-firestore:24.1.1] C:\Users\tanki\.gradle\caches\transforms-3\9a80a8fe104cba9bdacc80388c8cb06a\transformed\firebase-firestore-24.1.1\AndroidManifest.xml:22:17-82
+97            <meta-data
+97-->[com.google.firebase:firebase-storage:20.0.1] C:\Users\tanki\.gradle\caches\transforms-3\67d79aa5d526255b3e5655d1f105a1c5\transformed\firebase-storage-20.0.1\AndroidManifest.xml:33:13-35:85
+98                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
+98-->[com.google.firebase:firebase-storage:20.0.1] C:\Users\tanki\.gradle\caches\transforms-3\67d79aa5d526255b3e5655d1f105a1c5\transformed\firebase-storage-20.0.1\AndroidManifest.xml:34:17-107
+99                android:value="com.google.firebase.components.ComponentRegistrar" />
+99-->[com.google.firebase:firebase-storage:20.0.1] C:\Users\tanki\.gradle\caches\transforms-3\67d79aa5d526255b3e5655d1f105a1c5\transformed\firebase-storage-20.0.1\AndroidManifest.xml:35:17-82
+100            <meta-data
+100-->[com.google.firebase:firebase-inappmessaging-ktx:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\e4ee12e50225ce4717f5f59febd3ed22\transformed\firebase-inappmessaging-ktx-20.1.2\AndroidManifest.xml:15:13-17:85
+101                android:name="com.google.firebase.components:com.google.firebase.inappmessaging.ktx.FirebaseInAppMessagingKtxRegistrar"
+101-->[com.google.firebase:firebase-inappmessaging-ktx:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\e4ee12e50225ce4717f5f59febd3ed22\transformed\firebase-inappmessaging-ktx-20.1.2\AndroidManifest.xml:16:17-136
+102                android:value="com.google.firebase.components.ComponentRegistrar" />
+102-->[com.google.firebase:firebase-inappmessaging-ktx:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\e4ee12e50225ce4717f5f59febd3ed22\transformed\firebase-inappmessaging-ktx-20.1.2\AndroidManifest.xml:17:17-82
+103            <meta-data
+103-->[com.google.firebase:firebase-common-ktx:20.1.0] C:\Users\tanki\.gradle\caches\transforms-3\b10f125b28cbf21587d5d90ea52869bd\transformed\firebase-common-ktx-20.1.0\AndroidManifest.xml:15:13-17:85
+104                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar"
+104-->[com.google.firebase:firebase-common-ktx:20.1.0] C:\Users\tanki\.gradle\caches\transforms-3\b10f125b28cbf21587d5d90ea52869bd\transformed\firebase-common-ktx-20.1.0\AndroidManifest.xml:16:17-113
+105                android:value="com.google.firebase.components.ComponentRegistrar" />
+105-->[com.google.firebase:firebase-common-ktx:20.1.0] C:\Users\tanki\.gradle\caches\transforms-3\b10f125b28cbf21587d5d90ea52869bd\transformed\firebase-common-ktx-20.1.0\AndroidManifest.xml:17:17-82
+106            <meta-data
+106-->[com.google.firebase:firebase-inappmessaging:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\249050468ed003e5ba92b66a854bc41b\transformed\firebase-inappmessaging-20.1.2\AndroidManifest.xml:17:13-19:85
+107                android:name="com.google.firebase.components:com.google.firebase.inappmessaging.FirebaseInAppMessagingRegistrar"
+107-->[com.google.firebase:firebase-inappmessaging:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\249050468ed003e5ba92b66a854bc41b\transformed\firebase-inappmessaging-20.1.2\AndroidManifest.xml:18:17-129
+108                android:value="com.google.firebase.components.ComponentRegistrar" />
+108-->[com.google.firebase:firebase-inappmessaging:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\249050468ed003e5ba92b66a854bc41b\transformed\firebase-inappmessaging-20.1.2\AndroidManifest.xml:19:17-82
+109            <meta-data
+109-->[com.google.firebase:firebase-abt:21.0.1] C:\Users\tanki\.gradle\caches\transforms-3\f25435aa0f3210b5ad7166eab010ba92\transformed\firebase-abt-21.0.1\AndroidManifest.xml:13:13-15:85
+110                android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar"
+110-->[com.google.firebase:firebase-abt:21.0.1] C:\Users\tanki\.gradle\caches\transforms-3\f25435aa0f3210b5ad7166eab010ba92\transformed\firebase-abt-21.0.1\AndroidManifest.xml:14:17-109
+111                android:value="com.google.firebase.components.ComponentRegistrar" />
+111-->[com.google.firebase:firebase-abt:21.0.1] C:\Users\tanki\.gradle\caches\transforms-3\f25435aa0f3210b5ad7166eab010ba92\transformed\firebase-abt-21.0.1\AndroidManifest.xml:15:17-82
+112            <meta-data
+112-->[com.google.firebase:firebase-datatransport:18.1.1] C:\Users\tanki\.gradle\caches\transforms-3\12f9907308998f67bb76f49378df5645\transformed\firebase-datatransport-18.1.1\AndroidManifest.xml:28:13-30:85
+113                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+113-->[com.google.firebase:firebase-datatransport:18.1.1] C:\Users\tanki\.gradle\caches\transforms-3\12f9907308998f67bb76f49378df5645\transformed\firebase-datatransport-18.1.1\AndroidManifest.xml:29:17-115
+114                android:value="com.google.firebase.components.ComponentRegistrar" />
+114-->[com.google.firebase:firebase-datatransport:18.1.1] C:\Users\tanki\.gradle\caches\transforms-3\12f9907308998f67bb76f49378df5645\transformed\firebase-datatransport-18.1.1\AndroidManifest.xml:30:17-82
+115            <meta-data
+115-->[com.google.firebase:firebase-installations:17.0.1] C:\Users\tanki\.gradle\caches\transforms-3\614490a913e5b00e53bbba3bef0cc1b1\transformed\firebase-installations-17.0.1\AndroidManifest.xml:18:13-20:85
+116                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+116-->[com.google.firebase:firebase-installations:17.0.1] C:\Users\tanki\.gradle\caches\transforms-3\614490a913e5b00e53bbba3bef0cc1b1\transformed\firebase-installations-17.0.1\AndroidManifest.xml:19:17-127
+117                android:value="com.google.firebase.components.ComponentRegistrar" />
+117-->[com.google.firebase:firebase-installations:17.0.1] C:\Users\tanki\.gradle\caches\transforms-3\614490a913e5b00e53bbba3bef0cc1b1\transformed\firebase-installations-17.0.1\AndroidManifest.xml:20:17-82
+118        </service>
+119
+120        <activity
+120-->[com.google.android.gms:play-services-auth:20.1.0] C:\Users\tanki\.gradle\caches\transforms-3\4a9bf989125ad4ee2ab3f4f50621d293\transformed\play-services-auth-20.1.0\AndroidManifest.xml:23:9-27:75
+121            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+121-->[com.google.android.gms:play-services-auth:20.1.0] C:\Users\tanki\.gradle\caches\transforms-3\4a9bf989125ad4ee2ab3f4f50621d293\transformed\play-services-auth-20.1.0\AndroidManifest.xml:24:13-93
+122            android:excludeFromRecents="true"
+122-->[com.google.android.gms:play-services-auth:20.1.0] C:\Users\tanki\.gradle\caches\transforms-3\4a9bf989125ad4ee2ab3f4f50621d293\transformed\play-services-auth-20.1.0\AndroidManifest.xml:25:13-46
+123            android:exported="false"
+123-->[com.google.android.gms:play-services-auth:20.1.0] C:\Users\tanki\.gradle\caches\transforms-3\4a9bf989125ad4ee2ab3f4f50621d293\transformed\play-services-auth-20.1.0\AndroidManifest.xml:26:13-37
+124            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+124-->[com.google.android.gms:play-services-auth:20.1.0] C:\Users\tanki\.gradle\caches\transforms-3\4a9bf989125ad4ee2ab3f4f50621d293\transformed\play-services-auth-20.1.0\AndroidManifest.xml:27:13-72
+125        <!--
+126            Service handling Google Sign-In user revocation. For apps that do not integrate with
+127            Google Sign-In, this service will never be started.
+128        -->
+129        <service
+129-->[com.google.android.gms:play-services-auth:20.1.0] C:\Users\tanki\.gradle\caches\transforms-3\4a9bf989125ad4ee2ab3f4f50621d293\transformed\play-services-auth-20.1.0\AndroidManifest.xml:33:9-37:51
+130            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+130-->[com.google.android.gms:play-services-auth:20.1.0] C:\Users\tanki\.gradle\caches\transforms-3\4a9bf989125ad4ee2ab3f4f50621d293\transformed\play-services-auth-20.1.0\AndroidManifest.xml:34:13-89
+131            android:exported="true"
+131-->[com.google.android.gms:play-services-auth:20.1.0] C:\Users\tanki\.gradle\caches\transforms-3\4a9bf989125ad4ee2ab3f4f50621d293\transformed\play-services-auth-20.1.0\AndroidManifest.xml:35:13-36
+132            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+132-->[com.google.android.gms:play-services-auth:20.1.0] C:\Users\tanki\.gradle\caches\transforms-3\4a9bf989125ad4ee2ab3f4f50621d293\transformed\play-services-auth-20.1.0\AndroidManifest.xml:36:13-107
+133            android:visibleToInstantApps="true" />
+133-->[com.google.android.gms:play-services-auth:20.1.0] C:\Users\tanki\.gradle\caches\transforms-3\4a9bf989125ad4ee2ab3f4f50621d293\transformed\play-services-auth-20.1.0\AndroidManifest.xml:37:13-48
+134
+135        <activity
+135-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\59f270cf43ed3adb6ae43161949f4d97\transformed\firebase-auth-21.0.3\AndroidManifest.xml:27:9-44:20
+136            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+136-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\59f270cf43ed3adb6ae43161949f4d97\transformed\firebase-auth-21.0.3\AndroidManifest.xml:28:13-80
+137            android:excludeFromRecents="true"
+137-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\59f270cf43ed3adb6ae43161949f4d97\transformed\firebase-auth-21.0.3\AndroidManifest.xml:29:13-46
+138            android:exported="true"
+138-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\59f270cf43ed3adb6ae43161949f4d97\transformed\firebase-auth-21.0.3\AndroidManifest.xml:30:13-36
+139            android:launchMode="singleTask"
+139-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\59f270cf43ed3adb6ae43161949f4d97\transformed\firebase-auth-21.0.3\AndroidManifest.xml:31:13-44
+140            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+140-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\59f270cf43ed3adb6ae43161949f4d97\transformed\firebase-auth-21.0.3\AndroidManifest.xml:32:13-72
+141            <intent-filter>
+141-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\59f270cf43ed3adb6ae43161949f4d97\transformed\firebase-auth-21.0.3\AndroidManifest.xml:33:13-43:29
+142                <action android:name="android.intent.action.VIEW" />
+142-->[com.google.firebase:firebase-inappmessaging-display:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\a545de50d3fa39729d13b4f453aa3500\transformed\firebase-inappmessaging-display-20.1.2\AndroidManifest.xml:16:13-65
+142-->[com.google.firebase:firebase-inappmessaging-display:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\a545de50d3fa39729d13b4f453aa3500\transformed\firebase-inappmessaging-display-20.1.2\AndroidManifest.xml:16:21-62
+143
+144                <category android:name="android.intent.category.DEFAULT" />
+144-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\59f270cf43ed3adb6ae43161949f4d97\transformed\firebase-auth-21.0.3\AndroidManifest.xml:36:17-76
+144-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\59f270cf43ed3adb6ae43161949f4d97\transformed\firebase-auth-21.0.3\AndroidManifest.xml:36:27-73
+145                <category android:name="android.intent.category.BROWSABLE" />
+145-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\59f270cf43ed3adb6ae43161949f4d97\transformed\firebase-auth-21.0.3\AndroidManifest.xml:37:17-78
+145-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\59f270cf43ed3adb6ae43161949f4d97\transformed\firebase-auth-21.0.3\AndroidManifest.xml:37:27-75
+146
+147                <data
+147-->[com.google.firebase:firebase-inappmessaging-display:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\a545de50d3fa39729d13b4f453aa3500\transformed\firebase-inappmessaging-display-20.1.2\AndroidManifest.xml:18:13-44
+148                    android:host="firebase.auth"
+149                    android:path="/"
+150                    android:scheme="genericidp" />
+150-->[com.google.firebase:firebase-inappmessaging-display:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\a545de50d3fa39729d13b4f453aa3500\transformed\firebase-inappmessaging-display-20.1.2\AndroidManifest.xml:18:19-41
+151            </intent-filter>
+152        </activity>
+153        <activity
+153-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\59f270cf43ed3adb6ae43161949f4d97\transformed\firebase-auth-21.0.3\AndroidManifest.xml:45:9-62:20
+154            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+154-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\59f270cf43ed3adb6ae43161949f4d97\transformed\firebase-auth-21.0.3\AndroidManifest.xml:46:13-79
+155            android:excludeFromRecents="true"
+155-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\59f270cf43ed3adb6ae43161949f4d97\transformed\firebase-auth-21.0.3\AndroidManifest.xml:47:13-46
+156            android:exported="true"
+156-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\59f270cf43ed3adb6ae43161949f4d97\transformed\firebase-auth-21.0.3\AndroidManifest.xml:48:13-36
+157            android:launchMode="singleTask"
+157-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\59f270cf43ed3adb6ae43161949f4d97\transformed\firebase-auth-21.0.3\AndroidManifest.xml:49:13-44
+158            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+158-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\59f270cf43ed3adb6ae43161949f4d97\transformed\firebase-auth-21.0.3\AndroidManifest.xml:50:13-72
+159            <intent-filter>
+159-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\59f270cf43ed3adb6ae43161949f4d97\transformed\firebase-auth-21.0.3\AndroidManifest.xml:51:13-61:29
+160                <action android:name="android.intent.action.VIEW" />
+160-->[com.google.firebase:firebase-inappmessaging-display:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\a545de50d3fa39729d13b4f453aa3500\transformed\firebase-inappmessaging-display-20.1.2\AndroidManifest.xml:16:13-65
+160-->[com.google.firebase:firebase-inappmessaging-display:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\a545de50d3fa39729d13b4f453aa3500\transformed\firebase-inappmessaging-display-20.1.2\AndroidManifest.xml:16:21-62
 161
-162        <provider
-162-->[com.google.firebase:firebase-common:20.1.0] C:\Users\tanki\.gradle\caches\transforms-3\d6f4c281710bc56d167b1cebc72850c2\transformed\firebase-common-20.1.0\AndroidManifest.xml:26:9-31:39
-163            android:name="com.google.firebase.provider.FirebaseInitProvider"
-163-->[com.google.firebase:firebase-common:20.1.0] C:\Users\tanki\.gradle\caches\transforms-3\d6f4c281710bc56d167b1cebc72850c2\transformed\firebase-common-20.1.0\AndroidManifest.xml:27:13-77
-164            android:authorities="com.chatapp.firebaseinitprovider"
-164-->[com.google.firebase:firebase-common:20.1.0] C:\Users\tanki\.gradle\caches\transforms-3\d6f4c281710bc56d167b1cebc72850c2\transformed\firebase-common-20.1.0\AndroidManifest.xml:28:13-72
-165            android:directBootAware="true"
-165-->[com.google.firebase:firebase-common:20.1.0] C:\Users\tanki\.gradle\caches\transforms-3\d6f4c281710bc56d167b1cebc72850c2\transformed\firebase-common-20.1.0\AndroidManifest.xml:29:13-43
-166            android:exported="false"
-166-->[com.google.firebase:firebase-common:20.1.0] C:\Users\tanki\.gradle\caches\transforms-3\d6f4c281710bc56d167b1cebc72850c2\transformed\firebase-common-20.1.0\AndroidManifest.xml:30:13-37
-167            android:initOrder="100" />
-167-->[com.google.firebase:firebase-common:20.1.0] C:\Users\tanki\.gradle\caches\transforms-3\d6f4c281710bc56d167b1cebc72850c2\transformed\firebase-common-20.1.0\AndroidManifest.xml:31:13-36
-168
-169        <meta-data
-169-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\tanki\.gradle\caches\transforms-3\5176a74ab33d28972d3fa6bf364c5af8\transformed\play-services-basement-18.0.0\AndroidManifest.xml:21:9-23:69
-170            android:name="com.google.android.gms.version"
-170-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\tanki\.gradle\caches\transforms-3\5176a74ab33d28972d3fa6bf364c5af8\transformed\play-services-basement-18.0.0\AndroidManifest.xml:22:13-58
-171            android:value="@integer/google_play_services_version" />
-171-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\tanki\.gradle\caches\transforms-3\5176a74ab33d28972d3fa6bf364c5af8\transformed\play-services-basement-18.0.0\AndroidManifest.xml:23:13-66
-172
-173        <provider
-173-->[androidx.emoji2:emoji2:1.0.0] C:\Users\tanki\.gradle\caches\transforms-3\80cc77eaf61cfab093890cd797c4240f\transformed\emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
-174            android:name="androidx.startup.InitializationProvider"
-174-->[androidx.emoji2:emoji2:1.0.0] C:\Users\tanki\.gradle\caches\transforms-3\80cc77eaf61cfab093890cd797c4240f\transformed\emoji2-1.0.0\AndroidManifest.xml:27:13-67
-175            android:authorities="com.chatapp.androidx-startup"
-175-->[androidx.emoji2:emoji2:1.0.0] C:\Users\tanki\.gradle\caches\transforms-3\80cc77eaf61cfab093890cd797c4240f\transformed\emoji2-1.0.0\AndroidManifest.xml:28:13-68
-176            android:exported="false" >
-176-->[androidx.emoji2:emoji2:1.0.0] C:\Users\tanki\.gradle\caches\transforms-3\80cc77eaf61cfab093890cd797c4240f\transformed\emoji2-1.0.0\AndroidManifest.xml:29:13-37
-177            <meta-data
-177-->[androidx.emoji2:emoji2:1.0.0] C:\Users\tanki\.gradle\caches\transforms-3\80cc77eaf61cfab093890cd797c4240f\transformed\emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
-178                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-178-->[androidx.emoji2:emoji2:1.0.0] C:\Users\tanki\.gradle\caches\transforms-3\80cc77eaf61cfab093890cd797c4240f\transformed\emoji2-1.0.0\AndroidManifest.xml:32:17-75
-179                android:value="androidx.startup" />
-179-->[androidx.emoji2:emoji2:1.0.0] C:\Users\tanki\.gradle\caches\transforms-3\80cc77eaf61cfab093890cd797c4240f\transformed\emoji2-1.0.0\AndroidManifest.xml:33:17-49
-180            <meta-data
-180-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\tanki\.gradle\caches\transforms-3\859f069c2120b7e73df200d6d805afd4\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
-181                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-181-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\tanki\.gradle\caches\transforms-3\859f069c2120b7e73df200d6d805afd4\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
-182                android:value="androidx.startup" />
-182-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\tanki\.gradle\caches\transforms-3\859f069c2120b7e73df200d6d805afd4\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
-183        </provider>
-184
-185        <service
-185-->[com.google.android.datatransport:transport-backend-cct:3.1.1] C:\Users\tanki\.gradle\caches\transforms-3\5ade623d0ba997b70faaadd2736e8037\transformed\transport-backend-cct-3.1.1\AndroidManifest.xml:29:9-35:19
-186            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
-186-->[com.google.android.datatransport:transport-backend-cct:3.1.1] C:\Users\tanki\.gradle\caches\transforms-3\5ade623d0ba997b70faaadd2736e8037\transformed\transport-backend-cct-3.1.1\AndroidManifest.xml:30:13-103
-187            android:exported="false" >
-187-->[com.google.android.datatransport:transport-backend-cct:3.1.1] C:\Users\tanki\.gradle\caches\transforms-3\5ade623d0ba997b70faaadd2736e8037\transformed\transport-backend-cct-3.1.1\AndroidManifest.xml:31:13-37
-188            <meta-data
-188-->[com.google.android.datatransport:transport-backend-cct:3.1.1] C:\Users\tanki\.gradle\caches\transforms-3\5ade623d0ba997b70faaadd2736e8037\transformed\transport-backend-cct-3.1.1\AndroidManifest.xml:32:13-34:39
-189                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
-189-->[com.google.android.datatransport:transport-backend-cct:3.1.1] C:\Users\tanki\.gradle\caches\transforms-3\5ade623d0ba997b70faaadd2736e8037\transformed\transport-backend-cct-3.1.1\AndroidManifest.xml:33:17-94
-190                android:value="cct" />
-190-->[com.google.android.datatransport:transport-backend-cct:3.1.1] C:\Users\tanki\.gradle\caches\transforms-3\5ade623d0ba997b70faaadd2736e8037\transformed\transport-backend-cct-3.1.1\AndroidManifest.xml:34:17-36
-191        </service>
-192        <service
-192-->[com.google.android.datatransport:transport-runtime:3.1.1] C:\Users\tanki\.gradle\caches\transforms-3\9b879f7bc95ac9ea666f5bc3051af8c1\transformed\transport-runtime-3.1.1\AndroidManifest.xml:26:9-30:19
-193            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
-193-->[com.google.android.datatransport:transport-runtime:3.1.1] C:\Users\tanki\.gradle\caches\transforms-3\9b879f7bc95ac9ea666f5bc3051af8c1\transformed\transport-runtime-3.1.1\AndroidManifest.xml:27:13-117
-194            android:exported="false"
-194-->[com.google.android.datatransport:transport-runtime:3.1.1] C:\Users\tanki\.gradle\caches\transforms-3\9b879f7bc95ac9ea666f5bc3051af8c1\transformed\transport-runtime-3.1.1\AndroidManifest.xml:28:13-37
-195            android:permission="android.permission.BIND_JOB_SERVICE" >
-195-->[com.google.android.datatransport:transport-runtime:3.1.1] C:\Users\tanki\.gradle\caches\transforms-3\9b879f7bc95ac9ea666f5bc3051af8c1\transformed\transport-runtime-3.1.1\AndroidManifest.xml:29:13-69
-196        </service>
-197
-198        <receiver
-198-->[com.google.android.datatransport:transport-runtime:3.1.1] C:\Users\tanki\.gradle\caches\transforms-3\9b879f7bc95ac9ea666f5bc3051af8c1\transformed\transport-runtime-3.1.1\AndroidManifest.xml:32:9-34:40
-199            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
-199-->[com.google.android.datatransport:transport-runtime:3.1.1] C:\Users\tanki\.gradle\caches\transforms-3\9b879f7bc95ac9ea666f5bc3051af8c1\transformed\transport-runtime-3.1.1\AndroidManifest.xml:33:13-132
-200            android:exported="false" />
-200-->[com.google.android.datatransport:transport-runtime:3.1.1] C:\Users\tanki\.gradle\caches\transforms-3\9b879f7bc95ac9ea666f5bc3051af8c1\transformed\transport-runtime-3.1.1\AndroidManifest.xml:34:13-37
-201    </application>
-202
-203</manifest>
+162                <category android:name="android.intent.category.DEFAULT" />
+162-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\59f270cf43ed3adb6ae43161949f4d97\transformed\firebase-auth-21.0.3\AndroidManifest.xml:36:17-76
+162-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\59f270cf43ed3adb6ae43161949f4d97\transformed\firebase-auth-21.0.3\AndroidManifest.xml:36:27-73
+163                <category android:name="android.intent.category.BROWSABLE" />
+163-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\59f270cf43ed3adb6ae43161949f4d97\transformed\firebase-auth-21.0.3\AndroidManifest.xml:37:17-78
+163-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\59f270cf43ed3adb6ae43161949f4d97\transformed\firebase-auth-21.0.3\AndroidManifest.xml:37:27-75
+164
+165                <data
+165-->[com.google.firebase:firebase-inappmessaging-display:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\a545de50d3fa39729d13b4f453aa3500\transformed\firebase-inappmessaging-display-20.1.2\AndroidManifest.xml:18:13-44
+166                    android:host="firebase.auth"
+167                    android:path="/"
+168                    android:scheme="recaptcha" />
+168-->[com.google.firebase:firebase-inappmessaging-display:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\a545de50d3fa39729d13b4f453aa3500\transformed\firebase-inappmessaging-display-20.1.2\AndroidManifest.xml:18:19-41
+169            </intent-filter>
+170        </activity>
+171        <activity
+171-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\tanki\.gradle\caches\transforms-3\38c2f6dfe72c70dca657b319ede40fc9\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+172            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+172-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\tanki\.gradle\caches\transforms-3\38c2f6dfe72c70dca657b319ede40fc9\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+173            android:exported="false"
+173-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\tanki\.gradle\caches\transforms-3\38c2f6dfe72c70dca657b319ede40fc9\transformed\play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+174            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+174-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\tanki\.gradle\caches\transforms-3\38c2f6dfe72c70dca657b319ede40fc9\transformed\play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+175
+176        <provider
+176-->[com.google.firebase:firebase-common:20.1.0] C:\Users\tanki\.gradle\caches\transforms-3\f301db2a56b26e81f91c2ab82f6bb0c7\transformed\firebase-common-20.1.0\AndroidManifest.xml:26:9-31:39
+177            android:name="com.google.firebase.provider.FirebaseInitProvider"
+177-->[com.google.firebase:firebase-common:20.1.0] C:\Users\tanki\.gradle\caches\transforms-3\f301db2a56b26e81f91c2ab82f6bb0c7\transformed\firebase-common-20.1.0\AndroidManifest.xml:27:13-77
+178            android:authorities="com.chatapp.firebaseinitprovider"
+178-->[com.google.firebase:firebase-common:20.1.0] C:\Users\tanki\.gradle\caches\transforms-3\f301db2a56b26e81f91c2ab82f6bb0c7\transformed\firebase-common-20.1.0\AndroidManifest.xml:28:13-72
+179            android:directBootAware="true"
+179-->[com.google.firebase:firebase-common:20.1.0] C:\Users\tanki\.gradle\caches\transforms-3\f301db2a56b26e81f91c2ab82f6bb0c7\transformed\firebase-common-20.1.0\AndroidManifest.xml:29:13-43
+180            android:exported="false"
+180-->[com.google.firebase:firebase-common:20.1.0] C:\Users\tanki\.gradle\caches\transforms-3\f301db2a56b26e81f91c2ab82f6bb0c7\transformed\firebase-common-20.1.0\AndroidManifest.xml:30:13-37
+181            android:initOrder="100" />
+181-->[com.google.firebase:firebase-common:20.1.0] C:\Users\tanki\.gradle\caches\transforms-3\f301db2a56b26e81f91c2ab82f6bb0c7\transformed\firebase-common-20.1.0\AndroidManifest.xml:31:13-36
+182
+183        <meta-data
+183-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\tanki\.gradle\caches\transforms-3\b0fa9cf872f3823cba423df0027b8006\transformed\play-services-basement-18.0.0\AndroidManifest.xml:21:9-23:69
+184            android:name="com.google.android.gms.version"
+184-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\tanki\.gradle\caches\transforms-3\b0fa9cf872f3823cba423df0027b8006\transformed\play-services-basement-18.0.0\AndroidManifest.xml:22:13-58
+185            android:value="@integer/google_play_services_version" />
+185-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\tanki\.gradle\caches\transforms-3\b0fa9cf872f3823cba423df0027b8006\transformed\play-services-basement-18.0.0\AndroidManifest.xml:23:13-66
+186
+187        <provider
+187-->[androidx.emoji2:emoji2:1.0.0] C:\Users\tanki\.gradle\caches\transforms-3\d81ceb27cc5db6aca666d6a574b37698\transformed\emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+188            android:name="androidx.startup.InitializationProvider"
+188-->[androidx.emoji2:emoji2:1.0.0] C:\Users\tanki\.gradle\caches\transforms-3\d81ceb27cc5db6aca666d6a574b37698\transformed\emoji2-1.0.0\AndroidManifest.xml:27:13-67
+189            android:authorities="com.chatapp.androidx-startup"
+189-->[androidx.emoji2:emoji2:1.0.0] C:\Users\tanki\.gradle\caches\transforms-3\d81ceb27cc5db6aca666d6a574b37698\transformed\emoji2-1.0.0\AndroidManifest.xml:28:13-68
+190            android:exported="false" >
+190-->[androidx.emoji2:emoji2:1.0.0] C:\Users\tanki\.gradle\caches\transforms-3\d81ceb27cc5db6aca666d6a574b37698\transformed\emoji2-1.0.0\AndroidManifest.xml:29:13-37
+191            <meta-data
+191-->[androidx.emoji2:emoji2:1.0.0] C:\Users\tanki\.gradle\caches\transforms-3\d81ceb27cc5db6aca666d6a574b37698\transformed\emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+192                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+192-->[androidx.emoji2:emoji2:1.0.0] C:\Users\tanki\.gradle\caches\transforms-3\d81ceb27cc5db6aca666d6a574b37698\transformed\emoji2-1.0.0\AndroidManifest.xml:32:17-75
+193                android:value="androidx.startup" />
+193-->[androidx.emoji2:emoji2:1.0.0] C:\Users\tanki\.gradle\caches\transforms-3\d81ceb27cc5db6aca666d6a574b37698\transformed\emoji2-1.0.0\AndroidManifest.xml:33:17-49
+194            <meta-data
+194-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\tanki\.gradle\caches\transforms-3\bb1fec0b0c14d3489e2a85e06aca989b\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+195                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+195-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\tanki\.gradle\caches\transforms-3\bb1fec0b0c14d3489e2a85e06aca989b\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+196                android:value="androidx.startup" />
+196-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\tanki\.gradle\caches\transforms-3\bb1fec0b0c14d3489e2a85e06aca989b\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+197        </provider>
+198
+199        <service
+199-->[com.google.android.datatransport:transport-backend-cct:3.1.1] C:\Users\tanki\.gradle\caches\transforms-3\64bf566b6bbfee0d47d33d000b0326ed\transformed\transport-backend-cct-3.1.1\AndroidManifest.xml:29:9-35:19
+200            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+200-->[com.google.android.datatransport:transport-backend-cct:3.1.1] C:\Users\tanki\.gradle\caches\transforms-3\64bf566b6bbfee0d47d33d000b0326ed\transformed\transport-backend-cct-3.1.1\AndroidManifest.xml:30:13-103
+201            android:exported="false" >
+201-->[com.google.android.datatransport:transport-backend-cct:3.1.1] C:\Users\tanki\.gradle\caches\transforms-3\64bf566b6bbfee0d47d33d000b0326ed\transformed\transport-backend-cct-3.1.1\AndroidManifest.xml:31:13-37
+202            <meta-data
+202-->[com.google.android.datatransport:transport-backend-cct:3.1.1] C:\Users\tanki\.gradle\caches\transforms-3\64bf566b6bbfee0d47d33d000b0326ed\transformed\transport-backend-cct-3.1.1\AndroidManifest.xml:32:13-34:39
+203                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+203-->[com.google.android.datatransport:transport-backend-cct:3.1.1] C:\Users\tanki\.gradle\caches\transforms-3\64bf566b6bbfee0d47d33d000b0326ed\transformed\transport-backend-cct-3.1.1\AndroidManifest.xml:33:17-94
+204                android:value="cct" />
+204-->[com.google.android.datatransport:transport-backend-cct:3.1.1] C:\Users\tanki\.gradle\caches\transforms-3\64bf566b6bbfee0d47d33d000b0326ed\transformed\transport-backend-cct-3.1.1\AndroidManifest.xml:34:17-36
+205        </service>
+206        <service
+206-->[com.google.android.datatransport:transport-runtime:3.1.1] C:\Users\tanki\.gradle\caches\transforms-3\9fc9cb84b874acea5c483d3c7835dc5f\transformed\transport-runtime-3.1.1\AndroidManifest.xml:26:9-30:19
+207            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+207-->[com.google.android.datatransport:transport-runtime:3.1.1] C:\Users\tanki\.gradle\caches\transforms-3\9fc9cb84b874acea5c483d3c7835dc5f\transformed\transport-runtime-3.1.1\AndroidManifest.xml:27:13-117
+208            android:exported="false"
+208-->[com.google.android.datatransport:transport-runtime:3.1.1] C:\Users\tanki\.gradle\caches\transforms-3\9fc9cb84b874acea5c483d3c7835dc5f\transformed\transport-runtime-3.1.1\AndroidManifest.xml:28:13-37
+209            android:permission="android.permission.BIND_JOB_SERVICE" >
+209-->[com.google.android.datatransport:transport-runtime:3.1.1] C:\Users\tanki\.gradle\caches\transforms-3\9fc9cb84b874acea5c483d3c7835dc5f\transformed\transport-runtime-3.1.1\AndroidManifest.xml:29:13-69
+210        </service>
+211
+212        <receiver
+212-->[com.google.android.datatransport:transport-runtime:3.1.1] C:\Users\tanki\.gradle\caches\transforms-3\9fc9cb84b874acea5c483d3c7835dc5f\transformed\transport-runtime-3.1.1\AndroidManifest.xml:32:9-34:40
+213            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+213-->[com.google.android.datatransport:transport-runtime:3.1.1] C:\Users\tanki\.gradle\caches\transforms-3\9fc9cb84b874acea5c483d3c7835dc5f\transformed\transport-runtime-3.1.1\AndroidManifest.xml:33:13-132
+214            android:exported="false" />
+214-->[com.google.android.datatransport:transport-runtime:3.1.1] C:\Users\tanki\.gradle\caches\transforms-3\9fc9cb84b874acea5c483d3c7835dc5f\transformed\transport-runtime-3.1.1\AndroidManifest.xml:34:13-37
+215    </application>
+216
+217</manifest>

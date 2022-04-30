@@ -16,8 +16,12 @@
         "source": "E:\\Dev\\android\\chatApp\\app\\src\\main\\res\\layout\\activity_login_main.xml"
     },
     {
-        "merged": "E:\\Dev\\android\\chatApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_choise_avatar.xml",
-        "source": "E:\\Dev\\android\\chatApp\\app\\src\\main\\res\\layout\\activity_choise_avatar.xml"
+        "merged": "E:\\Dev\\android\\chatApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_choice_avatar.xml",
+        "source": "E:\\Dev\\android\\chatApp\\app\\src\\main\\res\\layout\\activity_choice_avatar.xml"
+    },
+    {
+        "merged": "E:\\Dev\\android\\chatApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_new_conversation.xml",
+        "source": "E:\\Dev\\android\\chatApp\\app\\src\\main\\res\\layout\\activity_new_conversation.xml"
     },
     {
         "merged": "E:\\Dev\\android\\chatApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
@@ -26,5 +30,17 @@
     {
         "merged": "E:\\Dev\\android\\chatApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\chat_adapter.xml",
         "source": "E:\\Dev\\android\\chatApp\\app\\src\\main\\res\\layout\\chat_adapter.xml"
+    },
+    {
+        "merged": "E:\\Dev\\android\\chatApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\settings_activity.xml",
+        "source": "E:\\Dev\\android\\chatApp\\app\\src\\main\\res\\layout\\settings_activity.xml"
+    },
+    {
+        "merged": "E:\\Dev\\android\\chatApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\user_activity.xml",
+        "source": "E:\\Dev\\android\\chatApp\\app\\src\\main\\res\\layout\\user_activity.xml"
+    },
+    {
+        "merged": "E:\\Dev\\android\\chatApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\user_profile_activity.xml",
+        "source": "E:\\Dev\\android\\chatApp\\app\\src\\main\\res\\layout\\user_profile_activity.xml"
     }
 ]

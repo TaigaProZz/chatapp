@@ -25,9 +25,7 @@ class LoginEmailActivity : AppCompatActivity() {
         // Login Button
         findViewById<Button>(R.id.login_button).setOnClickListener {
             loginWithEmail()
-            val intent = Intent(applicationContext, MainActivity::class.java)
-            intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK.or(Intent.FLAG_ACTIVITY_CLEAR_TASK)
-            startActivity(intent)
+
         }
 
         // goto register activity button
@@ -58,11 +56,10 @@ class LoginEmailActivity : AppCompatActivity() {
         // login to account with firebase
         auth.signInWithEmailAndPassword(username, password).addOnCompleteListener {
             if (it.isSuccessful) {
-                Toast.makeText(
-                    applicationContext,
-                    "Connexion réussie $username $password",
-                    Toast.LENGTH_SHORT
-                ).show()
+                Toast.makeText(applicationContext, "Connexion réussie $username $password", Toast.LENGTH_SHORT).show()
+                val intent = Intent(applicationContext, MainActivity::class.java)
+                intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK.or(Intent.FLAG_ACTIVITY_CLEAR_TASK)
+                startActivity(intent)
             } else {
 
                 Toast.makeText(applicationContext, "Connexion échouée", Toast.LENGTH_SHORT)

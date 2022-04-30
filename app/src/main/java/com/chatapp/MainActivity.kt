@@ -1,32 +1,23 @@
 package com.chatapp
 
 import android.content.Intent
-import android.net.Uri
 import android.os.Bundle
-import android.util.Log
 import android.view.Menu
-import android.widget.Button
-import android.widget.ImageView
-import android.widget.TextView
-import android.widget.Toast
+import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.graphics.drawable.toIcon
-import com.bumptech.glide.Glide
+import androidx.recyclerview.widget.RecyclerView
 import com.chatapp.account.AccountMainActivity
-import com.chatapp.conversation.Chat
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
-import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var auth: FirebaseAuth
-    private var db = Firebase.firestore
 
     companion object {
-        const val TAG = "AvatarChoice"
+        const val TAG = "MainActivityAvatar"
     }
 
     override fun onStart() {
@@ -40,56 +31,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val auth = Firebase.auth
-        val uid = auth.uid
-        Log.d("MainActivityAvatar", "uid = $uid")
+        val recyclerview = findViewById<RecyclerView>(R.id.recycler_view_main)
+        recyclerview.adapter
 
 
-        // show users' email / name
-        val username = findViewById<TextView>(R.id.username_connected)
-        val user = auth.currentUser?.email
-        username.text = user
-
-        // show user's avatar
-        val avatarDisplay = findViewById<ImageView>(R.id.user_avatar)
-        db.collection("users")
-            .get()
-            .addOnSuccessListener {
-                for (document in it) {
-                    val imageFromFirebase =  document.data["profileImage"]
-                    Glide.with(this).load(imageFromFirebase).into(avatarDisplay)
-                }
-            }
-            .addOnFailureListener {
-                Log.d("MainActivityAvatar", "fail")
-
-            }
-
-        /*             BUTTONS           */
-
-        // sign out button
-        findViewById<Button>(R.id.sign_out_button).setOnClickListener {
-            auth.signOut()
-
-            Toast.makeText(applicationContext, "Signed out", Toast.LENGTH_SHORT).show()
-            startActivity(Intent(applicationContext, AccountMainActivity::class.java))
-        }
-
-        val text = findViewById<TextView>(R.id.text)
-        text.setOnClickListener {
-            startActivity(Intent(applicationContext, Chat::class.java))
-        }
-
-        val text1 = findViewById<TextView>(R.id.text1)
-        text1.setOnClickListener {
-            startActivity(Intent(applicationContext, AccountMainActivity::class.java))
-        }
-
-
-        //               TOOLBAR             \\
-        val toolbar = findViewById<androidx.appcompat.widget.Toolbar>(R.id.toolbar)
-        setSupportActionBar(toolbar)
-        supportActionBar?.setDisplayShowTitleEnabled(false)
 
     }
 
@@ -108,7 +53,20 @@ class MainActivity : AppCompatActivity() {
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.nav_menu, menu)
         return super.onCreateOptionsMenu(menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+
+        when(item.itemId){
+            R.id.new_conversation_menu ->
+                startActivity(Intent(applicationContext, NewConversationActivity::class.java))
+
+            R.id.user_profile_menu ->
+                startActivity(Intent(applicationContext, UserProfileActivity::class.java))
+        }
+        return super.onOptionsItemSelected(item)
 
     }
+
 
 }
