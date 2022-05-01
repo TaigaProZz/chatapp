@@ -2844,6 +2844,7 @@ id editBtn_email_profile_user
 id edit_query
 id elastic
 id email_register
+id email_user_profile
 id end
 id endToStart
 id end_padder
@@ -3032,6 +3033,7 @@ id rectangles
 id recyclerViewChat_xml
 id recycler_view
 id recycler_view_main
+id recycler_view_newconversation
 id register_button
 id register_email_button
 id reverseSawtooth
@@ -3043,6 +3045,7 @@ id rounded
 id row_index_key
 id save_non_transition_alpha
 id save_overlay_view
+id save_username
 id sawtooth
 id scale
 id screen
@@ -3173,6 +3176,7 @@ id username
 id username_login
 id username_register
 id username_user_profile
+id username_user_profile2
 id vertical_only
 id view_offset_helper
 id view_transition
@@ -3447,9 +3451,6 @@ string action_sign_in_in_short
 string androidx_startup
 string app_name
 string appbar_scrolling_view_behavior
-string attachment_summary_off
-string attachment_summary_on
-string attachment_title
 string bottom_sheet_behavior
 string bottomsheet_action_expand_halfway
 string card_content_descriptor
@@ -3541,7 +3542,6 @@ string material_timepicker_minute
 string material_timepicker_pm
 string material_timepicker_select_time
 string material_timepicker_text_input_mode_description
-string messages_header
 string modal_content_descriptor
 string modal_inner_content_descriptor
 string mtrl_badge_numberless_content_description
@@ -3593,18 +3593,14 @@ string preference_copied
 string project_id
 string prompt_email
 string prompt_password
-string reply_title
 string s_inscrire
 string s_inscrire_par_email
 string se_connecter
 string se_connecter_par_email
 string search_menu_title
 string sign_out
-string signature_title
 string status_bar_notification_info_overflow
 string summary_collapsed_preference_list
-string sync_header
-string sync_title
 string title_activity_login
 string title_activity_maps
 string title_activity_settings
@@ -4805,7 +4801,7 @@ styleable OnClick clickAction targetId
 styleable OnSwipe autoCompleteMode dragDirection dragScale dragThreshold limitBoundsTo maxAcceleration maxVelocity moveWhenScrollAtTop nestedScrollFlags onTouchUp rotationCenterId springBoundary springDamping springMass springStiffness springStopThreshold touchAnchorId touchAnchorSide touchRegionId
 styleable PopupWindow android_popupBackground android_popupAnimationStyle overlapAnchor
 styleable PopupWindowBackgroundState state_above_anchor
-styleable Preference android_icon android_persistent android_enabled android_layout android_title android_selectable android_key android_summary android_order android_widgetLayout android_dependency android_defaultValue android_shouldDisableView android_fragment android_singleLineTitle android_iconSpaceReserved icon layout title allowDividerAbove allowDividerBelow defaultValue dependency enableCopying enabled fragment iconSpaceReserved isPreferenceVisible key order persistent selectable shouldDisableView singleLineTitle summary widgetLayout
+styleable Preference android_icon android_persistent android_enabled android_layout android_title android_selectable android_key android_summary android_order android_widgetLayout android_dependency android_defaultValue android_shouldDisableView android_fragment android_singleLineTitle android_iconSpaceReserved allowDividerAbove allowDividerBelow defaultValue dependency enableCopying enabled fragment icon iconSpaceReserved isPreferenceVisible key layout order persistent selectable shouldDisableView singleLineTitle summary title widgetLayout
 styleable PreferenceFragment android_layout android_divider android_dividerHeight allowDividerAfterLastItem
 styleable PreferenceFragmentCompat android_layout android_divider android_dividerHeight allowDividerAfterLastItem
 styleable PreferenceGroup android_orderingFromXml initialExpandedChildrenCount orderingFromXml

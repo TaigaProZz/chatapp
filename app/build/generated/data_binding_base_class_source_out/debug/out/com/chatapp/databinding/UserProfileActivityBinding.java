@@ -29,6 +29,12 @@ public final class UserProfileActivityBinding implements ViewBinding {
   public final ImageView editBtnEmailProfileUser;
 
   @NonNull
+  public final TextView emailUserProfile;
+
+  @NonNull
+  public final ImageView saveUsername;
+
+  @NonNull
   public final Button signOutButton;
 
   @NonNull
@@ -36,10 +42,13 @@ public final class UserProfileActivityBinding implements ViewBinding {
 
   private UserProfileActivityBinding(@NonNull ConstraintLayout rootView,
       @NonNull CircleImageView avatarUserProfile, @NonNull ImageView editBtnEmailProfileUser,
+      @NonNull TextView emailUserProfile, @NonNull ImageView saveUsername,
       @NonNull Button signOutButton, @NonNull TextView usernameUserProfile) {
     this.rootView = rootView;
     this.avatarUserProfile = avatarUserProfile;
     this.editBtnEmailProfileUser = editBtnEmailProfileUser;
+    this.emailUserProfile = emailUserProfile;
+    this.saveUsername = saveUsername;
     this.signOutButton = signOutButton;
     this.usernameUserProfile = usernameUserProfile;
   }
@@ -83,6 +92,18 @@ public final class UserProfileActivityBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.email_user_profile;
+      TextView emailUserProfile = ViewBindings.findChildViewById(rootView, id);
+      if (emailUserProfile == null) {
+        break missingId;
+      }
+
+      id = R.id.save_username;
+      ImageView saveUsername = ViewBindings.findChildViewById(rootView, id);
+      if (saveUsername == null) {
+        break missingId;
+      }
+
       id = R.id.sign_out_button;
       Button signOutButton = ViewBindings.findChildViewById(rootView, id);
       if (signOutButton == null) {
@@ -96,7 +117,8 @@ public final class UserProfileActivityBinding implements ViewBinding {
       }
 
       return new UserProfileActivityBinding((ConstraintLayout) rootView, avatarUserProfile,
-          editBtnEmailProfileUser, signOutButton, usernameUserProfile);
+          editBtnEmailProfileUser, emailUserProfile, saveUsername, signOutButton,
+          usernameUserProfile);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -8,24 +8,22 @@ import com.chatapp.MainActivity
 import com.chatapp.R
 import com.chatapp.account.AccountMainActivity
 import com.chatapp.account.register.RegisterEmailActivity
-import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 
 class LoginEmailActivity : AppCompatActivity() {
 
-    private lateinit var auth: FirebaseAuth
+    private val auth = Firebase.auth
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_email_login)
 
-        auth = Firebase.auth
 
-        // Login Button
+        /*          BUTTONS           */
+        // Login with email Button
         findViewById<Button>(R.id.login_button).setOnClickListener {
             loginWithEmail()
-
         }
 
         // goto register activity button
@@ -41,14 +39,17 @@ class LoginEmailActivity : AppCompatActivity() {
 
     }
 
-    private fun loginWithEmail(){
+    // login to Firebase with email & password
+    private fun loginWithEmail() {
 
+        // collect all inputs of the user
         val getUsername = findViewById<EditText>(R.id.username_login)
         val getPassword = findViewById<EditText>(R.id.password_login)
         val username = getUsername.text.toString()
         val password = getPassword.text.toString()
 
-        if(username.isEmpty() || password.isEmpty()) {
+        // check if fields arent empty
+        if (username.isEmpty() || password.isEmpty()) {
             Toast.makeText(applicationContext, "Vide", Toast.LENGTH_SHORT).show()
             return
         }
@@ -56,16 +57,13 @@ class LoginEmailActivity : AppCompatActivity() {
         // login to account with firebase
         auth.signInWithEmailAndPassword(username, password).addOnCompleteListener {
             if (it.isSuccessful) {
-                Toast.makeText(applicationContext, "Connexion réussie $username $password", Toast.LENGTH_SHORT).show()
+                Toast.makeText(applicationContext, "Connexion réussie $username $password",Toast.LENGTH_SHORT).show()
                 val intent = Intent(applicationContext, MainActivity::class.java)
                 intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK.or(Intent.FLAG_ACTIVITY_CLEAR_TASK)
                 startActivity(intent)
             } else {
-
-                Toast.makeText(applicationContext, "Connexion échouée", Toast.LENGTH_SHORT)
-                    .show()
+                Toast.makeText(applicationContext, "Connexion échouée", Toast.LENGTH_SHORT).show()
             }
         }
     }
-
 }

@@ -10,7 +10,6 @@ import androidx.appcompat.app.AppCompatActivity
 import com.chatapp.MainActivity
 import com.chatapp.R
 import com.chatapp.account.avatar.AvatarChoiceActivity
-import com.chatapp.account.avatar.User
 import com.chatapp.account.login.LoginEmailActivity
 import com.chatapp.account.register.RegisterEmailActivity
 import com.google.android.gms.auth.api.signin.GoogleSignIn
@@ -21,13 +20,12 @@ import com.google.android.gms.common.api.ApiException
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.GoogleAuthProvider
 import com.google.firebase.auth.ktx.auth
-import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 
 class AccountMainActivity : AppCompatActivity() {
 
 
-    private lateinit var auth: FirebaseAuth
+    private  val auth = Firebase.auth
     private lateinit var googleSignInClient: GoogleSignInClient
 
 
@@ -35,19 +33,12 @@ class AccountMainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login_main)
 
-        auth = Firebase.auth
 
         /*          BUTTONS           */
-
-        findViewById<Button>(R.id.avatar_btn).setOnClickListener {
-            startActivity(Intent(applicationContext, AvatarChoiceActivity::class.java))
-        }
-
         // google button sign in
         findViewById<SignInButton>(R.id.google_button).setOnClickListener {
             createRequest()
         }
-
 
         // goto login with email button
         findViewById<Button>(R.id.login_email_button).setOnClickListener {
@@ -79,6 +70,7 @@ class AccountMainActivity : AppCompatActivity() {
         signIn()
     }
 
+    // open google sign in activity
     private fun signIn() {
         val intent = googleSignInClient.signInIntent
         startActivityForResult(intent, 123)
@@ -93,7 +85,6 @@ class AccountMainActivity : AppCompatActivity() {
 
             try {
                 val account = task.getResult(ApiException::class.java)!!
-                Log.d("ResultGoogleId", "firebaseAuthWithGoogle:" + account.id)
                 firebaseAuthWithGoogle(account.idToken!!)
                 Toast.makeText(applicationContext, "Connexion réussie", Toast.LENGTH_SHORT).show()
 
@@ -103,17 +94,17 @@ class AccountMainActivity : AppCompatActivity() {
         }
     }
 
+    // sign in with google
     private fun firebaseAuthWithGoogle(idToken: String) {
         val credential = GoogleAuthProvider.getCredential(idToken, null)
 
         auth.signInWithCredential(credential)
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
-                    // Sign in success, update UI with the signed-in user's information
-                    //saveUserInfo()
+                    // sign in success
                     startActivity(Intent(applicationContext, MainActivity::class.java))
                 } else {
-                    // If sign in fails, display a message to the user.
+                    // if sign in fails, display a message to the user.
                     Toast.makeText(applicationContext, "Connexion échouée", Toast.LENGTH_SHORT)
                         .show()
 
@@ -121,24 +112,6 @@ class AccountMainActivity : AppCompatActivity() {
             }
     }
 
-    private fun saveUserInfo(profileImage: String) {
-
-        val firebase = Firebase.auth.currentUser
-        val uid = Firebase.auth.uid ?: ""
-        Log.d(AvatarChoiceActivity.TAG, "uid: $uid")
-
-        val ref = Firebase.firestore.collection("/users").document("/$uid")
-        val user = User(firebase?.email, uid, profileImage)
-
-        ref.set(user)
-            .addOnSuccessListener {
-                Log.d(AvatarChoiceActivity.TAG, "user infos added")
-            }
-            .addOnFailureListener {
-                Log.d(AvatarChoiceActivity.TAG, "failed to add user infos")
-            }
-    }
 
 }
 
-class User(val email: String?, val uid: String, val profileImage: String)

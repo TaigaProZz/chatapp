@@ -2,7 +2,6 @@ package com.chatapp.account.register
 
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageView
@@ -12,50 +11,45 @@ import com.chatapp.R
 import com.chatapp.account.AccountMainActivity
 import com.chatapp.account.avatar.AvatarChoiceActivity
 import com.google.android.gms.common.SignInButton
-import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
+import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 
 class RegisterEmailActivity : AppCompatActivity() {
 
-    private lateinit var auth: FirebaseAuth
+    private val auth = Firebase.auth
+    private val db = Firebase.firestore
 
     companion object {
-        const val TAG = "RegisterActivity"
+        const val TAG = "TagRegisterActivity"
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register)
 
-        auth = Firebase.auth
-
-
-        val googleButton = findViewById<SignInButton>(R.id.google_button).setOnClickListener {
-
+        // TODO create acc with google on this activity
+        findViewById<SignInButton>(R.id.google_button).setOnClickListener {
         }
 
         // create an account when register button is pressed
-        val registerButton = findViewById<Button>(R.id.register_button).setOnClickListener {
+        findViewById<Button>(R.id.register_button).setOnClickListener {
             createAccountWithEmail()
         }
 
 
-        // goto
-        findViewById<ImageView>(R.id.backArrow).setOnClickListener {
-            startActivity(Intent(applicationContext, AccountMainActivity::class.java))
-        }
-
-        // back arrow
+        // go back arrow
         findViewById<ImageView>(R.id.backArrow).setOnClickListener {
             startActivity(Intent(applicationContext, AccountMainActivity::class.java))
         }
     }
 
 
-    // create account with firebase with email
+    // create account with firebase with email & password
     private fun createAccountWithEmail() {
 
+
+        // collect all inputs of the user
         val getUsername = findViewById<EditText>(R.id.username_register)
         val getEmail = findViewById<EditText>(R.id.email_register)
         val getPassword = findViewById<EditText>(R.id.password_register)
@@ -64,32 +58,42 @@ class RegisterEmailActivity : AppCompatActivity() {
         val email = getEmail.text.toString()
         val password = getPassword.text.toString()
 
-        if (username.isEmpty() || password.isEmpty()) {
+        // check if fields arent empty
+        if (username.isEmpty() || email.isEmpty() || password.isEmpty()) {
             Toast.makeText(applicationContext, "Vide", Toast.LENGTH_SHORT).show()
             return
         }
 
+        // create the account with firebase
         auth.createUserWithEmailAndPassword(email, password)
             .addOnCompleteListener {
                 if (it.isSuccessful) {
+                    val uid = auth.currentUser?.uid
+                    val user = User(username, email, password, uid!!)
 
-
+                    // add users data to the database
+                    val userRef = db.collection("users").document(uid)
+                    userRef.set(user)
                     Toast.makeText(applicationContext, "Inscription réussie", Toast.LENGTH_SHORT)
                         .show()
-                    startActivity(Intent(applicationContext, AvatarChoiceActivity::class.java))
+                    val intent = Intent(applicationContext, AvatarChoiceActivity::class.java)
+                    intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK.or(Intent.FLAG_ACTIVITY_CLEAR_TASK)
+                    startActivity(intent)
                     return@addOnCompleteListener
                 }
             }
             .addOnFailureListener {
-
-                Log.d(TAG, "$it" )
-
                 Toast.makeText(applicationContext, "Inscription failed. ", Toast.LENGTH_SHORT)
                     .show()
             }
     }
-
-
 }
 
-class User()
+
+class User(
+    val username: String,
+    val email: String?,
+    val password: String,
+    val uid: String,
+    val avatar: String = "tbd"
+)

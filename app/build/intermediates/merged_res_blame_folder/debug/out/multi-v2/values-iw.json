@@ -4,7 +4,24 @@
             "outputFile": "E:\\Dev\\android\\chatApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-iw\\values-iw.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\tanki\\.gradle\\caches\\transforms-3\\b0fa9cf872f3823cba423df0027b8006\\transformed\\play-services-basement-18.0.0\\res\\values-iw\\values.xml",
+                    "source": "C:\\Users\\tanki\\.gradle\\caches\\transforms-3\\4210a69dbcb12b54f9bc44ddbc22627a\\transformed\\preference-1.1.1\\res\\values-iw\\values-iw.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "105,174,258,333,458,627,708",
+                        "endColumns": "68,83,74,124,168,80,78",
+                        "endOffsets": "169,253,328,453,622,703,782"
+                    },
+                    "to": {
+                        "startLines": "57,59,108,110,113,114,115",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "5459,5593,9328,9478,9786,9955,10036",
+                        "endColumns": "68,83,74,124,168,80,78",
+                        "endOffsets": "5523,5672,9398,9598,9950,10031,10110"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\tanki\\.gradle\\caches\\transforms-3\\4ec57a03a9e633dfcdd223ecbf921c23\\transformed\\play-services-basement-18.0.0\\res\\values-iw\\values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -21,24 +38,24 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\tanki\\.gradle\\caches\\transforms-3\\a97e268bfb8739d4f4ff81f0ae8069b9\\transformed\\core-1.7.0\\res\\values-iw\\values-iw.xml",
+                    "source": "C:\\Users\\tanki\\.gradle\\caches\\transforms-3\\0de75bd3d2751f4805668e1944368e22\\transformed\\appcompat-1.4.1\\res\\values-iw\\values-iw.xml",
                     "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,210,310,418,502,604,720,799,877,968,1062,1156,1250,1350,1443,1538,1631,1722,1814,1895,2000,2103,2201,2306,2408,2510,2664,2761",
+                        "endColumns": "104,99,107,83,101,115,78,77,90,93,93,93,99,92,94,92,90,91,80,104,102,97,104,101,101,153,96,81",
+                        "endOffsets": "205,305,413,497,599,715,794,872,963,1057,1151,1245,1345,1438,1533,1626,1717,1809,1890,1995,2098,2196,2301,2403,2505,2659,2756,2838"
                     },
                     "to": {
-                        "startLines": "112",
-                        "startColumns": "4",
-                        "startOffsets": "9685",
-                        "endColumns": "100",
-                        "endOffsets": "9781"
+                        "startLines": "8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,111",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "369,474,574,682,766,868,984,1063,1141,1232,1326,1420,1514,1614,1707,1802,1895,1986,2078,2159,2264,2367,2465,2570,2672,2774,2928,9603",
+                        "endColumns": "104,99,107,83,101,115,78,77,90,93,93,93,99,92,94,92,90,91,80,104,102,97,104,101,101,153,96,81",
+                        "endOffsets": "469,569,677,761,863,979,1058,1136,1227,1321,1415,1509,1609,1702,1797,1890,1981,2073,2154,2259,2362,2460,2565,2667,2769,2923,3020,9680"
                     }
                 },
                 {
-                    "source": "C:\\Users\\tanki\\.gradle\\caches\\transforms-3\\38c2f6dfe72c70dca657b319ede40fc9\\transformed\\play-services-base-18.0.1\\res\\values-iw\\values.xml",
+                    "source": "C:\\Users\\tanki\\.gradle\\caches\\transforms-3\\7f99f6b67a9871ccc667e584d6108dae\\transformed\\play-services-base-18.0.1\\res\\values-iw\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -55,7 +72,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\tanki\\.gradle\\caches\\transforms-3\\b500f575d2de3a5cbb84eb1ec97cac10\\transformed\\material-1.5.0\\res\\values-iw\\values-iw.xml",
+                    "source": "C:\\Users\\tanki\\.gradle\\caches\\transforms-3\\159938b0043343ca6af37c3367f7a16d\\transformed\\material-1.5.0\\res\\values-iw\\values-iw.xml",
                     "from": {
                         "startLines": "2,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -74,37 +91,20 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\tanki\\.gradle\\caches\\transforms-3\\969ae17f930492dcdbc28547ff3623b7\\transformed\\preference-1.1.1\\res\\values-iw\\values-iw.xml",
+                    "source": "C:\\Users\\tanki\\.gradle\\caches\\transforms-3\\eb433f90ece2b094496c69f692a36091\\transformed\\core-1.7.0\\res\\values-iw\\values-iw.xml",
                     "from": {
-                        "startLines": "2,3,4,5,6,7,8",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "105,174,258,333,458,627,708",
-                        "endColumns": "68,83,74,124,168,80,78",
-                        "endOffsets": "169,253,328,453,622,703,782"
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
                     },
                     "to": {
-                        "startLines": "57,59,108,110,113,114,115",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "5459,5593,9328,9478,9786,9955,10036",
-                        "endColumns": "68,83,74,124,168,80,78",
-                        "endOffsets": "5523,5672,9398,9598,9950,10031,10110"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\tanki\\.gradle\\caches\\transforms-3\\173b8d6cca050869f3b54d85d5e89275\\transformed\\appcompat-1.4.1\\res\\values-iw\\values-iw.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,210,310,418,502,604,720,799,877,968,1062,1156,1250,1350,1443,1538,1631,1722,1814,1895,2000,2103,2201,2306,2408,2510,2664,2761",
-                        "endColumns": "104,99,107,83,101,115,78,77,90,93,93,93,99,92,94,92,90,91,80,104,102,97,104,101,101,153,96,81",
-                        "endOffsets": "205,305,413,497,599,715,794,872,963,1057,1151,1245,1345,1438,1533,1626,1717,1809,1890,1995,2098,2196,2301,2403,2505,2659,2756,2838"
-                    },
-                    "to": {
-                        "startLines": "8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,111",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "369,474,574,682,766,868,984,1063,1141,1232,1326,1420,1514,1614,1707,1802,1895,1986,2078,2159,2264,2367,2465,2570,2672,2774,2928,9603",
-                        "endColumns": "104,99,107,83,101,115,78,77,90,93,93,93,99,92,94,92,90,91,80,104,102,97,104,101,101,153,96,81",
-                        "endOffsets": "469,569,677,761,863,979,1058,1136,1227,1321,1415,1509,1609,1702,1797,1890,1981,2073,2154,2259,2362,2460,2565,2667,2769,2923,3020,9680"
+                        "startLines": "112",
+                        "startColumns": "4",
+                        "startOffsets": "9685",
+                        "endColumns": "100",
+                        "endOffsets": "9781"
                     }
                 }
             ]

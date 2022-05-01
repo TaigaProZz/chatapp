@@ -22,7 +22,6 @@ class MainActivity : AppCompatActivity() {
 
     override fun onStart() {
         super.onStart()
-
         checkIfUserIsConnected()
 
     }
@@ -38,6 +37,7 @@ class MainActivity : AppCompatActivity() {
 
     }
 
+    // if user is not connected with Firebase, force go to AccountMainActivity
     private fun checkIfUserIsConnected(){
         val auth = Firebase.auth
         val currentUser = auth.currentUser
@@ -50,6 +50,8 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+
+    // menu settings
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.nav_menu, menu)
         return super.onCreateOptionsMenu(menu)

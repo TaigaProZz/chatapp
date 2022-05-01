@@ -16,11 +16,13 @@ import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 import com.google.firebase.storage.ktx.storage
 import de.hdodenhof.circleimageview.CircleImageView
-import java.util.*
 
 class AvatarChoiceActivity : AppCompatActivity() {
 
     private lateinit var root: ActivityChoiceAvatarBinding
+    private var db = Firebase.firestore
+    private val auth = Firebase.auth
+
 
     companion object {
         const val TAG = "AvatarChoice"
@@ -32,12 +34,9 @@ class AvatarChoiceActivity : AppCompatActivity() {
         val view = root.root
         setContentView(view)
 
-        supportActionBar?.title = "Avatar"
-        val auth = Firebase.auth
 
-        // show the username of the user
-        val getUsernameFromFirebase = auth.currentUser?.displayName
-        root.username.text = getUsernameFromFirebase
+        // toolbar settings
+        supportActionBar?.title = "Avatar"
 
 
         // open photo gallery from avatar circle button
@@ -51,7 +50,6 @@ class AvatarChoiceActivity : AppCompatActivity() {
 
 
         /*          BUTTONS           */
-
         // skip the avatar choice btn
         root.skipAvatarChoiceBtn.setOnClickListener {
             startActivity(Intent(applicationContext, MainActivity::class.java))
@@ -77,8 +75,6 @@ class AvatarChoiceActivity : AppCompatActivity() {
             selectedImage = data.data
 
             val bitmap = MediaStore.Images.Media.getBitmap(contentResolver, selectedImage)
-            Log.d(TAG, "avatar was selected")
-
             // change the image with the selected one
             findViewById<CircleImageView>(R.id.avatar_avatar_final).setImageBitmap(bitmap)
             // set the button invisible to see circle avatar
@@ -87,48 +83,35 @@ class AvatarChoiceActivity : AppCompatActivity() {
     }
 
 
+    // upload the avatar to Firebase storage
     private fun uploadInfoToFirebase() {
-
         if (selectedImage == null) return
-
-        val filename = UUID.randomUUID().toString()
-        val ref = Firebase.storage.getReference("/images/$filename")
+        // collect uid and image directory from Firebase Storage
+        val uid = Firebase.auth.uid
+        val ref = Firebase.storage.getReference("/images/$uid")
 
         // put the selectedImage on the database
         ref.putFile(selectedImage!!)
             .addOnSuccessListener {
-                Log.d(TAG, "avatar on database: ${it.metadata?.path}")
                 ref.downloadUrl.addOnSuccessListener { url ->
-                    Log.d(TAG, "uri path: ${url.toString()}")
-
-                    saveUserInfo(url.toString())
+                    // save avatar info to Firebase Database
+                    saveAvatarInfo(url.toString())
                 }
             }
             .addOnFailureListener {
-                Log.d(TAG, "Failed to upload image to storage: ${it.message}")
                 return@addOnFailureListener
             }
     }
 
 
-    private fun saveUserInfo(profileImage: String) {
+    private fun saveAvatarInfo(avatar: String) {
+        val uid = Firebase.auth.uid
+        val ref = db.collection("users").document(uid!!)
 
-        val firebase = Firebase.auth.currentUser
-        val uid = Firebase.auth.uid ?: ""
-        Log.d(TAG, "uid: $uid")
+        // put the link of the avatar from Firebase Storage to the user infos of Database
+        ref.update("avatar", avatar)
 
-        val ref = Firebase.firestore.collection("/users").document("/$uid")
-        val user = User(firebase?.email, uid, profileImage)
-
-        ref.set(user)
-            .addOnSuccessListener {
-                Log.d(TAG, "user infos added")
-            }
-            .addOnFailureListener {
-                Log.d(TAG, "failed to add user infos")
-            }
     }
 }
 
 
-class User(val email: String?, val uid: String, val profileImage: String)

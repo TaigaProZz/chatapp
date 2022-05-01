@@ -29,7 +29,7 @@
         app:srcCompat="@drawable/ic_launcher_foreground" />
 
     <TextView
-        android:id="@+id/username_user_profile"
+        android:id="@+id/email_user_profile"
         android:layout_width="255dp"
         android:layout_height="64dp"
         android:layout_marginTop="92dp"
@@ -39,14 +39,38 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/avatar_user_profile" />
 
+    <TextView
+        android:id="@+id/username_user_profile"
+        android:layout_width="255dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text="@string/username_user_profile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email_user_profile" />
+
     <ImageView
         android:id="@+id/editBtn_email_profile_user"
         android:layout_width="43dp"
         android:layout_height="28dp"
         android:layout_marginStart="7dp"
-        app:layout_constraintBottom_toBottomOf="@+id/username_user_profile"
-        app:layout_constraintStart_toEndOf="@+id/username_user_profile"
-        app:layout_constraintTop_toTopOf="@+id/username_user_profile"
+        app:layout_constraintBottom_toBottomOf="@+id/email_user_profile"
+        app:layout_constraintStart_toEndOf="@+id/email_user_profile"
+        app:layout_constraintTop_toTopOf="@+id/email_user_profile"
+        app:srcCompat="@android:drawable/ic_menu_edit" />
+
+    <ImageView
+        android:id="@+id/save_username"
+        android:layout_width="43dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="7dp"
+        app:layout_constraintBottom_toBottomOf="@+id/username_user_profile2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.035"
+        app:layout_constraintStart_toEndOf="@+id/username_user_profile2"
+        app:layout_constraintTop_toTopOf="@+id/username_user_profile2"
+        app:layout_constraintVertical_bias="0.527"
         app:srcCompat="@android:drawable/ic_menu_edit" />
 
 
