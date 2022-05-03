@@ -16,7 +16,6 @@ drawable avatar_circle
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 id avatar_avatar_final
-id avatar_btn
 id avatar_circle
 id avatar_user_profile
 id backArrow

@@ -2732,7 +2732,6 @@ int id autoComplete 0x7f090057
 int id autoCompleteToEnd 0x7f090058
 int id autoCompleteToStart 0x7f090059
 int id avatar_avatar_final 0x7f09005a
-int id avatar_btn 0x7f09005b
 int id avatar_circle 0x7f09005c
 int id avatar_user_profile 0x7f09005d
 int id backArrow 0x7f09005e

@@ -6,8 +6,10 @@
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/8c1b24f441f534e87e46ef177ff60de6/transformed/rxandroid-2.0.2/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/0433dec7abae42262669376e5b6f8a89/transformed/rxandroid-2.0.2/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/3bf0bb5613bc3cc14213a00e1cdee883/transformed/rxandroid-2.0.2/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/3bf0bb5613bc3cc14213a00e1cdee883/transformed/rxandroid-2.0.2/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/3bf0bb5613bc3cc14213a00e1cdee883/transformed/rxandroid-2.0.2/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/49c6a2f21239878d0d2849b1eecb8699/transformed/jetified-rxandroid-2.0.2/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/e5c698b1490ac9b9865fbd585cc2c4fd/transformed/jetified-rxandroid-2.0.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/e5c698b1490ac9b9865fbd585cc2c4fd/transformed/jetified-rxandroid-2.0.2/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/e5c698b1490ac9b9865fbd585cc2c4fd/transformed/jetified-rxandroid-2.0.2/res" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.reactivex.rxjava2/rxandroid/2.0.2/fcdc5a3422c57b141000facfa2c332d3a26d2ad4/rxandroid-2.0.2-javadoc.jar!/" />

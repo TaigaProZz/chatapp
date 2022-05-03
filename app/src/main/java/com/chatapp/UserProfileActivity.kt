@@ -27,7 +27,7 @@ class UserProfileActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.user_profile_activity)
-        
+
         // toolbar settings
         supportActionBar?.title = "Profil"
 

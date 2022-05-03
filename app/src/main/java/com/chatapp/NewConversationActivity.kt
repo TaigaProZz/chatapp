@@ -11,7 +11,9 @@ class NewConversationActivity : AppCompatActivity() {
 
         // recycler view settings
         val recyclerView = findViewById<RecyclerView>(R.id.recycler_view_newconversation)
-        recyclerView.adapter
+
+        val adapter = GroupieAdapter
+        recyclerView.adapter = adapter
 
 
     }
