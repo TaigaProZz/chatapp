@@ -17,6 +17,7 @@ drawable ic_launcher_background
 drawable ic_launcher_foreground
 id avatar_avatar_final
 id avatar_circle
+id avatar_user_adapter
 id avatar_user_profile
 id backArrow
 id confirm_avatar_button
@@ -43,13 +44,14 @@ id sendMsgBtn
 id sign_out_button
 id skip_avatar_choice_btn
 id taskAdapterText
+id textView2
 id toolbar
 id user_profile_menu
 id username
 id username_login
 id username_register
+id username_user_adapter
 id username_user_profile
-id username_user_profile2
 layout activity_chat
 layout activity_choice_avatar
 layout activity_email_login
@@ -58,7 +60,9 @@ layout activity_main
 layout activity_new_conversation
 layout activity_register
 layout chat_adapter
+layout main_activity_adapter
 layout user_profile_activity
+layout users_new_conversation_adapter
 menu nav_menu
 mipmap ic_launcher
 mipmap ic_launcher_round
@@ -75,6 +79,7 @@ string google_crash_reporting_api_key
 string google_storage_bucket
 string invalid_password
 string invalid_username
+string last_message_adapter
 string login_failed
 string no_pics_text
 string params
@@ -90,6 +95,7 @@ string sign_out
 string title_activity_login
 string title_activity_maps
 string title_activity_settings
+string username
 string username_connected
 string username_register
 string username_user_profile

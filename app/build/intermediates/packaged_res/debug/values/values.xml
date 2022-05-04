@@ -31,6 +31,7 @@
     <string name="google_storage_bucket" translatable="false">chat-app-84489.appspot.com</string>
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="invalid_username">Not a valid username</string>
+    <string name="last_message_adapter">Last Message....</string>
     <string name="login_failed">"Login failed"</string>
     <string name="no_pics_text">Passer cette étape</string>
     <string name="params">Settings</string>
@@ -46,6 +47,7 @@
     <string name="title_activity_login">LoginActivity</string>
     <string name="title_activity_maps">MapsActivity</string>
     <string name="title_activity_settings">SettingsActivity</string>
+    <string name="username">Username</string>
     <string name="username_connected">username</string>
     <string name="username_register">Username</string>
     <string name="username_user_profile"> </string>

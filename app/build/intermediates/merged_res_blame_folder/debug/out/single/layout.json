@@ -4,16 +4,16 @@
         "source": "E:\\Dev\\android\\chatApp\\app\\src\\main\\res\\layout\\activity_register.xml"
     },
     {
+        "merged": "E:\\Dev\\android\\chatApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\users_adapter.xml",
+        "source": "E:\\Dev\\android\\chatApp\\app\\src\\main\\res\\layout\\users_adapter.xml"
+    },
+    {
         "merged": "E:\\Dev\\android\\chatApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_chat.xml",
         "source": "E:\\Dev\\android\\chatApp\\app\\src\\main\\res\\layout\\activity_chat.xml"
     },
     {
-        "merged": "E:\\Dev\\android\\chatApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_email_login.xml",
-        "source": "E:\\Dev\\android\\chatApp\\app\\src\\main\\res\\layout\\activity_email_login.xml"
-    },
-    {
-        "merged": "E:\\Dev\\android\\chatApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_login_main.xml",
-        "source": "E:\\Dev\\android\\chatApp\\app\\src\\main\\res\\layout\\activity_login_main.xml"
+        "merged": "E:\\Dev\\android\\chatApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\users_new_message_adapter.xml",
+        "source": "E:\\Dev\\android\\chatApp\\app\\src\\main\\res\\layout\\users_new_message_adapter.xml"
     },
     {
         "merged": "E:\\Dev\\android\\chatApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_choice_avatar.xml",
@@ -28,8 +28,24 @@
         "source": "E:\\Dev\\android\\chatApp\\app\\src\\main\\res\\layout\\activity_main.xml"
     },
     {
+        "merged": "E:\\Dev\\android\\chatApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\main_activity_adapter.xml",
+        "source": "E:\\Dev\\android\\chatApp\\app\\src\\main\\res\\layout\\main_activity_adapter.xml"
+    },
+    {
+        "merged": "E:\\Dev\\android\\chatApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_email_login.xml",
+        "source": "E:\\Dev\\android\\chatApp\\app\\src\\main\\res\\layout\\activity_email_login.xml"
+    },
+    {
+        "merged": "E:\\Dev\\android\\chatApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_login_main.xml",
+        "source": "E:\\Dev\\android\\chatApp\\app\\src\\main\\res\\layout\\activity_login_main.xml"
+    },
+    {
         "merged": "E:\\Dev\\android\\chatApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\chat_adapter.xml",
         "source": "E:\\Dev\\android\\chatApp\\app\\src\\main\\res\\layout\\chat_adapter.xml"
+    },
+    {
+        "merged": "E:\\Dev\\android\\chatApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\users_new_conversation_adapter.xml",
+        "source": "E:\\Dev\\android\\chatApp\\app\\src\\main\\res\\layout\\users_new_conversation_adapter.xml"
     },
     {
         "merged": "E:\\Dev\\android\\chatApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\user_profile_activity.xml",

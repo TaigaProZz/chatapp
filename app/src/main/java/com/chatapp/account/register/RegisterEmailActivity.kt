@@ -9,16 +9,19 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.chatapp.R
 import com.chatapp.account.AccountMainActivity
+import com.chatapp.account.User
 import com.chatapp.account.avatar.AvatarChoiceActivity
 import com.google.android.gms.common.SignInButton
 import com.google.firebase.auth.ktx.auth
-import com.google.firebase.firestore.ktx.firestore
+import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
 
 class RegisterEmailActivity : AppCompatActivity() {
 
     private val auth = Firebase.auth
-    private val db = Firebase.firestore
+    private val db = Firebase.database("https://chat-app-84489-default-rtdb.europe-west1.firebasedatabase.app")
+    // collect all inputs of the user
+
 
     companion object {
         const val TAG = "TagRegisterActivity"
@@ -45,11 +48,11 @@ class RegisterEmailActivity : AppCompatActivity() {
     }
 
 
+
     // create account with firebase with email & password
     private fun createAccountWithEmail() {
 
 
-        // collect all inputs of the user
         val getUsername = findViewById<EditText>(R.id.username_register)
         val getEmail = findViewById<EditText>(R.id.email_register)
         val getPassword = findViewById<EditText>(R.id.password_register)
@@ -68,12 +71,8 @@ class RegisterEmailActivity : AppCompatActivity() {
         auth.createUserWithEmailAndPassword(email, password)
             .addOnCompleteListener {
                 if (it.isSuccessful) {
-                    val uid = auth.currentUser?.uid
-                    val user = User(username, email, password, uid!!)
 
-                    // add users data to the database
-                    val userRef = db.collection("users").document(uid)
-                    userRef.set(user)
+                    saveToDatabase()
                     Toast.makeText(applicationContext, "Inscription réussie", Toast.LENGTH_SHORT)
                         .show()
                     val intent = Intent(applicationContext, AvatarChoiceActivity::class.java)
@@ -87,13 +86,24 @@ class RegisterEmailActivity : AppCompatActivity() {
                     .show()
             }
     }
+
+    private fun saveToDatabase() {
+
+        val getUsername = findViewById<EditText>(R.id.username_register)
+        val getEmail = findViewById<EditText>(R.id.email_register)
+        val getPassword = findViewById<EditText>(R.id.password_register)
+
+        val username = getUsername.text.toString()
+        val email = getEmail.text.toString()
+        val password = getPassword.text.toString()
+
+        val uid = auth.currentUser?.uid
+        val user = User(username, email, password, uid!!)
+
+        // add users data to the database
+        val userRef = db.getReference("/users/$uid")
+        userRef.setValue(user)
+    }
 }
 
 
-class User(
-    val username: String,
-    val email: String?,
-    val password: String,
-    val uid: String,
-    val avatar: String = "tbd"
-)

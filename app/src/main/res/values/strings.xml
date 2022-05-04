@@ -26,6 +26,8 @@
     <string name="title_activity_settings">SettingsActivity</string>
 
     <string name="username_user_profile"> </string>
+    <string name="username">Username</string>
+    <string name="last_message_adapter">Last Message....</string>
 
 
 </resources>

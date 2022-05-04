@@ -7,9 +7,11 @@ import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.chatapp.account.AccountMainActivity
+import com.chatapp.adapters.MainActivityAdapter
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
+import com.xwray.groupie.GroupieAdapter
 
 
 class MainActivity : AppCompatActivity() {
@@ -31,14 +33,17 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val recyclerview = findViewById<RecyclerView>(R.id.recycler_view_main)
-        recyclerview.adapter
-
+        val groupieAdapter = GroupieAdapter()
+        //val adapterItem = MainActivityAdapter()
+        //groupieAdapter.add(adapterItem)
+        recyclerview.adapter = groupieAdapter
 
 
     }
 
+
     // if user is not connected with Firebase, force go to AccountMainActivity
-    private fun checkIfUserIsConnected(){
+    private fun checkIfUserIsConnected() {
         val auth = Firebase.auth
         val currentUser = auth.currentUser
 
@@ -59,7 +64,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
 
-        when(item.itemId){
+        when (item.itemId) {
             R.id.new_conversation_menu ->
                 startActivity(Intent(applicationContext, NewConversationActivity::class.java))
 
@@ -69,6 +74,4 @@ class MainActivity : AppCompatActivity() {
         return super.onOptionsItemSelected(item)
 
     }
-
-
 }

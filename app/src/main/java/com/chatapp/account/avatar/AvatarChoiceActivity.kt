@@ -12,6 +12,7 @@ import com.chatapp.MainActivity
 import com.chatapp.R
 import com.chatapp.databinding.ActivityChoiceAvatarBinding
 import com.google.firebase.auth.ktx.auth
+import com.google.firebase.database.ktx.database
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 import com.google.firebase.storage.ktx.storage
@@ -20,7 +21,7 @@ import de.hdodenhof.circleimageview.CircleImageView
 class AvatarChoiceActivity : AppCompatActivity() {
 
     private lateinit var root: ActivityChoiceAvatarBinding
-    private var db = Firebase.firestore
+    private var db = Firebase.database("https://chat-app-84489-default-rtdb.europe-west1.firebasedatabase.app")
     private val auth = Firebase.auth
 
 
@@ -106,10 +107,10 @@ class AvatarChoiceActivity : AppCompatActivity() {
 
     private fun saveAvatarInfo(avatar: String) {
         val uid = Firebase.auth.uid
-        val ref = db.collection("users").document(uid!!)
+        val ref = db.getReference("users/$uid")
 
         // put the link of the avatar from Firebase Storage to the user infos of Database
-        ref.update("avatar", avatar)
+        ref.child("avatar").setValue(avatar)
 
     }
 }

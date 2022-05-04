@@ -65,11 +65,11 @@
         android:layout_width="43dp"
         android:layout_height="28dp"
         android:layout_marginStart="7dp"
-        app:layout_constraintBottom_toBottomOf="@+id/username_user_profile2"
+        app:layout_constraintBottom_toBottomOf="@+id/username_user_profile"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.035"
-        app:layout_constraintStart_toEndOf="@+id/username_user_profile2"
-        app:layout_constraintTop_toTopOf="@+id/username_user_profile2"
+        app:layout_constraintStart_toEndOf="@+id/username_user_profile"
+        app:layout_constraintTop_toTopOf="@+id/username_user_profile"
         app:layout_constraintVertical_bias="0.527"
         app:srcCompat="@android:drawable/ic_menu_edit" />
 

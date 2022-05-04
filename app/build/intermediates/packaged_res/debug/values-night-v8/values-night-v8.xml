@@ -9,6 +9,7 @@
     <string name="choose_pic_text">Choisir une photo</string>
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="invalid_username">Not a valid username</string>
+    <string name="last_message_adapter">Last Message....</string>
     <string name="login_failed">"Login failed"</string>
     <string name="no_pics_text">Passer cette étape</string>
     <string name="params">Settings</string>
@@ -22,22 +23,23 @@
     <string name="sign_out">Déconnexion</string>
     <string name="title_activity_login">LoginActivity</string>
     <string name="title_activity_maps">MapsActivity</string>
+    <string name="username">Username</string>
     <string name="username_connected">username</string>
     <string name="username_register">Username</string>
     <string name="username_user_profile"/>
     <string name="web_client_id" translatable="false">859618026888-98mt718g22e8l8gv328gqs897vv2bqmm.apps.googleusercontent.com</string>
     <string name="welcome">"Welcome !"</string>
     <style name="Theme.ChatApp" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
-        <!-- Primary brand color. -->
+        
         <item name="colorPrimary">@color/purple_200</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
         <item name="colorOnPrimary">@color/black</item>
-        <!-- Secondary brand color. -->
+        
         <item name="colorSecondary">@color/teal_200</item>
         <item name="colorSecondaryVariant">@color/teal_200</item>
         <item name="colorOnSecondary">@color/black</item>
-        <!-- Status bar color. -->
+        
         <item name="android:statusBarColor" ns1:targetApi="l">?attr/colorPrimaryVariant</item>
-        <!-- Customize your theme here. -->
+        
     </style>
 </resources>

@@ -11,7 +11,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.bumptech.glide.Glide
 import com.chatapp.account.AccountMainActivity
 import com.google.firebase.auth.ktx.auth
-import com.google.firebase.firestore.ktx.firestore
+import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
 
 class UserProfileActivity : AppCompatActivity() {
@@ -21,8 +21,25 @@ class UserProfileActivity : AppCompatActivity() {
     }
 
     private val auth = Firebase.auth
-    private var db = Firebase.firestore
+    private var db =
+        Firebase.database("https://chat-app-84489-default-rtdb.europe-west1.firebasedatabase.app")
+    private val uid = auth.uid
 
+
+    override fun onStart() {
+        super.onStart()
+
+        // show user username
+        getUsernameFromFirebase()
+
+        // show user avatar
+        getAvatarFromFirebase()
+
+        // show user email
+        val userEmail = findViewById<TextView>(R.id.email_user_profile)
+        val email = auth.currentUser?.email
+        userEmail.text = email
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -31,47 +48,12 @@ class UserProfileActivity : AppCompatActivity() {
         // toolbar settings
         supportActionBar?.title = "Profil"
 
-        // show user email
-        val userEmail = findViewById<TextView>(R.id.email_user_profile)
-        val email = auth.currentUser?.email
-        userEmail.text = email
 
-        // show user username
-        db.collection("users")
-            .get()
-            .addOnSuccessListener {
-                for (document in it) {
-                    val usernameUser = findViewById<TextView>(R.id.username_user_profile)
-                    // collect username from Firebase and display it
-                    val usernameFromDatabase = document.data["username"].toString()
-                    usernameUser.text = usernameFromDatabase
-                }
-            }
-            .addOnFailureListener {
-                Log.d("TAG", "Can't get username from firebase")
-            }
-
-        // TODO change the username of the user
+        // TODO
+        //  Open a pop up with EDIT TEXT to change the username of the user
         // findViewById<ImageView>(R.id.save_username).setOnClickListener {
         //     userRef.update("username", usernameUser)
         // }
-
-
-        // show user's avatar
-        val avatarDisplay = findViewById<ImageView>(R.id.avatar_user_profile)
-        db.collection("users")
-            .get()
-            .addOnSuccessListener {
-                for (document in it) {
-                    val imageFromFirebase = document.data["avatar"]
-                    Glide.with(this).load(imageFromFirebase).into(avatarDisplay)
-                    Log.d("TAG", "Image displayed on user profile: $imageFromFirebase")
-
-                }
-            }
-            .addOnFailureListener {
-                Log.d("TAG", "Can't get image from firebase")
-            }
 
 
         /*          BUTTONS           */
@@ -82,6 +64,42 @@ class UserProfileActivity : AppCompatActivity() {
             startActivity(Intent(applicationContext, AccountMainActivity::class.java))
         }
     }
+
+    private fun getAvatarFromFirebase() {
+        // show user's avatar
+        val avatarDisplay = findViewById<ImageView>(R.id.avatar_user_profile)
+
+        db.getReference("users").child(uid!!).child("avatar")
+            .get()
+            .addOnSuccessListener {
+
+                val imageFromFirebase = it.value
+                Glide.with(applicationContext).load(imageFromFirebase).into(avatarDisplay)
+                Log.d("TAG", "Image displayed on user profile: $imageFromFirebase")
+
+            }
+            .addOnFailureListener {
+                Log.d("TAG", "Can't get image from firebase")
+            }
+    }
+
+    private fun getUsernameFromFirebase() {
+        db.getReference("users").child(uid!!).child("username")
+            .get()
+            .addOnSuccessListener {
+                Log.d(TAG, "display ${it.value}")
+
+                val usernameUser = findViewById<TextView>(R.id.username_user_profile)
+                // collect username from Firebase and display it
+                val usernameFromDatabase = it.value.toString()
+                usernameUser.text = usernameFromDatabase
+
+            }
+            .addOnFailureListener {
+                Log.d("TAG", "Can't get username from firebase")
+            }
+    }
+
 }
 
 

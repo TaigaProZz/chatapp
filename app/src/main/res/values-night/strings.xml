@@ -25,6 +25,8 @@
     <string name="username_register">Username</string>
     <string name="params">Settings</string>
     <string name="username_user_profile" />
+    <string name="username">Username</string>
+    <string name="last_message_adapter">Last Message....</string>
 
 
 </resources>
