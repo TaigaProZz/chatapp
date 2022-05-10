@@ -1,5 +1,9 @@
 [
     {
+        "merged": "E:\\Dev\\android\\chatApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\chat_user_row.xml",
+        "source": "E:\\Dev\\android\\chatApp\\app\\src\\main\\res\\layout\\chat_user_row.xml"
+    },
+    {
         "merged": "E:\\Dev\\android\\chatApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_register.xml",
         "source": "E:\\Dev\\android\\chatApp\\app\\src\\main\\res\\layout\\activity_register.xml"
     },
@@ -28,6 +32,10 @@
         "source": "E:\\Dev\\android\\chatApp\\app\\src\\main\\res\\layout\\activity_main.xml"
     },
     {
+        "merged": "E:\\Dev\\android\\chatApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\chat_friend_row.xml",
+        "source": "E:\\Dev\\android\\chatApp\\app\\src\\main\\res\\layout\\chat_friend_row.xml"
+    },
+    {
         "merged": "E:\\Dev\\android\\chatApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\main_activity_adapter.xml",
         "source": "E:\\Dev\\android\\chatApp\\app\\src\\main\\res\\layout\\main_activity_adapter.xml"
     },
@@ -50,5 +58,9 @@
     {
         "merged": "E:\\Dev\\android\\chatApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\user_profile_activity.xml",
         "source": "E:\\Dev\\android\\chatApp\\app\\src\\main\\res\\layout\\user_profile_activity.xml"
+    },
+    {
+        "merged": "E:\\Dev\\android\\chatApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\testlayout.xml",
+        "source": "E:\\Dev\\android\\chatApp\\app\\src\\main\\res\\layout\\testlayout.xml"
     }
 ]

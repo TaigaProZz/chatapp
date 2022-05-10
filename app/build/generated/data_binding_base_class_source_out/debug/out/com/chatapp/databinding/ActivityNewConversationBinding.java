@@ -20,12 +20,12 @@ public final class ActivityNewConversationBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final RecyclerView recyclerViewNewconversation;
+  public final RecyclerView recyclerViewNewConversation;
 
   private ActivityNewConversationBinding(@NonNull ConstraintLayout rootView,
-      @NonNull RecyclerView recyclerViewNewconversation) {
+      @NonNull RecyclerView recyclerViewNewConversation) {
     this.rootView = rootView;
-    this.recyclerViewNewconversation = recyclerViewNewconversation;
+    this.recyclerViewNewConversation = recyclerViewNewConversation;
   }
 
   @Override
@@ -55,14 +55,14 @@ public final class ActivityNewConversationBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.recycler_view_newconversation;
-      RecyclerView recyclerViewNewconversation = ViewBindings.findChildViewById(rootView, id);
-      if (recyclerViewNewconversation == null) {
+      id = R.id.recyclerView_NewConversation;
+      RecyclerView recyclerViewNewConversation = ViewBindings.findChildViewById(rootView, id);
+      if (recyclerViewNewConversation == null) {
         break missingId;
       }
 
       return new ActivityNewConversationBinding((ConstraintLayout) rootView,
-          recyclerViewNewconversation);
+          recyclerViewNewConversation);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

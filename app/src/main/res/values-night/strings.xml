@@ -27,6 +27,9 @@
     <string name="username_user_profile" />
     <string name="username">Username</string>
     <string name="last_message_adapter">Last Message....</string>
+    <string name="edit_text_hint_chat">Entrez votre message</string>
+    <string name="message">MessageMessageMessageMessageMessageMessageMessageMessageMessageMessage
+        MessageMessageMessageMessageMessageMessageMessageMee</string>
 
 
 </resources>

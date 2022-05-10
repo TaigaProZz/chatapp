@@ -8,7 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.chatapp.account.AccountMainActivity
 import com.chatapp.adapters.MainActivityAdapter
-import com.google.firebase.auth.FirebaseAuth
+import com.chatapp.conversation.NewConversationActivity
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 import com.xwray.groupie.GroupieAdapter
@@ -16,7 +16,6 @@ import com.xwray.groupie.GroupieAdapter
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var auth: FirebaseAuth
 
     companion object {
         const val TAG = "MainActivityAvatar"
@@ -32,11 +31,15 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        // toolbar settings
+        supportActionBar?.title = "ChatApp"
+
         val recyclerview = findViewById<RecyclerView>(R.id.recycler_view_main)
         val groupieAdapter = GroupieAdapter()
-        //val adapterItem = MainActivityAdapter()
-        //groupieAdapter.add(adapterItem)
+        val adapterItem = MainActivityAdapter()
         recyclerview.adapter = groupieAdapter
+
+        groupieAdapter.add(adapterItem)
 
 
     }

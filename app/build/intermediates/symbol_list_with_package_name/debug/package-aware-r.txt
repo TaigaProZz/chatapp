@@ -1371,7 +1371,9 @@ color error_color_material_dark
 color error_color_material_light
 color foreground_material_dark
 color foreground_material_light
+color friend_message_border
 color grey
+color grey2
 color highlighted_text_material_dark
 color highlighted_text_material_light
 color m3_appbar_overlay_color
@@ -1875,6 +1877,7 @@ color test_mtrl_calendar_day
 color test_mtrl_calendar_day_selected
 color tooltip_background_dark
 color tooltip_background_light
+color user_message_border
 color white
 dimen abc_action_bar_content_inset_material
 dimen abc_action_bar_content_inset_with_nav
@@ -2630,6 +2633,9 @@ drawable material_ic_keyboard_arrow_previous_black_24dp
 drawable material_ic_keyboard_arrow_right_black_24dp
 drawable material_ic_menu_arrow_down_black_24dp
 drawable material_ic_menu_arrow_up_black_24dp
+drawable message_avatar_circle
+drawable message_circle_border_friend
+drawable message_circle_border_user
 drawable mtrl_dialog_background
 drawable mtrl_dropdown_arrow
 drawable mtrl_ic_arrow_drop_down
@@ -2752,7 +2758,9 @@ id autoCompleteToEnd
 id autoCompleteToStart
 id avatar_avatar_final
 id avatar_circle
+id avatar_friend_message
 id avatar_user_adapter
+id avatar_user_message
 id avatar_user_profile
 id backArrow
 id banner_body
@@ -2966,6 +2974,8 @@ id material_value_index
 id media_actions
 id message
 id message_body
+id message_body_friend
+id message_body_user
 id message_title
 id middle
 id mini
@@ -3053,10 +3063,10 @@ id progress_horizontal
 id radio
 id ratio
 id rectangles
-id recyclerViewChat_xml
+id recyclerView_NewConversation
+id recyclerView_chat
 id recycler_view
 id recycler_view_main
-id recycler_view_newconversation
 id register_button
 id register_email_button
 id reverseSawtooth
@@ -3179,7 +3189,6 @@ id title
 id titleDividerNoCustom
 id title_template
 id toggle
-id toolbar
 id top
 id topPanel
 id touch_outside
@@ -3322,6 +3331,8 @@ layout card
 layout card_landscape_inner
 layout card_portrait_inner
 layout chat_adapter
+layout chat_friend_row
+layout chat_user_row
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -3510,6 +3521,7 @@ string common_signin_button_text
 string common_signin_button_text_long
 string copy
 string default_web_client_id
+string edit_text_hint_chat
 string error_icon_content_description
 string expand_button_title
 string exposed_dropdown_menu_content_description
@@ -3572,6 +3584,7 @@ string material_timepicker_minute
 string material_timepicker_pm
 string material_timepicker_select_time
 string material_timepicker_text_input_mode_description
+string message
 string modal_content_descriptor
 string modal_inner_content_descriptor
 string mtrl_badge_numberless_content_description

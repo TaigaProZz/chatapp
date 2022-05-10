@@ -8,4 +8,9 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="grey">#4E5663</color>
+    <color name="grey2">#767676</color>
+    <color name="friend_message_border">#FF424242</color>
+    <color name="user_message_border">#4C4C4C</color>
+
+
 </resources>

@@ -20,8 +20,6 @@ class RegisterEmailActivity : AppCompatActivity() {
 
     private val auth = Firebase.auth
     private val db = Firebase.database("https://chat-app-84489-default-rtdb.europe-west1.firebasedatabase.app")
-    // collect all inputs of the user
-
 
     companion object {
         const val TAG = "TagRegisterActivity"
@@ -40,7 +38,6 @@ class RegisterEmailActivity : AppCompatActivity() {
             createAccountWithEmail()
         }
 
-
         // go back arrow
         findViewById<ImageView>(R.id.backArrow).setOnClickListener {
             startActivity(Intent(applicationContext, AccountMainActivity::class.java))
@@ -48,11 +45,9 @@ class RegisterEmailActivity : AppCompatActivity() {
     }
 
 
-
     // create account with firebase with email & password
     private fun createAccountWithEmail() {
-
-
+        // collect all inputs of the user
         val getUsername = findViewById<EditText>(R.id.username_register)
         val getEmail = findViewById<EditText>(R.id.email_register)
         val getPassword = findViewById<EditText>(R.id.password_register)
@@ -88,7 +83,7 @@ class RegisterEmailActivity : AppCompatActivity() {
     }
 
     private fun saveToDatabase() {
-
+        // collect all inputs of the user
         val getUsername = findViewById<EditText>(R.id.username_register)
         val getEmail = findViewById<EditText>(R.id.email_register)
         val getPassword = findViewById<EditText>(R.id.password_register)

@@ -7,10 +7,13 @@
     <string name="app_name">Chat App</string>
     <string name="chat_text_adapter"/>
     <string name="choose_pic_text">Choisir une photo</string>
+    <string name="edit_text_hint_chat">Entrez votre message</string>
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="invalid_username">Not a valid username</string>
     <string name="last_message_adapter">Last Message....</string>
     <string name="login_failed">"Login failed"</string>
+    <string name="message">MessageMessageMessageMessageMessageMessageMessageMessageMessageMessage
+        MessageMessageMessageMessageMessageMessageMessageMee</string>
     <string name="no_pics_text">Passer cette étape</string>
     <string name="params">Settings</string>
     <string name="pas_encore_inscrit"> <u>Pas encore inscrit?</u> </string>

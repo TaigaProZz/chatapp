@@ -22,7 +22,6 @@ class AvatarChoiceActivity : AppCompatActivity() {
 
     private lateinit var root: ActivityChoiceAvatarBinding
     private var db = Firebase.database("https://chat-app-84489-default-rtdb.europe-west1.firebasedatabase.app")
-    private val auth = Firebase.auth
 
 
     companion object {

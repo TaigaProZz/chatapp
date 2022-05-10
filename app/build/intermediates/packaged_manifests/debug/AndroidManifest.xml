@@ -47,7 +47,7 @@
                 android:value=".MainActivity" />
         </activity>
         <activity
-            android:name="com.chatapp.NewConversationActivity"
+            android:name="com.chatapp.conversation.NewConversationActivity"
             android:exported="false" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -66,8 +66,12 @@
             android:name="com.chatapp.account.login.LoginEmailActivity"
             android:exported="false" />
         <activity
-            android:name="com.chatapp.conversation.Chat"
-            android:exported="false" />
+            android:name="com.chatapp.conversation.ChatActivity"
+            android:exported="false" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
 
         <service
             android:name="com.google.firebase.components.ComponentDiscoveryService"

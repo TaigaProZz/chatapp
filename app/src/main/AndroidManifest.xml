@@ -28,7 +28,7 @@
                 android:value=".MainActivity" />
         </activity>
         <activity
-            android:name=".NewConversationActivity"
+            android:name=".conversation.NewConversationActivity"
             android:exported="false">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -47,8 +47,12 @@
             android:name=".account.login.LoginEmailActivity"
             android:exported="false" />
         <activity
-            android:name=".conversation.Chat"
-            android:exported="false" />
+            android:name=".conversation.ChatActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
     </application>
 
 </manifest>

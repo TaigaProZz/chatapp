@@ -9,12 +9,15 @@
         <item>reply_all</item>
     </string-array>
     <color name="black">#FF000000</color>
+    <color name="friend_message_border">#FF424242</color>
     <color name="grey">#4E5663</color>
+    <color name="grey2">#767676</color>
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
+    <color name="user_message_border">#4C4C4C</color>
     <color name="white">#FFFFFFFF</color>
     <dimen name="button_height">55dp</dimen>
     <dimen name="button_width">200dp</dimen>
@@ -24,6 +27,7 @@
     <string name="chat_text_adapter"/>
     <string name="choose_pic_text">Choisir une photo</string>
     <string name="default_web_client_id" translatable="false">859618026888-98mt718g22e8l8gv328gqs897vv2bqmm.apps.googleusercontent.com</string>
+    <string name="edit_text_hint_chat">Entrez votre message</string>
     <string name="gcm_defaultSenderId" translatable="false">859618026888</string>
     <string name="google_api_key" translatable="false">AIzaSyDHBnv-11dzgQLL6NSyxIMUzaNhEzqkGYY</string>
     <string name="google_app_id" translatable="false">1:859618026888:android:87fa499eb2acb3b621063d</string>
@@ -33,6 +37,8 @@
     <string name="invalid_username">Not a valid username</string>
     <string name="last_message_adapter">Last Message....</string>
     <string name="login_failed">"Login failed"</string>
+    <string name="message">MessageMessageMessageMessageMessageMessageMessageMessageMessageMessage
+        MessageMessageMessageMessageMessageMessageMessageMee</string>
     <string name="no_pics_text">Passer cette étape</string>
     <string name="params">Settings</string>
     <string name="pas_encore_inscrit"> <u>Pas encore inscrit?</u> </string>

@@ -4,58 +4,49 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".conversation.Chat">
-
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:background="@color/teal_200"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-    </androidx.appcompat.widget.Toolbar>
+    tools:context=".conversation.ChatActivity"
+    android:background="@color/purple_200"
+    >
 
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerViewChat.xml"
+        android:id="@+id/recyclerView_chat"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
+        android:layout_height="0dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toTopOf="@+id/msgBox"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
-
-    <ImageView
-        android:id="@+id/backArrow"
-        android:layout_width="36dp"
-        android:layout_height="37dp"
-        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="?attr/homeAsUpIndicator" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/msgBox"
-        android:layout_width="370dp"
-        android:layout_height="48dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="4dp"
+        android:padding="10dp"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+
+        android:background="@color/cardview_dark_background"
         android:ems="10"
-        android:inputType="text"
-        android:text="Entrez votre message"
+        android:hint="@string/edit_text_hint_chat"
+        android:inputType="textMultiLine"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
         android:id="@+id/sendMsgBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/msgBox"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/msgBox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/msgBox"
         app:layout_constraintTop_toTopOf="@+id/msgBox"
-        app:layout_constraintVertical_bias="0.562"
         app:srcCompat="@android:drawable/ic_menu_send" />
 
 

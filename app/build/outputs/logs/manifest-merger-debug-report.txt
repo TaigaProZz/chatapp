@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:2:1-54:12
-INJECTED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:2:1-54:12
-INJECTED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:2:1-54:12
-INJECTED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:2:1-54:12
+ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:2:1-58:12
+INJECTED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:2:1-58:12
+INJECTED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:2:1-58:12
+INJECTED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:2:1-58:12
 MERGED from [androidx.databinding:viewbinding:7.1.3] C:\Users\tanki\.gradle\caches\transforms-3\30df45f80d0ec4da5b5b350337b978d6\transformed\jetified-viewbinding-7.1.3\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.preference:preference:1.2.0] C:\Users\tanki\.gradle\caches\transforms-3\50d90a5d2eaa62b5bae1557061d267be\transformed\preference-1.2.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.fragment:fragment-ktx:1.3.6] C:\Users\tanki\.gradle\caches\transforms-3\3d86a19ce3e5517f0bde3de70b139478\transformed\jetified-fragment-ktx-1.3.6\AndroidManifest.xml:17:1-24:12
@@ -104,20 +104,20 @@ MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\tanki\.
 MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\tanki\.gradle\caches\transforms-3\08dad30cda19cd8a612807cfd1cea283\transformed\jetified-protolite-well-known-types-18.0.0\AndroidManifest.xml:2:1-11:12
 MERGED from [io.reactivex.rxjava2:rxandroid:2.0.2] C:\Users\tanki\.gradle\caches\transforms-3\e5c698b1490ac9b9865fbd585cc2c4fd\transformed\jetified-rxandroid-2.0.2\AndroidManifest.xml:15:1-21:12
 MERGED from [io.grpc:grpc-android:1.44.1] C:\Users\tanki\.gradle\caches\transforms-3\36c2d576da1f193856547d81d464592f\transformed\jetified-grpc-android-1.44.1\AndroidManifest.xml:2:1-11:12
-INJECTED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:2:1-54:12
-INJECTED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:2:1-54:12
-INJECTED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:2:1-54:12
+INJECTED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:2:1-58:12
+INJECTED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:2:1-58:12
+INJECTED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:2:1-58:12
 	package
 		ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:3:5-26
 		INJECTED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml
 		INJECTED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml
-		ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:2:1-54:12
+		ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:2:1-58:12
 		INJECTED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml
-		ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:2:1-54:12
+		ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:2:1-58:12
 		INJECTED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:2:11-69
@@ -126,7 +126,7 @@ ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:5:5-80
 	android:name
 		ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:5:22-77
 application
-ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:7:5-52:19
+ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:7:5-56:19
 MERGED from [com.google.firebase:firebase-inappmessaging-display-ktx:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\039c2af7aa3b3c4f15bdbc9555813741\transformed\jetified-firebase-inappmessaging-display-ktx-20.1.2\AndroidManifest.xml:11:5-19:19
 MERGED from [com.google.firebase:firebase-inappmessaging-display-ktx:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\039c2af7aa3b3c4f15bdbc9555813741\transformed\jetified-firebase-inappmessaging-display-ktx-20.1.2\AndroidManifest.xml:11:5-19:19
 MERGED from [com.google.firebase:firebase-inappmessaging-display:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\83e210fb650a127376850eada13e1fbf\transformed\jetified-firebase-inappmessaging-display-20.1.2\AndroidManifest.xml:22:5-30:19
@@ -249,12 +249,12 @@ ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:26:13-28:49
 		ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:28:17-46
 	android:name
 		ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:27:17-63
-activity#com.chatapp.NewConversationActivity
+activity#com.chatapp.conversation.NewConversationActivity
 ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:30:9-36:20
 	android:exported
 		ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:32:13-37
 	android:name
-		ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:31:13-52
+		ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:31:13-65
 activity#com.chatapp.account.avatar.AvatarChoiceActivity
 ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:37:9-39:40
 	android:exported
@@ -279,12 +279,12 @@ ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:46:9-48:40
 		ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:48:13-37
 	android:name
 		ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:47:13-61
-activity#com.chatapp.conversation.Chat
-ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:49:9-51:40
+activity#com.chatapp.conversation.ChatActivity
+ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:49:9-55:20
 	android:exported
 		ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:51:13-37
 	android:name
-		ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:50:13-46
+		ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:50:13-54
 uses-sdk
 INJECTED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml
