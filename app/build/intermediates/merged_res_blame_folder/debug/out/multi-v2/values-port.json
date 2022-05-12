@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "E:\\Dev\\android\\chatApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-port\\values-port.xml",
+            "outputFile": "com.chatapp-mergeDebugResources-41:/values-port/values-port.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\tanki\\.gradle\\caches\\transforms-3\\58a1daf53a4c6e11ed0f90e78a9cedf4\\transformed\\appcompat-1.4.1\\res\\values-port\\values-port.xml",
+                    "source": "C:\\Users\\tanki\\.gradle\\caches\\transforms-3\\f29f4da337953096edb20466598c3aba\\transformed\\appcompat-1.4.1\\res\\values-port\\values-port.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

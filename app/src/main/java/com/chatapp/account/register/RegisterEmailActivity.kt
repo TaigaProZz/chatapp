@@ -9,7 +9,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.chatapp.R
 import com.chatapp.account.AccountMainActivity
-import com.chatapp.account.User
+import com.chatapp.models.User
 import com.chatapp.account.avatar.AvatarChoiceActivity
 import com.google.android.gms.common.SignInButton
 import com.google.firebase.auth.ktx.auth

@@ -4,7 +4,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import com.bumptech.glide.Glide
 import com.chatapp.R
-import com.chatapp.account.User
+import com.chatapp.models.User
 import com.xwray.groupie.GroupieViewHolder
 import com.xwray.groupie.Item
 

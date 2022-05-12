@@ -5,7 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
-import android.widget.ImageView;
+import android.widget.ImageButton;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -22,18 +22,18 @@ public final class ActivityChatBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final EditText msgBox;
+  public final EditText msgBoxEdittext;
 
   @NonNull
   public final RecyclerView recyclerViewChat;
 
   @NonNull
-  public final ImageView sendMsgBtn;
+  public final ImageButton sendMsgBtn;
 
-  private ActivityChatBinding(@NonNull ConstraintLayout rootView, @NonNull EditText msgBox,
-      @NonNull RecyclerView recyclerViewChat, @NonNull ImageView sendMsgBtn) {
+  private ActivityChatBinding(@NonNull ConstraintLayout rootView, @NonNull EditText msgBoxEdittext,
+      @NonNull RecyclerView recyclerViewChat, @NonNull ImageButton sendMsgBtn) {
     this.rootView = rootView;
-    this.msgBox = msgBox;
+    this.msgBoxEdittext = msgBoxEdittext;
     this.recyclerViewChat = recyclerViewChat;
     this.sendMsgBtn = sendMsgBtn;
   }
@@ -65,9 +65,9 @@ public final class ActivityChatBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.msgBox;
-      EditText msgBox = ViewBindings.findChildViewById(rootView, id);
-      if (msgBox == null) {
+      id = R.id.msg_box_edittext;
+      EditText msgBoxEdittext = ViewBindings.findChildViewById(rootView, id);
+      if (msgBoxEdittext == null) {
         break missingId;
       }
 
@@ -78,12 +78,12 @@ public final class ActivityChatBinding implements ViewBinding {
       }
 
       id = R.id.sendMsgBtn;
-      ImageView sendMsgBtn = ViewBindings.findChildViewById(rootView, id);
+      ImageButton sendMsgBtn = ViewBindings.findChildViewById(rootView, id);
       if (sendMsgBtn == null) {
         break missingId;
       }
 
-      return new ActivityChatBinding((ConstraintLayout) rootView, msgBox, recyclerViewChat,
+      return new ActivityChatBinding((ConstraintLayout) rootView, msgBoxEdittext, recyclerViewChat,
           sendMsgBtn);
     }
     String missingId = rootView.getResources().getResourceName(id);

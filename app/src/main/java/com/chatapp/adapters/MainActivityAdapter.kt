@@ -1,7 +1,6 @@
 package com.chatapp.adapters
 
 import com.chatapp.R
-import com.chatapp.account.User
 import com.xwray.groupie.GroupieViewHolder
 import com.xwray.groupie.Item
 

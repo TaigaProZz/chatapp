@@ -40,7 +40,7 @@ id login_button
 id login_email_button
 id message_body_friend
 id message_body_user
-id msgBox
+id msg_box_edittext
 id new_conversation_menu
 id password_login
 id password_register
@@ -84,6 +84,7 @@ string chat_text_adapter
 string choose_pic_text
 string default_web_client_id
 string edit_text_hint_chat
+string firebase_database_url
 string gcm_defaultSenderId
 string google_api_key
 string google_app_id

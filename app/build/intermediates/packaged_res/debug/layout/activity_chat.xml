@@ -14,13 +14,13 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        app:layout_constraintBottom_toTopOf="@+id/msgBox"
+        app:layout_constraintBottom_toTopOf="@+id/msg_box_edittext"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/msgBox"
+        android:id="@+id/msg_box_edittext"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -39,14 +39,15 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <ImageView
+    <ImageButton
         android:id="@+id/sendMsgBtn"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="@+id/msgBox"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="@+id/msg_box_edittext"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/msgBox"
-        app:layout_constraintTop_toTopOf="@+id/msgBox"
+        app:layout_constraintStart_toEndOf="@+id/msg_box_edittext"
+        app:layout_constraintTop_toTopOf="@+id/msg_box_edittext"
         app:srcCompat="@android:drawable/ic_menu_send" />
 
 

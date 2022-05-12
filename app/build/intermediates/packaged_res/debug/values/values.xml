@@ -28,6 +28,7 @@
     <string name="choose_pic_text">Choisir une photo</string>
     <string name="default_web_client_id" translatable="false">859618026888-98mt718g22e8l8gv328gqs897vv2bqmm.apps.googleusercontent.com</string>
     <string name="edit_text_hint_chat">Entrez votre message</string>
+    <string name="firebase_database_url" translatable="false">https://chat-app-84489-default-rtdb.europe-west1.firebasedatabase.app</string>
     <string name="gcm_defaultSenderId" translatable="false">859618026888</string>
     <string name="google_api_key" translatable="false">AIzaSyDHBnv-11dzgQLL6NSyxIMUzaNhEzqkGYY</string>
     <string name="google_app_id" translatable="false">1:859618026888:android:87fa499eb2acb3b621063d</string>

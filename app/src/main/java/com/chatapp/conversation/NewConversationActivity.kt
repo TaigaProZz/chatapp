@@ -6,7 +6,7 @@ import android.os.Bundle
 import android.util.Log
 import androidx.recyclerview.widget.RecyclerView
 import com.chatapp.R
-import com.chatapp.account.User
+import com.chatapp.models.User
 import com.chatapp.adapters.NewConversationActivityAdapter
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
