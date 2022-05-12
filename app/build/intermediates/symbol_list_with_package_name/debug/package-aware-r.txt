@@ -3162,7 +3162,6 @@ id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
 id tag_window_insets_animation_callback
-id taskAdapterText
 id test_checkbox_android_button_tint
 id test_checkbox_app_button_tint
 id test_radiobutton_android_button_tint
@@ -3324,13 +3323,14 @@ layout activity_login_main
 layout activity_main
 layout activity_new_conversation
 layout activity_register
+layout adapter_main_activity
+layout adapter_users_new_conversation
 layout banner
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
 layout card
 layout card_landscape_inner
 layout card_portrait_inner
-layout chat_adapter
 layout chat_friend_row
 layout chat_user_row
 layout custom_dialog
@@ -3355,7 +3355,6 @@ layout image_frame
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title
-layout main_activity_adapter
 layout material_chip_input_combo
 layout material_clock_display
 layout material_clock_display_divider
@@ -3452,7 +3451,6 @@ layout text_view_with_line_height_from_style
 layout text_view_with_theme_line_height
 layout text_view_without_line_height
 layout user_profile_activity
-layout users_new_conversation_adapter
 menu example_menu
 menu example_menu2
 menu nav_menu

@@ -53,7 +53,6 @@ id save_username
 id sendMsgBtn
 id sign_out_button
 id skip_avatar_choice_btn
-id taskAdapterText
 id textView2
 id user_profile_menu
 id username
@@ -68,12 +67,11 @@ layout activity_login_main
 layout activity_main
 layout activity_new_conversation
 layout activity_register
-layout chat_adapter
+layout adapter_main_activity
+layout adapter_users_new_conversation
 layout chat_friend_row
 layout chat_user_row
-layout main_activity_adapter
 layout user_profile_activity
-layout users_new_conversation_adapter
 menu nav_menu
 mipmap ic_launcher
 mipmap ic_launcher_round

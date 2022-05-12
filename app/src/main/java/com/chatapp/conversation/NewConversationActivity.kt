@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import androidx.recyclerview.widget.RecyclerView
+import com.chatapp.MainActivity
 import com.chatapp.R
 import com.chatapp.models.User
 import com.chatapp.adapters.NewConversationActivityAdapter
@@ -17,12 +18,14 @@ import com.xwray.groupie.GroupieAdapter
 
 class NewConversationActivity : AppCompatActivity() {
 
-    private val database = Firebase.database("https://chat-app-84489-default-rtdb.europe-west1.firebasedatabase.app")
 
 
     companion object {
-        val USER_KEY = "USER_KEY"
+        const val USER_KEY = "USER_KEY"
     }
+
+    private val database = MainActivity.db
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

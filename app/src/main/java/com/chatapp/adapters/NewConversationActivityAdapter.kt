@@ -17,7 +17,7 @@ class NewConversationActivityAdapter(val user: User): Item<GroupieViewHolder>(){
     }
 
     override fun getLayout(): Int {
-        return R.layout.users_new_conversation_adapter
+        return R.layout.adapter_users_new_conversation
     }
 
 }

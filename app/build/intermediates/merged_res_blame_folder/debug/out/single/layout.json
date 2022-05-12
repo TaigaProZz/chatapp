@@ -28,8 +28,16 @@
         "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-45:\\layout\\main_activity_adapter.xml"
     },
     {
+        "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-mergeDebugResources-42:\\layout\\adapter_main_activity.xml",
+        "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-45:\\layout\\adapter_main_activity.xml"
+    },
+    {
         "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-mergeDebugResources-42:\\layout\\users_new_conversation_adapter.xml",
         "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-45:\\layout\\users_new_conversation_adapter.xml"
+    },
+    {
+        "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-mergeDebugResources-42:\\layout\\adapter_users_new_conversation.xml",
+        "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-45:\\layout\\adapter_users_new_conversation.xml"
     },
     {
         "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-mergeDebugResources-42:\\layout\\chat_adapter.xml",

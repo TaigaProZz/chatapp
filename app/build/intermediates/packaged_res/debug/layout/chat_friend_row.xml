@@ -5,11 +5,11 @@
     android:layout_height="wrap_content"
     android:layout_margin="6dp">
 
-    <ImageView
+    <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/avatar_friend_message"
         android:layout_width="88dp"
         android:layout_height="82dp"
-        android:background="@drawable/message_avatar_circle"
+        android:background="@android:color/transparent"
         android:src="@drawable/ic_launcher_foreground"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

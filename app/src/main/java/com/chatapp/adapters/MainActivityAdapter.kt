@@ -12,7 +12,7 @@ class MainActivityAdapter(): Item<GroupieViewHolder>(){
     }
 
     override fun getLayout(): Int {
-        return R.layout.main_activity_adapter
+        return R.layout.adapter_main_activity
     }
 
 }

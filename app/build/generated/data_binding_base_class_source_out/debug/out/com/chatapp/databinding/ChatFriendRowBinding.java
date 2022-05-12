@@ -4,7 +4,6 @@ package com.chatapp.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -12,6 +11,7 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.chatapp.R;
+import de.hdodenhof.circleimageview.CircleImageView;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -21,13 +21,13 @@ public final class ChatFriendRowBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final ImageView avatarFriendMessage;
+  public final CircleImageView avatarFriendMessage;
 
   @NonNull
   public final TextView messageBodyFriend;
 
   private ChatFriendRowBinding(@NonNull ConstraintLayout rootView,
-      @NonNull ImageView avatarFriendMessage, @NonNull TextView messageBodyFriend) {
+      @NonNull CircleImageView avatarFriendMessage, @NonNull TextView messageBodyFriend) {
     this.rootView = rootView;
     this.avatarFriendMessage = avatarFriendMessage;
     this.messageBodyFriend = messageBodyFriend;
@@ -61,7 +61,7 @@ public final class ChatFriendRowBinding implements ViewBinding {
     int id;
     missingId: {
       id = R.id.avatar_friend_message;
-      ImageView avatarFriendMessage = ViewBindings.findChildViewById(rootView, id);
+      CircleImageView avatarFriendMessage = ViewBindings.findChildViewById(rootView, id);
       if (avatarFriendMessage == null) {
         break missingId;
       }
