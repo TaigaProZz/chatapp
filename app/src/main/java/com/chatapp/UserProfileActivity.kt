@@ -29,10 +29,8 @@ class UserProfileActivity : AppCompatActivity() {
     override fun onStart() {
         super.onStart()
 
-        // show user username
+        // call functions
         getUsernameFromFirebase()
-
-        // show user avatar
         getAvatarFromFirebase()
 
         // show user email
@@ -66,7 +64,6 @@ class UserProfileActivity : AppCompatActivity() {
     }
 
     private fun getAvatarFromFirebase() {
-        // show user's avatar
         val avatarDisplay = findViewById<ImageView>(R.id.avatar_user_profile)
 
         db.getReference("users").child(uid!!).child("avatar")

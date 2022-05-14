@@ -2,5 +2,6 @@
 <resources>
     <dimen name="button_width">200dp</dimen>
     <dimen name="button_height">55dp</dimen>
+    <dimen name="avatar_msg">50dp</dimen>
 
 </resources>

@@ -2,15 +2,16 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="82dp"
     android:layout_margin="6dp">
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/avatar_user_message"
-        android:layout_width="88dp"
-        android:layout_height="82dp"
+        android:layout_width="@dimen/avatar_msg"
+        android:layout_height="@dimen/avatar_msg"
         android:background="@android:color/transparent"
         android:src="@drawable/ic_launcher_foreground"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -18,12 +19,15 @@
         android:id="@+id/message_body_user"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="12dp"
-        android:maxWidth="240dp"
-        android:padding="16dp"
+        android:layout_marginEnd="8dp"
         android:background="@drawable/message_circle_border_user"
-        android:text="@string/message"
+        android:maxWidth="300dp"
+        android:padding="16dp"
+        android:gravity="center"
+
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/avatar_user_message"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.516" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

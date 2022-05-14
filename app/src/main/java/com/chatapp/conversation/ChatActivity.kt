@@ -1,5 +1,6 @@
 package com.chatapp.conversation
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.widget.EditText
@@ -11,6 +12,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.chatapp.MainActivity
 import com.chatapp.R
+import com.chatapp.account.AccountMainActivity
 import com.chatapp.models.ChatMessage
 import com.chatapp.models.User
 import com.google.android.datatransport.runtime.time.TimeModule_UptimeClockFactory
@@ -18,6 +20,7 @@ import com.google.firebase.auth.ktx.auth
 import com.google.firebase.database.ChildEventListener
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
+import com.google.firebase.database.ktx.database
 import com.google.firebase.database.ktx.getValue
 import com.google.firebase.ktx.Firebase
 import com.xwray.groupie.GroupieAdapter
@@ -30,10 +33,12 @@ class ChatActivity : AppCompatActivity() {
         val TAG = "TagChatActivity"
     }
 
-    private val db = MainActivity.db
+    private val db =
+        Firebase.database("https://chat-app-84489-default-rtdb.europe-west1.firebasedatabase.app")
     val adapter = GroupieAdapter()
     var toUser: User? = null
     private val auth = Firebase.auth
+
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -70,12 +75,13 @@ class ChatActivity : AppCompatActivity() {
     private fun sendMessage() {
         val messageField = findViewById<EditText>(R.id.msg_box_edittext).text.toString()
         val userUid = auth.uid ?: return
+        val toUserUsername = toUser?.username
 
         db.getReference("/users").child(userUid).child("/username")
             .get().addOnSuccessListener {
                 val userUsername = it.value.toString()
-                val ref = db.getReference("/messages/$userUsername/${toUser?.username}").push()
-                val toRef = db.getReference("/messages/${toUser?.username}/$userUsername").push()
+                val ref = db.getReference("/messages/$userUsername/$toUserUsername").push()
+                val toRef = db.getReference("/messages/$toUserUsername/$userUsername").push()
 
                 val chatMessage = ChatMessage(
                     ref.key!!,
@@ -90,6 +96,13 @@ class ChatActivity : AppCompatActivity() {
 
                 }
                 toRef.setValue(chatMessage)
+
+                val lastMessageRef = db.getReference("/last-message/$toUserUsername/$userUsername")
+                    .setValue(chatMessage)
+                val lastMessageToRef = db.getReference("/last-message/$userUsername/$toUserUsername")
+                    .setValue(chatMessage)
+
+
 
             }
 
@@ -136,9 +149,8 @@ class ChatActivity : AppCompatActivity() {
                 })
             }
 
-
-
     }
+
 }
 
 class ChatFriendAdapter(val text: String, val user: User) : Item<GroupieViewHolder>() {

@@ -19,6 +19,7 @@
     <color name="teal_700">#FF018786</color>
     <color name="user_message_border">#4C4C4C</color>
     <color name="white">#FFFFFFFF</color>
+    <dimen name="avatar_msg">50dp</dimen>
     <dimen name="button_height">55dp</dimen>
     <dimen name="button_width">200dp</dimen>
     <string name="action_sign_in">Sign in </string>

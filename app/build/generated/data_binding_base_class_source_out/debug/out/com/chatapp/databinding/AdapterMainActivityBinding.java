@@ -21,21 +21,21 @@ public final class AdapterMainActivityBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final CircleImageView avatarUserAdapter;
+  public final CircleImageView avatarUserAdapterMain;
 
   @NonNull
-  public final TextView textView2;
+  public final TextView lastMessage;
 
   @NonNull
-  public final TextView usernameUserAdapter;
+  public final TextView usernameUserAdapterMain;
 
   private AdapterMainActivityBinding(@NonNull ConstraintLayout rootView,
-      @NonNull CircleImageView avatarUserAdapter, @NonNull TextView textView2,
-      @NonNull TextView usernameUserAdapter) {
+      @NonNull CircleImageView avatarUserAdapterMain, @NonNull TextView lastMessage,
+      @NonNull TextView usernameUserAdapterMain) {
     this.rootView = rootView;
-    this.avatarUserAdapter = avatarUserAdapter;
-    this.textView2 = textView2;
-    this.usernameUserAdapter = usernameUserAdapter;
+    this.avatarUserAdapterMain = avatarUserAdapterMain;
+    this.lastMessage = lastMessage;
+    this.usernameUserAdapterMain = usernameUserAdapterMain;
   }
 
   @Override
@@ -65,26 +65,26 @@ public final class AdapterMainActivityBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.avatar_user_adapter;
-      CircleImageView avatarUserAdapter = ViewBindings.findChildViewById(rootView, id);
-      if (avatarUserAdapter == null) {
+      id = R.id.avatar_user_adapter_main;
+      CircleImageView avatarUserAdapterMain = ViewBindings.findChildViewById(rootView, id);
+      if (avatarUserAdapterMain == null) {
         break missingId;
       }
 
-      id = R.id.textView2;
-      TextView textView2 = ViewBindings.findChildViewById(rootView, id);
-      if (textView2 == null) {
+      id = R.id.last_message;
+      TextView lastMessage = ViewBindings.findChildViewById(rootView, id);
+      if (lastMessage == null) {
         break missingId;
       }
 
-      id = R.id.username_user_adapter;
-      TextView usernameUserAdapter = ViewBindings.findChildViewById(rootView, id);
-      if (usernameUserAdapter == null) {
+      id = R.id.username_user_adapter_main;
+      TextView usernameUserAdapterMain = ViewBindings.findChildViewById(rootView, id);
+      if (usernameUserAdapterMain == null) {
         break missingId;
       }
 
-      return new AdapterMainActivityBinding((ConstraintLayout) rootView, avatarUserAdapter,
-          textView2, usernameUserAdapter);
+      return new AdapterMainActivityBinding((ConstraintLayout) rootView, avatarUserAdapterMain,
+          lastMessage, usernameUserAdapterMain);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

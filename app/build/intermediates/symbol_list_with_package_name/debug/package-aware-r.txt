@@ -1962,6 +1962,7 @@ dimen abc_text_size_title_material
 dimen abc_text_size_title_material_toolbar
 dimen action_bar_size
 dimen appcompat_dialog_background_inset
+dimen avatar_msg
 dimen bannerContentWeight
 dimen bannerWeightSum
 dimen browser_actions_context_menu_max_width
@@ -2760,6 +2761,7 @@ id avatar_avatar_final
 id avatar_circle
 id avatar_friend_message
 id avatar_user_adapter
+id avatar_user_adapter_main
 id avatar_user_message
 id avatar_user_profile
 id backArrow
@@ -2935,6 +2937,7 @@ id item_touch_helper_previous_elevation
 id jumpToEnd
 id jumpToStart
 id labeled
+id last_message
 id layout
 id left
 id leftToRight
@@ -3173,7 +3176,6 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
-id textView2
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3209,6 +3211,7 @@ id username
 id username_login
 id username_register
 id username_user_adapter
+id username_user_adapter_main
 id username_user_profile
 id vertical_only
 id view_offset_helper
