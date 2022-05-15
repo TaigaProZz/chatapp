@@ -40,12 +40,12 @@
         "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-45:\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
-        "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-merged_res-43:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-45:\\mipmap-xxhdpi\\ic_launcher_round.webp"
-    },
-    {
         "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-merged_res-43:\\layout_activity_new_conversation.xml.flat",
         "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-45:\\layout\\activity_new_conversation.xml"
+    },
+    {
+        "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-merged_res-43:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-45:\\mipmap-xxhdpi\\ic_launcher_round.webp"
     },
     {
         "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-merged_res-43:\\layout_main_activity_adapter.xml.flat",
@@ -108,20 +108,20 @@
         "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-45:\\mipmap-mdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-merged_res-43:\\drawable_ic_launcher_background.xml.flat",
-        "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-45:\\drawable\\ic_launcher_background.xml"
-    },
-    {
         "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-merged_res-43:\\layout_activity_main.xml.flat",
         "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-45:\\layout\\activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-merged_res-43:\\menu_nav_menu.xml.flat",
-        "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-45:\\menu\\nav_menu.xml"
+        "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-merged_res-43:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-45:\\drawable\\ic_launcher_background.xml"
     },
     {
-        "merged": "com.chatapp-merged_res-43:/layout_adapter_main_activity.xml.flat",
-        "source": "com.chatapp-main-45:/layout/adapter_main_activity.xml"
+        "merged": "com.chatapp-merged_res-43:/layout_activity_login_main.xml.flat",
+        "source": "com.chatapp-main-45:/layout/activity_login_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-merged_res-43:\\menu_nav_menu.xml.flat",
+        "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-45:\\menu\\nav_menu.xml"
     },
     {
         "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-merged_res-43:\\layout_activity_register.xml.flat",

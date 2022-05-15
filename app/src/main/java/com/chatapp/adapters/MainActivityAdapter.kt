@@ -3,7 +3,7 @@ package com.chatapp.adapters
 import android.widget.ImageView
 import android.widget.TextView
 import com.bumptech.glide.Glide
-import com.chatapp.MainActivity
+import com.chatapp.conversation.MainActivity
 import com.chatapp.R
 import com.chatapp.models.ChatMessage
 import com.chatapp.models.User

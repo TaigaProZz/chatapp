@@ -9,9 +9,9 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AppCompat.DayNight">
+        android:theme="@style/Theme.Material3.Dark">
         <activity
-            android:name=".MainActivity"
+            android:name=".conversation.MainActivity"
             android:exported="true">
         <intent-filter>
         <action android:name="android.intent.action.MAIN" />
@@ -24,14 +24,14 @@
             android:exported="false">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value=".conversation.MainActivity" />
         </activity>
         <activity
             android:name=".conversation.NewConversationActivity"
             android:exported="false">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value=".conversation.MainActivity" />
         </activity>
         <activity
             android:name=".account.avatar.AvatarChoiceActivity"
@@ -42,16 +42,24 @@
         </activity>
         <activity
             android:name=".account.register.RegisterEmailActivity"
-            android:exported="false" />
+            android:exported="false">
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".account.AccountMainActivity"/>
+        </activity>
         <activity
             android:name=".account.login.LoginEmailActivity"
-            android:exported="false" />
+            android:exported="false">
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".account.AccountMainActivity"/>
+        </activity>
         <activity
             android:name=".conversation.ChatActivity"
             android:exported="false">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value=".conversation.MainActivity" />
         </activity>
     </application>
 

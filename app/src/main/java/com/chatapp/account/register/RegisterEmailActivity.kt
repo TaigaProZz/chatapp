@@ -29,19 +29,11 @@ class RegisterEmailActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register)
 
-        // TODO create acc with google on this activity
-        findViewById<SignInButton>(R.id.google_button).setOnClickListener {
-        }
-
         // create an account when register button is pressed
         findViewById<Button>(R.id.register_button).setOnClickListener {
             createAccountWithEmail()
         }
 
-        // go back arrow
-        findViewById<ImageView>(R.id.backArrow).setOnClickListener {
-            startActivity(Intent(applicationContext, AccountMainActivity::class.java))
-        }
     }
 
 

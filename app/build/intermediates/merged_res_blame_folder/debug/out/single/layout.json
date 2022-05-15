@@ -1,5 +1,9 @@
 [
     {
+        "merged": "com.chatapp-mergeDebugResources-42:/layout/activity_login_main.xml",
+        "source": "com.chatapp-main-45:/layout/activity_login_main.xml"
+    },
+    {
         "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-mergeDebugResources-42:\\layout\\activity_register.xml",
         "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-45:\\layout\\activity_register.xml"
     },
@@ -8,12 +12,12 @@
         "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-45:\\layout\\activity_choice_avatar.xml"
     },
     {
-        "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-mergeDebugResources-42:\\layout\\chat_friend_row.xml",
-        "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-45:\\layout\\chat_friend_row.xml"
-    },
-    {
         "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-mergeDebugResources-42:\\layout\\activity_chat.xml",
         "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-45:\\layout\\activity_chat.xml"
+    },
+    {
+        "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-mergeDebugResources-42:\\layout\\chat_friend_row.xml",
+        "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-45:\\layout\\chat_friend_row.xml"
     },
     {
         "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-mergeDebugResources-42:\\layout\\activity_email_login.xml",
@@ -58,9 +62,5 @@
     {
         "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-mergeDebugResources-42:\\layout\\chat_user_row.xml",
         "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-45:\\layout\\chat_user_row.xml"
-    },
-    {
-        "merged": "com.chatapp-mergeDebugResources-42:/layout/adapter_main_activity.xml",
-        "source": "com.chatapp-main-45:/layout/adapter_main_activity.xml"
     }
 ]

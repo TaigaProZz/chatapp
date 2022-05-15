@@ -22,9 +22,6 @@ public final class ActivityLoginMainBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final ImageView backArrow;
-
-  @NonNull
   public final SignInButton googleButton;
 
   @NonNull
@@ -36,11 +33,10 @@ public final class ActivityLoginMainBinding implements ViewBinding {
   @NonNull
   public final Button registerEmailButton;
 
-  private ActivityLoginMainBinding(@NonNull ConstraintLayout rootView, @NonNull ImageView backArrow,
+  private ActivityLoginMainBinding(@NonNull ConstraintLayout rootView,
       @NonNull SignInButton googleButton, @NonNull ImageView imageView,
       @NonNull Button loginEmailButton, @NonNull Button registerEmailButton) {
     this.rootView = rootView;
-    this.backArrow = backArrow;
     this.googleButton = googleButton;
     this.imageView = imageView;
     this.loginEmailButton = loginEmailButton;
@@ -74,12 +70,6 @@ public final class ActivityLoginMainBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.backArrow;
-      ImageView backArrow = ViewBindings.findChildViewById(rootView, id);
-      if (backArrow == null) {
-        break missingId;
-      }
-
       id = R.id.google_button;
       SignInButton googleButton = ViewBindings.findChildViewById(rootView, id);
       if (googleButton == null) {
@@ -104,8 +94,8 @@ public final class ActivityLoginMainBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityLoginMainBinding((ConstraintLayout) rootView, backArrow, googleButton,
-          imageView, loginEmailButton, registerEmailButton);
+      return new ActivityLoginMainBinding((ConstraintLayout) rootView, googleButton, imageView,
+          loginEmailButton, registerEmailButton);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

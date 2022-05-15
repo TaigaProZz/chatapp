@@ -35,7 +35,7 @@
 21    </queries>
 22
 23    <application
-23-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:6:5-56:19
+23-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:6:5-64:19
 24        android:allowBackup="true"
 24-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:7:9-35
 25        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -50,12 +50,12 @@
 30        android:supportsRtl="true"
 30-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:11:9-35
 31        android:testOnly="true"
-32        android:theme="@style/Theme.AppCompat.DayNight" >
-32-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:12:9-56
+32        android:theme="@style/Theme.Material3.Dark" >
+32-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:12:9-52
 33        <activity
 33-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:13:9-21:16
-34            android:name="com.chatapp.MainActivity"
-34-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:14:13-41
+34            android:name="com.chatapp.conversation.MainActivity"
+34-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:14:13-54
 35            android:exported="true" >
 35-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:15:13-36
 36            <intent-filter>
@@ -76,11 +76,11 @@
 44            android:exported="false" >
 44-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:24:13-37
 45            <meta-data
-45-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:25:13-27:49
+45-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:25:13-27:62
 46                android:name="android.support.PARENT_ACTIVITY"
 46-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:26:17-63
-47                android:value=".MainActivity" />
-47-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:27:17-46
+47                android:value=".conversation.MainActivity" />
+47-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:27:17-59
 48        </activity>
 49        <activity
 49-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:29:9-35:20
@@ -89,11 +89,11 @@
 51            android:exported="false" >
 51-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:31:13-37
 52            <meta-data
-52-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:25:13-27:49
+52-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:25:13-27:62
 53                android:name="android.support.PARENT_ACTIVITY"
 53-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:26:17-63
-54                android:value=".MainActivity" />
-54-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:27:17-46
+54                android:value=".conversation.MainActivity" />
+54-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:27:17-59
 55        </activity>
 56        <activity
 56-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:36:9-38:40
@@ -109,331 +109,345 @@
 61-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:41:13-36
 62        </activity>
 63        <activity
-63-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:43:9-45:40
+63-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:43:9-49:20
 64            android:name="com.chatapp.account.register.RegisterEmailActivity"
 64-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:44:13-67
-65            android:exported="false" />
+65            android:exported="false" >
 65-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:45:13-37
-66        <activity
-66-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:46:9-48:40
-67            android:name="com.chatapp.account.login.LoginEmailActivity"
-67-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:47:13-61
-68            android:exported="false" />
-68-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:48:13-37
-69        <activity
-69-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:49:9-55:20
-70            android:name="com.chatapp.conversation.ChatActivity"
-70-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:50:13-54
-71            android:exported="false" >
-71-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:51:13-37
-72            <meta-data
-72-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:25:13-27:49
-73                android:name="android.support.PARENT_ACTIVITY"
-73-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:26:17-63
-74                android:value=".MainActivity" />
-74-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:27:17-46
-75        </activity>
-76
-77        <service
-77-->[com.google.firebase:firebase-inappmessaging-display-ktx:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\fbc511e59f7ba0117b260412d9eeceed\transformed\jetified-firebase-inappmessaging-display-ktx-20.1.2\AndroidManifest.xml:12:9-18:19
-78            android:name="com.google.firebase.components.ComponentDiscoveryService"
-78-->[com.google.firebase:firebase-inappmessaging-display-ktx:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\fbc511e59f7ba0117b260412d9eeceed\transformed\jetified-firebase-inappmessaging-display-ktx-20.1.2\AndroidManifest.xml:13:13-84
-79            android:directBootAware="true"
-79-->[com.google.firebase:firebase-common:20.1.0] C:\Users\tanki\.gradle\caches\transforms-3\5f4ab6152d505f4a145ad9e05f0997bc\transformed\jetified-firebase-common-20.1.0\AndroidManifest.xml:35:13-43
-80            android:exported="false" >
-80-->[com.google.firebase:firebase-inappmessaging-display-ktx:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\fbc511e59f7ba0117b260412d9eeceed\transformed\jetified-firebase-inappmessaging-display-ktx-20.1.2\AndroidManifest.xml:14:13-37
-81            <meta-data
-81-->[com.google.firebase:firebase-inappmessaging-display-ktx:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\fbc511e59f7ba0117b260412d9eeceed\transformed\jetified-firebase-inappmessaging-display-ktx-20.1.2\AndroidManifest.xml:15:13-17:85
-82                android:name="com.google.firebase.components:com.google.firebase.inappmessaging.display.ktx.FirebaseInAppMessagingDisplayKtxRegistrar"
-82-->[com.google.firebase:firebase-inappmessaging-display-ktx:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\fbc511e59f7ba0117b260412d9eeceed\transformed\jetified-firebase-inappmessaging-display-ktx-20.1.2\AndroidManifest.xml:16:17-151
-83                android:value="com.google.firebase.components.ComponentRegistrar" />
-83-->[com.google.firebase:firebase-inappmessaging-display-ktx:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\fbc511e59f7ba0117b260412d9eeceed\transformed\jetified-firebase-inappmessaging-display-ktx-20.1.2\AndroidManifest.xml:17:17-82
-84            <meta-data
-84-->[com.google.firebase:firebase-inappmessaging-display:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\9ffb99ad0f6ac3d58ac31093eb31cde0\transformed\jetified-firebase-inappmessaging-display-20.1.2\AndroidManifest.xml:26:13-28:85
-85                android:name="com.google.firebase.components:com.google.firebase.inappmessaging.display.FirebaseInAppMessagingDisplayRegistrar"
-85-->[com.google.firebase:firebase-inappmessaging-display:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\9ffb99ad0f6ac3d58ac31093eb31cde0\transformed\jetified-firebase-inappmessaging-display-20.1.2\AndroidManifest.xml:27:17-144
-86                android:value="com.google.firebase.components.ComponentRegistrar" />
-86-->[com.google.firebase:firebase-inappmessaging-display:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\9ffb99ad0f6ac3d58ac31093eb31cde0\transformed\jetified-firebase-inappmessaging-display-20.1.2\AndroidManifest.xml:28:17-82
-87            <meta-data
-87-->[com.google.firebase:firebase-auth-ktx:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\c7a09c069b8ed9e32aa05280a2101074\transformed\jetified-firebase-auth-ktx-21.0.3\AndroidManifest.xml:11:13-13:85
-88                android:name="com.google.firebase.components:com.google.firebase.auth.ktx.FirebaseAuthKtxRegistrar"
-88-->[com.google.firebase:firebase-auth-ktx:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\c7a09c069b8ed9e32aa05280a2101074\transformed\jetified-firebase-auth-ktx-21.0.3\AndroidManifest.xml:12:17-116
-89                android:value="com.google.firebase.components.ComponentRegistrar" />
-89-->[com.google.firebase:firebase-auth-ktx:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\c7a09c069b8ed9e32aa05280a2101074\transformed\jetified-firebase-auth-ktx-21.0.3\AndroidManifest.xml:13:17-82
-90            <meta-data
-90-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\15b326d2761b3454feca955438b09e94\transformed\jetified-firebase-auth-21.0.3\AndroidManifest.xml:67:13-69:85
-91                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
-91-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\15b326d2761b3454feca955438b09e94\transformed\jetified-firebase-auth-21.0.3\AndroidManifest.xml:68:17-109
-92                android:value="com.google.firebase.components.ComponentRegistrar" />
-92-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\15b326d2761b3454feca955438b09e94\transformed\jetified-firebase-auth-21.0.3\AndroidManifest.xml:69:17-82
-93            <meta-data
-93-->[com.google.firebase:firebase-firestore-ktx:24.1.1] C:\Users\tanki\.gradle\caches\transforms-3\a52317726cdc1e3f44b9585d194d9fc1\transformed\jetified-firebase-firestore-ktx-24.1.1\AndroidManifest.xml:15:13-17:85
-94                android:name="com.google.firebase.components:com.google.firebase.firestore.ktx.FirebaseFirestoreKtxRegistrar"
-94-->[com.google.firebase:firebase-firestore-ktx:24.1.1] C:\Users\tanki\.gradle\caches\transforms-3\a52317726cdc1e3f44b9585d194d9fc1\transformed\jetified-firebase-firestore-ktx-24.1.1\AndroidManifest.xml:16:17-126
-95                android:value="com.google.firebase.components.ComponentRegistrar" />
-95-->[com.google.firebase:firebase-firestore-ktx:24.1.1] C:\Users\tanki\.gradle\caches\transforms-3\a52317726cdc1e3f44b9585d194d9fc1\transformed\jetified-firebase-firestore-ktx-24.1.1\AndroidManifest.xml:17:17-82
-96            <meta-data
-96-->[com.google.firebase:firebase-storage-ktx:20.0.1] C:\Users\tanki\.gradle\caches\transforms-3\a484ac3b406ac7aad24d219ab04bb195\transformed\jetified-firebase-storage-ktx-20.0.1\AndroidManifest.xml:15:13-17:85
-97                android:name="com.google.firebase.components:com.google.firebase.storage.ktx.FirebaseStorageKtxRegistrar"
-97-->[com.google.firebase:firebase-storage-ktx:20.0.1] C:\Users\tanki\.gradle\caches\transforms-3\a484ac3b406ac7aad24d219ab04bb195\transformed\jetified-firebase-storage-ktx-20.0.1\AndroidManifest.xml:16:17-122
-98                android:value="com.google.firebase.components.ComponentRegistrar" />
-98-->[com.google.firebase:firebase-storage-ktx:20.0.1] C:\Users\tanki\.gradle\caches\transforms-3\a484ac3b406ac7aad24d219ab04bb195\transformed\jetified-firebase-storage-ktx-20.0.1\AndroidManifest.xml:17:17-82
-99            <meta-data
-99-->[com.google.firebase:firebase-database-ktx:20.0.4] C:\Users\tanki\.gradle\caches\transforms-3\7fb3f28259acdcb5dcf44b4a27c1e957\transformed\jetified-firebase-database-ktx-20.0.4\AndroidManifest.xml:15:13-17:85
-100                android:name="com.google.firebase.components:com.google.firebase.database.ktx.FirebaseDatabaseKtxRegistrar"
-100-->[com.google.firebase:firebase-database-ktx:20.0.4] C:\Users\tanki\.gradle\caches\transforms-3\7fb3f28259acdcb5dcf44b4a27c1e957\transformed\jetified-firebase-database-ktx-20.0.4\AndroidManifest.xml:16:17-124
-101                android:value="com.google.firebase.components.ComponentRegistrar" />
-101-->[com.google.firebase:firebase-database-ktx:20.0.4] C:\Users\tanki\.gradle\caches\transforms-3\7fb3f28259acdcb5dcf44b4a27c1e957\transformed\jetified-firebase-database-ktx-20.0.4\AndroidManifest.xml:17:17-82
-102            <meta-data
-102-->[com.google.firebase:firebase-firestore:24.1.1] C:\Users\tanki\.gradle\caches\transforms-3\9230a9153e74771f84d9cae2510795b8\transformed\jetified-firebase-firestore-24.1.1\AndroidManifest.xml:20:13-22:85
-103                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
-103-->[com.google.firebase:firebase-firestore:24.1.1] C:\Users\tanki\.gradle\caches\transforms-3\9230a9153e74771f84d9cae2510795b8\transformed\jetified-firebase-firestore-24.1.1\AndroidManifest.xml:21:17-111
-104                android:value="com.google.firebase.components.ComponentRegistrar" />
-104-->[com.google.firebase:firebase-firestore:24.1.1] C:\Users\tanki\.gradle\caches\transforms-3\9230a9153e74771f84d9cae2510795b8\transformed\jetified-firebase-firestore-24.1.1\AndroidManifest.xml:22:17-82
-105            <meta-data
-105-->[com.google.firebase:firebase-storage:20.0.1] C:\Users\tanki\.gradle\caches\transforms-3\bdf2729fd404322180568417e0ec5794\transformed\jetified-firebase-storage-20.0.1\AndroidManifest.xml:33:13-35:85
-106                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
-106-->[com.google.firebase:firebase-storage:20.0.1] C:\Users\tanki\.gradle\caches\transforms-3\bdf2729fd404322180568417e0ec5794\transformed\jetified-firebase-storage-20.0.1\AndroidManifest.xml:34:17-107
-107                android:value="com.google.firebase.components.ComponentRegistrar" />
-107-->[com.google.firebase:firebase-storage:20.0.1] C:\Users\tanki\.gradle\caches\transforms-3\bdf2729fd404322180568417e0ec5794\transformed\jetified-firebase-storage-20.0.1\AndroidManifest.xml:35:17-82
-108            <meta-data
-108-->[com.google.firebase:firebase-database:20.0.4] C:\Users\tanki\.gradle\caches\transforms-3\5a45ddb4a58a0112d5004048ecc536aa\transformed\jetified-firebase-database-20.0.4\AndroidManifest.xml:32:13-34:85
-109                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
-109-->[com.google.firebase:firebase-database:20.0.4] C:\Users\tanki\.gradle\caches\transforms-3\5a45ddb4a58a0112d5004048ecc536aa\transformed\jetified-firebase-database-20.0.4\AndroidManifest.xml:33:17-109
-110                android:value="com.google.firebase.components.ComponentRegistrar" />
-110-->[com.google.firebase:firebase-database:20.0.4] C:\Users\tanki\.gradle\caches\transforms-3\5a45ddb4a58a0112d5004048ecc536aa\transformed\jetified-firebase-database-20.0.4\AndroidManifest.xml:34:17-82
-111            <meta-data
-111-->[com.google.firebase:firebase-inappmessaging-ktx:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\7c268dd87ec7493ad7258affac5becb2\transformed\jetified-firebase-inappmessaging-ktx-20.1.2\AndroidManifest.xml:15:13-17:85
-112                android:name="com.google.firebase.components:com.google.firebase.inappmessaging.ktx.FirebaseInAppMessagingKtxRegistrar"
-112-->[com.google.firebase:firebase-inappmessaging-ktx:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\7c268dd87ec7493ad7258affac5becb2\transformed\jetified-firebase-inappmessaging-ktx-20.1.2\AndroidManifest.xml:16:17-136
-113                android:value="com.google.firebase.components.ComponentRegistrar" />
-113-->[com.google.firebase:firebase-inappmessaging-ktx:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\7c268dd87ec7493ad7258affac5becb2\transformed\jetified-firebase-inappmessaging-ktx-20.1.2\AndroidManifest.xml:17:17-82
-114            <meta-data
-114-->[com.google.firebase:firebase-common-ktx:20.1.0] C:\Users\tanki\.gradle\caches\transforms-3\7b8dac941fbfc2e3427b8033f52578df\transformed\jetified-firebase-common-ktx-20.1.0\AndroidManifest.xml:15:13-17:85
-115                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar"
-115-->[com.google.firebase:firebase-common-ktx:20.1.0] C:\Users\tanki\.gradle\caches\transforms-3\7b8dac941fbfc2e3427b8033f52578df\transformed\jetified-firebase-common-ktx-20.1.0\AndroidManifest.xml:16:17-113
-116                android:value="com.google.firebase.components.ComponentRegistrar" />
-116-->[com.google.firebase:firebase-common-ktx:20.1.0] C:\Users\tanki\.gradle\caches\transforms-3\7b8dac941fbfc2e3427b8033f52578df\transformed\jetified-firebase-common-ktx-20.1.0\AndroidManifest.xml:17:17-82
-117            <meta-data
-117-->[com.google.firebase:firebase-inappmessaging:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\8031290a786691810b146bd19e8cc84b\transformed\jetified-firebase-inappmessaging-20.1.2\AndroidManifest.xml:17:13-19:85
-118                android:name="com.google.firebase.components:com.google.firebase.inappmessaging.FirebaseInAppMessagingRegistrar"
-118-->[com.google.firebase:firebase-inappmessaging:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\8031290a786691810b146bd19e8cc84b\transformed\jetified-firebase-inappmessaging-20.1.2\AndroidManifest.xml:18:17-129
-119                android:value="com.google.firebase.components.ComponentRegistrar" />
-119-->[com.google.firebase:firebase-inappmessaging:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\8031290a786691810b146bd19e8cc84b\transformed\jetified-firebase-inappmessaging-20.1.2\AndroidManifest.xml:19:17-82
-120            <meta-data
-120-->[com.google.firebase:firebase-abt:21.0.1] C:\Users\tanki\.gradle\caches\transforms-3\6764a069516c43593dad03ae89e98c51\transformed\jetified-firebase-abt-21.0.1\AndroidManifest.xml:13:13-15:85
-121                android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar"
-121-->[com.google.firebase:firebase-abt:21.0.1] C:\Users\tanki\.gradle\caches\transforms-3\6764a069516c43593dad03ae89e98c51\transformed\jetified-firebase-abt-21.0.1\AndroidManifest.xml:14:17-109
-122                android:value="com.google.firebase.components.ComponentRegistrar" />
-122-->[com.google.firebase:firebase-abt:21.0.1] C:\Users\tanki\.gradle\caches\transforms-3\6764a069516c43593dad03ae89e98c51\transformed\jetified-firebase-abt-21.0.1\AndroidManifest.xml:15:17-82
-123            <meta-data
-123-->[com.google.firebase:firebase-datatransport:18.1.1] C:\Users\tanki\.gradle\caches\transforms-3\b8cc1511aedb6d8cc06482dc8b2cc9ee\transformed\jetified-firebase-datatransport-18.1.1\AndroidManifest.xml:28:13-30:85
-124                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
-124-->[com.google.firebase:firebase-datatransport:18.1.1] C:\Users\tanki\.gradle\caches\transforms-3\b8cc1511aedb6d8cc06482dc8b2cc9ee\transformed\jetified-firebase-datatransport-18.1.1\AndroidManifest.xml:29:17-115
-125                android:value="com.google.firebase.components.ComponentRegistrar" />
-125-->[com.google.firebase:firebase-datatransport:18.1.1] C:\Users\tanki\.gradle\caches\transforms-3\b8cc1511aedb6d8cc06482dc8b2cc9ee\transformed\jetified-firebase-datatransport-18.1.1\AndroidManifest.xml:30:17-82
-126            <meta-data
-126-->[com.google.firebase:firebase-installations:17.0.1] C:\Users\tanki\.gradle\caches\transforms-3\0bd2060b27a8a3ce2f36aa0bb345761e\transformed\jetified-firebase-installations-17.0.1\AndroidManifest.xml:18:13-20:85
-127                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
-127-->[com.google.firebase:firebase-installations:17.0.1] C:\Users\tanki\.gradle\caches\transforms-3\0bd2060b27a8a3ce2f36aa0bb345761e\transformed\jetified-firebase-installations-17.0.1\AndroidManifest.xml:19:17-127
-128                android:value="com.google.firebase.components.ComponentRegistrar" />
-128-->[com.google.firebase:firebase-installations:17.0.1] C:\Users\tanki\.gradle\caches\transforms-3\0bd2060b27a8a3ce2f36aa0bb345761e\transformed\jetified-firebase-installations-17.0.1\AndroidManifest.xml:20:17-82
-129        </service>
-130
-131        <activity
-131-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\15b326d2761b3454feca955438b09e94\transformed\jetified-firebase-auth-21.0.3\AndroidManifest.xml:27:9-44:20
-132            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
-132-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\15b326d2761b3454feca955438b09e94\transformed\jetified-firebase-auth-21.0.3\AndroidManifest.xml:28:13-80
-133            android:excludeFromRecents="true"
-133-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\15b326d2761b3454feca955438b09e94\transformed\jetified-firebase-auth-21.0.3\AndroidManifest.xml:29:13-46
-134            android:exported="true"
-134-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\15b326d2761b3454feca955438b09e94\transformed\jetified-firebase-auth-21.0.3\AndroidManifest.xml:30:13-36
-135            android:launchMode="singleTask"
-135-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\15b326d2761b3454feca955438b09e94\transformed\jetified-firebase-auth-21.0.3\AndroidManifest.xml:31:13-44
-136            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-136-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\15b326d2761b3454feca955438b09e94\transformed\jetified-firebase-auth-21.0.3\AndroidManifest.xml:32:13-72
-137            <intent-filter>
-137-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\15b326d2761b3454feca955438b09e94\transformed\jetified-firebase-auth-21.0.3\AndroidManifest.xml:33:13-43:29
-138                <action android:name="android.intent.action.VIEW" />
-138-->[com.google.firebase:firebase-inappmessaging-display:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\9ffb99ad0f6ac3d58ac31093eb31cde0\transformed\jetified-firebase-inappmessaging-display-20.1.2\AndroidManifest.xml:16:13-65
-138-->[com.google.firebase:firebase-inappmessaging-display:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\9ffb99ad0f6ac3d58ac31093eb31cde0\transformed\jetified-firebase-inappmessaging-display-20.1.2\AndroidManifest.xml:16:21-62
-139
-140                <category android:name="android.intent.category.DEFAULT" />
-140-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\15b326d2761b3454feca955438b09e94\transformed\jetified-firebase-auth-21.0.3\AndroidManifest.xml:36:17-76
-140-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\15b326d2761b3454feca955438b09e94\transformed\jetified-firebase-auth-21.0.3\AndroidManifest.xml:36:27-73
-141                <category android:name="android.intent.category.BROWSABLE" />
-141-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\15b326d2761b3454feca955438b09e94\transformed\jetified-firebase-auth-21.0.3\AndroidManifest.xml:37:17-78
-141-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\15b326d2761b3454feca955438b09e94\transformed\jetified-firebase-auth-21.0.3\AndroidManifest.xml:37:27-75
-142
-143                <data
-143-->[com.google.firebase:firebase-inappmessaging-display:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\9ffb99ad0f6ac3d58ac31093eb31cde0\transformed\jetified-firebase-inappmessaging-display-20.1.2\AndroidManifest.xml:18:13-44
-144                    android:host="firebase.auth"
-145                    android:path="/"
-146                    android:scheme="genericidp" />
-146-->[com.google.firebase:firebase-inappmessaging-display:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\9ffb99ad0f6ac3d58ac31093eb31cde0\transformed\jetified-firebase-inappmessaging-display-20.1.2\AndroidManifest.xml:18:19-41
-147            </intent-filter>
-148        </activity>
-149        <activity
-149-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\15b326d2761b3454feca955438b09e94\transformed\jetified-firebase-auth-21.0.3\AndroidManifest.xml:45:9-62:20
-150            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
-150-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\15b326d2761b3454feca955438b09e94\transformed\jetified-firebase-auth-21.0.3\AndroidManifest.xml:46:13-79
-151            android:excludeFromRecents="true"
-151-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\15b326d2761b3454feca955438b09e94\transformed\jetified-firebase-auth-21.0.3\AndroidManifest.xml:47:13-46
-152            android:exported="true"
-152-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\15b326d2761b3454feca955438b09e94\transformed\jetified-firebase-auth-21.0.3\AndroidManifest.xml:48:13-36
-153            android:launchMode="singleTask"
-153-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\15b326d2761b3454feca955438b09e94\transformed\jetified-firebase-auth-21.0.3\AndroidManifest.xml:49:13-44
-154            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-154-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\15b326d2761b3454feca955438b09e94\transformed\jetified-firebase-auth-21.0.3\AndroidManifest.xml:50:13-72
-155            <intent-filter>
-155-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\15b326d2761b3454feca955438b09e94\transformed\jetified-firebase-auth-21.0.3\AndroidManifest.xml:51:13-61:29
-156                <action android:name="android.intent.action.VIEW" />
-156-->[com.google.firebase:firebase-inappmessaging-display:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\9ffb99ad0f6ac3d58ac31093eb31cde0\transformed\jetified-firebase-inappmessaging-display-20.1.2\AndroidManifest.xml:16:13-65
-156-->[com.google.firebase:firebase-inappmessaging-display:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\9ffb99ad0f6ac3d58ac31093eb31cde0\transformed\jetified-firebase-inappmessaging-display-20.1.2\AndroidManifest.xml:16:21-62
-157
-158                <category android:name="android.intent.category.DEFAULT" />
-158-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\15b326d2761b3454feca955438b09e94\transformed\jetified-firebase-auth-21.0.3\AndroidManifest.xml:36:17-76
-158-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\15b326d2761b3454feca955438b09e94\transformed\jetified-firebase-auth-21.0.3\AndroidManifest.xml:36:27-73
-159                <category android:name="android.intent.category.BROWSABLE" />
-159-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\15b326d2761b3454feca955438b09e94\transformed\jetified-firebase-auth-21.0.3\AndroidManifest.xml:37:17-78
-159-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\15b326d2761b3454feca955438b09e94\transformed\jetified-firebase-auth-21.0.3\AndroidManifest.xml:37:27-75
-160
-161                <data
-161-->[com.google.firebase:firebase-inappmessaging-display:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\9ffb99ad0f6ac3d58ac31093eb31cde0\transformed\jetified-firebase-inappmessaging-display-20.1.2\AndroidManifest.xml:18:13-44
-162                    android:host="firebase.auth"
-163                    android:path="/"
-164                    android:scheme="recaptcha" />
-164-->[com.google.firebase:firebase-inappmessaging-display:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\9ffb99ad0f6ac3d58ac31093eb31cde0\transformed\jetified-firebase-inappmessaging-display-20.1.2\AndroidManifest.xml:18:19-41
-165            </intent-filter>
-166        </activity>
-167
-168        <uses-library
-168-->[androidx.window:window:1.0.0] C:\Users\tanki\.gradle\caches\transforms-3\c80a8543939694f74db8ea3417cc2654\transformed\jetified-window-1.0.0\AndroidManifest.xml:25:9-27:40
-169            android:name="androidx.window.extensions"
-169-->[androidx.window:window:1.0.0] C:\Users\tanki\.gradle\caches\transforms-3\c80a8543939694f74db8ea3417cc2654\transformed\jetified-window-1.0.0\AndroidManifest.xml:26:13-54
-170            android:required="false" />
-170-->[androidx.window:window:1.0.0] C:\Users\tanki\.gradle\caches\transforms-3\c80a8543939694f74db8ea3417cc2654\transformed\jetified-window-1.0.0\AndroidManifest.xml:27:13-37
-171        <uses-library
-171-->[androidx.window:window:1.0.0] C:\Users\tanki\.gradle\caches\transforms-3\c80a8543939694f74db8ea3417cc2654\transformed\jetified-window-1.0.0\AndroidManifest.xml:28:9-30:40
-172            android:name="androidx.window.sidecar"
-172-->[androidx.window:window:1.0.0] C:\Users\tanki\.gradle\caches\transforms-3\c80a8543939694f74db8ea3417cc2654\transformed\jetified-window-1.0.0\AndroidManifest.xml:29:13-51
-173            android:required="false" />
-173-->[androidx.window:window:1.0.0] C:\Users\tanki\.gradle\caches\transforms-3\c80a8543939694f74db8ea3417cc2654\transformed\jetified-window-1.0.0\AndroidManifest.xml:30:13-37
-174
-175        <provider
-175-->[com.squareup.picasso:picasso:2.71828] C:\Users\tanki\.gradle\caches\transforms-3\06206ef7e5150d3ac0aede25e9e1a8a8\transformed\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
-176            android:name="com.squareup.picasso.PicassoProvider"
-176-->[com.squareup.picasso:picasso:2.71828] C:\Users\tanki\.gradle\caches\transforms-3\06206ef7e5150d3ac0aede25e9e1a8a8\transformed\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
-177            android:authorities="com.chatapp.com.squareup.picasso"
-177-->[com.squareup.picasso:picasso:2.71828] C:\Users\tanki\.gradle\caches\transforms-3\06206ef7e5150d3ac0aede25e9e1a8a8\transformed\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
-178            android:exported="false" />
-178-->[com.squareup.picasso:picasso:2.71828] C:\Users\tanki\.gradle\caches\transforms-3\06206ef7e5150d3ac0aede25e9e1a8a8\transformed\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
-179
-180        <activity
-180-->[com.google.android.gms:play-services-auth:20.1.0] C:\Users\tanki\.gradle\caches\transforms-3\910292740b2de1c5ebb9f2b7b72f7f87\transformed\jetified-play-services-auth-20.1.0\AndroidManifest.xml:23:9-27:75
-181            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
-181-->[com.google.android.gms:play-services-auth:20.1.0] C:\Users\tanki\.gradle\caches\transforms-3\910292740b2de1c5ebb9f2b7b72f7f87\transformed\jetified-play-services-auth-20.1.0\AndroidManifest.xml:24:13-93
-182            android:excludeFromRecents="true"
-182-->[com.google.android.gms:play-services-auth:20.1.0] C:\Users\tanki\.gradle\caches\transforms-3\910292740b2de1c5ebb9f2b7b72f7f87\transformed\jetified-play-services-auth-20.1.0\AndroidManifest.xml:25:13-46
-183            android:exported="false"
-183-->[com.google.android.gms:play-services-auth:20.1.0] C:\Users\tanki\.gradle\caches\transforms-3\910292740b2de1c5ebb9f2b7b72f7f87\transformed\jetified-play-services-auth-20.1.0\AndroidManifest.xml:26:13-37
-184            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-184-->[com.google.android.gms:play-services-auth:20.1.0] C:\Users\tanki\.gradle\caches\transforms-3\910292740b2de1c5ebb9f2b7b72f7f87\transformed\jetified-play-services-auth-20.1.0\AndroidManifest.xml:27:13-72
-185        <!--
-186            Service handling Google Sign-In user revocation. For apps that do not integrate with
-187            Google Sign-In, this service will never be started.
-188        -->
-189        <service
-189-->[com.google.android.gms:play-services-auth:20.1.0] C:\Users\tanki\.gradle\caches\transforms-3\910292740b2de1c5ebb9f2b7b72f7f87\transformed\jetified-play-services-auth-20.1.0\AndroidManifest.xml:33:9-37:51
-190            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
-190-->[com.google.android.gms:play-services-auth:20.1.0] C:\Users\tanki\.gradle\caches\transforms-3\910292740b2de1c5ebb9f2b7b72f7f87\transformed\jetified-play-services-auth-20.1.0\AndroidManifest.xml:34:13-89
-191            android:exported="true"
-191-->[com.google.android.gms:play-services-auth:20.1.0] C:\Users\tanki\.gradle\caches\transforms-3\910292740b2de1c5ebb9f2b7b72f7f87\transformed\jetified-play-services-auth-20.1.0\AndroidManifest.xml:35:13-36
-192            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
-192-->[com.google.android.gms:play-services-auth:20.1.0] C:\Users\tanki\.gradle\caches\transforms-3\910292740b2de1c5ebb9f2b7b72f7f87\transformed\jetified-play-services-auth-20.1.0\AndroidManifest.xml:36:13-107
-193            android:visibleToInstantApps="true" />
-193-->[com.google.android.gms:play-services-auth:20.1.0] C:\Users\tanki\.gradle\caches\transforms-3\910292740b2de1c5ebb9f2b7b72f7f87\transformed\jetified-play-services-auth-20.1.0\AndroidManifest.xml:37:13-48
-194
-195        <activity
-195-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\tanki\.gradle\caches\transforms-3\f96a991824859176255ccd00ca1e4e84\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
-196            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-196-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\tanki\.gradle\caches\transforms-3\f96a991824859176255ccd00ca1e4e84\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:19-85
-197            android:exported="false"
-197-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\tanki\.gradle\caches\transforms-3\f96a991824859176255ccd00ca1e4e84\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:22:19-43
-198            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-198-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\tanki\.gradle\caches\transforms-3\f96a991824859176255ccd00ca1e4e84\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:21:19-78
-199
-200        <provider
-200-->[com.google.firebase:firebase-common:20.1.0] C:\Users\tanki\.gradle\caches\transforms-3\5f4ab6152d505f4a145ad9e05f0997bc\transformed\jetified-firebase-common-20.1.0\AndroidManifest.xml:26:9-31:39
-201            android:name="com.google.firebase.provider.FirebaseInitProvider"
-201-->[com.google.firebase:firebase-common:20.1.0] C:\Users\tanki\.gradle\caches\transforms-3\5f4ab6152d505f4a145ad9e05f0997bc\transformed\jetified-firebase-common-20.1.0\AndroidManifest.xml:27:13-77
-202            android:authorities="com.chatapp.firebaseinitprovider"
-202-->[com.google.firebase:firebase-common:20.1.0] C:\Users\tanki\.gradle\caches\transforms-3\5f4ab6152d505f4a145ad9e05f0997bc\transformed\jetified-firebase-common-20.1.0\AndroidManifest.xml:28:13-72
-203            android:directBootAware="true"
-203-->[com.google.firebase:firebase-common:20.1.0] C:\Users\tanki\.gradle\caches\transforms-3\5f4ab6152d505f4a145ad9e05f0997bc\transformed\jetified-firebase-common-20.1.0\AndroidManifest.xml:29:13-43
-204            android:exported="false"
-204-->[com.google.firebase:firebase-common:20.1.0] C:\Users\tanki\.gradle\caches\transforms-3\5f4ab6152d505f4a145ad9e05f0997bc\transformed\jetified-firebase-common-20.1.0\AndroidManifest.xml:30:13-37
-205            android:initOrder="100" />
-205-->[com.google.firebase:firebase-common:20.1.0] C:\Users\tanki\.gradle\caches\transforms-3\5f4ab6152d505f4a145ad9e05f0997bc\transformed\jetified-firebase-common-20.1.0\AndroidManifest.xml:31:13-36
-206
-207        <meta-data
-207-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\tanki\.gradle\caches\transforms-3\b17eade684b0e5da0214430fee7ffe9b\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:21:9-23:69
-208            android:name="com.google.android.gms.version"
-208-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\tanki\.gradle\caches\transforms-3\b17eade684b0e5da0214430fee7ffe9b\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:22:13-58
-209            android:value="@integer/google_play_services_version" />
-209-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\tanki\.gradle\caches\transforms-3\b17eade684b0e5da0214430fee7ffe9b\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:23:13-66
-210
-211        <provider
-211-->[androidx.emoji2:emoji2:1.0.0] C:\Users\tanki\.gradle\caches\transforms-3\8e2d9601a040c59b00e67ae8908d0758\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
-212            android:name="androidx.startup.InitializationProvider"
-212-->[androidx.emoji2:emoji2:1.0.0] C:\Users\tanki\.gradle\caches\transforms-3\8e2d9601a040c59b00e67ae8908d0758\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:27:13-67
-213            android:authorities="com.chatapp.androidx-startup"
-213-->[androidx.emoji2:emoji2:1.0.0] C:\Users\tanki\.gradle\caches\transforms-3\8e2d9601a040c59b00e67ae8908d0758\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:28:13-68
-214            android:exported="false" >
-214-->[androidx.emoji2:emoji2:1.0.0] C:\Users\tanki\.gradle\caches\transforms-3\8e2d9601a040c59b00e67ae8908d0758\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:29:13-37
-215            <meta-data
-215-->[androidx.emoji2:emoji2:1.0.0] C:\Users\tanki\.gradle\caches\transforms-3\8e2d9601a040c59b00e67ae8908d0758\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
-216                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-216-->[androidx.emoji2:emoji2:1.0.0] C:\Users\tanki\.gradle\caches\transforms-3\8e2d9601a040c59b00e67ae8908d0758\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:32:17-75
-217                android:value="androidx.startup" />
-217-->[androidx.emoji2:emoji2:1.0.0] C:\Users\tanki\.gradle\caches\transforms-3\8e2d9601a040c59b00e67ae8908d0758\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:33:17-49
-218            <meta-data
-218-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\tanki\.gradle\caches\transforms-3\b5d6aac871b0d4fa6af2d5121ac84ba3\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
-219                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-219-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\tanki\.gradle\caches\transforms-3\b5d6aac871b0d4fa6af2d5121ac84ba3\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
-220                android:value="androidx.startup" />
-220-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\tanki\.gradle\caches\transforms-3\b5d6aac871b0d4fa6af2d5121ac84ba3\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
-221        </provider>
-222
-223        <service
-223-->[com.google.android.datatransport:transport-backend-cct:3.1.1] C:\Users\tanki\.gradle\caches\transforms-3\9f2fced454f29b2d5362b85e93dcc59c\transformed\jetified-transport-backend-cct-3.1.1\AndroidManifest.xml:29:9-35:19
-224            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
-224-->[com.google.android.datatransport:transport-backend-cct:3.1.1] C:\Users\tanki\.gradle\caches\transforms-3\9f2fced454f29b2d5362b85e93dcc59c\transformed\jetified-transport-backend-cct-3.1.1\AndroidManifest.xml:30:13-103
-225            android:exported="false" >
-225-->[com.google.android.datatransport:transport-backend-cct:3.1.1] C:\Users\tanki\.gradle\caches\transforms-3\9f2fced454f29b2d5362b85e93dcc59c\transformed\jetified-transport-backend-cct-3.1.1\AndroidManifest.xml:31:13-37
+66            <meta-data
+66-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:25:13-27:62
+67                android:name="android.support.PARENT_ACTIVITY"
+67-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:26:17-63
+68                android:value=".account.AccountMainActivity" />
+68-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:27:17-59
+69        </activity>
+70        <activity
+70-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:50:9-56:20
+71            android:name="com.chatapp.account.login.LoginEmailActivity"
+71-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:51:13-61
+72            android:exported="false" >
+72-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:52:13-37
+73            <meta-data
+73-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:25:13-27:62
+74                android:name="android.support.PARENT_ACTIVITY"
+74-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:26:17-63
+75                android:value=".account.AccountMainActivity" />
+75-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:27:17-59
+76        </activity>
+77        <activity
+77-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:57:9-63:20
+78            android:name="com.chatapp.conversation.ChatActivity"
+78-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:58:13-54
+79            android:exported="false" >
+79-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:59:13-37
+80            <meta-data
+80-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:25:13-27:62
+81                android:name="android.support.PARENT_ACTIVITY"
+81-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:26:17-63
+82                android:value=".conversation.MainActivity" />
+82-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:27:17-59
+83        </activity>
+84
+85        <service
+85-->[com.google.firebase:firebase-inappmessaging-display-ktx:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\fbc511e59f7ba0117b260412d9eeceed\transformed\jetified-firebase-inappmessaging-display-ktx-20.1.2\AndroidManifest.xml:12:9-18:19
+86            android:name="com.google.firebase.components.ComponentDiscoveryService"
+86-->[com.google.firebase:firebase-inappmessaging-display-ktx:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\fbc511e59f7ba0117b260412d9eeceed\transformed\jetified-firebase-inappmessaging-display-ktx-20.1.2\AndroidManifest.xml:13:13-84
+87            android:directBootAware="true"
+87-->[com.google.firebase:firebase-common:20.1.0] C:\Users\tanki\.gradle\caches\transforms-3\5f4ab6152d505f4a145ad9e05f0997bc\transformed\jetified-firebase-common-20.1.0\AndroidManifest.xml:35:13-43
+88            android:exported="false" >
+88-->[com.google.firebase:firebase-inappmessaging-display-ktx:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\fbc511e59f7ba0117b260412d9eeceed\transformed\jetified-firebase-inappmessaging-display-ktx-20.1.2\AndroidManifest.xml:14:13-37
+89            <meta-data
+89-->[com.google.firebase:firebase-inappmessaging-display-ktx:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\fbc511e59f7ba0117b260412d9eeceed\transformed\jetified-firebase-inappmessaging-display-ktx-20.1.2\AndroidManifest.xml:15:13-17:85
+90                android:name="com.google.firebase.components:com.google.firebase.inappmessaging.display.ktx.FirebaseInAppMessagingDisplayKtxRegistrar"
+90-->[com.google.firebase:firebase-inappmessaging-display-ktx:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\fbc511e59f7ba0117b260412d9eeceed\transformed\jetified-firebase-inappmessaging-display-ktx-20.1.2\AndroidManifest.xml:16:17-151
+91                android:value="com.google.firebase.components.ComponentRegistrar" />
+91-->[com.google.firebase:firebase-inappmessaging-display-ktx:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\fbc511e59f7ba0117b260412d9eeceed\transformed\jetified-firebase-inappmessaging-display-ktx-20.1.2\AndroidManifest.xml:17:17-82
+92            <meta-data
+92-->[com.google.firebase:firebase-inappmessaging-display:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\9ffb99ad0f6ac3d58ac31093eb31cde0\transformed\jetified-firebase-inappmessaging-display-20.1.2\AndroidManifest.xml:26:13-28:85
+93                android:name="com.google.firebase.components:com.google.firebase.inappmessaging.display.FirebaseInAppMessagingDisplayRegistrar"
+93-->[com.google.firebase:firebase-inappmessaging-display:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\9ffb99ad0f6ac3d58ac31093eb31cde0\transformed\jetified-firebase-inappmessaging-display-20.1.2\AndroidManifest.xml:27:17-144
+94                android:value="com.google.firebase.components.ComponentRegistrar" />
+94-->[com.google.firebase:firebase-inappmessaging-display:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\9ffb99ad0f6ac3d58ac31093eb31cde0\transformed\jetified-firebase-inappmessaging-display-20.1.2\AndroidManifest.xml:28:17-82
+95            <meta-data
+95-->[com.google.firebase:firebase-auth-ktx:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\c7a09c069b8ed9e32aa05280a2101074\transformed\jetified-firebase-auth-ktx-21.0.3\AndroidManifest.xml:11:13-13:85
+96                android:name="com.google.firebase.components:com.google.firebase.auth.ktx.FirebaseAuthKtxRegistrar"
+96-->[com.google.firebase:firebase-auth-ktx:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\c7a09c069b8ed9e32aa05280a2101074\transformed\jetified-firebase-auth-ktx-21.0.3\AndroidManifest.xml:12:17-116
+97                android:value="com.google.firebase.components.ComponentRegistrar" />
+97-->[com.google.firebase:firebase-auth-ktx:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\c7a09c069b8ed9e32aa05280a2101074\transformed\jetified-firebase-auth-ktx-21.0.3\AndroidManifest.xml:13:17-82
+98            <meta-data
+98-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\15b326d2761b3454feca955438b09e94\transformed\jetified-firebase-auth-21.0.3\AndroidManifest.xml:67:13-69:85
+99                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+99-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\15b326d2761b3454feca955438b09e94\transformed\jetified-firebase-auth-21.0.3\AndroidManifest.xml:68:17-109
+100                android:value="com.google.firebase.components.ComponentRegistrar" />
+100-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\15b326d2761b3454feca955438b09e94\transformed\jetified-firebase-auth-21.0.3\AndroidManifest.xml:69:17-82
+101            <meta-data
+101-->[com.google.firebase:firebase-firestore-ktx:24.1.1] C:\Users\tanki\.gradle\caches\transforms-3\a52317726cdc1e3f44b9585d194d9fc1\transformed\jetified-firebase-firestore-ktx-24.1.1\AndroidManifest.xml:15:13-17:85
+102                android:name="com.google.firebase.components:com.google.firebase.firestore.ktx.FirebaseFirestoreKtxRegistrar"
+102-->[com.google.firebase:firebase-firestore-ktx:24.1.1] C:\Users\tanki\.gradle\caches\transforms-3\a52317726cdc1e3f44b9585d194d9fc1\transformed\jetified-firebase-firestore-ktx-24.1.1\AndroidManifest.xml:16:17-126
+103                android:value="com.google.firebase.components.ComponentRegistrar" />
+103-->[com.google.firebase:firebase-firestore-ktx:24.1.1] C:\Users\tanki\.gradle\caches\transforms-3\a52317726cdc1e3f44b9585d194d9fc1\transformed\jetified-firebase-firestore-ktx-24.1.1\AndroidManifest.xml:17:17-82
+104            <meta-data
+104-->[com.google.firebase:firebase-storage-ktx:20.0.1] C:\Users\tanki\.gradle\caches\transforms-3\a484ac3b406ac7aad24d219ab04bb195\transformed\jetified-firebase-storage-ktx-20.0.1\AndroidManifest.xml:15:13-17:85
+105                android:name="com.google.firebase.components:com.google.firebase.storage.ktx.FirebaseStorageKtxRegistrar"
+105-->[com.google.firebase:firebase-storage-ktx:20.0.1] C:\Users\tanki\.gradle\caches\transforms-3\a484ac3b406ac7aad24d219ab04bb195\transformed\jetified-firebase-storage-ktx-20.0.1\AndroidManifest.xml:16:17-122
+106                android:value="com.google.firebase.components.ComponentRegistrar" />
+106-->[com.google.firebase:firebase-storage-ktx:20.0.1] C:\Users\tanki\.gradle\caches\transforms-3\a484ac3b406ac7aad24d219ab04bb195\transformed\jetified-firebase-storage-ktx-20.0.1\AndroidManifest.xml:17:17-82
+107            <meta-data
+107-->[com.google.firebase:firebase-database-ktx:20.0.4] C:\Users\tanki\.gradle\caches\transforms-3\7fb3f28259acdcb5dcf44b4a27c1e957\transformed\jetified-firebase-database-ktx-20.0.4\AndroidManifest.xml:15:13-17:85
+108                android:name="com.google.firebase.components:com.google.firebase.database.ktx.FirebaseDatabaseKtxRegistrar"
+108-->[com.google.firebase:firebase-database-ktx:20.0.4] C:\Users\tanki\.gradle\caches\transforms-3\7fb3f28259acdcb5dcf44b4a27c1e957\transformed\jetified-firebase-database-ktx-20.0.4\AndroidManifest.xml:16:17-124
+109                android:value="com.google.firebase.components.ComponentRegistrar" />
+109-->[com.google.firebase:firebase-database-ktx:20.0.4] C:\Users\tanki\.gradle\caches\transforms-3\7fb3f28259acdcb5dcf44b4a27c1e957\transformed\jetified-firebase-database-ktx-20.0.4\AndroidManifest.xml:17:17-82
+110            <meta-data
+110-->[com.google.firebase:firebase-firestore:24.1.1] C:\Users\tanki\.gradle\caches\transforms-3\9230a9153e74771f84d9cae2510795b8\transformed\jetified-firebase-firestore-24.1.1\AndroidManifest.xml:20:13-22:85
+111                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+111-->[com.google.firebase:firebase-firestore:24.1.1] C:\Users\tanki\.gradle\caches\transforms-3\9230a9153e74771f84d9cae2510795b8\transformed\jetified-firebase-firestore-24.1.1\AndroidManifest.xml:21:17-111
+112                android:value="com.google.firebase.components.ComponentRegistrar" />
+112-->[com.google.firebase:firebase-firestore:24.1.1] C:\Users\tanki\.gradle\caches\transforms-3\9230a9153e74771f84d9cae2510795b8\transformed\jetified-firebase-firestore-24.1.1\AndroidManifest.xml:22:17-82
+113            <meta-data
+113-->[com.google.firebase:firebase-storage:20.0.1] C:\Users\tanki\.gradle\caches\transforms-3\bdf2729fd404322180568417e0ec5794\transformed\jetified-firebase-storage-20.0.1\AndroidManifest.xml:33:13-35:85
+114                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
+114-->[com.google.firebase:firebase-storage:20.0.1] C:\Users\tanki\.gradle\caches\transforms-3\bdf2729fd404322180568417e0ec5794\transformed\jetified-firebase-storage-20.0.1\AndroidManifest.xml:34:17-107
+115                android:value="com.google.firebase.components.ComponentRegistrar" />
+115-->[com.google.firebase:firebase-storage:20.0.1] C:\Users\tanki\.gradle\caches\transforms-3\bdf2729fd404322180568417e0ec5794\transformed\jetified-firebase-storage-20.0.1\AndroidManifest.xml:35:17-82
+116            <meta-data
+116-->[com.google.firebase:firebase-database:20.0.4] C:\Users\tanki\.gradle\caches\transforms-3\5a45ddb4a58a0112d5004048ecc536aa\transformed\jetified-firebase-database-20.0.4\AndroidManifest.xml:32:13-34:85
+117                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+117-->[com.google.firebase:firebase-database:20.0.4] C:\Users\tanki\.gradle\caches\transforms-3\5a45ddb4a58a0112d5004048ecc536aa\transformed\jetified-firebase-database-20.0.4\AndroidManifest.xml:33:17-109
+118                android:value="com.google.firebase.components.ComponentRegistrar" />
+118-->[com.google.firebase:firebase-database:20.0.4] C:\Users\tanki\.gradle\caches\transforms-3\5a45ddb4a58a0112d5004048ecc536aa\transformed\jetified-firebase-database-20.0.4\AndroidManifest.xml:34:17-82
+119            <meta-data
+119-->[com.google.firebase:firebase-inappmessaging-ktx:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\7c268dd87ec7493ad7258affac5becb2\transformed\jetified-firebase-inappmessaging-ktx-20.1.2\AndroidManifest.xml:15:13-17:85
+120                android:name="com.google.firebase.components:com.google.firebase.inappmessaging.ktx.FirebaseInAppMessagingKtxRegistrar"
+120-->[com.google.firebase:firebase-inappmessaging-ktx:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\7c268dd87ec7493ad7258affac5becb2\transformed\jetified-firebase-inappmessaging-ktx-20.1.2\AndroidManifest.xml:16:17-136
+121                android:value="com.google.firebase.components.ComponentRegistrar" />
+121-->[com.google.firebase:firebase-inappmessaging-ktx:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\7c268dd87ec7493ad7258affac5becb2\transformed\jetified-firebase-inappmessaging-ktx-20.1.2\AndroidManifest.xml:17:17-82
+122            <meta-data
+122-->[com.google.firebase:firebase-common-ktx:20.1.0] C:\Users\tanki\.gradle\caches\transforms-3\7b8dac941fbfc2e3427b8033f52578df\transformed\jetified-firebase-common-ktx-20.1.0\AndroidManifest.xml:15:13-17:85
+123                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar"
+123-->[com.google.firebase:firebase-common-ktx:20.1.0] C:\Users\tanki\.gradle\caches\transforms-3\7b8dac941fbfc2e3427b8033f52578df\transformed\jetified-firebase-common-ktx-20.1.0\AndroidManifest.xml:16:17-113
+124                android:value="com.google.firebase.components.ComponentRegistrar" />
+124-->[com.google.firebase:firebase-common-ktx:20.1.0] C:\Users\tanki\.gradle\caches\transforms-3\7b8dac941fbfc2e3427b8033f52578df\transformed\jetified-firebase-common-ktx-20.1.0\AndroidManifest.xml:17:17-82
+125            <meta-data
+125-->[com.google.firebase:firebase-inappmessaging:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\8031290a786691810b146bd19e8cc84b\transformed\jetified-firebase-inappmessaging-20.1.2\AndroidManifest.xml:17:13-19:85
+126                android:name="com.google.firebase.components:com.google.firebase.inappmessaging.FirebaseInAppMessagingRegistrar"
+126-->[com.google.firebase:firebase-inappmessaging:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\8031290a786691810b146bd19e8cc84b\transformed\jetified-firebase-inappmessaging-20.1.2\AndroidManifest.xml:18:17-129
+127                android:value="com.google.firebase.components.ComponentRegistrar" />
+127-->[com.google.firebase:firebase-inappmessaging:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\8031290a786691810b146bd19e8cc84b\transformed\jetified-firebase-inappmessaging-20.1.2\AndroidManifest.xml:19:17-82
+128            <meta-data
+128-->[com.google.firebase:firebase-abt:21.0.1] C:\Users\tanki\.gradle\caches\transforms-3\6764a069516c43593dad03ae89e98c51\transformed\jetified-firebase-abt-21.0.1\AndroidManifest.xml:13:13-15:85
+129                android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar"
+129-->[com.google.firebase:firebase-abt:21.0.1] C:\Users\tanki\.gradle\caches\transforms-3\6764a069516c43593dad03ae89e98c51\transformed\jetified-firebase-abt-21.0.1\AndroidManifest.xml:14:17-109
+130                android:value="com.google.firebase.components.ComponentRegistrar" />
+130-->[com.google.firebase:firebase-abt:21.0.1] C:\Users\tanki\.gradle\caches\transforms-3\6764a069516c43593dad03ae89e98c51\transformed\jetified-firebase-abt-21.0.1\AndroidManifest.xml:15:17-82
+131            <meta-data
+131-->[com.google.firebase:firebase-datatransport:18.1.1] C:\Users\tanki\.gradle\caches\transforms-3\b8cc1511aedb6d8cc06482dc8b2cc9ee\transformed\jetified-firebase-datatransport-18.1.1\AndroidManifest.xml:28:13-30:85
+132                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+132-->[com.google.firebase:firebase-datatransport:18.1.1] C:\Users\tanki\.gradle\caches\transforms-3\b8cc1511aedb6d8cc06482dc8b2cc9ee\transformed\jetified-firebase-datatransport-18.1.1\AndroidManifest.xml:29:17-115
+133                android:value="com.google.firebase.components.ComponentRegistrar" />
+133-->[com.google.firebase:firebase-datatransport:18.1.1] C:\Users\tanki\.gradle\caches\transforms-3\b8cc1511aedb6d8cc06482dc8b2cc9ee\transformed\jetified-firebase-datatransport-18.1.1\AndroidManifest.xml:30:17-82
+134            <meta-data
+134-->[com.google.firebase:firebase-installations:17.0.1] C:\Users\tanki\.gradle\caches\transforms-3\0bd2060b27a8a3ce2f36aa0bb345761e\transformed\jetified-firebase-installations-17.0.1\AndroidManifest.xml:18:13-20:85
+135                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+135-->[com.google.firebase:firebase-installations:17.0.1] C:\Users\tanki\.gradle\caches\transforms-3\0bd2060b27a8a3ce2f36aa0bb345761e\transformed\jetified-firebase-installations-17.0.1\AndroidManifest.xml:19:17-127
+136                android:value="com.google.firebase.components.ComponentRegistrar" />
+136-->[com.google.firebase:firebase-installations:17.0.1] C:\Users\tanki\.gradle\caches\transforms-3\0bd2060b27a8a3ce2f36aa0bb345761e\transformed\jetified-firebase-installations-17.0.1\AndroidManifest.xml:20:17-82
+137        </service>
+138
+139        <activity
+139-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\15b326d2761b3454feca955438b09e94\transformed\jetified-firebase-auth-21.0.3\AndroidManifest.xml:27:9-44:20
+140            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+140-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\15b326d2761b3454feca955438b09e94\transformed\jetified-firebase-auth-21.0.3\AndroidManifest.xml:28:13-80
+141            android:excludeFromRecents="true"
+141-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\15b326d2761b3454feca955438b09e94\transformed\jetified-firebase-auth-21.0.3\AndroidManifest.xml:29:13-46
+142            android:exported="true"
+142-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\15b326d2761b3454feca955438b09e94\transformed\jetified-firebase-auth-21.0.3\AndroidManifest.xml:30:13-36
+143            android:launchMode="singleTask"
+143-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\15b326d2761b3454feca955438b09e94\transformed\jetified-firebase-auth-21.0.3\AndroidManifest.xml:31:13-44
+144            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+144-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\15b326d2761b3454feca955438b09e94\transformed\jetified-firebase-auth-21.0.3\AndroidManifest.xml:32:13-72
+145            <intent-filter>
+145-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\15b326d2761b3454feca955438b09e94\transformed\jetified-firebase-auth-21.0.3\AndroidManifest.xml:33:13-43:29
+146                <action android:name="android.intent.action.VIEW" />
+146-->[com.google.firebase:firebase-inappmessaging-display:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\9ffb99ad0f6ac3d58ac31093eb31cde0\transformed\jetified-firebase-inappmessaging-display-20.1.2\AndroidManifest.xml:16:13-65
+146-->[com.google.firebase:firebase-inappmessaging-display:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\9ffb99ad0f6ac3d58ac31093eb31cde0\transformed\jetified-firebase-inappmessaging-display-20.1.2\AndroidManifest.xml:16:21-62
+147
+148                <category android:name="android.intent.category.DEFAULT" />
+148-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\15b326d2761b3454feca955438b09e94\transformed\jetified-firebase-auth-21.0.3\AndroidManifest.xml:36:17-76
+148-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\15b326d2761b3454feca955438b09e94\transformed\jetified-firebase-auth-21.0.3\AndroidManifest.xml:36:27-73
+149                <category android:name="android.intent.category.BROWSABLE" />
+149-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\15b326d2761b3454feca955438b09e94\transformed\jetified-firebase-auth-21.0.3\AndroidManifest.xml:37:17-78
+149-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\15b326d2761b3454feca955438b09e94\transformed\jetified-firebase-auth-21.0.3\AndroidManifest.xml:37:27-75
+150
+151                <data
+151-->[com.google.firebase:firebase-inappmessaging-display:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\9ffb99ad0f6ac3d58ac31093eb31cde0\transformed\jetified-firebase-inappmessaging-display-20.1.2\AndroidManifest.xml:18:13-44
+152                    android:host="firebase.auth"
+153                    android:path="/"
+154                    android:scheme="genericidp" />
+154-->[com.google.firebase:firebase-inappmessaging-display:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\9ffb99ad0f6ac3d58ac31093eb31cde0\transformed\jetified-firebase-inappmessaging-display-20.1.2\AndroidManifest.xml:18:19-41
+155            </intent-filter>
+156        </activity>
+157        <activity
+157-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\15b326d2761b3454feca955438b09e94\transformed\jetified-firebase-auth-21.0.3\AndroidManifest.xml:45:9-62:20
+158            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+158-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\15b326d2761b3454feca955438b09e94\transformed\jetified-firebase-auth-21.0.3\AndroidManifest.xml:46:13-79
+159            android:excludeFromRecents="true"
+159-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\15b326d2761b3454feca955438b09e94\transformed\jetified-firebase-auth-21.0.3\AndroidManifest.xml:47:13-46
+160            android:exported="true"
+160-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\15b326d2761b3454feca955438b09e94\transformed\jetified-firebase-auth-21.0.3\AndroidManifest.xml:48:13-36
+161            android:launchMode="singleTask"
+161-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\15b326d2761b3454feca955438b09e94\transformed\jetified-firebase-auth-21.0.3\AndroidManifest.xml:49:13-44
+162            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+162-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\15b326d2761b3454feca955438b09e94\transformed\jetified-firebase-auth-21.0.3\AndroidManifest.xml:50:13-72
+163            <intent-filter>
+163-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\15b326d2761b3454feca955438b09e94\transformed\jetified-firebase-auth-21.0.3\AndroidManifest.xml:51:13-61:29
+164                <action android:name="android.intent.action.VIEW" />
+164-->[com.google.firebase:firebase-inappmessaging-display:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\9ffb99ad0f6ac3d58ac31093eb31cde0\transformed\jetified-firebase-inappmessaging-display-20.1.2\AndroidManifest.xml:16:13-65
+164-->[com.google.firebase:firebase-inappmessaging-display:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\9ffb99ad0f6ac3d58ac31093eb31cde0\transformed\jetified-firebase-inappmessaging-display-20.1.2\AndroidManifest.xml:16:21-62
+165
+166                <category android:name="android.intent.category.DEFAULT" />
+166-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\15b326d2761b3454feca955438b09e94\transformed\jetified-firebase-auth-21.0.3\AndroidManifest.xml:36:17-76
+166-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\15b326d2761b3454feca955438b09e94\transformed\jetified-firebase-auth-21.0.3\AndroidManifest.xml:36:27-73
+167                <category android:name="android.intent.category.BROWSABLE" />
+167-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\15b326d2761b3454feca955438b09e94\transformed\jetified-firebase-auth-21.0.3\AndroidManifest.xml:37:17-78
+167-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\tanki\.gradle\caches\transforms-3\15b326d2761b3454feca955438b09e94\transformed\jetified-firebase-auth-21.0.3\AndroidManifest.xml:37:27-75
+168
+169                <data
+169-->[com.google.firebase:firebase-inappmessaging-display:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\9ffb99ad0f6ac3d58ac31093eb31cde0\transformed\jetified-firebase-inappmessaging-display-20.1.2\AndroidManifest.xml:18:13-44
+170                    android:host="firebase.auth"
+171                    android:path="/"
+172                    android:scheme="recaptcha" />
+172-->[com.google.firebase:firebase-inappmessaging-display:20.1.2] C:\Users\tanki\.gradle\caches\transforms-3\9ffb99ad0f6ac3d58ac31093eb31cde0\transformed\jetified-firebase-inappmessaging-display-20.1.2\AndroidManifest.xml:18:19-41
+173            </intent-filter>
+174        </activity>
+175
+176        <uses-library
+176-->[androidx.window:window:1.0.0] C:\Users\tanki\.gradle\caches\transforms-3\c80a8543939694f74db8ea3417cc2654\transformed\jetified-window-1.0.0\AndroidManifest.xml:25:9-27:40
+177            android:name="androidx.window.extensions"
+177-->[androidx.window:window:1.0.0] C:\Users\tanki\.gradle\caches\transforms-3\c80a8543939694f74db8ea3417cc2654\transformed\jetified-window-1.0.0\AndroidManifest.xml:26:13-54
+178            android:required="false" />
+178-->[androidx.window:window:1.0.0] C:\Users\tanki\.gradle\caches\transforms-3\c80a8543939694f74db8ea3417cc2654\transformed\jetified-window-1.0.0\AndroidManifest.xml:27:13-37
+179        <uses-library
+179-->[androidx.window:window:1.0.0] C:\Users\tanki\.gradle\caches\transforms-3\c80a8543939694f74db8ea3417cc2654\transformed\jetified-window-1.0.0\AndroidManifest.xml:28:9-30:40
+180            android:name="androidx.window.sidecar"
+180-->[androidx.window:window:1.0.0] C:\Users\tanki\.gradle\caches\transforms-3\c80a8543939694f74db8ea3417cc2654\transformed\jetified-window-1.0.0\AndroidManifest.xml:29:13-51
+181            android:required="false" />
+181-->[androidx.window:window:1.0.0] C:\Users\tanki\.gradle\caches\transforms-3\c80a8543939694f74db8ea3417cc2654\transformed\jetified-window-1.0.0\AndroidManifest.xml:30:13-37
+182
+183        <provider
+183-->[com.squareup.picasso:picasso:2.71828] C:\Users\tanki\.gradle\caches\transforms-3\06206ef7e5150d3ac0aede25e9e1a8a8\transformed\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
+184            android:name="com.squareup.picasso.PicassoProvider"
+184-->[com.squareup.picasso:picasso:2.71828] C:\Users\tanki\.gradle\caches\transforms-3\06206ef7e5150d3ac0aede25e9e1a8a8\transformed\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
+185            android:authorities="com.chatapp.com.squareup.picasso"
+185-->[com.squareup.picasso:picasso:2.71828] C:\Users\tanki\.gradle\caches\transforms-3\06206ef7e5150d3ac0aede25e9e1a8a8\transformed\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
+186            android:exported="false" />
+186-->[com.squareup.picasso:picasso:2.71828] C:\Users\tanki\.gradle\caches\transforms-3\06206ef7e5150d3ac0aede25e9e1a8a8\transformed\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
+187
+188        <activity
+188-->[com.google.android.gms:play-services-auth:20.1.0] C:\Users\tanki\.gradle\caches\transforms-3\910292740b2de1c5ebb9f2b7b72f7f87\transformed\jetified-play-services-auth-20.1.0\AndroidManifest.xml:23:9-27:75
+189            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+189-->[com.google.android.gms:play-services-auth:20.1.0] C:\Users\tanki\.gradle\caches\transforms-3\910292740b2de1c5ebb9f2b7b72f7f87\transformed\jetified-play-services-auth-20.1.0\AndroidManifest.xml:24:13-93
+190            android:excludeFromRecents="true"
+190-->[com.google.android.gms:play-services-auth:20.1.0] C:\Users\tanki\.gradle\caches\transforms-3\910292740b2de1c5ebb9f2b7b72f7f87\transformed\jetified-play-services-auth-20.1.0\AndroidManifest.xml:25:13-46
+191            android:exported="false"
+191-->[com.google.android.gms:play-services-auth:20.1.0] C:\Users\tanki\.gradle\caches\transforms-3\910292740b2de1c5ebb9f2b7b72f7f87\transformed\jetified-play-services-auth-20.1.0\AndroidManifest.xml:26:13-37
+192            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+192-->[com.google.android.gms:play-services-auth:20.1.0] C:\Users\tanki\.gradle\caches\transforms-3\910292740b2de1c5ebb9f2b7b72f7f87\transformed\jetified-play-services-auth-20.1.0\AndroidManifest.xml:27:13-72
+193        <!--
+194            Service handling Google Sign-In user revocation. For apps that do not integrate with
+195            Google Sign-In, this service will never be started.
+196        -->
+197        <service
+197-->[com.google.android.gms:play-services-auth:20.1.0] C:\Users\tanki\.gradle\caches\transforms-3\910292740b2de1c5ebb9f2b7b72f7f87\transformed\jetified-play-services-auth-20.1.0\AndroidManifest.xml:33:9-37:51
+198            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+198-->[com.google.android.gms:play-services-auth:20.1.0] C:\Users\tanki\.gradle\caches\transforms-3\910292740b2de1c5ebb9f2b7b72f7f87\transformed\jetified-play-services-auth-20.1.0\AndroidManifest.xml:34:13-89
+199            android:exported="true"
+199-->[com.google.android.gms:play-services-auth:20.1.0] C:\Users\tanki\.gradle\caches\transforms-3\910292740b2de1c5ebb9f2b7b72f7f87\transformed\jetified-play-services-auth-20.1.0\AndroidManifest.xml:35:13-36
+200            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+200-->[com.google.android.gms:play-services-auth:20.1.0] C:\Users\tanki\.gradle\caches\transforms-3\910292740b2de1c5ebb9f2b7b72f7f87\transformed\jetified-play-services-auth-20.1.0\AndroidManifest.xml:36:13-107
+201            android:visibleToInstantApps="true" />
+201-->[com.google.android.gms:play-services-auth:20.1.0] C:\Users\tanki\.gradle\caches\transforms-3\910292740b2de1c5ebb9f2b7b72f7f87\transformed\jetified-play-services-auth-20.1.0\AndroidManifest.xml:37:13-48
+202
+203        <activity
+203-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\tanki\.gradle\caches\transforms-3\f96a991824859176255ccd00ca1e4e84\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+204            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+204-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\tanki\.gradle\caches\transforms-3\f96a991824859176255ccd00ca1e4e84\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+205            android:exported="false"
+205-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\tanki\.gradle\caches\transforms-3\f96a991824859176255ccd00ca1e4e84\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+206            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+206-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\tanki\.gradle\caches\transforms-3\f96a991824859176255ccd00ca1e4e84\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+207
+208        <provider
+208-->[com.google.firebase:firebase-common:20.1.0] C:\Users\tanki\.gradle\caches\transforms-3\5f4ab6152d505f4a145ad9e05f0997bc\transformed\jetified-firebase-common-20.1.0\AndroidManifest.xml:26:9-31:39
+209            android:name="com.google.firebase.provider.FirebaseInitProvider"
+209-->[com.google.firebase:firebase-common:20.1.0] C:\Users\tanki\.gradle\caches\transforms-3\5f4ab6152d505f4a145ad9e05f0997bc\transformed\jetified-firebase-common-20.1.0\AndroidManifest.xml:27:13-77
+210            android:authorities="com.chatapp.firebaseinitprovider"
+210-->[com.google.firebase:firebase-common:20.1.0] C:\Users\tanki\.gradle\caches\transforms-3\5f4ab6152d505f4a145ad9e05f0997bc\transformed\jetified-firebase-common-20.1.0\AndroidManifest.xml:28:13-72
+211            android:directBootAware="true"
+211-->[com.google.firebase:firebase-common:20.1.0] C:\Users\tanki\.gradle\caches\transforms-3\5f4ab6152d505f4a145ad9e05f0997bc\transformed\jetified-firebase-common-20.1.0\AndroidManifest.xml:29:13-43
+212            android:exported="false"
+212-->[com.google.firebase:firebase-common:20.1.0] C:\Users\tanki\.gradle\caches\transforms-3\5f4ab6152d505f4a145ad9e05f0997bc\transformed\jetified-firebase-common-20.1.0\AndroidManifest.xml:30:13-37
+213            android:initOrder="100" />
+213-->[com.google.firebase:firebase-common:20.1.0] C:\Users\tanki\.gradle\caches\transforms-3\5f4ab6152d505f4a145ad9e05f0997bc\transformed\jetified-firebase-common-20.1.0\AndroidManifest.xml:31:13-36
+214
+215        <meta-data
+215-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\tanki\.gradle\caches\transforms-3\b17eade684b0e5da0214430fee7ffe9b\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:21:9-23:69
+216            android:name="com.google.android.gms.version"
+216-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\tanki\.gradle\caches\transforms-3\b17eade684b0e5da0214430fee7ffe9b\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:22:13-58
+217            android:value="@integer/google_play_services_version" />
+217-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\tanki\.gradle\caches\transforms-3\b17eade684b0e5da0214430fee7ffe9b\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:23:13-66
+218
+219        <provider
+219-->[androidx.emoji2:emoji2:1.0.0] C:\Users\tanki\.gradle\caches\transforms-3\8e2d9601a040c59b00e67ae8908d0758\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+220            android:name="androidx.startup.InitializationProvider"
+220-->[androidx.emoji2:emoji2:1.0.0] C:\Users\tanki\.gradle\caches\transforms-3\8e2d9601a040c59b00e67ae8908d0758\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:27:13-67
+221            android:authorities="com.chatapp.androidx-startup"
+221-->[androidx.emoji2:emoji2:1.0.0] C:\Users\tanki\.gradle\caches\transforms-3\8e2d9601a040c59b00e67ae8908d0758\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:28:13-68
+222            android:exported="false" >
+222-->[androidx.emoji2:emoji2:1.0.0] C:\Users\tanki\.gradle\caches\transforms-3\8e2d9601a040c59b00e67ae8908d0758\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:29:13-37
+223            <meta-data
+223-->[androidx.emoji2:emoji2:1.0.0] C:\Users\tanki\.gradle\caches\transforms-3\8e2d9601a040c59b00e67ae8908d0758\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+224                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+224-->[androidx.emoji2:emoji2:1.0.0] C:\Users\tanki\.gradle\caches\transforms-3\8e2d9601a040c59b00e67ae8908d0758\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:32:17-75
+225                android:value="androidx.startup" />
+225-->[androidx.emoji2:emoji2:1.0.0] C:\Users\tanki\.gradle\caches\transforms-3\8e2d9601a040c59b00e67ae8908d0758\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:33:17-49
 226            <meta-data
-226-->[com.google.android.datatransport:transport-backend-cct:3.1.1] C:\Users\tanki\.gradle\caches\transforms-3\9f2fced454f29b2d5362b85e93dcc59c\transformed\jetified-transport-backend-cct-3.1.1\AndroidManifest.xml:32:13-34:39
-227                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
-227-->[com.google.android.datatransport:transport-backend-cct:3.1.1] C:\Users\tanki\.gradle\caches\transforms-3\9f2fced454f29b2d5362b85e93dcc59c\transformed\jetified-transport-backend-cct-3.1.1\AndroidManifest.xml:33:17-94
-228                android:value="cct" />
-228-->[com.google.android.datatransport:transport-backend-cct:3.1.1] C:\Users\tanki\.gradle\caches\transforms-3\9f2fced454f29b2d5362b85e93dcc59c\transformed\jetified-transport-backend-cct-3.1.1\AndroidManifest.xml:34:17-36
-229        </service>
-230        <service
-230-->[com.google.android.datatransport:transport-runtime:3.1.1] C:\Users\tanki\.gradle\caches\transforms-3\b08f0942310fa5675eb3f64ced6b915e\transformed\jetified-transport-runtime-3.1.1\AndroidManifest.xml:26:9-30:19
-231            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
-231-->[com.google.android.datatransport:transport-runtime:3.1.1] C:\Users\tanki\.gradle\caches\transforms-3\b08f0942310fa5675eb3f64ced6b915e\transformed\jetified-transport-runtime-3.1.1\AndroidManifest.xml:27:13-117
-232            android:exported="false"
-232-->[com.google.android.datatransport:transport-runtime:3.1.1] C:\Users\tanki\.gradle\caches\transforms-3\b08f0942310fa5675eb3f64ced6b915e\transformed\jetified-transport-runtime-3.1.1\AndroidManifest.xml:28:13-37
-233            android:permission="android.permission.BIND_JOB_SERVICE" >
-233-->[com.google.android.datatransport:transport-runtime:3.1.1] C:\Users\tanki\.gradle\caches\transforms-3\b08f0942310fa5675eb3f64ced6b915e\transformed\jetified-transport-runtime-3.1.1\AndroidManifest.xml:29:13-69
-234        </service>
-235
-236        <receiver
-236-->[com.google.android.datatransport:transport-runtime:3.1.1] C:\Users\tanki\.gradle\caches\transforms-3\b08f0942310fa5675eb3f64ced6b915e\transformed\jetified-transport-runtime-3.1.1\AndroidManifest.xml:32:9-34:40
-237            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
-237-->[com.google.android.datatransport:transport-runtime:3.1.1] C:\Users\tanki\.gradle\caches\transforms-3\b08f0942310fa5675eb3f64ced6b915e\transformed\jetified-transport-runtime-3.1.1\AndroidManifest.xml:33:13-132
-238            android:exported="false" />
-238-->[com.google.android.datatransport:transport-runtime:3.1.1] C:\Users\tanki\.gradle\caches\transforms-3\b08f0942310fa5675eb3f64ced6b915e\transformed\jetified-transport-runtime-3.1.1\AndroidManifest.xml:34:13-37
-239    </application>
-240
-241</manifest>
+226-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\tanki\.gradle\caches\transforms-3\b5d6aac871b0d4fa6af2d5121ac84ba3\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+227                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+227-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\tanki\.gradle\caches\transforms-3\b5d6aac871b0d4fa6af2d5121ac84ba3\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+228                android:value="androidx.startup" />
+228-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\tanki\.gradle\caches\transforms-3\b5d6aac871b0d4fa6af2d5121ac84ba3\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+229        </provider>
+230
+231        <service
+231-->[com.google.android.datatransport:transport-backend-cct:3.1.1] C:\Users\tanki\.gradle\caches\transforms-3\9f2fced454f29b2d5362b85e93dcc59c\transformed\jetified-transport-backend-cct-3.1.1\AndroidManifest.xml:29:9-35:19
+232            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+232-->[com.google.android.datatransport:transport-backend-cct:3.1.1] C:\Users\tanki\.gradle\caches\transforms-3\9f2fced454f29b2d5362b85e93dcc59c\transformed\jetified-transport-backend-cct-3.1.1\AndroidManifest.xml:30:13-103
+233            android:exported="false" >
+233-->[com.google.android.datatransport:transport-backend-cct:3.1.1] C:\Users\tanki\.gradle\caches\transforms-3\9f2fced454f29b2d5362b85e93dcc59c\transformed\jetified-transport-backend-cct-3.1.1\AndroidManifest.xml:31:13-37
+234            <meta-data
+234-->[com.google.android.datatransport:transport-backend-cct:3.1.1] C:\Users\tanki\.gradle\caches\transforms-3\9f2fced454f29b2d5362b85e93dcc59c\transformed\jetified-transport-backend-cct-3.1.1\AndroidManifest.xml:32:13-34:39
+235                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+235-->[com.google.android.datatransport:transport-backend-cct:3.1.1] C:\Users\tanki\.gradle\caches\transforms-3\9f2fced454f29b2d5362b85e93dcc59c\transformed\jetified-transport-backend-cct-3.1.1\AndroidManifest.xml:33:17-94
+236                android:value="cct" />
+236-->[com.google.android.datatransport:transport-backend-cct:3.1.1] C:\Users\tanki\.gradle\caches\transforms-3\9f2fced454f29b2d5362b85e93dcc59c\transformed\jetified-transport-backend-cct-3.1.1\AndroidManifest.xml:34:17-36
+237        </service>
+238        <service
+238-->[com.google.android.datatransport:transport-runtime:3.1.1] C:\Users\tanki\.gradle\caches\transforms-3\b08f0942310fa5675eb3f64ced6b915e\transformed\jetified-transport-runtime-3.1.1\AndroidManifest.xml:26:9-30:19
+239            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+239-->[com.google.android.datatransport:transport-runtime:3.1.1] C:\Users\tanki\.gradle\caches\transforms-3\b08f0942310fa5675eb3f64ced6b915e\transformed\jetified-transport-runtime-3.1.1\AndroidManifest.xml:27:13-117
+240            android:exported="false"
+240-->[com.google.android.datatransport:transport-runtime:3.1.1] C:\Users\tanki\.gradle\caches\transforms-3\b08f0942310fa5675eb3f64ced6b915e\transformed\jetified-transport-runtime-3.1.1\AndroidManifest.xml:28:13-37
+241            android:permission="android.permission.BIND_JOB_SERVICE" >
+241-->[com.google.android.datatransport:transport-runtime:3.1.1] C:\Users\tanki\.gradle\caches\transforms-3\b08f0942310fa5675eb3f64ced6b915e\transformed\jetified-transport-runtime-3.1.1\AndroidManifest.xml:29:13-69
+242        </service>
+243
+244        <receiver
+244-->[com.google.android.datatransport:transport-runtime:3.1.1] C:\Users\tanki\.gradle\caches\transforms-3\b08f0942310fa5675eb3f64ced6b915e\transformed\jetified-transport-runtime-3.1.1\AndroidManifest.xml:32:9-34:40
+245            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+245-->[com.google.android.datatransport:transport-runtime:3.1.1] C:\Users\tanki\.gradle\caches\transforms-3\b08f0942310fa5675eb3f64ced6b915e\transformed\jetified-transport-runtime-3.1.1\AndroidManifest.xml:33:13-132
+246            android:exported="false" />
+246-->[com.google.android.datatransport:transport-runtime:3.1.1] C:\Users\tanki\.gradle\caches\transforms-3\b08f0942310fa5675eb3f64ced6b915e\transformed\jetified-transport-runtime-3.1.1\AndroidManifest.xml:34:13-37
+247    </application>
+248
+249</manifest>

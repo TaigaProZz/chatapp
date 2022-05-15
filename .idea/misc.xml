@@ -10,7 +10,7 @@
         <entry key="..\:/Dev/android/chatApp/app/src/main/res/layout-v27/chat_friend_row.xml" value="0.17831813576494426" />
         <entry key="..\:/Dev/android/chatApp/app/src/main/res/layout-w1240dp/activity_login.xml" value="0.23560910307898258" />
         <entry key="..\:/Dev/android/chatApp/app/src/main/res/layout-w936dp/activity_login.xml" value="0.2807017543859649" />
-        <entry key="..\:/Dev/android/chatApp/app/src/main/res/layout/activity_chat.xml" value="0.22" />
+        <entry key="..\:/Dev/android/chatApp/app/src/main/res/layout/activity_chat.xml" value="0.25" />
         <entry key="..\:/Dev/android/chatApp/app/src/main/res/layout/activity_choice_avatar.xml" value="0.18476775956284153" />
         <entry key="..\:/Dev/android/chatApp/app/src/main/res/layout/activity_choise_avatar.xml" value="0.15" />
         <entry key="..\:/Dev/android/chatApp/app/src/main/res/layout/activity_email_login.xml" value="0.21" />
@@ -19,7 +19,7 @@
         <entry key="..\:/Dev/android/chatApp/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/Dev/android/chatApp/app/src/main/res/layout/activity_maps.xml" value="0.16154371584699453" />
         <entry key="..\:/Dev/android/chatApp/app/src/main/res/layout/activity_new_conversation.xml" value="0.16120218579234974" />
-        <entry key="..\:/Dev/android/chatApp/app/src/main/res/layout/activity_register.xml" value="0.22" />
+        <entry key="..\:/Dev/android/chatApp/app/src/main/res/layout/activity_register.xml" value="0.18" />
         <entry key="..\:/Dev/android/chatApp/app/src/main/res/layout/adapter_main_activity.xml" value="0.15" />
         <entry key="..\:/Dev/android/chatApp/app/src/main/res/layout/adapter_users_new_conversation.xml" value="0.33" />
         <entry key="..\:/Dev/android/chatApp/app/src/main/res/layout/chat_adapter.xml" value="0.18" />

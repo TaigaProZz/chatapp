@@ -1,18 +1,17 @@
 package com.chatapp.conversation
 
-import android.content.Intent
 import android.os.Bundle
 import android.util.Log
+import android.widget.Button
 import android.widget.EditText
-import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.isVisible
+import androidx.core.widget.addTextChangedListener
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.chatapp.MainActivity
 import com.chatapp.R
-import com.chatapp.account.AccountMainActivity
 import com.chatapp.models.ChatMessage
 import com.chatapp.models.User
 import com.google.android.datatransport.runtime.time.TimeModule_UptimeClockFactory
@@ -26,6 +25,9 @@ import com.google.firebase.ktx.Firebase
 import com.xwray.groupie.GroupieAdapter
 import com.xwray.groupie.GroupieViewHolder
 import com.xwray.groupie.Item
+import java.time.Instant
+import java.time.ZoneId
+import java.time.ZonedDateTime
 
 class ChatActivity : AppCompatActivity() {
 
@@ -40,7 +42,6 @@ class ChatActivity : AppCompatActivity() {
     private val auth = Firebase.auth
 
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_chat)
@@ -53,10 +54,12 @@ class ChatActivity : AppCompatActivity() {
         // recycler view settings
         val recyclerView = findViewById<RecyclerView>(R.id.recyclerView_chat)
         recyclerView.adapter = adapter
+        recyclerView.scrollToPosition(adapter.itemCount - 1)
 
 
         // call functions
         listenMessage()
+        checkEditTextIsEmpty()
 
 
         // toolbar settings
@@ -64,7 +67,7 @@ class ChatActivity : AppCompatActivity() {
 
 
         // send message button
-        findViewById<ImageButton>(R.id.sendMsgBtn).setOnClickListener {
+        findViewById<Button>(R.id.sendMsgBtn).setOnClickListener {
             sendMessage()
             Log.d(TAG, "send mess btn ")
         }
@@ -73,42 +76,46 @@ class ChatActivity : AppCompatActivity() {
 
 
     private fun sendMessage() {
-        val messageField = findViewById<EditText>(R.id.msg_box_edittext).text.toString()
         val userUid = auth.uid ?: return
         val toUserUsername = toUser?.username
+        val messageField = findViewById<EditText>(R.id.msg_box_edittext).text.toString()
+        if (messageField.isEmpty()) {
+            return
+        } else {
+            db.getReference("/users").child(userUid).child("/username")
+                .get().addOnSuccessListener {
+                    val userUsername = it.value.toString()
+                    val ref = db.getReference("/messages/$userUsername/$toUserUsername").push()
+                    val toRef = db.getReference("/messages/$toUserUsername/$userUsername").push()
 
-        db.getReference("/users").child(userUid).child("/username")
-            .get().addOnSuccessListener {
-                val userUsername = it.value.toString()
-                val ref = db.getReference("/messages/$userUsername/$toUserUsername").push()
-                val toRef = db.getReference("/messages/$toUserUsername/$userUsername").push()
+                    val chatMessage = ChatMessage(
+                        ref.key!!,
+                        messageField,
+                        userUid,
+                        toUser!!.uid,
+                        TimeModule_UptimeClockFactory.uptimeClock().time
 
-                val chatMessage = ChatMessage(
-                    ref.key!!,
-                    messageField,
-                    userUid,
-                    toUser!!.uid,
-                    TimeModule_UptimeClockFactory.uptimeClock().time
-                )
+                    )
 
-                ref.setValue(chatMessage).addOnSuccessListener {
-                    findViewById<EditText>(R.id.msg_box_edittext).text.clear()
+                    ref.setValue(chatMessage).addOnSuccessListener {
+                        findViewById<EditText>(R.id.msg_box_edittext).text.clear()
+
+                    }
+                    toRef.setValue(chatMessage)
+
+                    val lastMessageRef =
+                        db.getReference("/last-message/$toUserUsername/$userUsername")
+                            .setValue(chatMessage)
+                    val lastMessageToRef =
+                        db.getReference("/last-message/$userUsername/$toUserUsername")
+                            .setValue(chatMessage)
+
 
                 }
-                toRef.setValue(chatMessage)
 
-                val lastMessageRef = db.getReference("/last-message/$toUserUsername/$userUsername")
-                    .setValue(chatMessage)
-                val lastMessageToRef = db.getReference("/last-message/$userUsername/$toUserUsername")
-                    .setValue(chatMessage)
-
-
-
-            }
-
-
-
+        }
     }
+
 
     private fun listenMessage() {
         val userUid = auth.uid ?: return
@@ -116,39 +123,53 @@ class ChatActivity : AppCompatActivity() {
         // get the username of the user logged
         db.getReference("/users").child(userUid).child("/username")
             .get().addOnSuccessListener {
-                val userUsername = it.value.toString()
                 // collect message from database
+                val userUsername = it.value.toString()
                 val ref = db.getReference("/messages/${toUser?.username}/$userUsername")
+
                 ref.addChildEventListener(object : ChildEventListener {
                     override fun onChildAdded(snapshot: DataSnapshot, previousChildName: String?) {
                         val message = snapshot.getValue<ChatMessage>()
-
                         if (message != null) {
-                            Log.d(TAG, message.text)
-
                             if (message.userUid == userUid) {
                                 val user = MainActivity.currentUser
+                                Log.d("TagAccountMai", "${user?.uid}")
                                 adapter.add(ChatUserAdapter(message.text, user!!))
                             } else {
                                 adapter.add(ChatFriendAdapter(message.text, toUser!!))
                             }
                         }
+                        val recyclerView = findViewById<RecyclerView>(R.id.recyclerView_chat)
+                        recyclerView.scrollToPosition(adapter.itemCount - 1)
+
                     }
 
                     override fun onChildChanged(snapshot: DataSnapshot, previousChildName: String?) {
-                    }
 
+                    }
                     override fun onChildRemoved(snapshot: DataSnapshot) {
                     }
-
                     override fun onChildMoved(snapshot: DataSnapshot, previousChildName: String?) {
                     }
-
                     override fun onCancelled(error: DatabaseError) {
                     }
                 })
             }
+    }
 
+    private fun checkEditTextIsEmpty() {
+        val messageField = findViewById<EditText>(R.id.msg_box_edittext)
+        val sendMsgBtn = findViewById<Button>(R.id.sendMsgBtn)
+        sendMsgBtn.isVisible = false
+
+
+        // check if message field is not empty, hide button if empty, or display if not empty
+        messageField.addTextChangedListener {
+            Log.d(TAG, it.toString())
+            sendMsgBtn.isVisible = messageField.text.isNotEmpty()
+
+
+        }
     }
 
 }
@@ -174,9 +195,7 @@ class ChatUserAdapter(val text: String, val user: User) : Item<GroupieViewHolder
 
         // set user avatar
         val userAvatar = viewHolder.itemView.findViewById<ImageView>(R.id.avatar_user_message)
-
         Glide.with(viewHolder.itemView).load(user.avatar).into(userAvatar)
-
 
     }
 

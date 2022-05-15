@@ -4,8 +4,8 @@ package com.chatapp.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageButton;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -28,10 +28,10 @@ public final class ActivityChatBinding implements ViewBinding {
   public final RecyclerView recyclerViewChat;
 
   @NonNull
-  public final ImageButton sendMsgBtn;
+  public final Button sendMsgBtn;
 
   private ActivityChatBinding(@NonNull ConstraintLayout rootView, @NonNull EditText msgBoxEdittext,
-      @NonNull RecyclerView recyclerViewChat, @NonNull ImageButton sendMsgBtn) {
+      @NonNull RecyclerView recyclerViewChat, @NonNull Button sendMsgBtn) {
     this.rootView = rootView;
     this.msgBoxEdittext = msgBoxEdittext;
     this.recyclerViewChat = recyclerViewChat;
@@ -78,7 +78,7 @@ public final class ActivityChatBinding implements ViewBinding {
       }
 
       id = R.id.sendMsgBtn;
-      ImageButton sendMsgBtn = ViewBindings.findChildViewById(rootView, id);
+      Button sendMsgBtn = ViewBindings.findChildViewById(rootView, id);
       if (sendMsgBtn == null) {
         break missingId;
       }

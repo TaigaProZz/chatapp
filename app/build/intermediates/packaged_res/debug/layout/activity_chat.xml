@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".conversation.ChatActivity"
-    android:background="@color/purple_200"
     >
 
 
@@ -17,8 +16,10 @@
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintBottom_toTopOf="@+id/msg_box_edittext"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <EditText
         android:id="@+id/msg_box_edittext"
@@ -40,16 +41,14 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <ImageButton
+    <Button
         android:id="@+id/sendMsgBtn"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:background="@android:color/transparent"
         app:layout_constraintBottom_toBottomOf="@+id/msg_box_edittext"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/msg_box_edittext"
-        app:layout_constraintTop_toTopOf="@+id/msg_box_edittext"
-        app:srcCompat="@android:drawable/ic_menu_send" />
+        app:layout_constraintTop_toTopOf="@+id/msg_box_edittext" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

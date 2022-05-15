@@ -1,5 +1,6 @@
 package com.chatapp.account.avatar
 
+import android.accounts.Account
 import android.app.Activity
 import android.content.Intent
 import android.net.Uri
@@ -8,12 +9,13 @@ import android.provider.MediaStore
 import android.util.Log
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
-import com.chatapp.MainActivity
+import com.chatapp.conversation.MainActivity
 import com.chatapp.R
+import com.chatapp.account.AccountMainActivity
 import com.chatapp.databinding.ActivityChoiceAvatarBinding
+import com.chatapp.models.User
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.database.ktx.database
-import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 import com.google.firebase.storage.ktx.storage
 import de.hdodenhof.circleimageview.CircleImageView
@@ -23,6 +25,7 @@ class AvatarChoiceActivity : AppCompatActivity() {
     private lateinit var root: ActivityChoiceAvatarBinding
     private var db = Firebase.database("https://chat-app-84489-default-rtdb.europe-west1.firebasedatabase.app")
     val auth = Firebase.auth
+    var mGoogleCode: String =""
 
 
     companion object {
@@ -35,6 +38,21 @@ class AvatarChoiceActivity : AppCompatActivity() {
         val view = root.root
         setContentView(view)
 
+        mGoogleCode = intent.getStringExtra("requestCode").toString()
+        Log.d(TAG, mGoogleCode)
+        if (mGoogleCode == "111"){
+            Log.d(TAG, "ZDZDDZDZD")
+            val uid = auth.uid
+            val ref = MainActivity.db.getReference("/users/$uid")
+            Log.d("TagAccountMain", "${auth.currentUser?.displayName} " +
+                    "${auth.currentUser?.email!!} $uid")
+            val user = User(
+                auth.currentUser?.displayName!!,
+                auth.currentUser?.email!!,
+                avatar = auth.currentUser?.photoUrl.toString(),
+                uid = uid!!)
+            ref.setValue(user)
+        }
 
         // toolbar settings
         supportActionBar?.title = "Avatar"
@@ -56,8 +74,14 @@ class AvatarChoiceActivity : AppCompatActivity() {
             val uid = auth.uid
             val ref = db.getReference("users/$uid")
             // set a default avatar
-            ref.child("avatar").setValue("https://firebasestorage.googleapis.com/v0/b/chat-app-84489.appspot.com/o/images%2FAndroid_robot.svg.png?alt=media&token=66c7f3bf-1608-451f-916e-01ce8264dd3d")
-            startActivity(Intent(applicationContext, MainActivity::class.java))
+            // dont force default image if logged with google
+            if (mGoogleCode != "111"){
+                ref.child("avatar").setValue("https://firebasestorage.googleapis.com/v0/b/chat-app-84489.appspot.com/o/images%2FAndroid_robot.svg.png?alt=media&token=66c7f3bf-1608-451f-916e-01ce8264dd3d")
+                startActivity(Intent(applicationContext, MainActivity::class.java))
+
+            }else{
+                startActivity(Intent(applicationContext, MainActivity::class.java))
+            }
         }
 
         // confirm button avatar, and upload the image on firebase database
@@ -73,6 +97,8 @@ class AvatarChoiceActivity : AppCompatActivity() {
 
     var selectedImage: Uri? = null
 
+
+
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
 
@@ -85,7 +111,10 @@ class AvatarChoiceActivity : AppCompatActivity() {
             // set the button invisible to see circle avatar
             findViewById<Button>(R.id.avatar_circle).alpha = 0f
         }
+
+
     }
+
 
 
     // upload the avatar to Firebase storage
