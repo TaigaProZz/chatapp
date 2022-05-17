@@ -26,11 +26,16 @@ public final class ChatUserRowBinding implements ViewBinding {
   @NonNull
   public final TextView messageBodyUser;
 
+  @NonNull
+  public final TextView textTimeUser;
+
   private ChatUserRowBinding(@NonNull ConstraintLayout rootView,
-      @NonNull CircleImageView avatarUserMessage, @NonNull TextView messageBodyUser) {
+      @NonNull CircleImageView avatarUserMessage, @NonNull TextView messageBodyUser,
+      @NonNull TextView textTimeUser) {
     this.rootView = rootView;
     this.avatarUserMessage = avatarUserMessage;
     this.messageBodyUser = messageBodyUser;
+    this.textTimeUser = textTimeUser;
   }
 
   @Override
@@ -72,8 +77,14 @@ public final class ChatUserRowBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ChatUserRowBinding((ConstraintLayout) rootView, avatarUserMessage,
-          messageBodyUser);
+      id = R.id.text_time_user;
+      TextView textTimeUser = ViewBindings.findChildViewById(rootView, id);
+      if (textTimeUser == null) {
+        break missingId;
+      }
+
+      return new ChatUserRowBinding((ConstraintLayout) rootView, avatarUserMessage, messageBodyUser,
+          textTimeUser);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

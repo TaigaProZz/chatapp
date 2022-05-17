@@ -19,30 +19,31 @@ import com.xwray.groupie.Item
 class MainActivityAdapter(private val chatMessage: ChatMessage) : Item<GroupieViewHolder>() {
 
     var chatUser: User? = null
-
     override fun bind(viewHolder: GroupieViewHolder, position: Int) {
         val auth = Firebase.auth
+        // set last message
         viewHolder.itemView.findViewById<TextView>(R.id.last_message).text = chatMessage.text
 
-
+        // check which user sent the message
         val chatPartnerId: String
         if (chatMessage.toUid == auth.uid) {
             chatPartnerId = chatMessage.userUid
         } else {
             chatPartnerId = chatMessage.toUid
         }
-
+        // set user data to the adapter ( username, avatar )
         val ref = MainActivity.db.getReference("/users/$chatPartnerId")
         ref.addListenerForSingleValueEvent(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
                 chatUser = snapshot.getValue<User>()
+                // username
                 viewHolder.itemView.findViewById<TextView>(R.id.username_user_adapter_main).text =
                     chatUser?.username
 
+                //avatar
                 val adapterAvatar =
                     viewHolder.itemView.findViewById<ImageView>(R.id.avatar_user_adapter_main)
                 Glide.with(viewHolder.itemView).load(chatUser?.avatar).into(adapterAvatar)
-
             }
 
             override fun onCancelled(error: DatabaseError) {

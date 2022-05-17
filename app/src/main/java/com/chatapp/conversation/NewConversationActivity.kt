@@ -28,6 +28,10 @@ class NewConversationActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_new_conversation)
 
+        // toolbar settings
+        supportActionBar?.title = "Friends"
+
+
         // recycler view settings
         // val adapterItem = NewConversationActivityAdapter()
         val recyclerView = findViewById<RecyclerView>(R.id.recyclerView_NewConversation)

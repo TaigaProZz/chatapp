@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.chatapp.R;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -20,11 +21,15 @@ public final class ActivityMainBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
+  public final FloatingActionButton addConversationButton;
+
+  @NonNull
   public final RecyclerView recyclerViewMain;
 
   private ActivityMainBinding(@NonNull ConstraintLayout rootView,
-      @NonNull RecyclerView recyclerViewMain) {
+      @NonNull FloatingActionButton addConversationButton, @NonNull RecyclerView recyclerViewMain) {
     this.rootView = rootView;
+    this.addConversationButton = addConversationButton;
     this.recyclerViewMain = recyclerViewMain;
   }
 
@@ -55,13 +60,20 @@ public final class ActivityMainBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.add_conversation_button;
+      FloatingActionButton addConversationButton = ViewBindings.findChildViewById(rootView, id);
+      if (addConversationButton == null) {
+        break missingId;
+      }
+
       id = R.id.recycler_view_main;
       RecyclerView recyclerViewMain = ViewBindings.findChildViewById(rootView, id);
       if (recyclerViewMain == null) {
         break missingId;
       }
 
-      return new ActivityMainBinding((ConstraintLayout) rootView, recyclerViewMain);
+      return new ActivityMainBinding((ConstraintLayout) rootView, addConversationButton,
+          recyclerViewMain);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

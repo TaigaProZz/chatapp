@@ -26,11 +26,16 @@ public final class ChatFriendRowBinding implements ViewBinding {
   @NonNull
   public final TextView messageBodyFriend;
 
+  @NonNull
+  public final TextView textTimeFriend;
+
   private ChatFriendRowBinding(@NonNull ConstraintLayout rootView,
-      @NonNull CircleImageView avatarFriendMessage, @NonNull TextView messageBodyFriend) {
+      @NonNull CircleImageView avatarFriendMessage, @NonNull TextView messageBodyFriend,
+      @NonNull TextView textTimeFriend) {
     this.rootView = rootView;
     this.avatarFriendMessage = avatarFriendMessage;
     this.messageBodyFriend = messageBodyFriend;
+    this.textTimeFriend = textTimeFriend;
   }
 
   @Override
@@ -72,8 +77,14 @@ public final class ChatFriendRowBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.text_time_friend;
+      TextView textTimeFriend = ViewBindings.findChildViewById(rootView, id);
+      if (textTimeFriend == null) {
+        break missingId;
+      }
+
       return new ChatFriendRowBinding((ConstraintLayout) rootView, avatarFriendMessage,
-          messageBodyFriend);
+          messageBodyFriend, textTimeFriend);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

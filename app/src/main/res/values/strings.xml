@@ -31,6 +31,7 @@
     <string name="edit_text_hint_chat">Entrez votre message</string>
     <string name="message">MessageMessageMessageMessageMessageMessageMessageMessageMessageMessage
         MessageMessageMessageMessageMessageMessageMessageMee</string>
+    <string name="time">1</string>
 
 
 </resources>

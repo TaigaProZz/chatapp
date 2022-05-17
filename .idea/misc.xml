@@ -23,9 +23,10 @@
         <entry key="..\:/Dev/android/chatApp/app/src/main/res/layout/adapter_main_activity.xml" value="0.15" />
         <entry key="..\:/Dev/android/chatApp/app/src/main/res/layout/adapter_users_new_conversation.xml" value="0.33" />
         <entry key="..\:/Dev/android/chatApp/app/src/main/res/layout/chat_adapter.xml" value="0.18" />
-        <entry key="..\:/Dev/android/chatApp/app/src/main/res/layout/chat_friend_row.xml" value="0.5" />
-        <entry key="..\:/Dev/android/chatApp/app/src/main/res/layout/chat_user_row.xml" value="0.25" />
+        <entry key="..\:/Dev/android/chatApp/app/src/main/res/layout/chat_friend_row.xml" value="0.67" />
+        <entry key="..\:/Dev/android/chatApp/app/src/main/res/layout/chat_user_row.xml" value="1.0" />
         <entry key="..\:/Dev/android/chatApp/app/src/main/res/layout/main_activity_adapter.xml" value="0.11678832116788321" />
+        <entry key="..\:/Dev/android/chatApp/app/src/main/res/layout/message_option.xml" value="0.33" />
         <entry key="..\:/Dev/android/chatApp/app/src/main/res/layout/settings_activity.xml" value="0.16120218579234974" />
         <entry key="..\:/Dev/android/chatApp/app/src/main/res/layout/testlayout.xml" value="0.14207650273224043" />
         <entry key="..\:/Dev/android/chatApp/app/src/main/res/layout/user_profile_activity.xml" value="0.22" />
@@ -33,6 +34,8 @@
         <entry key="..\:/Dev/android/chatApp/app/src/main/res/layout/users_new_conversation_adapter.xml" value="0.13" />
         <entry key="..\:/Dev/android/chatApp/app/src/main/res/layout/users_new_message_adapter.xml" value="0.22131147540983606" />
         <entry key="..\:/Dev/android/chatApp/app/src/main/res/menu/menu.xml" value="0.1488294314381271" />
+        <entry key="..\:/Dev/android/chatApp/app/src/main/res/menu/message_option.xml" value="0.18" />
+        <entry key="..\:/Dev/android/chatApp/app/src/main/res/menu/message_options.xml" value="0.13277027027027027" />
         <entry key="..\:/Dev/android/chatApp/app/src/main/res/menu/nav_menu.xml" value="0.23783783783783785" />
         <entry key="..\:/Dev/android/chatApp/app/src/main/res/xml/root_preferences.xml" value="0.16120218579234974" />
         <entry key="..\:/Dev/chatApp/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />

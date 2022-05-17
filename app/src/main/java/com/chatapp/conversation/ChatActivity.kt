@@ -2,10 +2,8 @@ package com.chatapp.conversation
 
 import android.os.Bundle
 import android.util.Log
-import android.widget.Button
-import android.widget.EditText
-import android.widget.ImageView
-import android.widget.TextView
+import android.view.View
+import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.isVisible
 import androidx.core.widget.addTextChangedListener
@@ -25,9 +23,7 @@ import com.google.firebase.ktx.Firebase
 import com.xwray.groupie.GroupieAdapter
 import com.xwray.groupie.GroupieViewHolder
 import com.xwray.groupie.Item
-import java.time.Instant
-import java.time.ZoneId
-import java.time.ZonedDateTime
+import java.util.*
 
 class ChatActivity : AppCompatActivity() {
 
@@ -76,44 +72,40 @@ class ChatActivity : AppCompatActivity() {
 
 
     private fun sendMessage() {
-        val userUid = auth.uid ?: return
-        val toUserUsername = toUser?.username
         val messageField = findViewById<EditText>(R.id.msg_box_edittext).text.toString()
         if (messageField.isEmpty()) {
             return
         } else {
-            db.getReference("/users").child(userUid).child("/username")
-                .get().addOnSuccessListener {
-                    val userUsername = it.value.toString()
-                    val ref = db.getReference("/messages/$userUsername/$toUserUsername").push()
-                    val toRef = db.getReference("/messages/$toUserUsername/$userUsername").push()
 
-                    val chatMessage = ChatMessage(
-                        ref.key!!,
-                        messageField,
-                        userUid,
-                        toUser!!.uid,
-                        TimeModule_UptimeClockFactory.uptimeClock().time
+            val userUid = auth.uid ?: return
+            val toUserUid = toUser?.uid ?: return
 
-                    )
+            val ref = db.getReference("/messages/$toUserUid/$userUid").push()
+            val toRef = db.getReference("/messages/$userUid/$toUserUid").push()
+            val calendar = TimeModule_UptimeClockFactory.uptimeClock().time
 
-                    ref.setValue(chatMessage).addOnSuccessListener {
-                        findViewById<EditText>(R.id.msg_box_edittext).text.clear()
+            val chatMessage = ChatMessage(
+                ref.key!!,
+                messageField,
+                userUid,
+                toUserUid,
+                calendar
+            )
 
-                    }
-                    toRef.setValue(chatMessage)
+            ref.setValue(chatMessage).addOnSuccessListener {
+                findViewById<EditText>(R.id.msg_box_edittext).text.clear()
 
-                    val lastMessageRef =
-                        db.getReference("/last-message/$toUserUsername/$userUsername")
-                            .setValue(chatMessage)
-                    val lastMessageToRef =
-                        db.getReference("/last-message/$userUsername/$toUserUsername")
-                            .setValue(chatMessage)
+            }
+            toRef.setValue(chatMessage)
 
+            val toUid = toUser?.uid
+            val lastMessageRef = db.getReference("/last-message/$toUid/$userUid")
+            lastMessageRef.setValue(chatMessage)
 
-                }
-
+            val lastMessageToRef = db.getReference("/last-message/$userUid/$toUid")
+            lastMessageToRef.setValue(chatMessage)
         }
+
     }
 
 
@@ -121,40 +113,45 @@ class ChatActivity : AppCompatActivity() {
         val userUid = auth.uid ?: return
 
         // get the username of the user logged
-        db.getReference("/users").child(userUid).child("/username")
-            .get().addOnSuccessListener {
-                // collect message from database
-                val userUsername = it.value.toString()
-                val ref = db.getReference("/messages/${toUser?.username}/$userUsername")
+        val refUsername = db.getReference("/users").child(userUid).child("/username").get()
 
-                ref.addChildEventListener(object : ChildEventListener {
-                    override fun onChildAdded(snapshot: DataSnapshot, previousChildName: String?) {
-                        val message = snapshot.getValue<ChatMessage>()
-                        if (message != null) {
-                            if (message.userUid == userUid) {
-                                val user = MainActivity.currentUser
-                                Log.d("TagAccountMai", "${user?.uid}")
-                                adapter.add(ChatUserAdapter(message.text, user!!))
-                            } else {
-                                adapter.add(ChatFriendAdapter(message.text, toUser!!))
-                            }
+        refUsername.addOnSuccessListener {
+            // collect message from database
+
+            val toUserUid = toUser?.uid
+            val ref = db.getReference("/messages/$userUid/$toUserUid")
+
+            ref.addChildEventListener(object : ChildEventListener {
+                override fun onChildAdded(snapshot: DataSnapshot, previousChildName: String?) {
+                    val message = snapshot.getValue<ChatMessage>()
+                    if (message != null) {
+                        if (message.userUid == userUid) {
+                            val user = MainActivity.currentUser
+                            adapter.add(ChatUserAdapter(message.text, user!!, message))
+
+                        } else {
+                            adapter.add(ChatFriendAdapter(message.text, toUser!!, message))
                         }
-                        val recyclerView = findViewById<RecyclerView>(R.id.recyclerView_chat)
-                        recyclerView.scrollToPosition(adapter.itemCount - 1)
+                    }
+                    val recyclerView = findViewById<RecyclerView>(R.id.recyclerView_chat)
+                    recyclerView.scrollToPosition(adapter.itemCount - 1)
 
-                    }
+                }
 
-                    override fun onChildChanged(snapshot: DataSnapshot, previousChildName: String?) {
+                override fun onChildChanged(snapshot: DataSnapshot, previousChildName: String?) {
 
-                    }
-                    override fun onChildRemoved(snapshot: DataSnapshot) {
-                    }
-                    override fun onChildMoved(snapshot: DataSnapshot, previousChildName: String?) {
-                    }
-                    override fun onCancelled(error: DatabaseError) {
-                    }
-                })
-            }
+                }
+
+                override fun onChildRemoved(snapshot: DataSnapshot) {
+                }
+
+                override fun onChildMoved(snapshot: DataSnapshot, previousChildName: String?) {
+                }
+
+                override fun onCancelled(error: DatabaseError) {
+                }
+            })
+        }
     }
 
     private fun checkEditTextIsEmpty() {
@@ -171,15 +168,26 @@ class ChatActivity : AppCompatActivity() {
 
         }
     }
-
 }
 
-class ChatFriendAdapter(val text: String, val user: User) : Item<GroupieViewHolder>() {
+
+class ChatFriendAdapter(val text: String, val user: User, val chatMessage: ChatMessage) :
+    Item<GroupieViewHolder>() {
     override fun bind(viewHolder: GroupieViewHolder, position: Int) {
-        viewHolder.itemView.findViewById<TextView>(R.id.message_body_friend).text = text
+        // set text of the message
+        val textField = viewHolder.itemView.findViewById<TextView>(R.id.message_body_friend)
+        textField.text = text
         // set friend avatar with extra intent
         val friendAvatar = viewHolder.itemView.findViewById<ImageView>(R.id.avatar_friend_message)
         Glide.with(viewHolder.itemView).load(user.avatar).into(friendAvatar)
+
+        // set time of the message
+        viewHolder.itemView.findViewById<TextView>(R.id.text_time_friend).text = chatMessage.time.toString()
+
+        viewHolder.itemView.findViewById<TextView>(R.id.message_body_friend).setOnLongClickListener {
+            popUp(viewHolder.itemView.findViewById(R.id.message_body_friend))
+            isLongClickable
+        }
 
     }
 
@@ -188,18 +196,34 @@ class ChatFriendAdapter(val text: String, val user: User) : Item<GroupieViewHold
     }
 }
 
-
-class ChatUserAdapter(val text: String, val user: User) : Item<GroupieViewHolder>() {
+class ChatUserAdapter(val text: String, val user: User, val chatMessage: ChatMessage) :
+    Item<GroupieViewHolder>() {
     override fun bind(viewHolder: GroupieViewHolder, position: Int) {
-        viewHolder.itemView.findViewById<TextView>(R.id.message_body_user).text = text
-
+        // set text of the message
+        val textField = viewHolder.itemView.findViewById<TextView>(R.id.message_body_user)
+        textField.text = text
         // set user avatar
         val userAvatar = viewHolder.itemView.findViewById<ImageView>(R.id.avatar_user_message)
         Glide.with(viewHolder.itemView).load(user.avatar).into(userAvatar)
+        // set time of the message
+        viewHolder.itemView.findViewById<TextView>(R.id.text_time_user).text = chatMessage.time.toString()
 
+        viewHolder.itemView.findViewById<TextView>(R.id.message_body_user).setOnLongClickListener {
+            popUp(viewHolder.itemView.findViewById(R.id.message_body_user))
+            isLongClickable
+        }
     }
 
     override fun getLayout(): Int {
         return R.layout.chat_user_row
     }
+}
+
+private fun popUp(view: View) {
+    val popupMenu = PopupMenu(view.context, view)
+    popupMenu.menuInflater.inflate(R.menu.message_option, popupMenu.menu)
+    popupMenu.setOnMenuItemClickListener {
+        true
+    }
+    popupMenu.show()
 }

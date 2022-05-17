@@ -2738,6 +2738,7 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
+id add_conversation_button
 id adjust_height
 id adjust_width
 id alertTitle
@@ -3026,7 +3027,6 @@ id navigation_header_container
 id never
 id neverCompleteToEnd
 id neverCompleteToStart
-id new_conversation_menu
 id noScroll
 id noState
 id none
@@ -3179,6 +3179,8 @@ id textTop
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
+id text_time_friend
+id text_time_user
 id textinput_counter
 id textinput_error
 id textinput_helper_text
@@ -3456,6 +3458,7 @@ layout text_view_without_line_height
 layout user_profile_activity
 menu example_menu
 menu example_menu2
+menu message_option
 menu nav_menu
 mipmap ic_launcher
 mipmap ic_launcher_round
@@ -3646,6 +3649,7 @@ string search_menu_title
 string sign_out
 string status_bar_notification_info_overflow
 string summary_collapsed_preference_list
+string time
 string title_activity_login
 string title_activity_maps
 string title_activity_settings

@@ -25,6 +25,7 @@
     <string name="se_connecter">Se connecter</string>
     <string name="se_connecter_par_email">Se connecter par email</string>
     <string name="sign_out">Déconnexion</string>
+    <string name="time">1</string>
     <string name="title_activity_login">LoginActivity</string>
     <string name="title_activity_maps">MapsActivity</string>
     <string name="username">Username</string>
