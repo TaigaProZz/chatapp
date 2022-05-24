@@ -12,7 +12,6 @@ import com.bumptech.glide.Glide
 import com.chatapp.R
 import com.chatapp.models.ChatMessage
 import com.chatapp.models.User
-import com.google.android.datatransport.runtime.time.TimeModule_UptimeClockFactory
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.database.ChildEventListener
 import com.google.firebase.database.DataSnapshot
@@ -65,7 +64,6 @@ class ChatActivity : AppCompatActivity() {
         // send message button
         findViewById<Button>(R.id.sendMsgBtn).setOnClickListener {
             sendMessage()
-            Log.d(TAG, "send mess btn ")
         }
 
     }
@@ -79,17 +77,17 @@ class ChatActivity : AppCompatActivity() {
 
             val userUid = auth.uid ?: return
             val toUserUid = toUser?.uid ?: return
+            val calendar = Calendar.getInstance().time.time
 
             val ref = db.getReference("/messages/$toUserUid/$userUid").push()
             val toRef = db.getReference("/messages/$userUid/$toUserUid").push()
-            val calendar = TimeModule_UptimeClockFactory.uptimeClock().time
 
             val chatMessage = ChatMessage(
                 ref.key!!,
                 messageField,
                 userUid,
                 toUserUid,
-                calendar
+                calendar.toString()
             )
 
             ref.setValue(chatMessage).addOnSuccessListener {
@@ -102,8 +100,11 @@ class ChatActivity : AppCompatActivity() {
             val lastMessageRef = db.getReference("/last-message/$toUid/$userUid")
             lastMessageRef.setValue(chatMessage)
 
+
             val lastMessageToRef = db.getReference("/last-message/$userUid/$toUid")
             lastMessageToRef.setValue(chatMessage)
+
+
         }
 
     }

@@ -3,8 +3,8 @@ package com.chatapp.adapters
 import android.widget.ImageView
 import android.widget.TextView
 import com.bumptech.glide.Glide
-import com.chatapp.conversation.MainActivity
 import com.chatapp.R
+import com.chatapp.conversation.MainActivity
 import com.chatapp.models.ChatMessage
 import com.chatapp.models.User
 import com.google.firebase.auth.ktx.auth
@@ -17,6 +17,8 @@ import com.xwray.groupie.GroupieViewHolder
 import com.xwray.groupie.Item
 
 class MainActivityAdapter(private val chatMessage: ChatMessage) : Item<GroupieViewHolder>() {
+
+
 
     var chatUser: User? = null
     override fun bind(viewHolder: GroupieViewHolder, position: Int) {
@@ -51,6 +53,8 @@ class MainActivityAdapter(private val chatMessage: ChatMessage) : Item<GroupieVi
 
         })
     }
+
+
 
     override fun getLayout(): Int {
         return R.layout.adapter_main_activity

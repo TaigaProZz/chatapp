@@ -33,7 +33,6 @@ class NewConversationActivity : AppCompatActivity() {
 
 
         // recycler view settings
-        // val adapterItem = NewConversationActivityAdapter()
         val recyclerView = findViewById<RecyclerView>(R.id.recyclerView_NewConversation)
         val adapter = GroupieAdapter()
         recyclerView.adapter = adapter
@@ -45,7 +44,7 @@ class NewConversationActivity : AppCompatActivity() {
     // TODO Add friends only
     // get users from database and add it on the recycler view
     private fun fetchUsers() {
-        val ref = db.getReference("/users")
+        val ref = db.getReference("/users").orderByChild("username")
         ref.addListenerForSingleValueEvent(object : ValueEventListener {
 
             override fun onDataChange(snapshot: DataSnapshot) {
@@ -53,6 +52,7 @@ class NewConversationActivity : AppCompatActivity() {
                 val adapter = GroupieAdapter()
 
                 snapshot.children.forEach {
+
                     val user = it.getValue(User::class.java)
                     val adapterItem = NewConversationActivityAdapter(user!!)
                     adapter.add(adapterItem)

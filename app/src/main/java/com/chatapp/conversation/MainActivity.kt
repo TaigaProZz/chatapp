@@ -2,6 +2,7 @@ package com.chatapp.conversation
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
@@ -24,7 +25,6 @@ import com.google.firebase.database.ktx.getValue
 import com.google.firebase.ktx.Firebase
 import com.xwray.groupie.GroupieAdapter
 import java.util.*
-import kotlin.collections.HashMap
 
 
 class MainActivity : AppCompatActivity() {
@@ -53,6 +53,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         // call functions
+
         fetchUser()
         listenMessageFromDatabase()
 
@@ -70,6 +71,7 @@ class MainActivity : AppCompatActivity() {
         // recycler view settings
         val recyclerview = findViewById<RecyclerView>(R.id.recycler_view_main)
         recyclerview.adapter = adapter
+        adapter.clear()
 
         adapter.setOnItemClickListener { item, _ ->
             val intent = Intent(applicationContext, ChatActivity::class.java)
@@ -80,56 +82,52 @@ class MainActivity : AppCompatActivity() {
 
     }
 
+    private val lastMessageList = TreeMap<String, ChatMessage>()
 
-    //private fun refreshRecyclerView() {
-//
-    //}
-    private val lastMessageList = HashMap<String, ChatMessage>()
+    private fun refreshRecycler() {
+        adapter.clear()
+
+        lastMessageList.values.sortedBy { message ->
+            message.time
+        }.forEach {
+            adapter.add(0, MainActivityAdapter(it))
+
+        }
+    }
 
     private fun listenMessageFromDatabase() {
+
         // get the username of the user logged
         if (auth.uid != null) {
             // collect message from database
             val userUid = auth.uid
-            val ref = db.getReference("last-message/$userUid").orderByChild("time")
+
+            val ref = db.getReference("last-message/$userUid")
+
             ref.addChildEventListener(object : ChildEventListener {
                 override fun onChildAdded(snapshot: DataSnapshot, previousChildName: String?) {
-                    val message = snapshot.getValue(ChatMessage::class.java) ?: return
+                    val message = snapshot.getValue<ChatMessage>() ?: return
                     lastMessageList[snapshot.key!!] = message
+                    refreshRecycler()
 
-                    adapter.clear()
-                    lastMessageList.toSortedMap()
-                    lastMessageList.values.forEach {
-                        // add to recycler view the message
-                        adapter.add(MainActivityAdapter(it))
-                    }
-
-
-                    //refreshRecyclerView()
                 }
 
                 override fun onChildChanged(snapshot: DataSnapshot, previousChildName: String?) {
                     val message = snapshot.getValue<ChatMessage>() ?: return
-                    adapter.clear()
                     lastMessageList[snapshot.key!!] = message
+                    refreshRecycler()
 
-                    adapter.clear()
-                    lastMessageList.toSortedMap()
-                    lastMessageList.values.forEach {
-                        // add to recycler view the message
-                        adapter.add(MainActivityAdapter(it))
-                    }
-
-                    //refreshRecyclerView()
                 }
 
                 override fun onChildRemoved(snapshot: DataSnapshot) {
+
                 }
 
                 override fun onChildMoved(
                     snapshot: DataSnapshot,
                     previousChildName: String?
                 ) {
+
                 }
 
                 override fun onCancelled(error: DatabaseError) {
@@ -138,6 +136,7 @@ class MainActivity : AppCompatActivity() {
         }
 
     }
+
 
     // fetch user information
     private fun fetchUser() {
@@ -184,3 +183,4 @@ class MainActivity : AppCompatActivity() {
     }
 
 }
+
