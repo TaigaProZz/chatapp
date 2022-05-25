@@ -16,10 +16,6 @@
         "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-45:\\mipmap-hdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.chatapp-merged_res-43:/menu_message_option.xml.flat",
-        "source": "com.chatapp-main-45:/menu/message_option.xml"
-    },
-    {
         "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-merged_res-43:\\drawable_message_avatar_circle.xml.flat",
         "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-45:\\drawable\\message_avatar_circle.xml"
     },
@@ -56,12 +52,12 @@
         "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-45:\\layout\\activity_login_main.xml"
     },
     {
-        "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-merged_res-43:\\drawable_avatar_circle.xml.flat",
-        "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-45:\\drawable\\avatar_circle.xml"
-    },
-    {
         "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-merged_res-43:\\mipmap-xxhdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-45:\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-merged_res-43:\\drawable_avatar_circle.xml.flat",
+        "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-45:\\drawable\\avatar_circle.xml"
     },
     {
         "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-merged_res-43:\\layout_user_profile_activity.xml.flat",
@@ -74,6 +70,10 @@
     {
         "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-merged_res-43:\\mipmap-hdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-45:\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.chatapp-merged_res-43:/menu_conversation_option.xml.flat",
+        "source": "com.chatapp-main-45:/menu/conversation_option.xml"
     },
     {
         "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-merged_res-43:\\mipmap-xhdpi_ic_launcher.webp.flat",
@@ -130,6 +130,10 @@
     {
         "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-merged_res-43:\\layout_adapter_main_activity.xml.flat",
         "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-45:\\layout\\adapter_main_activity.xml"
+    },
+    {
+        "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-merged_res-43:\\menu_conversation_option.xml.flat",
+        "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-45:\\menu\\conversation_option.xml"
     },
     {
         "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-merged_res-43:\\menu_message_option.xml.flat",

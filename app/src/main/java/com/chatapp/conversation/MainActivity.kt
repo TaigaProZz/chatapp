@@ -5,12 +5,15 @@ import android.os.Bundle
 import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.ImageView
+import android.widget.PopupMenu
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.chatapp.R
 import com.chatapp.UserProfileActivity
 import com.chatapp.account.AccountMainActivity
-import com.chatapp.adapters.MainActivityAdapter
 import com.chatapp.conversation.NewConversationActivity.Companion.USER_KEY
 import com.chatapp.models.ChatMessage
 import com.chatapp.models.User
@@ -24,6 +27,8 @@ import com.google.firebase.database.ktx.database
 import com.google.firebase.database.ktx.getValue
 import com.google.firebase.ktx.Firebase
 import com.xwray.groupie.GroupieAdapter
+import com.xwray.groupie.GroupieViewHolder
+import com.xwray.groupie.Item
 import java.util.*
 
 
@@ -40,6 +45,8 @@ class MainActivity : AppCompatActivity() {
     val tag = "TagMainActivity"
     private val auth = Firebase.auth
     private val adapter = GroupieAdapter()
+    val lastMessageList = TreeMap<String, ChatMessage>()
+
 
 
     override fun onStart() {
@@ -53,7 +60,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         // call functions
-
         fetchUser()
         listenMessageFromDatabase()
 
@@ -61,7 +67,7 @@ class MainActivity : AppCompatActivity() {
         // toolbar settings
         supportActionBar?.title = "ChatApp"
 
-        // add conversation
+        // add conversation button
         findViewById<FloatingActionButton>(R.id.add_conversation_button)
             .setOnClickListener {
                 startActivity(Intent(applicationContext, NewConversationActivity::class.java))
@@ -71,8 +77,8 @@ class MainActivity : AppCompatActivity() {
         // recycler view settings
         val recyclerview = findViewById<RecyclerView>(R.id.recycler_view_main)
         recyclerview.adapter = adapter
-        adapter.clear()
 
+        // open the conversation with user selected
         adapter.setOnItemClickListener { item, _ ->
             val intent = Intent(applicationContext, ChatActivity::class.java)
             val row = item as MainActivityAdapter
@@ -80,30 +86,53 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        val userUid = auth.uid
+        // long press on item
+        adapter.setOnItemLongClickListener { item, view ->
+
+            val message = item as MainActivityAdapter
+            val ref = db.getReference("last-message/$userUid/${message.chatUser}")
+
+            val popupMenu = PopupMenu(this, view)
+            popupMenu.menuInflater.inflate(R.menu.conversation_option, popupMenu.menu)
+            popupMenu.setOnMenuItemClickListener {
+                when (it.itemId) {
+                    // TODO delete item + delete in firebase too
+                    R.id.delete_conversation -> Log.d("taggbou", "$ref")
+
+                }
+                true
+            }
+            popupMenu.show()
+            true
+        }
     }
 
-    private val lastMessageList = TreeMap<String, ChatMessage>()
+
+
+
+    private fun deleteItem(position: Int){
+
+    }
 
     private fun refreshRecycler() {
         adapter.clear()
 
+        // sort the list by time and add it to the recycler view
         lastMessageList.values.sortedBy { message ->
             message.time
         }.forEach {
             adapter.add(0, MainActivityAdapter(it))
-
         }
     }
 
     private fun listenMessageFromDatabase() {
-
         // get the username of the user logged
         if (auth.uid != null) {
             // collect message from database
             val userUid = auth.uid
 
             val ref = db.getReference("last-message/$userUid")
-
             ref.addChildEventListener(object : ChildEventListener {
                 override fun onChildAdded(snapshot: DataSnapshot, previousChildName: String?) {
                     val message = snapshot.getValue<ChatMessage>() ?: return
@@ -120,21 +149,15 @@ class MainActivity : AppCompatActivity() {
                 }
 
                 override fun onChildRemoved(snapshot: DataSnapshot) {
-
                 }
 
-                override fun onChildMoved(
-                    snapshot: DataSnapshot,
-                    previousChildName: String?
-                ) {
-
+                override fun onChildMoved(snapshot: DataSnapshot, previousChildName: String?) {
                 }
 
                 override fun onCancelled(error: DatabaseError) {
                 }
             })
         }
-
     }
 
 
@@ -155,9 +178,7 @@ class MainActivity : AppCompatActivity() {
 
     // if user is not connected with Firebase, force go to AccountMainActivity
     private fun checkIfUserIsConnected() {
-
         val currentUser = auth.currentUser
-
         // if the user is not connected, force login activity
         if (currentUser == null) {
             val intent =
@@ -178,9 +199,54 @@ class MainActivity : AppCompatActivity() {
         when (item.itemId) {
             R.id.user_profile_menu ->
                 startActivity(Intent(applicationContext, UserProfileActivity::class.java))
+            R.id.delete_conversation ->
+                startActivity(Intent(applicationContext, UserProfileActivity::class.java))
         }
         return super.onOptionsItemSelected(item)
     }
 
 }
+
+/*    CLASS ADAPTER   */
+class MainActivityAdapter(private val chatMessage: ChatMessage) : Item<GroupieViewHolder>() {
+
+    var chatUser: User? = null
+    override fun bind(viewHolder: GroupieViewHolder, position: Int) {
+        val auth = Firebase.auth
+        // set last message of the user
+        viewHolder.itemView.findViewById<TextView>(R.id.last_message).text = chatMessage.text
+
+        // check which user sent the message
+        val chatPartnerId: String
+        if (chatMessage.toUid == auth.uid) {
+            chatPartnerId = chatMessage.userUid
+        } else {
+            chatPartnerId = chatMessage.toUid
+        }
+        // set user data to the adapter ( username, avatar )
+        val ref = MainActivity.db.getReference("/users/$chatPartnerId")
+        ref.addListenerForSingleValueEvent(object : ValueEventListener {
+            override fun onDataChange(snapshot: DataSnapshot) {
+                chatUser = snapshot.getValue<User>()
+                // username
+                viewHolder.itemView.findViewById<TextView>(R.id.username_user_adapter_main).text =
+                    chatUser?.username
+                //avatar
+                val adapterAvatar =
+                    viewHolder.itemView.findViewById<ImageView>(R.id.avatar_user_adapter_main)
+                Glide.with(viewHolder.itemView).load(chatUser?.avatar).into(adapterAvatar)
+            }
+
+            override fun onCancelled(error: DatabaseError) {
+            }
+        })
+    }
+    override fun getLayout(): Int {
+        return R.layout.adapter_main_activity
+    }
+
+
+}
+
+
 

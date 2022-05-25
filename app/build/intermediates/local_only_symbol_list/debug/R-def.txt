@@ -33,6 +33,7 @@ id avatar_user_profile
 id backArrow
 id confirm_avatar_button
 id container
+id delete_conversation
 id editBtn_email_profile_user
 id email_register
 id email_user_profile
@@ -77,6 +78,7 @@ layout adapter_users_new_conversation
 layout chat_friend_row
 layout chat_user_row
 layout user_profile_activity
+menu conversation_option
 menu message_option
 menu nav_menu
 mipmap ic_launcher

@@ -30,12 +30,7 @@ class LoginEmailActivity : AppCompatActivity() {
         findViewById<TextView>(R.id.goto_register_button).setOnClickListener {
             startActivity(Intent(applicationContext, RegisterEmailActivity::class.java))
         }
-
-
-        // back arrow
-        findViewById<ImageView>(R.id.backArrow).setOnClickListener {
-            startActivity(Intent(applicationContext, AccountMainActivity::class.java))
-        }
+        
 
     }
 

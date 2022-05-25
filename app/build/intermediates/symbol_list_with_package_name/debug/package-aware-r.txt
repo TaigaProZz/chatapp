@@ -2841,6 +2841,7 @@ id decelerate
 id decelerateAndComplete
 id decor_content_parent
 id default_activity_button
+id delete_conversation
 id deltaRelative
 id dependency_ordering
 id design_bottom_sheet
@@ -3456,6 +3457,7 @@ layout text_view_with_line_height_from_style
 layout text_view_with_theme_line_height
 layout text_view_without_line_height
 layout user_profile_activity
+menu conversation_option
 menu example_menu
 menu example_menu2
 menu message_option
