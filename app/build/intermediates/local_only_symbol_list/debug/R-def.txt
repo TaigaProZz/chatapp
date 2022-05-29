@@ -3,6 +3,7 @@ local
 array reply_entries
 array reply_values
 color black
+color cam_border
 color friend_message_border
 color grey
 color grey2
@@ -17,6 +18,8 @@ dimen avatar_msg
 dimen button_height
 dimen button_width
 drawable avatar_circle
+drawable cam_border
+drawable ic_baseline_photo_camera_24
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable message_avatar_circle
@@ -30,11 +33,14 @@ id avatar_user_adapter
 id avatar_user_adapter_main
 id avatar_user_message
 id avatar_user_profile
-id backArrow
+id change_avatar_btn
+id change_email_btn
+id change_username_btn
 id confirm_avatar_button
 id container
 id delete_conversation
-id editBtn_email_profile_user
+id edit_text_change_username
+id email_ico
 id email_register
 id email_user_profile
 id google_button
@@ -53,12 +59,12 @@ id recyclerView_chat
 id recycler_view_main
 id register_button
 id register_email_button
-id save_username
 id sendMsgBtn
 id sign_out_button
 id skip_avatar_choice_btn
 id text_time_friend
 id text_time_user
+id user_ico
 id user_profile_menu
 id username
 id username_login
@@ -77,6 +83,7 @@ layout adapter_main_activity
 layout adapter_users_new_conversation
 layout chat_friend_row
 layout chat_user_row
+layout edit_text_alertbox
 layout user_profile_activity
 menu conversation_option
 menu message_option

@@ -36,7 +36,8 @@ class MainActivity : AppCompatActivity() {
 
 
     companion object {
-
+        val adapter = GroupieAdapter()
+        val lastMessageList = TreeMap<String, ChatMessage>()
         var currentUser: User? = null
         val db =
             Firebase.database("https://chat-app-84489-default-rtdb.europe-west1.firebasedatabase.app")
@@ -44,9 +45,6 @@ class MainActivity : AppCompatActivity() {
 
     val tag = "TagMainActivity"
     private val auth = Firebase.auth
-    private val adapter = GroupieAdapter()
-    val lastMessageList = TreeMap<String, ChatMessage>()
-
 
 
     override fun onStart() {
@@ -86,34 +84,9 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        val userUid = auth.uid
-        // long press on item
-        adapter.setOnItemLongClickListener { item, view ->
-
-            val message = item as MainActivityAdapter
-            val ref = db.getReference("last-message/$userUid/${message.chatUser}")
-
-            val popupMenu = PopupMenu(this, view)
-            popupMenu.menuInflater.inflate(R.menu.conversation_option, popupMenu.menu)
-            popupMenu.setOnMenuItemClickListener {
-                when (it.itemId) {
-                    // TODO delete item + delete in firebase too
-                    R.id.delete_conversation -> Log.d("taggbou", "$ref")
-
-                }
-                true
-            }
-            popupMenu.show()
-            true
-        }
-    }
-
-
-
-
-    private fun deleteItem(position: Int){
 
     }
+
 
     private fun refreshRecycler() {
         adapter.clear()
@@ -149,9 +122,16 @@ class MainActivity : AppCompatActivity() {
                 }
 
                 override fun onChildRemoved(snapshot: DataSnapshot) {
+                    val message = snapshot.getValue<ChatMessage>() ?: return
+                    lastMessageList[snapshot.key!!] = message
+                    refreshRecycler()
+
                 }
 
                 override fun onChildMoved(snapshot: DataSnapshot, previousChildName: String?) {
+                    val message = snapshot.getValue<ChatMessage>() ?: return
+                    lastMessageList[snapshot.key!!] = message
+                    refreshRecycler()
                 }
 
                 override fun onCancelled(error: DatabaseError) {
@@ -240,7 +220,38 @@ class MainActivityAdapter(private val chatMessage: ChatMessage) : Item<GroupieVi
             override fun onCancelled(error: DatabaseError) {
             }
         })
+
+
+        // long press on item
+        MainActivity.adapter.setOnItemLongClickListener { item, view ->
+            val message = item as MainActivityAdapter
+            val userUid = auth.uid
+            val uid = message.chatUser?.uid
+            val refLastMessage = MainActivity.db.getReference("last-message/$userUid/$uid")
+            // pop up
+            val popupMenu = PopupMenu(view.context, view)
+            popupMenu.menuInflater.inflate(R.menu.conversation_option, popupMenu.menu)
+            popupMenu.setOnMenuItemClickListener {
+                when (it.itemId) {
+                    // delete message button
+                    R.id.delete_conversation -> {
+                        // TODO refresh the recyclerview
+                        refLastMessage.removeValue().addOnSuccessListener {
+                            MainActivity.adapter.notifyItemRangeRemoved(position, MainActivity.lastMessageList.size)
+
+                        }
+
+                    }
+                }
+                true
+            }
+            popupMenu.show()
+            true
+        }
+
+
     }
+
     override fun getLayout(): Int {
         return R.layout.adapter_main_activity
     }

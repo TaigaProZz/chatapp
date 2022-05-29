@@ -6,7 +6,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -21,9 +20,6 @@ import java.lang.String;
 public final class ActivityEmailLoginBinding implements ViewBinding {
   @NonNull
   private final ConstraintLayout rootView;
-
-  @NonNull
-  public final ImageView backArrow;
 
   @NonNull
   public final ConstraintLayout container;
@@ -41,11 +37,10 @@ public final class ActivityEmailLoginBinding implements ViewBinding {
   public final EditText usernameLogin;
 
   private ActivityEmailLoginBinding(@NonNull ConstraintLayout rootView,
-      @NonNull ImageView backArrow, @NonNull ConstraintLayout container,
-      @NonNull TextView gotoRegisterButton, @NonNull Button loginButton,
-      @NonNull EditText passwordLogin, @NonNull EditText usernameLogin) {
+      @NonNull ConstraintLayout container, @NonNull TextView gotoRegisterButton,
+      @NonNull Button loginButton, @NonNull EditText passwordLogin,
+      @NonNull EditText usernameLogin) {
     this.rootView = rootView;
-    this.backArrow = backArrow;
     this.container = container;
     this.gotoRegisterButton = gotoRegisterButton;
     this.loginButton = loginButton;
@@ -80,12 +75,6 @@ public final class ActivityEmailLoginBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.backArrow;
-      ImageView backArrow = ViewBindings.findChildViewById(rootView, id);
-      if (backArrow == null) {
-        break missingId;
-      }
-
       ConstraintLayout container = (ConstraintLayout) rootView;
 
       id = R.id.goto_register_button;
@@ -112,7 +101,7 @@ public final class ActivityEmailLoginBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityEmailLoginBinding((ConstraintLayout) rootView, backArrow, container,
+      return new ActivityEmailLoginBinding((ConstraintLayout) rootView, container,
           gotoRegisterButton, loginButton, passwordLogin, usernameLogin);
     }
     String missingId = rootView.getResources().getResourceName(id);

@@ -26,30 +26,44 @@ public final class UserProfileActivityBinding implements ViewBinding {
   public final CircleImageView avatarUserProfile;
 
   @NonNull
-  public final ImageView editBtnEmailProfileUser;
+  public final ImageView changeAvatarBtn;
+
+  @NonNull
+  public final ImageView changeEmailBtn;
+
+  @NonNull
+  public final ImageView changeUsernameBtn;
+
+  @NonNull
+  public final ImageView emailIco;
 
   @NonNull
   public final TextView emailUserProfile;
 
   @NonNull
-  public final ImageView saveUsername;
+  public final Button signOutButton;
 
   @NonNull
-  public final Button signOutButton;
+  public final ImageView userIco;
 
   @NonNull
   public final TextView usernameUserProfile;
 
   private UserProfileActivityBinding(@NonNull ConstraintLayout rootView,
-      @NonNull CircleImageView avatarUserProfile, @NonNull ImageView editBtnEmailProfileUser,
-      @NonNull TextView emailUserProfile, @NonNull ImageView saveUsername,
-      @NonNull Button signOutButton, @NonNull TextView usernameUserProfile) {
+      @NonNull CircleImageView avatarUserProfile, @NonNull ImageView changeAvatarBtn,
+      @NonNull ImageView changeEmailBtn, @NonNull ImageView changeUsernameBtn,
+      @NonNull ImageView emailIco, @NonNull TextView emailUserProfile,
+      @NonNull Button signOutButton, @NonNull ImageView userIco,
+      @NonNull TextView usernameUserProfile) {
     this.rootView = rootView;
     this.avatarUserProfile = avatarUserProfile;
-    this.editBtnEmailProfileUser = editBtnEmailProfileUser;
+    this.changeAvatarBtn = changeAvatarBtn;
+    this.changeEmailBtn = changeEmailBtn;
+    this.changeUsernameBtn = changeUsernameBtn;
+    this.emailIco = emailIco;
     this.emailUserProfile = emailUserProfile;
-    this.saveUsername = saveUsername;
     this.signOutButton = signOutButton;
+    this.userIco = userIco;
     this.usernameUserProfile = usernameUserProfile;
   }
 
@@ -86,9 +100,27 @@ public final class UserProfileActivityBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.editBtn_email_profile_user;
-      ImageView editBtnEmailProfileUser = ViewBindings.findChildViewById(rootView, id);
-      if (editBtnEmailProfileUser == null) {
+      id = R.id.change_avatar_btn;
+      ImageView changeAvatarBtn = ViewBindings.findChildViewById(rootView, id);
+      if (changeAvatarBtn == null) {
+        break missingId;
+      }
+
+      id = R.id.change_email_btn;
+      ImageView changeEmailBtn = ViewBindings.findChildViewById(rootView, id);
+      if (changeEmailBtn == null) {
+        break missingId;
+      }
+
+      id = R.id.change_username_btn;
+      ImageView changeUsernameBtn = ViewBindings.findChildViewById(rootView, id);
+      if (changeUsernameBtn == null) {
+        break missingId;
+      }
+
+      id = R.id.email_ico;
+      ImageView emailIco = ViewBindings.findChildViewById(rootView, id);
+      if (emailIco == null) {
         break missingId;
       }
 
@@ -98,15 +130,15 @@ public final class UserProfileActivityBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.save_username;
-      ImageView saveUsername = ViewBindings.findChildViewById(rootView, id);
-      if (saveUsername == null) {
-        break missingId;
-      }
-
       id = R.id.sign_out_button;
       Button signOutButton = ViewBindings.findChildViewById(rootView, id);
       if (signOutButton == null) {
+        break missingId;
+      }
+
+      id = R.id.user_ico;
+      ImageView userIco = ViewBindings.findChildViewById(rootView, id);
+      if (userIco == null) {
         break missingId;
       }
 
@@ -117,8 +149,8 @@ public final class UserProfileActivityBinding implements ViewBinding {
       }
 
       return new UserProfileActivityBinding((ConstraintLayout) rootView, avatarUserProfile,
-          editBtnEmailProfileUser, emailUserProfile, saveUsername, signOutButton,
-          usernameUserProfile);
+          changeAvatarBtn, changeEmailBtn, changeUsernameBtn, emailIco, emailUserProfile,
+          signOutButton, userIco, usernameUserProfile);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

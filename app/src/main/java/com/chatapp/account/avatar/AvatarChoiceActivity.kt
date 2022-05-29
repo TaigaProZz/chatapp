@@ -32,31 +32,22 @@ class AvatarChoiceActivity : AppCompatActivity() {
         const val TAG = "AvatarChoice"
     }
 
+    override fun onStart() {
+        super.onStart()
+
+        // call functions
+        saveGoogleProfileToFirebase()
+    }
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         root = ActivityChoiceAvatarBinding.inflate(layoutInflater)
         val view = root.root
         setContentView(view)
 
-        mGoogleCode = intent.getStringExtra("requestCode").toString()
-        Log.d(TAG, mGoogleCode)
-        if (mGoogleCode == "111"){
-            Log.d(TAG, "ZDZDDZDZD")
-            val uid = auth.uid
-            val ref = MainActivity.db.getReference("/users/$uid")
-            Log.d("TagAccountMain", "${auth.currentUser?.displayName} " +
-                    "${auth.currentUser?.email!!} $uid")
-            val user = User(
-                auth.currentUser?.displayName!!,
-                auth.currentUser?.email!!,
-                avatar = auth.currentUser?.photoUrl.toString(),
-                uid = uid!!)
-            ref.setValue(user)
-        }
-
         // toolbar settings
         supportActionBar?.title = "Avatar"
-
 
         // open photo gallery from avatar circle button
         root.avatarCircle.setOnClickListener {
@@ -88,7 +79,7 @@ class AvatarChoiceActivity : AppCompatActivity() {
         root.confirmAvatarButton.setOnClickListener {
             Log.d(TAG, "send image to firebase and go next activity")
 
-            uploadInfoToFirebase()
+            uploadAvatarToFirestore()
             val intent = Intent(applicationContext, MainActivity::class.java)
             intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK.or(Intent.FLAG_ACTIVITY_NEW_TASK)
             startActivity(intent)
@@ -98,6 +89,24 @@ class AvatarChoiceActivity : AppCompatActivity() {
     var selectedImage: Uri? = null
 
 
+
+    private fun saveGoogleProfileToFirebase(){
+        mGoogleCode = intent.getStringExtra("requestCode").toString()
+        Log.d(TAG, mGoogleCode)
+        if (mGoogleCode == "111"){
+            val uid = auth.uid
+            val ref = MainActivity.db.getReference("/users/$uid")
+            Log.d("TagAccountMain", "${auth.currentUser?.displayName} " +
+                    "${auth.currentUser?.email!!} $uid")
+            val user = User(
+                auth.currentUser?.displayName!!,
+                auth.currentUser?.email!!,
+                avatar = auth.currentUser?.photoUrl.toString(),
+                uid = uid!!)
+            ref.setValue(user)
+        }
+
+    }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
@@ -118,7 +127,7 @@ class AvatarChoiceActivity : AppCompatActivity() {
 
 
     // upload the avatar to Firebase storage
-    private fun uploadInfoToFirebase() {
+    private fun uploadAvatarToFirestore() {
         if (selectedImage == null) return
         // collect uid and image directory from Firebase Storage
         val uid = auth.uid

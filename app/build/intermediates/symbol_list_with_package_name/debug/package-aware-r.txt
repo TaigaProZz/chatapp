@@ -1309,6 +1309,7 @@ color browser_actions_text_color
 color browser_actions_title_color
 color button_material_dark
 color button_material_light
+color cam_border
 color cardview_dark_background
 color cardview_light_background
 color cardview_shadow_end_color
@@ -2576,6 +2577,7 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+drawable cam_border
 drawable collapse
 drawable common_full_open_on_phone
 drawable common_google_signin_btn_icon_dark
@@ -2604,6 +2606,7 @@ drawable design_snackbar_background
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable ic_arrow_down_24dp
+drawable ic_baseline_photo_camera_24
 drawable ic_clock_black_24dp
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
@@ -2765,7 +2768,6 @@ id avatar_user_adapter
 id avatar_user_adapter_main
 id avatar_user_message
 id avatar_user_profile
-id backArrow
 id banner_body
 id banner_content_root
 id banner_image
@@ -2803,6 +2805,9 @@ id center_vertical
 id chain
 id chain2
 id chains
+id change_avatar_btn
+id change_email_btn
+id change_username_btn
 id checkbox
 id checked
 id chip
@@ -2870,9 +2875,10 @@ id easeIn
 id easeInOut
 id easeOut
 id east
-id editBtn_email_profile_user
 id edit_query
+id edit_text_change_username
 id elastic
+id email_ico
 id email_register
 id email_user_profile
 id end
@@ -3083,7 +3089,6 @@ id row_index_key
 id rtl
 id save_non_transition_alpha
 id save_overlay_view
-id save_username
 id sawtooth
 id scale
 id screen
@@ -3209,6 +3214,7 @@ id uniform
 id unlabeled
 id up
 id useLogo
+id user_ico
 id user_profile_menu
 id username
 id username_login
@@ -3355,6 +3361,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout edit_text_alertbox
 layout expand_button
 layout image
 layout image_frame

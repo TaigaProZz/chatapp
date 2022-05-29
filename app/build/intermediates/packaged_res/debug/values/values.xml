@@ -9,6 +9,7 @@
         <item>reply_all</item>
     </string-array>
     <color name="black">#FF000000</color>
+    <color name="cam_border">#BA86FC</color>
     <color name="friend_message_border">#FF424242</color>
     <color name="grey">#4E5663</color>
     <color name="grey2">#767676</color>
