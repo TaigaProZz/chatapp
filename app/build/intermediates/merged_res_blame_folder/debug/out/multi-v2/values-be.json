@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.chatapp-mergeDebugResources-41:/values-be/values-be.xml",
+            "outputFile": "com.chatapp-mergeDebugResources-4:/values-be/values-be.xml",
             "map": [
                 {
                     "source": "C:\\Users\\tanki\\.gradle\\caches\\transforms-3\\40f29f5dabbbe41bf9e8f06824a52066\\transformed\\core-1.7.0\\res\\values-be\\values-be.xml",

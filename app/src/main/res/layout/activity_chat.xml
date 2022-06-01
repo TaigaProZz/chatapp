@@ -29,10 +29,10 @@
         android:layout_marginEnd="44dp"
         android:layout_marginBottom="4dp"
         android:padding="10dp"
-        android:paddingStart="8dp"
-        android:paddingEnd="8dp"
+        android:paddingStart="13dp"
+        android:paddingEnd="13dp"
 
-        android:background="@color/cardview_dark_background"
+        android:background="@drawable/message_box"
         android:ems="10"
         android:hint="@string/edit_text_hint_chat"
         android:inputType="textMultiLine"
@@ -41,10 +41,12 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <Button
+    <ImageView
         android:id="@+id/sendMsgBtn"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="54dp"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        app:srcCompat="@android:drawable/ic_menu_send"
         app:layout_constraintBottom_toBottomOf="@+id/msg_box_edittext"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/msg_box_edittext"

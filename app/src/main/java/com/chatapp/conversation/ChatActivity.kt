@@ -62,7 +62,7 @@ class ChatActivity : AppCompatActivity() {
 
 
         // send message button
-        findViewById<Button>(R.id.sendMsgBtn).setOnClickListener {
+        findViewById<ImageView>(R.id.sendMsgBtn).setOnClickListener {
             sendMessage()
         }
 
@@ -157,14 +157,15 @@ class ChatActivity : AppCompatActivity() {
 
     private fun checkEditTextIsEmpty() {
         val messageField = findViewById<EditText>(R.id.msg_box_edittext)
-        val sendMsgBtn = findViewById<Button>(R.id.sendMsgBtn)
-        sendMsgBtn.isVisible = false
+        val sendMsgBtn = findViewById<ImageView>(R.id.sendMsgBtn)
 
 
         // check if message field is not empty, hide button if empty, or display if not empty
         messageField.addTextChangedListener {
             Log.d(TAG, it.toString())
-            sendMsgBtn.isVisible = messageField.text.isNotEmpty()
+            if(messageField.text.isEmpty()){
+                return@addTextChangedListener
+            }
 
 
         }

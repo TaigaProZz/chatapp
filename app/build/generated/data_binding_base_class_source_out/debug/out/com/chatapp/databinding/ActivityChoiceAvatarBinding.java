@@ -28,24 +28,24 @@ public final class ActivityChoiceAvatarBinding implements ViewBinding {
   public final Button avatarCircle;
 
   @NonNull
+  public final TextView avatarUsername;
+
+  @NonNull
   public final Button confirmAvatarButton;
 
   @NonNull
   public final TextView skipAvatarChoiceBtn;
 
-  @NonNull
-  public final TextView username;
-
   private ActivityChoiceAvatarBinding(@NonNull ConstraintLayout rootView,
       @NonNull CircleImageView avatarAvatarFinal, @NonNull Button avatarCircle,
-      @NonNull Button confirmAvatarButton, @NonNull TextView skipAvatarChoiceBtn,
-      @NonNull TextView username) {
+      @NonNull TextView avatarUsername, @NonNull Button confirmAvatarButton,
+      @NonNull TextView skipAvatarChoiceBtn) {
     this.rootView = rootView;
     this.avatarAvatarFinal = avatarAvatarFinal;
     this.avatarCircle = avatarCircle;
+    this.avatarUsername = avatarUsername;
     this.confirmAvatarButton = confirmAvatarButton;
     this.skipAvatarChoiceBtn = skipAvatarChoiceBtn;
-    this.username = username;
   }
 
   @Override
@@ -87,6 +87,12 @@ public final class ActivityChoiceAvatarBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.avatar_username;
+      TextView avatarUsername = ViewBindings.findChildViewById(rootView, id);
+      if (avatarUsername == null) {
+        break missingId;
+      }
+
       id = R.id.confirm_avatar_button;
       Button confirmAvatarButton = ViewBindings.findChildViewById(rootView, id);
       if (confirmAvatarButton == null) {
@@ -99,14 +105,8 @@ public final class ActivityChoiceAvatarBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.username;
-      TextView username = ViewBindings.findChildViewById(rootView, id);
-      if (username == null) {
-        break missingId;
-      }
-
       return new ActivityChoiceAvatarBinding((ConstraintLayout) rootView, avatarAvatarFinal,
-          avatarCircle, confirmAvatarButton, skipAvatarChoiceBtn, username);
+          avatarCircle, avatarUsername, confirmAvatarButton, skipAvatarChoiceBtn);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

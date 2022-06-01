@@ -1375,6 +1375,7 @@ color foreground_material_light
 color friend_message_border
 color grey
 color grey2
+color grey_500
 color highlighted_text_material_dark
 color highlighted_text_material_light
 color m3_appbar_overlay_color
@@ -2638,6 +2639,7 @@ drawable material_ic_keyboard_arrow_right_black_24dp
 drawable material_ic_menu_arrow_down_black_24dp
 drawable material_ic_menu_arrow_up_black_24dp
 drawable message_avatar_circle
+drawable message_box
 drawable message_circle_border_friend
 drawable message_circle_border_user
 drawable mtrl_dialog_background
@@ -2768,6 +2770,7 @@ id avatar_user_adapter
 id avatar_user_adapter_main
 id avatar_user_message
 id avatar_user_profile
+id avatar_username
 id banner_body
 id banner_content_root
 id banner_image
@@ -3216,7 +3219,6 @@ id up
 id useLogo
 id user_ico
 id user_profile_menu
-id username
 id username_login
 id username_register
 id username_user_adapter

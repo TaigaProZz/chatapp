@@ -1,150 +1,154 @@
 [
     {
-        "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-merged_res-43:\\drawable_message_circle_border_user.xml.flat",
-        "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-45:\\drawable\\message_circle_border_user.xml"
+        "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-merged_res-6:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-8:\\mipmap-xxxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-merged_res-43:\\drawable_message_circle_border_friend.xml.flat",
-        "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-45:\\drawable\\message_circle_border_friend.xml"
+        "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-merged_res-6:\\layout_adapter_users_new_conversation.xml.flat",
+        "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-8:\\layout\\adapter_users_new_conversation.xml"
     },
     {
-        "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-merged_res-43:\\mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-45:\\mipmap-mdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-merged_res-6:\\menu_conversation_option.xml.flat",
+        "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-8:\\menu\\conversation_option.xml"
     },
     {
-        "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-merged_res-43:\\mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-45:\\mipmap-hdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-merged_res-6:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-8:\\mipmap-xxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-merged_res-43:\\layout_chat_friend_row.xml.flat",
-        "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-45:\\layout\\chat_friend_row.xml"
+        "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-merged_res-6:\\drawable_ic_baseline_photo_camera_24.xml.flat",
+        "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-8:\\drawable\\ic_baseline_photo_camera_24.xml"
     },
     {
-        "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-merged_res-43:\\layout_edit_text_alertbox.xml.flat",
-        "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-45:\\layout\\edit_text_alertbox.xml"
+        "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-merged_res-6:\\layout_edit_text_alertbox.xml.flat",
+        "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-8:\\layout\\edit_text_alertbox.xml"
     },
     {
-        "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-merged_res-43:\\drawable_message_avatar_circle.xml.flat",
-        "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-45:\\drawable\\message_avatar_circle.xml"
+        "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-merged_res-6:\\drawable_message_avatar_circle.xml.flat",
+        "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-8:\\drawable\\message_avatar_circle.xml"
     },
     {
-        "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-merged_res-43:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-45:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+        "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-merged_res-6:\\layout_activity_login_main.xml.flat",
+        "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-8:\\layout\\activity_login_main.xml"
     },
     {
-        "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-merged_res-43:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-45:\\mipmap-xxxhdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-merged_res-6:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-8:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-merged_res-43:\\layout_chat_user_row.xml.flat",
-        "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-45:\\layout\\chat_user_row.xml"
+        "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-merged_res-6:\\layout_activity_new_conversation.xml.flat",
+        "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-8:\\layout\\activity_new_conversation.xml"
     },
     {
-        "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-merged_res-43:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-45:\\mipmap-anydpi-v26\\ic_launcher.xml"
+        "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-merged_res-6:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-8:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
-        "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-merged_res-43:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-45:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-merged_res-6:\\layout_activity_choice_avatar.xml.flat",
+        "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-8:\\layout\\activity_choice_avatar.xml"
     },
     {
-        "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-merged_res-43:\\layout_activity_new_conversation.xml.flat",
-        "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-45:\\layout\\activity_new_conversation.xml"
+        "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-merged_res-6:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-8:\\layout\\activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-merged_res-43:\\drawable-v24_ic_launcher_foreground.xml.flat",
-        "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-45:\\drawable-v24\\ic_launcher_foreground.xml"
+        "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-merged_res-6:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-8:\\mipmap-hdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-merged_res-43:\\layout_activity_login_main.xml.flat",
-        "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-45:\\layout\\activity_login_main.xml"
+        "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-merged_res-6:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-8:\\mipmap-hdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-merged_res-43:\\drawable_avatar_circle.xml.flat",
-        "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-45:\\drawable\\avatar_circle.xml"
+        "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-merged_res-6:\\layout_activity_email_login.xml.flat",
+        "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-8:\\layout\\activity_email_login.xml"
     },
     {
-        "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-merged_res-43:\\mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-45:\\mipmap-xxhdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-merged_res-6:\\layout_user_profile_activity.xml.flat",
+        "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-8:\\layout\\user_profile_activity.xml"
     },
     {
-        "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-merged_res-43:\\layout_user_profile_activity.xml.flat",
-        "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-45:\\layout\\user_profile_activity.xml"
+        "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-merged_res-6:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-8:\\mipmap-mdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-merged_res-43:\\mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-45:\\mipmap-hdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-merged_res-6:\\layout_activity_register.xml.flat",
+        "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-8:\\layout\\activity_register.xml"
     },
     {
-        "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-merged_res-43:\\mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-45:\\mipmap-xhdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-merged_res-6:\\drawable_message_circle_border_friend.xml.flat",
+        "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-8:\\drawable\\message_circle_border_friend.xml"
     },
     {
-        "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-merged_res-43:\\layout_adapter_users_new_conversation.xml.flat",
-        "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-45:\\layout\\adapter_users_new_conversation.xml"
+        "merged": "com.chatapp-merged_res-6:/layout_activity_choice_avatar.xml.flat",
+        "source": "com.chatapp-main-8:/layout/activity_choice_avatar.xml"
     },
     {
-        "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-merged_res-43:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-45:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-merged_res-6:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-8:\\mipmap-xhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-merged_res-43:\\layout_activity_choice_avatar.xml.flat",
-        "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-45:\\layout\\activity_choice_avatar.xml"
+        "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-merged_res-6:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-8:\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
-        "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-merged_res-43:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-45:\\mipmap-xhdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-merged_res-6:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-8:\\drawable\\ic_launcher_background.xml"
     },
     {
-        "merged": "com.chatapp-merged_res-43:/drawable_cam_border.xml.flat",
-        "source": "com.chatapp-main-45:/drawable/cam_border.xml"
+        "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-merged_res-6:\\layout_chat_friend_row.xml.flat",
+        "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-8:\\layout\\chat_friend_row.xml"
     },
     {
-        "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-merged_res-43:\\layout_activity_chat.xml.flat",
-        "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-45:\\layout\\activity_chat.xml"
+        "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-merged_res-6:\\layout_adapter_main_activity.xml.flat",
+        "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-8:\\layout\\adapter_main_activity.xml"
     },
     {
-        "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-merged_res-43:\\mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-45:\\mipmap-mdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-merged_res-6:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-8:\\mipmap-xhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-merged_res-43:\\drawable_ic_launcher_background.xml.flat",
-        "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-45:\\drawable\\ic_launcher_background.xml"
+        "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-merged_res-6:\\menu_nav_menu.xml.flat",
+        "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-8:\\menu\\nav_menu.xml"
     },
     {
-        "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-merged_res-43:\\layout_activity_main.xml.flat",
-        "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-45:\\layout\\activity_main.xml"
+        "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-merged_res-6:\\drawable_avatar_circle.xml.flat",
+        "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-8:\\drawable\\avatar_circle.xml"
     },
     {
-        "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-merged_res-43:\\menu_nav_menu.xml.flat",
-        "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-45:\\menu\\nav_menu.xml"
+        "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-merged_res-6:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-8:\\mipmap-mdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-merged_res-43:\\layout_activity_register.xml.flat",
-        "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-45:\\layout\\activity_register.xml"
+        "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-merged_res-6:\\layout_chat_user_row.xml.flat",
+        "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-8:\\layout\\chat_user_row.xml"
     },
     {
-        "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-merged_res-43:\\layout_adapter_main_activity.xml.flat",
-        "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-45:\\layout\\adapter_main_activity.xml"
+        "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-merged_res-6:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-8:\\mipmap-xxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-merged_res-43:\\drawable_cam_border.xml.flat",
-        "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-45:\\drawable\\cam_border.xml"
+        "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-merged_res-6:\\menu_message_option.xml.flat",
+        "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-8:\\menu\\message_option.xml"
     },
     {
-        "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-merged_res-43:\\menu_conversation_option.xml.flat",
-        "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-45:\\menu\\conversation_option.xml"
+        "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-merged_res-6:\\drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-8:\\drawable-v24\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-merged_res-43:\\drawable_ic_baseline_photo_camera_24.xml.flat",
-        "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-45:\\drawable\\ic_baseline_photo_camera_24.xml"
+        "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-merged_res-6:\\layout_activity_chat.xml.flat",
+        "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-8:\\layout\\activity_chat.xml"
     },
     {
-        "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-merged_res-43:\\menu_message_option.xml.flat",
-        "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-45:\\menu\\message_option.xml"
+        "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-merged_res-6:\\drawable_cam_border.xml.flat",
+        "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-8:\\drawable\\cam_border.xml"
     },
     {
-        "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-merged_res-43:\\layout_activity_email_login.xml.flat",
-        "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-45:\\layout\\activity_email_login.xml"
+        "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-merged_res-6:\\drawable_message_box.xml.flat",
+        "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-8:\\drawable\\message_box.xml"
+    },
+    {
+        "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-merged_res-6:\\drawable_message_circle_border_user.xml.flat",
+        "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-8:\\drawable\\message_circle_border_user.xml"
     }
 ]

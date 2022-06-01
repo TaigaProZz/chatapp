@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.chatapp-mergeDebugResources-41:/values-en-rAU/values-en-rAU.xml",
+            "outputFile": "com.chatapp-mergeDebugResources-4:/values-en-rAU/values-en-rAU.xml",
             "map": [
                 {
                     "source": "C:\\Users\\tanki\\.gradle\\caches\\transforms-3\\a643d4a7e4e24200f8b010b54e44ccf2\\transformed\\preference-1.2.0\\res\\values-en-rAU\\values-en-rAU.xml",

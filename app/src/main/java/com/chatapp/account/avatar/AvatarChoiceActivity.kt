@@ -8,6 +8,7 @@ import android.os.Bundle
 import android.provider.MediaStore
 import android.util.Log
 import android.widget.Button
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.chatapp.conversation.MainActivity
 import com.chatapp.R
@@ -37,6 +38,7 @@ class AvatarChoiceActivity : AppCompatActivity() {
 
         // call functions
         saveGoogleProfileToFirebase()
+        setUsername()
     }
 
 
@@ -89,7 +91,6 @@ class AvatarChoiceActivity : AppCompatActivity() {
     var selectedImage: Uri? = null
 
 
-
     private fun saveGoogleProfileToFirebase(){
         mGoogleCode = intent.getStringExtra("requestCode").toString()
         Log.d(TAG, mGoogleCode)
@@ -104,6 +105,7 @@ class AvatarChoiceActivity : AppCompatActivity() {
                 avatar = auth.currentUser?.photoUrl.toString(),
                 uid = uid!!)
             ref.setValue(user)
+            startActivity(Intent(applicationContext, MainActivity::class.java))
         }
 
     }
@@ -144,6 +146,16 @@ class AvatarChoiceActivity : AppCompatActivity() {
             .addOnFailureListener {
                 return@addOnFailureListener
             }
+    }
+
+
+    private fun setUsername(){
+        val uid = auth.uid
+        val ref = db.getReference("/users/$uid/username").get()
+        ref.addOnSuccessListener {
+            val getString = findViewById<TextView>(R.id.avatar_username)
+            getString.text = it.value.toString()
+        }
     }
 
 
