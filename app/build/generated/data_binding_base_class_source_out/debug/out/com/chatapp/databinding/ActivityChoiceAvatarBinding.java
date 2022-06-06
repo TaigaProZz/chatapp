@@ -5,13 +5,16 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.Toolbar;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.chatapp.R;
+import com.google.android.material.appbar.AppBarLayout;
 import de.hdodenhof.circleimageview.CircleImageView;
 import java.lang.NullPointerException;
 import java.lang.Override;
@@ -20,6 +23,9 @@ import java.lang.String;
 public final class ActivityChoiceAvatarBinding implements ViewBinding {
   @NonNull
   private final ConstraintLayout rootView;
+
+  @NonNull
+  public final AppBarLayout appBarLayout;
 
   @NonNull
   public final CircleImageView avatarAvatarFinal;
@@ -36,16 +42,31 @@ public final class ActivityChoiceAvatarBinding implements ViewBinding {
   @NonNull
   public final TextView skipAvatarChoiceBtn;
 
+  @NonNull
+  public final ImageView toolbarArrow;
+
+  @NonNull
+  public final Toolbar toolbarMain;
+
+  @NonNull
+  public final TextView toolbarUsername;
+
   private ActivityChoiceAvatarBinding(@NonNull ConstraintLayout rootView,
-      @NonNull CircleImageView avatarAvatarFinal, @NonNull Button avatarCircle,
-      @NonNull TextView avatarUsername, @NonNull Button confirmAvatarButton,
-      @NonNull TextView skipAvatarChoiceBtn) {
+      @NonNull AppBarLayout appBarLayout, @NonNull CircleImageView avatarAvatarFinal,
+      @NonNull Button avatarCircle, @NonNull TextView avatarUsername,
+      @NonNull Button confirmAvatarButton, @NonNull TextView skipAvatarChoiceBtn,
+      @NonNull ImageView toolbarArrow, @NonNull Toolbar toolbarMain,
+      @NonNull TextView toolbarUsername) {
     this.rootView = rootView;
+    this.appBarLayout = appBarLayout;
     this.avatarAvatarFinal = avatarAvatarFinal;
     this.avatarCircle = avatarCircle;
     this.avatarUsername = avatarUsername;
     this.confirmAvatarButton = confirmAvatarButton;
     this.skipAvatarChoiceBtn = skipAvatarChoiceBtn;
+    this.toolbarArrow = toolbarArrow;
+    this.toolbarMain = toolbarMain;
+    this.toolbarUsername = toolbarUsername;
   }
 
   @Override
@@ -75,6 +96,12 @@ public final class ActivityChoiceAvatarBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.appBarLayout;
+      AppBarLayout appBarLayout = ViewBindings.findChildViewById(rootView, id);
+      if (appBarLayout == null) {
+        break missingId;
+      }
+
       id = R.id.avatar_avatar_final;
       CircleImageView avatarAvatarFinal = ViewBindings.findChildViewById(rootView, id);
       if (avatarAvatarFinal == null) {
@@ -105,8 +132,27 @@ public final class ActivityChoiceAvatarBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityChoiceAvatarBinding((ConstraintLayout) rootView, avatarAvatarFinal,
-          avatarCircle, avatarUsername, confirmAvatarButton, skipAvatarChoiceBtn);
+      id = R.id.toolbar_arrow;
+      ImageView toolbarArrow = ViewBindings.findChildViewById(rootView, id);
+      if (toolbarArrow == null) {
+        break missingId;
+      }
+
+      id = R.id.toolbarMain;
+      Toolbar toolbarMain = ViewBindings.findChildViewById(rootView, id);
+      if (toolbarMain == null) {
+        break missingId;
+      }
+
+      id = R.id.toolbar_username;
+      TextView toolbarUsername = ViewBindings.findChildViewById(rootView, id);
+      if (toolbarUsername == null) {
+        break missingId;
+      }
+
+      return new ActivityChoiceAvatarBinding((ConstraintLayout) rootView, appBarLayout,
+          avatarAvatarFinal, avatarCircle, avatarUsername, confirmAvatarButton, skipAvatarChoiceBtn,
+          toolbarArrow, toolbarMain, toolbarUsername);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

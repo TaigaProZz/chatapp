@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.chatapp-mergeDebugResources-4:/values-en-rGB/values-en-rGB.xml",
+            "outputFile": "com.chatapp-mergeDebugResources-41:/values-en-rGB/values-en-rGB.xml",
             "map": [
                 {
                     "source": "C:\\Users\\tanki\\.gradle\\caches\\transforms-3\\b17eade684b0e5da0214430fee7ffe9b\\transformed\\jetified-play-services-basement-18.0.0\\res\\values-en-rGB\\values.xml",

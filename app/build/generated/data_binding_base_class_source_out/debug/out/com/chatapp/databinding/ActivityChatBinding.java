@@ -6,13 +6,17 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.Toolbar;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.chatapp.R;
+import com.google.android.material.appbar.AppBarLayout;
+import de.hdodenhof.circleimageview.CircleImageView;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -20,6 +24,9 @@ import java.lang.String;
 public final class ActivityChatBinding implements ViewBinding {
   @NonNull
   private final ConstraintLayout rootView;
+
+  @NonNull
+  public final AppBarLayout appBarLayout;
 
   @NonNull
   public final EditText msgBoxEdittext;
@@ -30,12 +37,32 @@ public final class ActivityChatBinding implements ViewBinding {
   @NonNull
   public final ImageView sendMsgBtn;
 
-  private ActivityChatBinding(@NonNull ConstraintLayout rootView, @NonNull EditText msgBoxEdittext,
-      @NonNull RecyclerView recyclerViewChat, @NonNull ImageView sendMsgBtn) {
+  @NonNull
+  public final ImageView toolbarArrow;
+
+  @NonNull
+  public final CircleImageView toolbarAvatar;
+
+  @NonNull
+  public final Toolbar toolbarChat;
+
+  @NonNull
+  public final TextView toolbarUsername;
+
+  private ActivityChatBinding(@NonNull ConstraintLayout rootView,
+      @NonNull AppBarLayout appBarLayout, @NonNull EditText msgBoxEdittext,
+      @NonNull RecyclerView recyclerViewChat, @NonNull ImageView sendMsgBtn,
+      @NonNull ImageView toolbarArrow, @NonNull CircleImageView toolbarAvatar,
+      @NonNull Toolbar toolbarChat, @NonNull TextView toolbarUsername) {
     this.rootView = rootView;
+    this.appBarLayout = appBarLayout;
     this.msgBoxEdittext = msgBoxEdittext;
     this.recyclerViewChat = recyclerViewChat;
     this.sendMsgBtn = sendMsgBtn;
+    this.toolbarArrow = toolbarArrow;
+    this.toolbarAvatar = toolbarAvatar;
+    this.toolbarChat = toolbarChat;
+    this.toolbarUsername = toolbarUsername;
   }
 
   @Override
@@ -65,6 +92,12 @@ public final class ActivityChatBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.appBarLayout;
+      AppBarLayout appBarLayout = ViewBindings.findChildViewById(rootView, id);
+      if (appBarLayout == null) {
+        break missingId;
+      }
+
       id = R.id.msg_box_edittext;
       EditText msgBoxEdittext = ViewBindings.findChildViewById(rootView, id);
       if (msgBoxEdittext == null) {
@@ -83,8 +116,32 @@ public final class ActivityChatBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityChatBinding((ConstraintLayout) rootView, msgBoxEdittext, recyclerViewChat,
-          sendMsgBtn);
+      id = R.id.toolbar_arrow;
+      ImageView toolbarArrow = ViewBindings.findChildViewById(rootView, id);
+      if (toolbarArrow == null) {
+        break missingId;
+      }
+
+      id = R.id.toolbar_avatar;
+      CircleImageView toolbarAvatar = ViewBindings.findChildViewById(rootView, id);
+      if (toolbarAvatar == null) {
+        break missingId;
+      }
+
+      id = R.id.toolbarChat;
+      Toolbar toolbarChat = ViewBindings.findChildViewById(rootView, id);
+      if (toolbarChat == null) {
+        break missingId;
+      }
+
+      id = R.id.toolbar_username;
+      TextView toolbarUsername = ViewBindings.findChildViewById(rootView, id);
+      if (toolbarUsername == null) {
+        break missingId;
+      }
+
+      return new ActivityChatBinding((ConstraintLayout) rootView, appBarLayout, msgBoxEdittext,
+          recyclerViewChat, sendMsgBtn, toolbarArrow, toolbarAvatar, toolbarChat, toolbarUsername);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

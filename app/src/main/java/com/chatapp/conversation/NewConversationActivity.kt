@@ -2,6 +2,7 @@ package com.chatapp.conversation
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.chatapp.R
@@ -29,15 +30,21 @@ class NewConversationActivity : AppCompatActivity() {
         setContentView(R.layout.activity_new_conversation)
 
         // toolbar settings
-        supportActionBar?.title = "Friends"
 
 
         // recycler view settings
         val recyclerView = findViewById<RecyclerView>(R.id.recyclerView_NewConversation)
         val adapter = GroupieAdapter()
         recyclerView.adapter = adapter
-
         fetchUsers()
+
+
+        /*          BUTTONS           */
+        // Back Arrow
+        findViewById<ImageView>(R.id.toolbar_arrow).setOnClickListener{
+            startActivity(Intent(applicationContext, MainActivity::class.java))
+        }
+
 
     }
 

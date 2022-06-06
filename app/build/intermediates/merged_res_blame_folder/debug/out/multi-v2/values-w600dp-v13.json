@@ -1,0 +1,63 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.chatapp-mergeDebugResources-41:/values-w600dp-v13/values-w600dp-v13.xml",
+            "map": [
+                {
+                    "source": "E:\\Dev\\android\\chatApp\\app\\src\\main\\res\\values-w600dp\\dimens.xml",
+                    "from": {
+                        "startLines": "-1",
+                        "startColumns": "-1",
+                        "startOffsets": "-1"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "41",
+                        "endOffsets": "92"
+                    }
+                },
+                {
+                    "source": "E:\\Dev\\android\\chatApp\\app\\src\\main\\res\\values-w600dp\\strings.xml",
+                    "from": {
+                        "startLines": "3,-1",
+                        "startColumns": "4,-1",
+                        "startOffsets": "102,-1",
+                        "endColumns": "67,-1",
+                        "endOffsets": "165,-1"
+                    },
+                    "to": {
+                        "startLines": "3,4",
+                        "startColumns": "4,4",
+                        "startOffsets": "97,165",
+                        "endColumns": "67,43",
+                        "endOffsets": "160,204"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-mergeDebugResources-41:\\values-w600dp-v13\\values-w600dp-v13.xml",
+            "map": [
+                {
+                    "source": "E:\\Dev\\android\\chatApp\\app\\src\\main\\res\\values-w600dp\\dimens.xml",
+                    "from": {
+                        "startLines": "1",
+                        "startColumns": "4",
+                        "startOffsets": "16",
+                        "endColumns": "41",
+                        "endOffsets": "53"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "41",
+                        "endOffsets": "92"
+                    }
+                }
+            ]
+        }
+    ]
+}

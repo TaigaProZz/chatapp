@@ -6,20 +6,6 @@
      android:layout_height="82dp"
      android:layout_margin="6dp">
 
-     <de.hdodenhof.circleimageview.CircleImageView
-         android:id="@+id/avatar_user_message"
-         android:layout_width="@dimen/avatar_msg"
-         android:layout_height="@dimen/avatar_msg"
-         android:background="@android:color/transparent"
-         android:src="@drawable/ic_launcher_foreground"
-         app:circularflow_radiusInDP="2dp"
-         app:civ_border_color="@color/white"
-         app:layout_constraintBottom_toBottomOf="parent"
-         app:layout_constraintEnd_toEndOf="parent"
-         app:layout_constraintTop_toTopOf="parent" />
-
-
-
      <TextView
          android:id="@+id/message_body_user"
          android:layout_width="wrap_content"
@@ -28,10 +14,13 @@
          android:background="@drawable/message_circle_border_user"
          android:gravity="center"
          android:maxWidth="300dp"
-         android:padding="12dp"
+         android:padding="16dp"
+
+         android:textSize="17sp"
+
 
          app:layout_constraintBottom_toBottomOf="parent"
-         app:layout_constraintEnd_toStartOf="@+id/avatar_user_message"
+         app:layout_constraintEnd_toEndOf="parent"
          app:layout_constraintTop_toTopOf="parent"
          app:layout_constraintVertical_bias="0.516" />
 
@@ -44,6 +33,5 @@
         android:text="@string/time"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/message_body_user" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

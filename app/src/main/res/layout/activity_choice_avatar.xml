@@ -6,28 +6,68 @@
     android:layout_height="match_parent"
     tools:context=".account.avatar.AvatarChoiceActivity">
 
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/grey_500"
+            >
+
+            <ImageView
+                android:id="@+id/toolbar_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                app:srcCompat="@drawable/abc_ic_ab_back_material"
+                />
+
+
+            <TextView
+                android:id="@+id/toolbar_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/avatar_choice"
+                android:layout_marginStart="24dp" />
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
     <Button
         android:id="@+id/avatar_circle"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="40dp"
         android:background="@drawable/avatar_circle"
         android:text="@string/choose_pic_text"
         android:textColor="@color/white"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
+        app:layout_constraintTop_toBottomOf="@+id/avatar_username" />
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/avatar_avatar_final"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="40dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/avatar_username" />
 
     <TextView
         android:id="@+id/skip_avatar_choice_btn"
@@ -42,23 +82,24 @@
 
     <TextView
         android:id="@+id/avatar_username"
-        android:layout_width="215dp"
-        android:layout_height="103dp"
+        android:layout_width="254dp"
+        android:layout_height="76dp"
         android:gravity="center"
         android:text="@string/username_connected"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.091" />
+        app:layout_constraintVertical_bias="0.19" />
 
     <Button
         android:id="@+id/confirm_avatar_button"
         android:layout_width="113dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="180dp"
-        android:text="Appliquer"
+        android:text="@string/apply"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.506"

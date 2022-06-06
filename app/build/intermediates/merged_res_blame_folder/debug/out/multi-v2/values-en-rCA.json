@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.chatapp-mergeDebugResources-4:/values-en-rCA/values-en-rCA.xml",
+            "outputFile": "com.chatapp-mergeDebugResources-41:/values-en-rCA/values-en-rCA.xml",
             "map": [
                 {
                     "source": "C:\\Users\\tanki\\.gradle\\caches\\transforms-3\\f29f4da337953096edb20466598c3aba\\transformed\\appcompat-1.4.1\\res\\values-en-rCA\\values-en-rCA.xml",

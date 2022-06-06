@@ -11,7 +11,6 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.chatapp.R;
-import de.hdodenhof.circleimageview.CircleImageView;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -21,19 +20,14 @@ public final class ChatUserRowBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final CircleImageView avatarUserMessage;
-
-  @NonNull
   public final TextView messageBodyUser;
 
   @NonNull
   public final TextView textTimeUser;
 
-  private ChatUserRowBinding(@NonNull ConstraintLayout rootView,
-      @NonNull CircleImageView avatarUserMessage, @NonNull TextView messageBodyUser,
+  private ChatUserRowBinding(@NonNull ConstraintLayout rootView, @NonNull TextView messageBodyUser,
       @NonNull TextView textTimeUser) {
     this.rootView = rootView;
-    this.avatarUserMessage = avatarUserMessage;
     this.messageBodyUser = messageBodyUser;
     this.textTimeUser = textTimeUser;
   }
@@ -65,12 +59,6 @@ public final class ChatUserRowBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.avatar_user_message;
-      CircleImageView avatarUserMessage = ViewBindings.findChildViewById(rootView, id);
-      if (avatarUserMessage == null) {
-        break missingId;
-      }
-
       id = R.id.message_body_user;
       TextView messageBodyUser = ViewBindings.findChildViewById(rootView, id);
       if (messageBodyUser == null) {
@@ -83,8 +71,7 @@ public final class ChatUserRowBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ChatUserRowBinding((ConstraintLayout) rootView, avatarUserMessage, messageBodyUser,
-          textTimeUser);
+      return new ChatUserRowBinding((ConstraintLayout) rootView, messageBodyUser, textTimeUser);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

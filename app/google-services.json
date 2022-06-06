@@ -23,6 +23,14 @@
           }
         },
         {
+          "client_id": "859618026888-lg39ij976aan97gofu597funq8tvaj7c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.chatapp",
+            "certificate_hash": "f1508e825d7bdbefdd8a53c742f36cc8791ddb67"
+          }
+        },
+        {
           "client_id": "859618026888-98mt718g22e8l8gv328gqs897vv2bqmm.apps.googleusercontent.com",
           "client_type": 3
         }

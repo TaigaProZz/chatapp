@@ -4,14 +4,18 @@ package com.chatapp.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.Toolbar;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.chatapp.R;
+import com.google.android.material.appbar.AppBarLayout;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import de.hdodenhof.circleimageview.CircleImageView;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -24,13 +28,31 @@ public final class ActivityMainBinding implements ViewBinding {
   public final FloatingActionButton addConversationButton;
 
   @NonNull
+  public final AppBarLayout appBarLayout;
+
+  @NonNull
   public final RecyclerView recyclerViewMain;
 
+  @NonNull
+  public final CircleImageView toolbarAvatar;
+
+  @NonNull
+  public final Toolbar toolbarMain;
+
+  @NonNull
+  public final TextView toolbarUsername;
+
   private ActivityMainBinding(@NonNull ConstraintLayout rootView,
-      @NonNull FloatingActionButton addConversationButton, @NonNull RecyclerView recyclerViewMain) {
+      @NonNull FloatingActionButton addConversationButton, @NonNull AppBarLayout appBarLayout,
+      @NonNull RecyclerView recyclerViewMain, @NonNull CircleImageView toolbarAvatar,
+      @NonNull Toolbar toolbarMain, @NonNull TextView toolbarUsername) {
     this.rootView = rootView;
     this.addConversationButton = addConversationButton;
+    this.appBarLayout = appBarLayout;
     this.recyclerViewMain = recyclerViewMain;
+    this.toolbarAvatar = toolbarAvatar;
+    this.toolbarMain = toolbarMain;
+    this.toolbarUsername = toolbarUsername;
   }
 
   @Override
@@ -66,14 +88,38 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.appBarLayout;
+      AppBarLayout appBarLayout = ViewBindings.findChildViewById(rootView, id);
+      if (appBarLayout == null) {
+        break missingId;
+      }
+
       id = R.id.recycler_view_main;
       RecyclerView recyclerViewMain = ViewBindings.findChildViewById(rootView, id);
       if (recyclerViewMain == null) {
         break missingId;
       }
 
+      id = R.id.toolbar_avatar;
+      CircleImageView toolbarAvatar = ViewBindings.findChildViewById(rootView, id);
+      if (toolbarAvatar == null) {
+        break missingId;
+      }
+
+      id = R.id.toolbarMain;
+      Toolbar toolbarMain = ViewBindings.findChildViewById(rootView, id);
+      if (toolbarMain == null) {
+        break missingId;
+      }
+
+      id = R.id.toolbar_username;
+      TextView toolbarUsername = ViewBindings.findChildViewById(rootView, id);
+      if (toolbarUsername == null) {
+        break missingId;
+      }
+
       return new ActivityMainBinding((ConstraintLayout) rootView, addConversationButton,
-          recyclerViewMain);
+          appBarLayout, recyclerViewMain, toolbarAvatar, toolbarMain, toolbarUsername);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -6,6 +6,44 @@
     android:layout_height="match_parent"
     tools:context=".account.avatar.AvatarChoiceActivity">
 
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/grey_500"
+            >
+
+            <ImageView
+                android:id="@+id/toolbar_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                app:srcCompat="@drawable/abc_ic_ab_back_material"
+                />
+
+
+            <TextView
+                android:id="@+id/toolbar_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/avatar_choice"
+                android:layout_marginStart="24dp" />
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
     <Button
         android:id="@+id/avatar_circle"
         android:layout_width="150dp"
@@ -58,7 +96,7 @@
         android:layout_width="113dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="180dp"
-        android:text="Appliquer"
+        android:text="@string/apply"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.506"

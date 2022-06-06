@@ -24,12 +24,12 @@
         android:allowBackup="true"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:debuggable="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/chat"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/chat"
         android:supportsRtl="true"
         android:testOnly="true"
-        android:theme="@style/Theme.Material3.Dark" >
+        android:theme="@style/Theme.Material3.Dark.NoActionBar" >
         <activity
             android:name="com.chatapp.conversation.MainActivity"
             android:exported="true" >
@@ -58,8 +58,7 @@
             android:exported="false" />
         <activity
             android:name="com.chatapp.account.AccountMainActivity"
-            android:exported="true" >
-        </activity>
+            android:exported="true" />
         <activity
             android:name="com.chatapp.account.register.RegisterEmailActivity"
             android:exported="false" >

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.chatapp-mergeDebugResources-4:/values-port/values-port.xml",
+            "outputFile": "com.chatapp-mergeDebugResources-41:/values-port/values-port.xml",
             "map": [
                 {
                     "source": "C:\\Users\\tanki\\.gradle\\caches\\transforms-3\\f29f4da337953096edb20466598c3aba\\transformed\\appcompat-1.4.1\\res\\values-port\\values-port.xml",

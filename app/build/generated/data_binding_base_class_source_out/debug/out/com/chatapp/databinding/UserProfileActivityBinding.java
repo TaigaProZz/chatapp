@@ -9,10 +9,12 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.Toolbar;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.chatapp.R;
+import com.google.android.material.appbar.AppBarLayout;
 import de.hdodenhof.circleimageview.CircleImageView;
 import java.lang.NullPointerException;
 import java.lang.Override;
@@ -21,6 +23,9 @@ import java.lang.String;
 public final class UserProfileActivityBinding implements ViewBinding {
   @NonNull
   private final ConstraintLayout rootView;
+
+  @NonNull
+  public final AppBarLayout appBarLayout;
 
   @NonNull
   public final CircleImageView avatarUserProfile;
@@ -44,18 +49,30 @@ public final class UserProfileActivityBinding implements ViewBinding {
   public final Button signOutButton;
 
   @NonNull
+  public final ImageView toolbarArrow;
+
+  @NonNull
+  public final Toolbar toolbarMain;
+
+  @NonNull
+  public final TextView toolbarUsername;
+
+  @NonNull
   public final ImageView userIco;
 
   @NonNull
   public final TextView usernameUserProfile;
 
   private UserProfileActivityBinding(@NonNull ConstraintLayout rootView,
-      @NonNull CircleImageView avatarUserProfile, @NonNull ImageView changeAvatarBtn,
-      @NonNull ImageView changeEmailBtn, @NonNull ImageView changeUsernameBtn,
-      @NonNull ImageView emailIco, @NonNull TextView emailUserProfile,
-      @NonNull Button signOutButton, @NonNull ImageView userIco,
+      @NonNull AppBarLayout appBarLayout, @NonNull CircleImageView avatarUserProfile,
+      @NonNull ImageView changeAvatarBtn, @NonNull ImageView changeEmailBtn,
+      @NonNull ImageView changeUsernameBtn, @NonNull ImageView emailIco,
+      @NonNull TextView emailUserProfile, @NonNull Button signOutButton,
+      @NonNull ImageView toolbarArrow, @NonNull Toolbar toolbarMain,
+      @NonNull TextView toolbarUsername, @NonNull ImageView userIco,
       @NonNull TextView usernameUserProfile) {
     this.rootView = rootView;
+    this.appBarLayout = appBarLayout;
     this.avatarUserProfile = avatarUserProfile;
     this.changeAvatarBtn = changeAvatarBtn;
     this.changeEmailBtn = changeEmailBtn;
@@ -63,6 +80,9 @@ public final class UserProfileActivityBinding implements ViewBinding {
     this.emailIco = emailIco;
     this.emailUserProfile = emailUserProfile;
     this.signOutButton = signOutButton;
+    this.toolbarArrow = toolbarArrow;
+    this.toolbarMain = toolbarMain;
+    this.toolbarUsername = toolbarUsername;
     this.userIco = userIco;
     this.usernameUserProfile = usernameUserProfile;
   }
@@ -94,6 +114,12 @@ public final class UserProfileActivityBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.appBarLayout;
+      AppBarLayout appBarLayout = ViewBindings.findChildViewById(rootView, id);
+      if (appBarLayout == null) {
+        break missingId;
+      }
+
       id = R.id.avatar_user_profile;
       CircleImageView avatarUserProfile = ViewBindings.findChildViewById(rootView, id);
       if (avatarUserProfile == null) {
@@ -136,6 +162,24 @@ public final class UserProfileActivityBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.toolbar_arrow;
+      ImageView toolbarArrow = ViewBindings.findChildViewById(rootView, id);
+      if (toolbarArrow == null) {
+        break missingId;
+      }
+
+      id = R.id.toolbarMain;
+      Toolbar toolbarMain = ViewBindings.findChildViewById(rootView, id);
+      if (toolbarMain == null) {
+        break missingId;
+      }
+
+      id = R.id.toolbar_username;
+      TextView toolbarUsername = ViewBindings.findChildViewById(rootView, id);
+      if (toolbarUsername == null) {
+        break missingId;
+      }
+
       id = R.id.user_ico;
       ImageView userIco = ViewBindings.findChildViewById(rootView, id);
       if (userIco == null) {
@@ -148,9 +192,10 @@ public final class UserProfileActivityBinding implements ViewBinding {
         break missingId;
       }
 
-      return new UserProfileActivityBinding((ConstraintLayout) rootView, avatarUserProfile,
-          changeAvatarBtn, changeEmailBtn, changeUsernameBtn, emailIco, emailUserProfile,
-          signOutButton, userIco, usernameUserProfile);
+      return new UserProfileActivityBinding((ConstraintLayout) rootView, appBarLayout,
+          avatarUserProfile, changeAvatarBtn, changeEmailBtn, changeUsernameBtn, emailIco,
+          emailUserProfile, signOutButton, toolbarArrow, toolbarMain, toolbarUsername, userIco,
+          usernameUserProfile);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

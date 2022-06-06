@@ -42,6 +42,9 @@ android {
         jvmTarget = '1.8'
     }
     namespace 'com.chatapp'
+    buildFeatures {
+        viewBinding true
+    }
 
 }
 

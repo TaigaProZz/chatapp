@@ -27,14 +27,18 @@ public final class AdapterMainActivityBinding implements ViewBinding {
   public final TextView lastMessage;
 
   @NonNull
+  public final TextView timeMainActivity;
+
+  @NonNull
   public final TextView usernameUserAdapterMain;
 
   private AdapterMainActivityBinding(@NonNull ConstraintLayout rootView,
       @NonNull CircleImageView avatarUserAdapterMain, @NonNull TextView lastMessage,
-      @NonNull TextView usernameUserAdapterMain) {
+      @NonNull TextView timeMainActivity, @NonNull TextView usernameUserAdapterMain) {
     this.rootView = rootView;
     this.avatarUserAdapterMain = avatarUserAdapterMain;
     this.lastMessage = lastMessage;
+    this.timeMainActivity = timeMainActivity;
     this.usernameUserAdapterMain = usernameUserAdapterMain;
   }
 
@@ -77,6 +81,12 @@ public final class AdapterMainActivityBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.time_main_activity;
+      TextView timeMainActivity = ViewBindings.findChildViewById(rootView, id);
+      if (timeMainActivity == null) {
+        break missingId;
+      }
+
       id = R.id.username_user_adapter_main;
       TextView usernameUserAdapterMain = ViewBindings.findChildViewById(rootView, id);
       if (usernameUserAdapterMain == null) {
@@ -84,7 +94,7 @@ public final class AdapterMainActivityBinding implements ViewBinding {
       }
 
       return new AdapterMainActivityBinding((ConstraintLayout) rootView, avatarUserAdapterMain,
-          lastMessage, usernameUserAdapterMain);
+          lastMessage, timeMainActivity, usernameUserAdapterMain);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

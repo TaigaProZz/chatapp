@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.chatapp-mergeDebugResources-4:/values-sw600dp-v13/values-sw600dp-v13.xml",
+            "outputFile": "com.chatapp-mergeDebugResources-41:/values-sw600dp-v13/values-sw600dp-v13.xml",
             "map": [
                 {
                     "source": "C:\\Users\\tanki\\.gradle\\caches\\transforms-3\\9ffb99ad0f6ac3d58ac31093eb31cde0\\transformed\\jetified-firebase-inappmessaging-display-20.1.2\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",

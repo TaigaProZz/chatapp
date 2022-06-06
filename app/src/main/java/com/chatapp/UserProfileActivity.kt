@@ -8,6 +8,7 @@ import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.bumptech.glide.Glide
 import com.chatapp.account.AccountMainActivity
+import com.chatapp.conversation.MainActivity
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
@@ -47,7 +48,6 @@ class UserProfileActivity : AppCompatActivity() {
         setContentView(R.layout.user_profile_activity)
 
         // toolbar settings
-        supportActionBar?.title = "Profil"
 
 
 
@@ -63,6 +63,11 @@ class UserProfileActivity : AppCompatActivity() {
             auth.signOut()
             Toast.makeText(applicationContext, "Signed out", Toast.LENGTH_SHORT).show()
             startActivity(Intent(applicationContext, AccountMainActivity::class.java))
+        }
+
+
+        findViewById<ImageView>(R.id.toolbar_arrow).setOnClickListener {
+            startActivity(Intent(applicationContext, MainActivity::class.java))
         }
 
     }

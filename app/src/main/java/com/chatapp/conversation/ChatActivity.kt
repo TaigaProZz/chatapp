@@ -1,11 +1,14 @@
 package com.chatapp.conversation
 
+import android.app.ActionBar.DISPLAY_SHOW_CUSTOM
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.util.Log
 import android.view.View
 import android.widget.*
+import androidx.appcompat.app.ActionBar
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.isVisible
 import androidx.core.widget.addTextChangedListener
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
@@ -22,6 +25,9 @@ import com.google.firebase.ktx.Firebase
 import com.xwray.groupie.GroupieAdapter
 import com.xwray.groupie.GroupieViewHolder
 import com.xwray.groupie.Item
+import de.hdodenhof.circleimageview.CircleImageView
+import java.io.InputStream
+import java.text.SimpleDateFormat
 import java.util.*
 
 class ChatActivity : AppCompatActivity() {
@@ -57,8 +63,22 @@ class ChatActivity : AppCompatActivity() {
         checkEditTextIsEmpty()
 
 
-        // toolbar settings
-        supportActionBar?.title = toUser?.username
+        /// TOOLBAR SETTINGS ///
+
+        // Username
+        val getUsername = toUser?.username
+        val getUsernameFromView = findViewById<TextView>(R.id.toolbar_username)
+        getUsernameFromView.text = getUsername
+
+        // Avatar
+        val getUserAvatar = toUser?.avatar
+        val getAvatarFromView = findViewById<CircleImageView>(R.id.toolbar_avatar)
+        Glide.with(applicationContext).load(getUserAvatar).into(getAvatarFromView)
+
+        // Back Arrow
+        findViewById<ImageView>(R.id.toolbar_arrow).setOnClickListener{
+            startActivity(Intent(applicationContext, MainActivity::class.java))
+        }
 
 
         // send message button
@@ -77,7 +97,10 @@ class ChatActivity : AppCompatActivity() {
 
             val userUid = auth.uid ?: return
             val toUserUid = toUser?.uid ?: return
-            val calendar = Calendar.getInstance().time.time
+
+            val pattern = "dd.MM.yyyy HH:mm:ss z"
+            val simpleDateFormat = SimpleDateFormat(pattern, Locale.getDefault())
+            val date = simpleDateFormat.format(Date())
 
             val ref = db.getReference("/messages/$toUserUid/$userUid").push()
             val toRef = db.getReference("/messages/$userUid/$toUserUid").push()
@@ -87,7 +110,7 @@ class ChatActivity : AppCompatActivity() {
                 messageField,
                 userUid,
                 toUserUid,
-                calendar.toString()
+                date
             )
 
             ref.setValue(chatMessage).addOnSuccessListener {
@@ -103,7 +126,6 @@ class ChatActivity : AppCompatActivity() {
 
             val lastMessageToRef = db.getReference("/last-message/$userUid/$toUid")
             lastMessageToRef.setValue(chatMessage)
-
 
         }
 
@@ -157,8 +179,6 @@ class ChatActivity : AppCompatActivity() {
 
     private fun checkEditTextIsEmpty() {
         val messageField = findViewById<EditText>(R.id.msg_box_edittext)
-        val sendMsgBtn = findViewById<ImageView>(R.id.sendMsgBtn)
-
 
         // check if message field is not empty, hide button if empty, or display if not empty
         messageField.addTextChangedListener {
@@ -173,19 +193,21 @@ class ChatActivity : AppCompatActivity() {
 }
 
 
-class ChatFriendAdapter(val text: String, val user: User, val chatMessage: ChatMessage) :
+class ChatFriendAdapter(val text: String, val user: User, private val chatMessage: ChatMessage) :
     Item<GroupieViewHolder>() {
     override fun bind(viewHolder: GroupieViewHolder, position: Int) {
-        // set text of the message
+        // set MESSAGE TEXT
         val textField = viewHolder.itemView.findViewById<TextView>(R.id.message_body_friend)
         textField.text = text
-        // set friend avatar with extra intent
+
+        // set FRIEND AVATAR with extra intent
         val friendAvatar = viewHolder.itemView.findViewById<ImageView>(R.id.avatar_friend_message)
         Glide.with(viewHolder.itemView).load(user.avatar).into(friendAvatar)
 
-        // set time of the message
-        viewHolder.itemView.findViewById<TextView>(R.id.text_time_friend).text = chatMessage.time.toString()
+        // set TIME of the message
+        viewHolder.itemView.findViewById<TextView>(R.id.text_time_friend).text = chatMessage.time.subSequence(11, 16)
 
+        // on LONG click
         viewHolder.itemView.findViewById<TextView>(R.id.message_body_friend).setOnLongClickListener {
             popUp(viewHolder.itemView.findViewById(R.id.message_body_friend))
             isLongClickable
@@ -198,17 +220,16 @@ class ChatFriendAdapter(val text: String, val user: User, val chatMessage: ChatM
     }
 }
 
-class ChatUserAdapter(val text: String, val user: User, val chatMessage: ChatMessage) :
+class ChatUserAdapter(val text: String, val user: User, private val chatMessage: ChatMessage) :
     Item<GroupieViewHolder>() {
     override fun bind(viewHolder: GroupieViewHolder, position: Int) {
         // set text of the message
         val textField = viewHolder.itemView.findViewById<TextView>(R.id.message_body_user)
         textField.text = text
-        // set user avatar
-        val userAvatar = viewHolder.itemView.findViewById<ImageView>(R.id.avatar_user_message)
-        Glide.with(viewHolder.itemView).load(user.avatar).into(userAvatar)
+
         // set time of the message
-        viewHolder.itemView.findViewById<TextView>(R.id.text_time_user).text = chatMessage.time.toString()
+        viewHolder.itemView.findViewById<TextView>(R.id.text_time_user).text = chatMessage.time.subSequence(11, 16)
+
 
         viewHolder.itemView.findViewById<TextView>(R.id.message_body_user).setOnLongClickListener {
             popUp(viewHolder.itemView.findViewById(R.id.message_body_user))

@@ -22,9 +22,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:background="@drawable/message_circle_border_friend"
+        android:gravity="center"
         android:maxWidth="300dp"
         android:padding="16dp"
-        android:gravity="center"
+        android:textSize="17sp"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/avatar_friend_message"
         app:layout_constraintTop_toTopOf="parent"
