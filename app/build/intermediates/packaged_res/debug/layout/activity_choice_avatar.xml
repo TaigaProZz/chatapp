@@ -44,28 +44,30 @@
 
     </com.google.android.material.appbar.AppBarLayout>
 
+
     <Button
         android:id="@+id/avatar_circle"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="40dp"
         android:background="@drawable/avatar_circle"
         android:text="@string/choose_pic_text"
         android:textColor="@color/white"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
+        app:layout_constraintTop_toBottomOf="@+id/avatar_username" />
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/avatar_avatar_final"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="40dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/avatar_username" />
 
     <TextView
         android:id="@+id/skip_avatar_choice_btn"
@@ -80,16 +82,17 @@
 
     <TextView
         android:id="@+id/avatar_username"
-        android:layout_width="215dp"
-        android:layout_height="103dp"
+        android:layout_width="254dp"
+        android:layout_height="76dp"
         android:gravity="center"
         android:text="@string/username_connected"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.091" />
+        app:layout_constraintVertical_bias="0.19" />
 
     <Button
         android:id="@+id/confirm_avatar_button"

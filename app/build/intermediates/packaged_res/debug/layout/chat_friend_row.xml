@@ -42,4 +42,13 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/message_body_friend" />
 
+    <TextView
+        android:id="@+id/isSeenFriend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Delivered"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/text_time_friend" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

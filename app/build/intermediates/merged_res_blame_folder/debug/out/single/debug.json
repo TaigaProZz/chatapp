@@ -52,8 +52,8 @@
         "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-45:\\layout\\chat_user_row.xml"
     },
     {
-        "merged": "com.chatapp-merged_res-43:/layout_activity_choice_avatar.xml.flat",
-        "source": "com.chatapp-main-45:/layout/activity_choice_avatar.xml"
+        "merged": "com.chatapp-merged_res-43:/layout_chat_friend_row.xml.flat",
+        "source": "com.chatapp-main-45:/layout/chat_friend_row.xml"
     },
     {
         "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-merged_res-43:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
@@ -146,6 +146,10 @@
     {
         "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-merged_res-43:\\menu_nav_menu.xml.flat",
         "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-45:\\menu\\nav_menu.xml"
+    },
+    {
+        "merged": "com.chatapp-merged_res-43:/layout_chat_user_row.xml.flat",
+        "source": "com.chatapp-main-45:/layout/chat_user_row.xml"
     },
     {
         "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-merged_res-43:\\layout_activity_register.xml.flat",

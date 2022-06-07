@@ -24,16 +24,20 @@ public final class ChatFriendRowBinding implements ViewBinding {
   public final CircleImageView avatarFriendMessage;
 
   @NonNull
+  public final TextView isSeenFriend;
+
+  @NonNull
   public final TextView messageBodyFriend;
 
   @NonNull
   public final TextView textTimeFriend;
 
   private ChatFriendRowBinding(@NonNull ConstraintLayout rootView,
-      @NonNull CircleImageView avatarFriendMessage, @NonNull TextView messageBodyFriend,
-      @NonNull TextView textTimeFriend) {
+      @NonNull CircleImageView avatarFriendMessage, @NonNull TextView isSeenFriend,
+      @NonNull TextView messageBodyFriend, @NonNull TextView textTimeFriend) {
     this.rootView = rootView;
     this.avatarFriendMessage = avatarFriendMessage;
+    this.isSeenFriend = isSeenFriend;
     this.messageBodyFriend = messageBodyFriend;
     this.textTimeFriend = textTimeFriend;
   }
@@ -71,6 +75,12 @@ public final class ChatFriendRowBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.isSeenFriend;
+      TextView isSeenFriend = ViewBindings.findChildViewById(rootView, id);
+      if (isSeenFriend == null) {
+        break missingId;
+      }
+
       id = R.id.message_body_friend;
       TextView messageBodyFriend = ViewBindings.findChildViewById(rootView, id);
       if (messageBodyFriend == null) {
@@ -84,7 +94,7 @@ public final class ChatFriendRowBinding implements ViewBinding {
       }
 
       return new ChatFriendRowBinding((ConstraintLayout) rootView, avatarFriendMessage,
-          messageBodyFriend, textTimeFriend);
+          isSeenFriend, messageBodyFriend, textTimeFriend);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

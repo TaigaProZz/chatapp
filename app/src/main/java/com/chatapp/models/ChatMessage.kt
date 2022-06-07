@@ -4,8 +4,8 @@ import java.util.*
 
 class ChatMessage(
     val messageId: String, val text: String, val userUid: String,
-    val toUid: String, val time: String
+    val toUid: String, val time: String, val seen: Boolean
 )  {
-constructor() : this("", "","", "", "")
+constructor() : this("", "","", "", "", false)
 
 }

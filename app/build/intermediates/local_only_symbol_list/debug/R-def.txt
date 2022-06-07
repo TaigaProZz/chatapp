@@ -56,6 +56,8 @@ id fab
 id google_button
 id goto_register_button
 id imageView
+id isSeenFriend
+id isSeenUser
 id last_message
 id login_button
 id login_email_button

@@ -20,14 +20,18 @@ public final class ChatUserRowBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
+  public final TextView isSeenUser;
+
+  @NonNull
   public final TextView messageBodyUser;
 
   @NonNull
   public final TextView textTimeUser;
 
-  private ChatUserRowBinding(@NonNull ConstraintLayout rootView, @NonNull TextView messageBodyUser,
-      @NonNull TextView textTimeUser) {
+  private ChatUserRowBinding(@NonNull ConstraintLayout rootView, @NonNull TextView isSeenUser,
+      @NonNull TextView messageBodyUser, @NonNull TextView textTimeUser) {
     this.rootView = rootView;
+    this.isSeenUser = isSeenUser;
     this.messageBodyUser = messageBodyUser;
     this.textTimeUser = textTimeUser;
   }
@@ -59,6 +63,12 @@ public final class ChatUserRowBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.isSeenUser;
+      TextView isSeenUser = ViewBindings.findChildViewById(rootView, id);
+      if (isSeenUser == null) {
+        break missingId;
+      }
+
       id = R.id.message_body_user;
       TextView messageBodyUser = ViewBindings.findChildViewById(rootView, id);
       if (messageBodyUser == null) {
@@ -71,7 +81,8 @@ public final class ChatUserRowBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ChatUserRowBinding((ConstraintLayout) rootView, messageBodyUser, textTimeUser);
+      return new ChatUserRowBinding((ConstraintLayout) rootView, isSeenUser, messageBodyUser,
+          textTimeUser);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
