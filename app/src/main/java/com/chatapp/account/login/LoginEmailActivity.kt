@@ -4,9 +4,8 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
-import com.chatapp.conversation.MainActivity
+import com.chatapp.mainActivity.MainActivity
 import com.chatapp.R
-import com.chatapp.account.AccountMainActivity
 import com.chatapp.account.register.RegisterEmailActivity
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase

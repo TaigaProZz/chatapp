@@ -4,24 +4,7 @@
             "outputFile": "com.chatapp-mergeDebugResources-41:/values-pt/values-pt.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\tanki\\.gradle\\caches\\transforms-3\\a643d4a7e4e24200f8b010b54e44ccf2\\transformed\\preference-1.2.0\\res\\values-pt\\values-pt.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "105,175,262,341,492,661,748",
-                        "endColumns": "69,86,78,150,168,86,80",
-                        "endOffsets": "170,257,336,487,656,743,824"
-                    },
-                    "to": {
-                        "startLines": "29,30,31,32,35,36,37",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "2843,2913,3000,3079,3417,3586,3673",
-                        "endColumns": "69,86,78,150,168,86,80",
-                        "endOffsets": "2908,2995,3074,3225,3581,3668,3749"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\tanki\\.gradle\\caches\\transforms-3\\40f29f5dabbbe41bf9e8f06824a52066\\transformed\\core-1.7.0\\res\\values-pt\\values-pt.xml",
+                    "source": "C:\\Users\\tanki\\.gradle\\caches\\transforms-3\\de9eab25746a067fc04e3494755294f6\\transformed\\core-1.7.0\\res\\values-pt\\values-pt.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -38,7 +21,24 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\tanki\\.gradle\\caches\\transforms-3\\f29f4da337953096edb20466598c3aba\\transformed\\appcompat-1.4.1\\res\\values-pt\\values-pt.xml",
+                    "source": "C:\\Users\\tanki\\.gradle\\caches\\transforms-3\\77d72890bddd248b1b29f1c1d67b504e\\transformed\\preference-1.2.0\\res\\values-pt\\values-pt.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "105,175,262,341,492,661,748",
+                        "endColumns": "69,86,78,150,168,86,80",
+                        "endOffsets": "170,257,336,487,656,743,824"
+                    },
+                    "to": {
+                        "startLines": "29,30,31,32,35,36,37",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "2843,2913,3000,3079,3417,3586,3673",
+                        "endColumns": "69,86,78,150,168,86,80",
+                        "endOffsets": "2908,2995,3074,3225,3581,3668,3749"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\tanki\\.gradle\\caches\\transforms-3\\dc9192b06c3883dc8506e28305b69946\\transformed\\appcompat-1.4.1\\res\\values-pt\\values-pt.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

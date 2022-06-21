@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: com.google.firebase:firebase-inappmessaging-display:20.1.2@aar">
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/9ffb99ad0f6ac3d58ac31093eb31cde0/transformed/jetified-firebase-inappmessaging-display-20.1.2/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/9ffb99ad0f6ac3d58ac31093eb31cde0/transformed/jetified-firebase-inappmessaging-display-20.1.2/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/9ffb99ad0f6ac3d58ac31093eb31cde0/transformed/jetified-firebase-inappmessaging-display-20.1.2/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/80f4148787937f8e4f7984d274c3021f/transformed/jetified-firebase-inappmessaging-display-20.1.2/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/80f4148787937f8e4f7984d274c3021f/transformed/jetified-firebase-inappmessaging-display-20.1.2/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/80f4148787937f8e4f7984d274c3021f/transformed/jetified-firebase-inappmessaging-display-20.1.2/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.firebase/firebase-inappmessaging-display/20.1.2/8d3125c04a8ba8a8a937ef6132474fe530926ed1/firebase-inappmessaging-display-20.1.2-javadoc.jar!/" />

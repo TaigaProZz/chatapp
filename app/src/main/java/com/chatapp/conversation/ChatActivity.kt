@@ -13,6 +13,7 @@ import androidx.core.widget.addTextChangedListener
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.chatapp.R
+import com.chatapp.mainActivity.MainActivity
 import com.chatapp.models.ChatMessage
 import com.chatapp.models.User
 import com.google.firebase.auth.ktx.auth
@@ -54,8 +55,7 @@ class ChatActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_chat)
 
-
-        // init val
+        // parse extra
         toUser = intent.getParcelableExtra(NewConversationActivity.USER_KEY)
 
 
@@ -68,7 +68,7 @@ class ChatActivity : AppCompatActivity() {
         // call functions
         listenMessage()
         checkEditTextIsEmpty()
-        checkIfMessageIsSeen(auth.uid!!)
+        //checkIfMessageIsSeen(auth.uid!!)
 
 
         /// TOOLBAR SETTINGS ///
@@ -96,57 +96,6 @@ class ChatActivity : AppCompatActivity() {
         }
 
     }
-
-
-    private fun checkIfMessageIsSeen(userId: String) {
-
-        val uid = auth.uid
-        val ref = db.getReference("/messages/$uid/${toUser?.uid}")
-        val ref2 = db.getReference("/messages/${toUser?.uid}/$uid")
-
-        valueListener = ref.addValueEventListener(object : ValueEventListener {
-            override fun onDataChange(snapshot: DataSnapshot) {
-                snapshot.children.forEach {
-                    val message = snapshot.getValue<ChatMessage>()
-                    if (message?.toUid.equals(toUser?.uid) && message?.userUid.equals(userId)) {
-                        Log.d("tagrg", "true eeee")
-
-                        val hashMap: HashMap<String, Any> = HashMap()
-                        hashMap["seen"] = true
-                        snapshot.ref.updateChildren(hashMap)
-                        adapter.notifyDataSetChanged()
-
-                    }
-                }
-            }
-
-            override fun onCancelled(error: DatabaseError) {
-            }
-        })
-
-        ref2.addValueEventListener(object : ValueEventListener {
-            override fun onDataChange(snapshot: DataSnapshot) {
-                snapshot.children.forEach {
-                    val message = it.getValue<ChatMessage>()
-                    if (message?.toUid.equals(toUser?.uid) && message?.userUid.equals(userId)) {
-                        Log.d("tagrg", "true eeee")
-
-                        val hashMap: HashMap<String, Any> = HashMap()
-                        hashMap["seen"] = true
-                        snapshot.ref.updateChildren(hashMap)
-                        adapter.notifyDataSetChanged()
-
-                    }
-
-                }
-            }
-
-            override fun onCancelled(error: DatabaseError) {
-
-            }
-        })
-    }
-
 
     private fun sendMessage() {
         val messageField = findViewById<EditText>(R.id.msg_box_edittext).text.toString()
@@ -240,7 +189,56 @@ class ChatActivity : AppCompatActivity() {
             }
         }
     }
+    // TODO check message is seen
 
+    // private fun checkIfMessageIsSeen(userId: String) {
+
+    //     val uid = auth.uid
+    //     val ref = db.getReference("/messages/$uid/${toUser?.uid}")
+    //     val ref2 = db.getReference("/messages/${toUser?.uid}/$uid")
+
+    //     valueListener = ref.addValueEventListener(object : ValueEventListener {
+    //         override fun onDataChange(snapshot: DataSnapshot) {
+    //             snapshot.children.forEach {
+    //                 val message = snapshot.getValue<ChatMessage>()
+    //                 if (message?.toUid.equals(toUser?.uid) && message?.userUid.equals(userId)) {
+    //                     Log.d("tagrg", "true eeee")
+
+    //                     val hashMap: HashMap<String, Any> = HashMap()
+    //                     hashMap["seen"] = true
+    //                     snapshot.ref.updateChildren(hashMap)
+    //                     adapter.notifyDataSetChanged()
+
+    //                 }
+    //             }
+    //         }
+
+    //         override fun onCancelled(error: DatabaseError) {
+    //         }
+    //     })
+
+    //     valueListener = ref2.addValueEventListener(object : ValueEventListener {
+    //         override fun onDataChange(snapshot: DataSnapshot) {
+    //             snapshot.children.forEach {
+    //                 val message = it.getValue<ChatMessage>()
+    //                 if (message?.toUid.equals(toUser?.uid) && message?.userUid.equals(userId)) {
+    //                     Log.d("tagrg", "true eeee")
+
+    //                    //val hashMap: HashMap<String, Any> = HashMap()
+    //                    //hashMap["seen"] = true
+    //                    //snapshot.ref.updateChildren(hashMap)
+    //                     adapter.notifyDataSetChanged()
+
+    //                 }
+
+    //             }
+    //         }
+
+    //         override fun onCancelled(error: DatabaseError) {
+
+    //         }
+    //     })
+    // }
 
 }
 

@@ -33,6 +33,9 @@
     <string name="action_sign_in_in_short">Sign in r</string>
     <string name="app_name">Chat App</string>
     <string name="apply">Apply</string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails</string>
+    <string name="attachment_title">Download incoming attachments</string>
     <string name="avatar_choice">Select your profile image</string>
     <string name="chat_text_adapter"/>
     <string name="choose_pic_text">Select a photo</string>
@@ -45,22 +48,28 @@
     <string name="google_app_id" translatable="false">1:859618026888:android:87fa499eb2acb3b621063d</string>
     <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDHBnv-11dzgQLL6NSyxIMUzaNhEzqkGYY</string>
     <string name="google_storage_bucket" translatable="false">chat-app-84489.appspot.com</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="invalid_username">Not a valid username</string>
     <string name="last_message_adapter">Last Message....</string>
     <string name="login_failed">"Login failed"</string>
     <string name="message">Message</string>
+    <string name="messages_header">Messages</string>
     <string name="no_pics_text">Skip this step</string>
     <string name="params">Settings</string>
     <string name="pas_encore_inscrit"> <u>Not Registered?</u> </string>
     <string name="project_id" translatable="false">chat-app-84489</string>
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password</string>
+    <string name="reply_title">Default reply action</string>
     <string name="s_inscrire">Sign up</string>
     <string name="s_inscrire_par_email">Sign up with email</string>
     <string name="se_connecter">Log in</string>
     <string name="se_connecter_par_email">Login in with email</string>
     <string name="sign_out">Sign Out</string>
+    <string name="signature_title">Your signature</string>
+    <string name="sync_header">Sync</string>
+    <string name="sync_title">Sync email periodically</string>
     <string name="tab_text_1">Tab 1</string>
     <string name="tab_text_2">Tab 2</string>
     <string name="time">Time</string>

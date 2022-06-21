@@ -9,7 +9,6 @@ import com.chatapp.R
 import com.chatapp.account.avatar.AvatarChoiceActivity
 import com.chatapp.account.login.LoginEmailActivity
 import com.chatapp.account.register.RegisterEmailActivity
-import com.chatapp.conversation.MainActivity
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions

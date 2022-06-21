@@ -4,17 +4,17 @@ package com.chatapp.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.FrameLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.Toolbar;
 import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.chatapp.R;
 import com.google.android.material.appbar.AppBarLayout;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import de.hdodenhof.circleimageview.CircleImageView;
 import java.lang.NullPointerException;
 import java.lang.Override;
@@ -25,13 +25,13 @@ public final class ActivityMainBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final FloatingActionButton addConversationButton;
-
-  @NonNull
   public final AppBarLayout appBarLayout;
 
   @NonNull
-  public final RecyclerView recyclerViewMain;
+  public final BottomNavigationView bottomNavBarMainActivity;
+
+  @NonNull
+  public final FrameLayout frameLayout;
 
   @NonNull
   public final CircleImageView toolbarAvatar;
@@ -43,13 +43,13 @@ public final class ActivityMainBinding implements ViewBinding {
   public final TextView toolbarUsername;
 
   private ActivityMainBinding(@NonNull ConstraintLayout rootView,
-      @NonNull FloatingActionButton addConversationButton, @NonNull AppBarLayout appBarLayout,
-      @NonNull RecyclerView recyclerViewMain, @NonNull CircleImageView toolbarAvatar,
+      @NonNull AppBarLayout appBarLayout, @NonNull BottomNavigationView bottomNavBarMainActivity,
+      @NonNull FrameLayout frameLayout, @NonNull CircleImageView toolbarAvatar,
       @NonNull Toolbar toolbarMain, @NonNull TextView toolbarUsername) {
     this.rootView = rootView;
-    this.addConversationButton = addConversationButton;
     this.appBarLayout = appBarLayout;
-    this.recyclerViewMain = recyclerViewMain;
+    this.bottomNavBarMainActivity = bottomNavBarMainActivity;
+    this.frameLayout = frameLayout;
     this.toolbarAvatar = toolbarAvatar;
     this.toolbarMain = toolbarMain;
     this.toolbarUsername = toolbarUsername;
@@ -82,21 +82,21 @@ public final class ActivityMainBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.add_conversation_button;
-      FloatingActionButton addConversationButton = ViewBindings.findChildViewById(rootView, id);
-      if (addConversationButton == null) {
-        break missingId;
-      }
-
       id = R.id.appBarLayout;
       AppBarLayout appBarLayout = ViewBindings.findChildViewById(rootView, id);
       if (appBarLayout == null) {
         break missingId;
       }
 
-      id = R.id.recycler_view_main;
-      RecyclerView recyclerViewMain = ViewBindings.findChildViewById(rootView, id);
-      if (recyclerViewMain == null) {
+      id = R.id.bottom_nav_bar_main_activity;
+      BottomNavigationView bottomNavBarMainActivity = ViewBindings.findChildViewById(rootView, id);
+      if (bottomNavBarMainActivity == null) {
+        break missingId;
+      }
+
+      id = R.id.frameLayout;
+      FrameLayout frameLayout = ViewBindings.findChildViewById(rootView, id);
+      if (frameLayout == null) {
         break missingId;
       }
 
@@ -118,8 +118,8 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityMainBinding((ConstraintLayout) rootView, addConversationButton,
-          appBarLayout, recyclerViewMain, toolbarAvatar, toolbarMain, toolbarUsername);
+      return new ActivityMainBinding((ConstraintLayout) rootView, appBarLayout,
+          bottomNavBarMainActivity, frameLayout, toolbarAvatar, toolbarMain, toolbarUsername);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

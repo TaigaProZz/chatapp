@@ -1,6 +1,5 @@
 package com.chatapp.account.avatar
 
-import android.accounts.Account
 import android.app.Activity
 import android.content.Intent
 import android.net.Uri
@@ -10,9 +9,8 @@ import android.util.Log
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import com.chatapp.conversation.MainActivity
+import com.chatapp.mainActivity.MainActivity
 import com.chatapp.R
-import com.chatapp.account.AccountMainActivity
 import com.chatapp.databinding.ActivityChoiceAvatarBinding
 import com.chatapp.models.User
 import com.google.firebase.auth.ktx.auth

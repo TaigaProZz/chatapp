@@ -22,9 +22,6 @@ public final class ActivityEmailLoginBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final ConstraintLayout container;
-
-  @NonNull
   public final TextView gotoRegisterButton;
 
   @NonNull
@@ -37,11 +34,9 @@ public final class ActivityEmailLoginBinding implements ViewBinding {
   public final EditText usernameLogin;
 
   private ActivityEmailLoginBinding(@NonNull ConstraintLayout rootView,
-      @NonNull ConstraintLayout container, @NonNull TextView gotoRegisterButton,
-      @NonNull Button loginButton, @NonNull EditText passwordLogin,
-      @NonNull EditText usernameLogin) {
+      @NonNull TextView gotoRegisterButton, @NonNull Button loginButton,
+      @NonNull EditText passwordLogin, @NonNull EditText usernameLogin) {
     this.rootView = rootView;
-    this.container = container;
     this.gotoRegisterButton = gotoRegisterButton;
     this.loginButton = loginButton;
     this.passwordLogin = passwordLogin;
@@ -75,8 +70,6 @@ public final class ActivityEmailLoginBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      ConstraintLayout container = (ConstraintLayout) rootView;
-
       id = R.id.goto_register_button;
       TextView gotoRegisterButton = ViewBindings.findChildViewById(rootView, id);
       if (gotoRegisterButton == null) {
@@ -101,8 +94,8 @@ public final class ActivityEmailLoginBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityEmailLoginBinding((ConstraintLayout) rootView, container,
-          gotoRegisterButton, loginButton, passwordLogin, usernameLogin);
+      return new ActivityEmailLoginBinding((ConstraintLayout) rootView, gotoRegisterButton,
+          loginButton, passwordLogin, usernameLogin);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

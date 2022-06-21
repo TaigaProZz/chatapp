@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.chatapp.R
 import com.chatapp.adapters.NewConversationActivityAdapter
+import com.chatapp.mainActivity.MainActivity
 import com.chatapp.models.User
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError

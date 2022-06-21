@@ -12,7 +12,7 @@
         android:theme="@style/Theme.Material3.Dark.NoActionBar">
 
         <activity
-            android:name=".conversation.MainActivity"
+            android:name=".mainActivity.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -25,14 +25,20 @@
             android:exported="false">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".conversation.MainActivity" />
+                android:value=".mainActivity.MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".mainActivity.SearchFriendFragment"
+            android:exported="false">
+
         </activity>
         <activity
             android:name=".conversation.NewConversationActivity"
             android:exported="false">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".conversation.MainActivity" />
+                android:value=".mainActivity.MainActivity" />
         </activity>
         <activity
             android:name=".account.avatar.AvatarChoiceActivity"
@@ -59,7 +65,7 @@
             android:exported="false">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".conversation.MainActivity" />
+                android:value=".mainActivity.MainActivity" />
         </activity>
     </application>
 

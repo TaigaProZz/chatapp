@@ -4,7 +4,7 @@
             "outputFile": "com.chatapp-mergeDebugResources-41:/values-w600dp-land-v13/values-w600dp-land-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\tanki\\.gradle\\caches\\transforms-3\\110914044444deb935331021fc2a0899\\transformed\\material-1.5.0\\res\\values-w600dp-land-v13\\values-w600dp-land-v13.xml",
+                    "source": "C:\\Users\\tanki\\.gradle\\caches\\transforms-3\\ece3b2720ead26328c40967c771ddf7c\\transformed\\material-1.5.0\\res\\values-w600dp-land-v13\\values-w600dp-land-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
