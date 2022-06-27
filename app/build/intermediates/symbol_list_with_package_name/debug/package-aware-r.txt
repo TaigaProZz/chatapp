@@ -2614,16 +2614,23 @@ drawable googleg_standard_color_18
 drawable ic_arrow_down_24dp
 drawable ic_baseline_photo_camera_24
 drawable ic_clock_black_24dp
+drawable ic_contact_picture_2
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_m3_chip_check
 drawable ic_m3_chip_checked_circle
 drawable ic_m3_chip_close
+drawable ic_menu_allfriends
+drawable ic_menu_delete
+drawable ic_menu_invite
+drawable ic_menu_search
+drawable ic_menu_start_conversation
 drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable ic_sysbar_quicksettings
 drawable image_placeholder
 drawable m3_appbar_background
 drawable m3_popupmenu_background_overlay
@@ -2749,6 +2756,7 @@ id actions
 id activity_chooser_view_content
 id add
 id add_conversation_button
+id add_friend_ico
 id adjust_height
 id adjust_width
 id alertTitle
@@ -2772,6 +2780,7 @@ id autoCompleteToEnd
 id autoCompleteToStart
 id avatar_avatar_final
 id avatar_circle
+id avatar_friend_adapter
 id avatar_friend_message
 id avatar_user_adapter
 id avatar_user_adapter_main
@@ -2826,6 +2835,7 @@ id chip2
 id chip3
 id chip_group
 id chronometer
+id circleImageView
 id circle_center
 id clear_text
 id clip_horizontal
@@ -2905,6 +2915,7 @@ id fill
 id fill_horizontal
 id fill_vertical
 id filled
+id firstconstaint
 id fitToContents
 id fixed
 id flip
@@ -2912,6 +2923,8 @@ id floating
 id forever
 id fragment_container_view_tag
 id frameLayout
+id framelayoutfirst
+id friend_adapter_username
 id frost
 id ghost_view
 id ghost_view_holder
@@ -3092,6 +3105,7 @@ id ratio
 id rectangles
 id recyclerView_NewConversation
 id recyclerView_chat
+id recyclerView_friend_fragment
 id recycler_view
 id recycler_view_main
 id register_button
@@ -3119,6 +3133,7 @@ id search_bar
 id search_button
 id search_close_btn
 id search_edit_frame
+id search_friend_bar
 id search_go_btn
 id search_mag_icon
 id search_plate
@@ -3200,6 +3215,7 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
+id textView
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3360,6 +3376,7 @@ layout activity_main
 layout activity_main_tabbed
 layout activity_new_conversation
 layout activity_register
+layout adapter_friend_fragment
 layout adapter_main_activity
 layout adapter_users_new_conversation
 layout banner
@@ -3388,8 +3405,9 @@ layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout edit_text_alertbox
 layout expand_button
+layout fragment_friend
 layout fragment_main
-layout fragment_search_friend
+layout fragment_settings
 layout image
 layout image_frame
 layout m3_alert_dialog
@@ -3492,7 +3510,6 @@ layout text_view_with_theme_line_height
 layout text_view_without_line_height
 layout toolbar_default
 layout user_profile_activity
-menu conversation_option
 menu example_menu
 menu example_menu2
 menu message_option
@@ -3530,14 +3547,12 @@ string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
 string action_sign_in
-string action_sign_in_in_short
+string activity_login_title
+string activity_settings_title
 string androidx_startup
 string app_name
 string appbar_scrolling_view_behavior
 string apply
-string attachment_summary_off
-string attachment_summary_on
-string attachment_title
 string avatar_choice
 string bottom_sheet_behavior
 string bottomsheet_action_expand_halfway
@@ -3545,7 +3560,7 @@ string card_content_descriptor
 string character_counter_content_description
 string character_counter_overflowed_content_description
 string character_counter_pattern
-string chat_text_adapter
+string chat
 string chip_text
 string choose_pic_text
 string clear_text_end_icon_content_description
@@ -3569,7 +3584,10 @@ string common_signin_button_text
 string common_signin_button_text_long
 string copy
 string default_web_client_id
+string delete
 string edit_text_hint_chat
+string edit_the_profile
+string email
 string error_icon_content_description
 string expand_button_title
 string exposed_dropdown_menu_content_description
@@ -3589,7 +3607,9 @@ string invalid_password
 string invalid_username
 string item_view_role_description
 string last_message_adapter
+string login
 string login_failed
+string login_with_email
 string m3_ref_typeface_brand_display_regular
 string m3_ref_typeface_brand_medium
 string m3_ref_typeface_brand_regular
@@ -3636,7 +3656,6 @@ string material_timepicker_pm
 string material_timepicker_select_time
 string material_timepicker_text_input_mode_description
 string message
-string messages_header
 string modal_content_descriptor
 string modal_inner_content_descriptor
 string mtrl_badge_numberless_content_description
@@ -3676,9 +3695,9 @@ string mtrl_picker_toggle_to_text_input_mode
 string mtrl_picker_toggle_to_year_selection
 string mtrl_timepicker_confirm
 string no_pics_text
+string not_registered
 string not_set
-string params
-string pas_encore_inscrit
+string password
 string password_toggle_content_description
 string path_password_eye
 string path_password_eye_mask_strike_through
@@ -3686,32 +3705,16 @@ string path_password_eye_mask_visible
 string path_password_strike_through
 string preference_copied
 string project_id
-string prompt_email
-string prompt_password
-string reply_title
-string s_inscrire
-string s_inscrire_par_email
-string se_connecter
-string se_connecter_par_email
 string search_menu_title
+string settings
 string sign_out
-string signature_title
+string sign_up
+string signup_with_email
 string status_bar_notification_info_overflow
 string summary_collapsed_preference_list
-string sync_header
-string sync_title
-string tab_text_1
-string tab_text_2
 string time
-string title_activity_login
-string title_activity_main_tabbed
-string title_activity_maps
-string title_activity_settings
-string user_profile
+string user_profile_title
 string username
-string username_connected
-string username_register
-string username_user_profile
 string v7_preference_off
 string v7_preference_on
 string web_client_id
@@ -4963,7 +4966,6 @@ styleable ViewPager2 android_orientation
 styleable ViewStubCompat android_id android_layout android_inflatedId
 styleable ViewTransition android_id SharedValue SharedValueId clearsTag duration ifTagNotSet ifTagSet motionInterpolator motionTarget onStateTransition pathMotionArc setsTag transitionDisable upDuration viewTransitionMode
 styleable include constraintSet
-xml root_preferences
 xml standalone_badge
 xml standalone_badge_gravity_bottom_end
 xml standalone_badge_gravity_bottom_start

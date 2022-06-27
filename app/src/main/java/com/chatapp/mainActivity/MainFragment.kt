@@ -3,17 +3,20 @@ package com.chatapp.mainActivity
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.appcompat.widget.PopupMenu
+import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.chatapp.R
 import com.chatapp.conversation.ChatActivity
 import com.chatapp.conversation.NewConversationActivity
+import com.chatapp.mainActivity.MainActivity.Companion.currentUser
+import com.chatapp.mainActivity.MainActivity.Companion.db
 import com.chatapp.models.ChatMessage
 import com.chatapp.models.User
 import com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -30,24 +33,24 @@ import com.xwray.groupie.Item
 import java.util.*
 
 class MainFragment : Fragment() {
-
-    private val adapter = GroupieAdapter()
+    companion object{
+        private val adapter = GroupieAdapter()
+        val lastMessageList = TreeMap<String, ChatMessage>()
+    }
     private val auth = Firebase.auth
-    val lastMessageList = TreeMap<String, ChatMessage>()
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         listenMessageFromDatabase()
     }
 
-
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+        inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
+    ): View? {
 
         val view = inflater.inflate(R.layout.fragment_main, container, false)
 
-        // add conversation
+        // add conversation button
         view.findViewById<FloatingActionButton>(R.id.add_conversation_button)
             .setOnClickListener {
                 startActivity(Intent(view.context, NewConversationActivity::class.java))
@@ -57,6 +60,8 @@ class MainFragment : Fragment() {
         // Recycler view settings
         val recyclerview = view.findViewById<RecyclerView>(R.id.recycler_view_main)
         recyclerview.adapter = adapter
+
+
 
         // Open the conversation with user selected
         adapter.setOnItemClickListener { item, _ ->
@@ -71,6 +76,7 @@ class MainFragment : Fragment() {
         return view
     }
 
+
     private fun refreshRecycler() {
         adapter.clear()
 
@@ -81,19 +87,19 @@ class MainFragment : Fragment() {
             adapter.add(0, MainActivityAdapter(it))
         }
     }
+
     private fun listenMessageFromDatabase() {
         // Get the username of the user logged
         if (auth.uid != null) {
             // Collect message from database
             val userUid = auth.uid
 
-            val ref = MainActivity.db.getReference("last-message/$userUid")
+            val ref = db.getReference("last-message/$userUid")
             ref.addChildEventListener(object : ChildEventListener {
                 override fun onChildAdded(snapshot: DataSnapshot, previousChildName: String?) {
                     val message = snapshot.getValue<ChatMessage>() ?: return
                     lastMessageList[snapshot.key!!] = message
                     refreshRecycler()
-                    Log.d("fzfzf", "fzfzf")
 
                 }
 
@@ -122,6 +128,7 @@ class MainFragment : Fragment() {
             })
         }
     }
+
     /*    CLASS ADAPTER   */
     class MainActivityAdapter(private val chatMessage: ChatMessage) : Item<GroupieViewHolder>() {
 
@@ -140,7 +147,7 @@ class MainFragment : Fragment() {
             }
 
             // Set USER DATA to the adapter (username, avatar)
-            val ref = MainActivity.db.getReference("/users/$chatPartnerId")
+            val ref = db.getReference("/users/$chatPartnerId")
             ref.addListenerForSingleValueEvent(object : ValueEventListener {
                 override fun onDataChange(snapshot: DataSnapshot) {
                     chatUser = snapshot.getValue<User>()
@@ -164,13 +171,44 @@ class MainFragment : Fragment() {
 
 
             // Long click PopUp
-            //   popUp(position)
+            popUp(position)
 
         }
 
         override fun getLayout(): Int {
             return R.layout.adapter_main_activity
         }
-    }
 
+        private fun popUp(position: Int) {
+            // Long press on item
+
+            adapter.setOnItemLongClickListener { item, view ->
+                val message = item as MainActivityAdapter
+                val auth = Firebase.auth
+                val userUid = auth.uid
+                val uid = message.chatUser?.uid
+                val refLastMessage = db.getReference("last-message/$userUid/$uid")
+                // Pop up
+                val popupMenu = PopupMenu(view.context, view)
+                popupMenu.menuInflater.inflate(R.menu.message_option, popupMenu.menu)
+                popupMenu.setOnMenuItemClickListener {
+                    when (it.itemId) {
+                        // Delete message button
+                        R.id.delete_conversation -> {
+                            // TODO refresh the recyclerview
+                            refLastMessage.removeValue().addOnSuccessListener {
+                                adapter.notifyItemRangeRemoved(
+                                    position,
+                                    lastMessageList.size
+                                )
+                            }
+                        }
+                    }
+                    true
+                }
+                popupMenu.show()
+                true
+            }
+        }
+    }
 }

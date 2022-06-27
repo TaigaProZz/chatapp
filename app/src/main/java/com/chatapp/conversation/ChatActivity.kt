@@ -6,10 +6,10 @@ import android.util.Log
 import android.view.View
 import android.widget.EditText
 import android.widget.ImageView
-import android.widget.PopupMenu
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.widget.addTextChangedListener
+import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.chatapp.R
@@ -51,9 +51,13 @@ class ChatActivity : AppCompatActivity() {
         ref.removeEventListener(valueListener!!)
     }
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_chat)
+
+        Log.d("resumaae", "create")
+
 
         // parse extra
         toUser = intent.getParcelableExtra(NewConversationActivity.USER_KEY)
@@ -65,10 +69,11 @@ class ChatActivity : AppCompatActivity() {
         recyclerView.scrollToPosition(adapter.itemCount - 1)
 
 
+
         // call functions
         listenMessage()
         checkEditTextIsEmpty()
-        //checkIfMessageIsSeen(auth.uid!!)
+       // checkIfMessageIsSeen(auth.uid!!)
 
 
         /// TOOLBAR SETTINGS ///
@@ -158,6 +163,8 @@ class ChatActivity : AppCompatActivity() {
                         adapter.add(ChatFriendAdapter(message.text, toUser!!, message))
                     }
                 }
+
+
                 val recyclerView = findViewById<RecyclerView>(R.id.recyclerView_chat)
                 recyclerView.scrollToPosition(adapter.itemCount - 1)
 
@@ -189,63 +196,34 @@ class ChatActivity : AppCompatActivity() {
             }
         }
     }
+
+
     // TODO check message is seen
+    // juste changer la valeur de is seen dans la bdd dans le oncreate
+    //private fun checkIfMessageIsSeen(userId: String) {
 
-    // private fun checkIfMessageIsSeen(userId: String) {
+    //    val uid = auth.uid
+    //    val ref = db.getReference("/last-message/$uid/${toUser?.uid}")
+    //    val ref2 = db.getReference("/messages/${toUser?.uid}/$uid")
 
-    //     val uid = auth.uid
-    //     val ref = db.getReference("/messages/$uid/${toUser?.uid}")
-    //     val ref2 = db.getReference("/messages/${toUser?.uid}/$uid")
+    //    valueListener = ref.addValueEventListener(object : ValueEventListener {
+    //        override fun onDataChange(snapshot: DataSnapshot) {
+    //            snapshot.children.forEach {
+    //                val message = it.getValue<ChatMessage>()
 
-    //     valueListener = ref.addValueEventListener(object : ValueEventListener {
-    //         override fun onDataChange(snapshot: DataSnapshot) {
-    //             snapshot.children.forEach {
-    //                 val message = snapshot.getValue<ChatMessage>()
-    //                 if (message?.toUid.equals(toUser?.uid) && message?.userUid.equals(userId)) {
-    //                     Log.d("tagrg", "true eeee")
 
-    //                     val hashMap: HashMap<String, Any> = HashMap()
-    //                     hashMap["seen"] = true
-    //                     snapshot.ref.updateChildren(hashMap)
-    //                     adapter.notifyDataSetChanged()
+    //            }
+    //        }
 
-    //                 }
-    //             }
-    //         }
+    //        override fun onCancelled(error: DatabaseError) {
+    //        }
+    //    })
 
-    //         override fun onCancelled(error: DatabaseError) {
-    //         }
-    //     })
-
-    //     valueListener = ref2.addValueEventListener(object : ValueEventListener {
-    //         override fun onDataChange(snapshot: DataSnapshot) {
-    //             snapshot.children.forEach {
-    //                 val message = it.getValue<ChatMessage>()
-    //                 if (message?.toUid.equals(toUser?.uid) && message?.userUid.equals(userId)) {
-    //                     Log.d("tagrg", "true eeee")
-
-    //                    //val hashMap: HashMap<String, Any> = HashMap()
-    //                    //hashMap["seen"] = true
-    //                    //snapshot.ref.updateChildren(hashMap)
-    //                     adapter.notifyDataSetChanged()
-
-    //                 }
-
-    //             }
-    //         }
-
-    //         override fun onCancelled(error: DatabaseError) {
-
-    //         }
-    //     })
-    // }
 
 }
 
 
-class ChatFriendAdapter(
-    val text: String, val user: User, private val chatMessage: ChatMessage
-) :
+class ChatFriendAdapter(val text: String, val user: User, private val chatMessage: ChatMessage) :
     Item<GroupieViewHolder>() {
 
     override fun bind(viewHolder: GroupieViewHolder, position: Int) {
@@ -263,18 +241,16 @@ class ChatFriendAdapter(
 
         // Show if message is seen or not
         val isSeen = viewHolder.itemView.findViewById<TextView>(R.id.isSeenFriend)
-
-
         if (chatMessage.seen) {
             isSeen.text = "Seen"
         }
 
 
         // on LONG click
-        viewHolder.itemView.findViewById<TextView>(R.id.message_body_friend).setOnLongClickListener {
-            popUp(viewHolder.itemView.findViewById(R.id.message_body_friend))
-            isLongClickable
-        }
+        //  viewHolder.itemView.findViewById<TextView>(R.id.message_body_friend).setOnLongClickListener {
+        //      popUp(viewHolder.itemView.findViewById(R.id.message_body_friend))
+        //      isLongClickable
+        //  }
 
     }
 
@@ -295,30 +271,19 @@ class ChatUserAdapter(val text: String, val user: User, private val chatMessage:
             chatMessage.time.subSequence(11, 16)
 
 
-        // Show if message is seen or not
-        val isSeen = viewHolder.itemView.findViewById<TextView>(R.id.isSeenUser)
-        if (chatMessage.seen) {
-            isSeen.text = "Seen"
-        }
 
-        // Pop up
-        viewHolder.itemView.findViewById<TextView>(R.id.message_body_user).setOnLongClickListener {
-            popUp(viewHolder.itemView.findViewById(R.id.message_body_user))
-            isLongClickable
-        }
+
+        // Show if message is seen or not
+        // val isSeen = viewHolder.itemView.findViewById<TextView>(R.id.isSeenUser)
+
     }
 
     override fun getLayout(): Int {
         return R.layout.chat_user_row
     }
+
 }
 
-private fun popUp(view: View) {
-    val popupMenu = PopupMenu(view.context, view)
-    popupMenu.menuInflater.inflate(R.menu.message_option, popupMenu.menu)
-    popupMenu.setOnMenuItemClickListener {
-        true
-    }
-    popupMenu.show()
-}
+
+
 

@@ -249,12 +249,12 @@ ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:26:13-28:62
 		ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:28:17-59
 	android:name
 		ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:27:17-63
-activity#com.chatapp.mainActivity.SearchFriendFragment
+activity#com.chatapp.mainActivity.FriendFragment
 ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:31:9-35:20
 	android:exported
 		ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:33:13-37
 	android:name
-		ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:32:13-62
+		ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:32:13-56
 activity#com.chatapp.conversation.NewConversationActivity
 ADDED from E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:36:9-42:20
 	android:exported

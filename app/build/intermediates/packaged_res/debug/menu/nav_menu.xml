@@ -5,7 +5,8 @@
 
     <item
         android:id="@+id/user_profile_menu"
-        android:title="@string/params"
+        android:title="@string/settings"
         android:visible="true"
-         />
+
+        />
 </menu>

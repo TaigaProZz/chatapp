@@ -34,7 +34,7 @@
                 android:id="@+id/toolbar_username"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/user_profile"
+                android:text="@string/user_profile_title"
                 android:layout_marginStart="24dp" />
 
 
@@ -60,7 +60,7 @@
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_marginTop="16dp"
-        android:src="@drawable/collapse"
+        android:src="@drawable/ic_contact_picture_2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -81,7 +81,7 @@
         android:layout_height="44dp"
         android:layout_marginTop="92dp"
         android:gravity="center_vertical"
-        android:text="@string/username_user_profile"
+        android:text="@string/email"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/avatar_user_profile" />
@@ -89,7 +89,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Username"
+        android:text="@string/username"
         app:layout_constraintBottom_toTopOf="@+id/username_user_profile"
         app:layout_constraintStart_toStartOf="@+id/username_user_profile" />
 
@@ -99,7 +99,7 @@
         android:layout_height="44dp"
         android:layout_marginTop="76dp"
         android:gravity="center_vertical"
-        android:text="@string/username_user_profile"
+        android:text="@string/username"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/email_user_profile" />

@@ -6,6 +6,72 @@
                 {
                     "source": "E:\\Dev\\android\\chatApp\\app\\src\\main\\res\\values-night\\themes.xml",
                     "from": {
+                        "startLines": "-1",
+                        "startColumns": "-1",
+                        "startOffsets": "-1"
+                    },
+                    "to": {
+                        "startLines": "12",
+                        "startColumns": "4",
+                        "startOffsets": "864",
+                        "endLines": "24",
+                        "endColumns": "12",
+                        "endOffsets": "1457"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\tanki\\.gradle\\caches\\transforms-3\\ece3b2720ead26328c40967c771ddf7c\\transformed\\material-1.5.0\\res\\values-night-v8\\values-night-v8.xml",
+                    "from": {
+                        "startLines": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startColumns": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startOffsets": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"
+                    },
+                    "to": {
+                        "startLines": "25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,50,51,52,53,54,55,56,57",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "1462,1537,1648,1737,1838,1945,2052,2151,2254,2342,2466,2568,2670,2786,2888,3002,3130,3246,3368,3504,3624,3758,3878,3990,4205,4322,4446,4576,4698,4836,4970,5086",
+                        "endColumns": "74,110,88,100,106,106,98,102,87,123,101,101,115,101,113,127,115,121,135,119,133,119,111,125,116,123,129,121,137,133,115,119",
+                        "endOffsets": "1532,1643,1732,1833,1940,2047,2146,2249,2337,2461,2563,2665,2781,2883,2997,3125,3241,3363,3499,3619,3753,3873,3985,4111,4317,4441,4571,4693,4831,4965,5081,5201"
+                    }
+                },
+                {
+                    "source": "E:\\Dev\\android\\chatApp\\app\\src\\main\\res\\values-night\\dimens.xml",
+                    "from": {
+                        "startLines": "-1,-1,-1",
+                        "startColumns": "-1,-1,-1",
+                        "startOffsets": "-1,-1,-1"
+                    },
+                    "to": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "100,142,187",
+                        "endColumns": "41,44,44",
+                        "endOffsets": "137,182,227"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\tanki\\.gradle\\caches\\transforms-3\\dc9192b06c3883dc8506e28305b69946\\transformed\\appcompat-1.4.1\\res\\values-night-v8\\values-night-v8.xml",
+                    "from": {
+                        "startLines": "-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startColumns": "-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startOffsets": "-1,-1,-1,-1,-1,-1,-1,-1"
+                    },
+                    "to": {
+                        "startLines": "5,6,7,8,9,10,11,49",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "232,302,386,470,566,668,770,4116",
+                        "endColumns": "69,83,83,95,101,101,93,88",
+                        "endOffsets": "297,381,465,561,663,765,859,4200"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-mergeDebugResources-41:\\values-night-v8\\values-night-v8.xml",
+            "map": [
+                {
+                    "source": "E:\\Dev\\android\\chatApp\\app\\src\\main\\res\\values-night\\themes.xml",
+                    "from": {
                         "startLines": "2",
                         "startColumns": "4",
                         "startOffsets": "100",

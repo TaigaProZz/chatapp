@@ -29,18 +29,19 @@
     <dimen name="button_height">55dp</dimen>
     <dimen name="button_width">200dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
-    <string name="action_sign_in">Sign in </string>
-    <string name="action_sign_in_in_short">Sign in r</string>
-    <string name="app_name">Chat App</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="activity_login_title">LoginActivity</string>
+    <string name="activity_settings_title">SettingsActivity</string>
+    <string name="app_name" translatable="false">Chat App</string>
     <string name="apply">Apply</string>
-    <string name="attachment_summary_off">Only download attachments when manually requested</string>
-    <string name="attachment_summary_on">Automatically download attachments for incoming emails</string>
-    <string name="attachment_title">Download incoming attachments</string>
     <string name="avatar_choice">Select your profile image</string>
-    <string name="chat_text_adapter"/>
+    <string name="chat">Chat</string>
     <string name="choose_pic_text">Select a photo</string>
     <string name="default_web_client_id" translatable="false">859618026888-98mt718g22e8l8gv328gqs897vv2bqmm.apps.googleusercontent.com</string>
+    <string name="delete">delete</string>
     <string name="edit_text_hint_chat">Type your message</string>
+    <string name="edit_the_profile">Edit profil</string>
+    <string name="email">Email</string>
     <string name="firebase_database_url" translatable="false">https://chat-app-84489-default-rtdb.europe-west1.firebasedatabase.app</string>
     <string name="friends">Friends</string>
     <string name="gcm_defaultSenderId" translatable="false">859618026888</string>
@@ -52,36 +53,21 @@
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="invalid_username">Not a valid username</string>
     <string name="last_message_adapter">Last Message....</string>
+    <string name="login">Log in</string>
     <string name="login_failed">"Login failed"</string>
+    <string name="login_with_email">Login in with email</string>
     <string name="message">Message</string>
-    <string name="messages_header">Messages</string>
     <string name="no_pics_text">Skip this step</string>
-    <string name="params">Settings</string>
-    <string name="pas_encore_inscrit"> <u>Not Registered?</u> </string>
+    <string name="not_registered">" <u>Not Registered ?</u> "</string>
+    <string name="password">Password</string>
     <string name="project_id" translatable="false">chat-app-84489</string>
-    <string name="prompt_email">Email</string>
-    <string name="prompt_password">Password</string>
-    <string name="reply_title">Default reply action</string>
-    <string name="s_inscrire">Sign up</string>
-    <string name="s_inscrire_par_email">Sign up with email</string>
-    <string name="se_connecter">Log in</string>
-    <string name="se_connecter_par_email">Login in with email</string>
+    <string name="settings">Settings</string>
     <string name="sign_out">Sign Out</string>
-    <string name="signature_title">Your signature</string>
-    <string name="sync_header">Sync</string>
-    <string name="sync_title">Sync email periodically</string>
-    <string name="tab_text_1">Tab 1</string>
-    <string name="tab_text_2">Tab 2</string>
+    <string name="sign_up">Sign up</string>
+    <string name="signup_with_email">Sign up with email</string>
     <string name="time">Time</string>
-    <string name="title_activity_login">LoginActivity</string>
-    <string name="title_activity_main_tabbed">MainTabbedActivity</string>
-    <string name="title_activity_maps">MapsActivity</string>
-    <string name="title_activity_settings">SettingsActivity</string>
-    <string name="user_profile">User Profile</string>
+    <string name="user_profile_title">User Profile</string>
     <string name="username">Username</string>
-    <string name="username_connected">Username</string>
-    <string name="username_register">Username</string>
-    <string name="username_user_profile"> </string>
     <string name="web_client_id" translatable="false">859618026888-98mt718g22e8l8gv328gqs897vv2bqmm.apps.googleusercontent.com</string>
     <string name="welcome">"Welcome !"</string>
     <style name="AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>

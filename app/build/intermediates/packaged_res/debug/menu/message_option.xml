@@ -4,7 +4,9 @@
 
 
 <item
-        android:title="à config"
+        android:id="@+id/delete_conversation"
+        android:title="@string/delete"
+        android:icon="@drawable/ic_menu_delete"
 
         />
 

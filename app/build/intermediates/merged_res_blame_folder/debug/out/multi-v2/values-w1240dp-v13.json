@@ -6,6 +6,26 @@
                 {
                     "source": "E:\\Dev\\android\\chatApp\\app\\src\\main\\res\\values-w1240dp\\dimens.xml",
                     "from": {
+                        "startLines": "-1",
+                        "startColumns": "-1",
+                        "startOffsets": "-1"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "42",
+                        "endOffsets": "93"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-mergeDebugResources-41:\\values-w1240dp-v13\\values-w1240dp-v13.xml",
+            "map": [
+                {
+                    "source": "E:\\Dev\\android\\chatApp\\app\\src\\main\\res\\values-w1240dp\\dimens.xml",
+                    "from": {
                         "startLines": "1",
                         "startColumns": "4",
                         "startOffsets": "16",

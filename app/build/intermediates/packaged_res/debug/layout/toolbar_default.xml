@@ -37,7 +37,7 @@
                 android:id="@+id/toolbar_username"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/user_profile"
+                android:text="@string/username"
                 android:layout_marginStart="24dp" />
 
 

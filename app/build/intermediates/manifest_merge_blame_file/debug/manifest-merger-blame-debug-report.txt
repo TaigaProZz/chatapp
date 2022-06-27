@@ -84,8 +84,8 @@
 48        </activity>
 49        <activity
 49-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:31:9-35:20
-50            android:name="com.chatapp.mainActivity.SearchFriendFragment"
-50-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:32:13-62
+50            android:name="com.chatapp.mainActivity.FriendFragment"
+50-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:32:13-56
 51            android:exported="false" >
 51-->E:\Dev\android\chatApp\app\src\main\AndroidManifest.xml:33:13-37
 52        </activity>

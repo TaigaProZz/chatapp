@@ -5,7 +5,7 @@ import kotlinx.parcelize.Parcelize
 
 @Parcelize
 class User(
-    val username: String = "",
+    var username: String = "",
     val email: String = "",
     val password: String = "",
     val uid: String = "",

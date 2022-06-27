@@ -21,6 +21,8 @@ class NewConversationActivity : AppCompatActivity() {
     companion object {
         const val USER_KEY = "USER_KEY"
     }
+    private val adapter = GroupieAdapter()
+
 
     private val db =
         Firebase.database("https://chat-app-84489-default-rtdb.europe-west1.firebasedatabase.app")
@@ -30,12 +32,9 @@ class NewConversationActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_new_conversation)
 
-        // toolbar settings
-
 
         // recycler view settings
         val recyclerView = findViewById<RecyclerView>(R.id.recyclerView_NewConversation)
-        val adapter = GroupieAdapter()
         recyclerView.adapter = adapter
         fetchUsers()
 
