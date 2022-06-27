@@ -54,11 +54,10 @@ class FriendFragment : Fragment() {
 
         view.findViewById<ImageView>(R.id.add_friend_ico).setOnClickListener {
 
-            friendAdapter.clear()
             val text = editTextSearchFriend?.text.toString()
-            text.equals(text, true)
-
-            userSearch(text)
+            val searchText = text.lowercase()
+            userSearch(searchText)
+            Log.d("fzfzfz", searchText)
 
         }
 
@@ -71,7 +70,7 @@ class FriendFragment : Fragment() {
     private fun userSearch(text: String) {
 
         db.getReference("/users").orderByChild("username")
-            .startAt(text).endAt(text + "\uf8ff")
+            .equalTo(text)
             .addListenerForSingleValueEvent(object : ValueEventListener {
                 override fun onDataChange(snapshot: DataSnapshot) {
                     snapshot.children.forEach {
@@ -88,45 +87,6 @@ class FriendFragment : Fragment() {
 
                 }
             })
-
-        // private fun searchUser(query: String) {
-        //     val userRef = db.getReference("/users").orderByChild("username")
-        //     userRef.addListenerForSingleValueEvent(object : ValueEventListener {
-        //         override fun onDataChange(snapshot: DataSnapshot) {
-        //             snapshot.children.forEach {
-        //                 val getAllUser = snapshot.getValue<User>()
-        //                 if (getAllUser?.username?.lowercase()?.contains(query.lowercase())!!) {
-        //                     friendAdapter.add(FriendFragmentAdapter(getAllUser))
-        //                     Log.d("fzffzz", getAllUser.username)
-        //                 }
-        //             }
-//
-//
-        //         }
-//
-        //         override fun onCancelled(error: DatabaseError) {
-        //         }
-        //     })
-        // }
-//
-        // // get users from database and add it on the recycler view
-        // private fun fetchUsers() {
-        //     val ref = db.getReference("/users").orderByChild("username")
-        //     ref.addListenerForSingleValueEvent(object : ValueEventListener {
-        //         override fun onDataChange(snapshot: DataSnapshot) {
-        //             snapshot.children.forEach {
-        //                 val user = it.getValue(User::class.java)
-//
-        //                 friendAdapter.add(FriendFragmentAdapter(user!!))
-//
-        //             }
-        //         }
-//
-        //         override fun onCancelled(error: DatabaseError) {
-        //         }
-        //     })
-        // }
-
 
     }
 }
