@@ -32,6 +32,7 @@
 
 
     <ImageView
+        android:id="@+id/add_friend_btn_adapter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/ic_menu_start_conversation"

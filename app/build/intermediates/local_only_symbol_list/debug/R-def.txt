@@ -33,6 +33,7 @@ drawable ic_menu_allfriends
 drawable ic_menu_delete
 drawable ic_menu_invite
 drawable ic_menu_search
+drawable ic_menu_search_mtrl_alpha
 drawable ic_menu_start_conversation
 drawable ic_sysbar_quicksettings
 drawable message_avatar_circle
@@ -40,7 +41,7 @@ drawable message_box
 drawable message_circle_border_friend
 drawable message_circle_border_user
 id add_conversation_button
-id add_friend_ico
+id add_friend_btn_adapter
 id appBarLayout
 id appBarLayout2
 id avatar_avatar_final

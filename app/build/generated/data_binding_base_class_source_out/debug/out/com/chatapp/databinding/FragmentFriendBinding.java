@@ -6,7 +6,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.FrameLayout;
-import android.widget.ImageView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -23,9 +22,6 @@ public final class FragmentFriendBinding implements ViewBinding {
   private final FrameLayout rootView;
 
   @NonNull
-  public final ImageView addFriendIco;
-
-  @NonNull
   public final ConstraintLayout firstconstaint;
 
   @NonNull
@@ -37,11 +33,10 @@ public final class FragmentFriendBinding implements ViewBinding {
   @NonNull
   public final EditText searchFriendBar;
 
-  private FragmentFriendBinding(@NonNull FrameLayout rootView, @NonNull ImageView addFriendIco,
+  private FragmentFriendBinding(@NonNull FrameLayout rootView,
       @NonNull ConstraintLayout firstconstaint, @NonNull FrameLayout framelayoutfirst,
       @NonNull RecyclerView recyclerViewFriendFragment, @NonNull EditText searchFriendBar) {
     this.rootView = rootView;
-    this.addFriendIco = addFriendIco;
     this.firstconstaint = firstconstaint;
     this.framelayoutfirst = framelayoutfirst;
     this.recyclerViewFriendFragment = recyclerViewFriendFragment;
@@ -75,12 +70,6 @@ public final class FragmentFriendBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.add_friend_ico;
-      ImageView addFriendIco = ViewBindings.findChildViewById(rootView, id);
-      if (addFriendIco == null) {
-        break missingId;
-      }
-
       id = R.id.firstconstaint;
       ConstraintLayout firstconstaint = ViewBindings.findChildViewById(rootView, id);
       if (firstconstaint == null) {
@@ -105,8 +94,8 @@ public final class FragmentFriendBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentFriendBinding((FrameLayout) rootView, addFriendIco, firstconstaint,
-          framelayoutfirst, recyclerViewFriendFragment, searchFriendBar);
+      return new FragmentFriendBinding((FrameLayout) rootView, firstconstaint, framelayoutfirst,
+          recyclerViewFriendFragment, searchFriendBar);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

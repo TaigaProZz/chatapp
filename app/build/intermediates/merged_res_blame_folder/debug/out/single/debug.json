@@ -4,10 +4,6 @@
         "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-45:\\drawable\\ic_menu_start_conversation.png"
     },
     {
-        "merged": "com.chatapp-merged_res-43:/layout_fragment_friend.xml.flat",
-        "source": "com.chatapp-main-45:/layout/fragment_friend.xml"
-    },
-    {
         "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-merged_res-43:\\drawable_ic_menu_search.png.flat",
         "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-45:\\drawable\\ic_menu_search.png"
     },
@@ -140,6 +136,10 @@
         "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-45:\\drawable\\message_circle_border_user.xml"
     },
     {
+        "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-merged_res-43:\\drawable_ic_menu_search_mtrl_alpha.png.flat",
+        "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-45:\\drawable\\ic_menu_search_mtrl_alpha.png"
+    },
+    {
         "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-merged_res-43:\\menu_nav_bar_main_activity.xml.flat",
         "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-45:\\menu\\nav_bar_main_activity.xml"
     },
@@ -178,6 +178,10 @@
     {
         "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-merged_res-43:\\drawable-v24_ic_launcher_foreground.xml.flat",
         "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-45:\\drawable-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.chatapp-merged_res-43:/layout_adapter_friend_fragment.xml.flat",
+        "source": "com.chatapp-main-45:/layout/adapter_friend_fragment.xml"
     },
     {
         "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-merged_res-43:\\drawable_ic_contact_picture_2.png.flat",

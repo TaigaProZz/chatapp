@@ -4,6 +4,7 @@ package com.chatapp.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -21,14 +22,19 @@ public final class AdapterFriendFragmentBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
+  public final ImageView addFriendBtnAdapter;
+
+  @NonNull
   public final CircleImageView avatarFriendAdapter;
 
   @NonNull
   public final TextView friendAdapterUsername;
 
   private AdapterFriendFragmentBinding(@NonNull ConstraintLayout rootView,
-      @NonNull CircleImageView avatarFriendAdapter, @NonNull TextView friendAdapterUsername) {
+      @NonNull ImageView addFriendBtnAdapter, @NonNull CircleImageView avatarFriendAdapter,
+      @NonNull TextView friendAdapterUsername) {
     this.rootView = rootView;
+    this.addFriendBtnAdapter = addFriendBtnAdapter;
     this.avatarFriendAdapter = avatarFriendAdapter;
     this.friendAdapterUsername = friendAdapterUsername;
   }
@@ -60,6 +66,12 @@ public final class AdapterFriendFragmentBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.add_friend_btn_adapter;
+      ImageView addFriendBtnAdapter = ViewBindings.findChildViewById(rootView, id);
+      if (addFriendBtnAdapter == null) {
+        break missingId;
+      }
+
       id = R.id.avatar_friend_adapter;
       CircleImageView avatarFriendAdapter = ViewBindings.findChildViewById(rootView, id);
       if (avatarFriendAdapter == null) {
@@ -72,8 +84,8 @@ public final class AdapterFriendFragmentBinding implements ViewBinding {
         break missingId;
       }
 
-      return new AdapterFriendFragmentBinding((ConstraintLayout) rootView, avatarFriendAdapter,
-          friendAdapterUsername);
+      return new AdapterFriendFragmentBinding((ConstraintLayout) rootView, addFriendBtnAdapter,
+          avatarFriendAdapter, friendAdapterUsername);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
