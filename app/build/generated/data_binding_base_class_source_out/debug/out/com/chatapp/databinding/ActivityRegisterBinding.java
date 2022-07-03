@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -24,6 +25,12 @@ public final class ActivityRegisterBinding implements ViewBinding {
   public final EditText emailRegister;
 
   @NonNull
+  public final TextView gotoLoginButton;
+
+  @NonNull
+  public final EditText nameRegister;
+
+  @NonNull
   public final EditText passwordRegister;
 
   @NonNull
@@ -33,10 +40,13 @@ public final class ActivityRegisterBinding implements ViewBinding {
   public final EditText usernameRegister;
 
   private ActivityRegisterBinding(@NonNull ConstraintLayout rootView,
-      @NonNull EditText emailRegister, @NonNull EditText passwordRegister,
+      @NonNull EditText emailRegister, @NonNull TextView gotoLoginButton,
+      @NonNull EditText nameRegister, @NonNull EditText passwordRegister,
       @NonNull Button registerButton, @NonNull EditText usernameRegister) {
     this.rootView = rootView;
     this.emailRegister = emailRegister;
+    this.gotoLoginButton = gotoLoginButton;
+    this.nameRegister = nameRegister;
     this.passwordRegister = passwordRegister;
     this.registerButton = registerButton;
     this.usernameRegister = usernameRegister;
@@ -75,6 +85,18 @@ public final class ActivityRegisterBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.goto_login_button;
+      TextView gotoLoginButton = ViewBindings.findChildViewById(rootView, id);
+      if (gotoLoginButton == null) {
+        break missingId;
+      }
+
+      id = R.id.name_register;
+      EditText nameRegister = ViewBindings.findChildViewById(rootView, id);
+      if (nameRegister == null) {
+        break missingId;
+      }
+
       id = R.id.password_register;
       EditText passwordRegister = ViewBindings.findChildViewById(rootView, id);
       if (passwordRegister == null) {
@@ -94,7 +116,7 @@ public final class ActivityRegisterBinding implements ViewBinding {
       }
 
       return new ActivityRegisterBinding((ConstraintLayout) rootView, emailRegister,
-          passwordRegister, registerButton, usernameRegister);
+          gotoLoginButton, nameRegister, passwordRegister, registerButton, usernameRegister);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

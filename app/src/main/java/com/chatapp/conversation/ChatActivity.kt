@@ -43,12 +43,16 @@ class ChatActivity : AppCompatActivity() {
     var toUser: User? = null
     private val auth = Firebase.auth
     var valueListener: ValueEventListener? = null
+    val uid = auth.uid
+    private val ref = db.getReference("/messages/$uid/${toUser?.uid}")
 
     override fun onDestroy() {
         super.onDestroy()
-        val uid = auth.uid
-        val ref = db.getReference("/messages/$uid/${toUser?.uid}")
-        ref.removeEventListener(valueListener!!)
+
+      //  if(ref != null){
+      //      ref.removeEventListener(valueListener!!)
+//
+      //  }
     }
 
 

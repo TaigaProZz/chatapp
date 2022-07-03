@@ -32,6 +32,7 @@
     <string name="action_sign_in">Sign in</string>
     <string name="activity_login_title">LoginActivity</string>
     <string name="activity_settings_title">SettingsActivity</string>
+    <string name="already_registered"><u>Already registered?</u></string>
     <string name="app_name" translatable="false">Chat App</string>
     <string name="apply">Apply</string>
     <string name="avatar_choice">Select your profile image</string>
@@ -40,7 +41,7 @@
     <string name="default_web_client_id" translatable="false">859618026888-98mt718g22e8l8gv328gqs897vv2bqmm.apps.googleusercontent.com</string>
     <string name="delete">delete</string>
     <string name="edit_text_hint_chat">Type your message</string>
-    <string name="edit_the_profile">Edit profil</string>
+    <string name="edit_the_profile" translatable="false">Edit profil</string>
     <string name="email">Email</string>
     <string name="firebase_database_url" translatable="false">https://chat-app-84489-default-rtdb.europe-west1.firebasedatabase.app</string>
     <string name="friends">Friends</string>
@@ -49,7 +50,7 @@
     <string name="google_app_id" translatable="false">1:859618026888:android:87fa499eb2acb3b621063d</string>
     <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDHBnv-11dzgQLL6NSyxIMUzaNhEzqkGYY</string>
     <string name="google_storage_bucket" translatable="false">chat-app-84489.appspot.com</string>
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="invalid_username">Not a valid username</string>
     <string name="last_message_adapter">Last Message....</string>
@@ -57,8 +58,9 @@
     <string name="login_failed">"Login failed"</string>
     <string name="login_with_email">Login in with email</string>
     <string name="message">Message</string>
+    <string name="name">Name</string>
     <string name="no_pics_text">Skip this step</string>
-    <string name="not_registered">" <u>Not Registered ?</u> "</string>
+    <string name="not_registered"><u>Not registered yet?</u></string>
     <string name="password">Password</string>
     <string name="project_id" translatable="false">chat-app-84489</string>
     <string name="settings">Settings</string>
@@ -68,6 +70,7 @@
     <string name="time">Time</string>
     <string name="user_profile_title">User Profile</string>
     <string name="username">Username</string>
+    <string name="username_what_is_allowed">(Only lowercase letters and numbers are allowed for username)</string>
     <string name="web_client_id" translatable="false">859618026888-98mt718g22e8l8gv328gqs897vv2bqmm.apps.googleusercontent.com</string>
     <string name="welcome">"Welcome !"</string>
     <style name="AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>

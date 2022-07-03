@@ -2756,8 +2756,8 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
+id add_btn_friend_adapter
 id add_conversation_button
-id add_friend_btn_adapter
 id adjust_height
 id adjust_width
 id alertTitle
@@ -2836,7 +2836,6 @@ id chip2
 id chip3
 id chip_group
 id chronometer
-id circleImageView
 id circle_center
 id clear_text
 id clip_horizontal
@@ -2932,6 +2931,7 @@ id ghost_view_holder
 id glide_custom_view_target_tag
 id gone
 id google_button
+id goto_login_button
 id goto_register_button
 id graph
 id graph_wrap
@@ -3052,6 +3052,7 @@ id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
+id name_register
 id navbar_main_activity_chat_main
 id navbar_main_activity_search_friend
 id navbar_main_activity_settings
@@ -3147,6 +3148,9 @@ id select_dialog_listview
 id selected
 id selection_type
 id sendMsgBtn
+id settings_fragment_avatar
+id settings_fragment_edit_profile
+id settings_fragment_username
 id sharedValueSet
 id sharedValueUnset
 id shortcut
@@ -3181,6 +3185,7 @@ id start
 id startHorizontal
 id startToEnd
 id startVertical
+id start_conversation_btn_friend_adapter
 id staticLayout
 id staticPostLayout
 id status_bar_latest_event_content
@@ -3216,7 +3221,6 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
-id textView
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3379,6 +3383,7 @@ layout activity_new_conversation
 layout activity_register
 layout adapter_friend_fragment
 layout adapter_main_activity
+layout adapter_search_friend_fragment
 layout adapter_users_new_conversation
 layout banner
 layout browser_actions_context_menu_page
@@ -3550,6 +3555,7 @@ string abc_toolbar_collapse_description
 string action_sign_in
 string activity_login_title
 string activity_settings_title
+string already_registered
 string androidx_startup
 string app_name
 string appbar_scrolling_view_behavior
@@ -3695,6 +3701,7 @@ string mtrl_picker_toggle_to_day_selection
 string mtrl_picker_toggle_to_text_input_mode
 string mtrl_picker_toggle_to_year_selection
 string mtrl_timepicker_confirm
+string name
 string no_pics_text
 string not_registered
 string not_set
@@ -3716,6 +3723,7 @@ string summary_collapsed_preference_list
 string time
 string user_profile_title
 string username
+string username_what_is_allowed
 string v7_preference_off
 string v7_preference_on
 string web_client_id

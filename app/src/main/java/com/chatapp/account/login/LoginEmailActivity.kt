@@ -51,7 +51,7 @@ class LoginEmailActivity : AppCompatActivity() {
         // login to account with firebase
         auth.signInWithEmailAndPassword(username, password).addOnCompleteListener {
             if (it.isSuccessful) {
-                Toast.makeText(applicationContext, "Connexion réussie $username $password",Toast.LENGTH_SHORT).show()
+                Toast.makeText(applicationContext, "Connexion réussie $username",Toast.LENGTH_SHORT).show()
                 val intent = Intent(applicationContext, MainActivity::class.java)
                 intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK.or(Intent.FLAG_ACTIVITY_CLEAR_TASK)
                 startActivity(intent)

@@ -40,8 +40,8 @@ drawable message_avatar_circle
 drawable message_box
 drawable message_circle_border_friend
 drawable message_circle_border_user
+id add_btn_friend_adapter
 id add_conversation_button
-id add_friend_btn_adapter
 id appBarLayout
 id appBarLayout2
 id avatar_avatar_final
@@ -56,7 +56,6 @@ id bottom_nav_bar_main_activity
 id change_avatar_btn
 id change_email_btn
 id change_username_btn
-id circleImageView
 id confirm_avatar_button
 id delete_conversation
 id edit_text_change_username
@@ -69,6 +68,7 @@ id frameLayout
 id framelayoutfirst
 id friend_adapter_username
 id google_button
+id goto_login_button
 id goto_register_button
 id imageView
 id isSeenFriend
@@ -79,6 +79,7 @@ id login_email_button
 id message_body_friend
 id message_body_user
 id msg_box_edittext
+id name_register
 id navbar_main_activity_chat_main
 id navbar_main_activity_search_friend
 id navbar_main_activity_settings
@@ -92,10 +93,13 @@ id register_button
 id register_email_button
 id search_friend_bar
 id sendMsgBtn
+id settings_fragment_avatar
+id settings_fragment_edit_profile
+id settings_fragment_username
 id sign_out_button
 id skip_avatar_choice_btn
+id start_conversation_btn_friend_adapter
 id tabs
-id textView
 id text_time_friend
 id text_time_user
 id time_main_activity
@@ -123,6 +127,7 @@ layout activity_new_conversation
 layout activity_register
 layout adapter_friend_fragment
 layout adapter_main_activity
+layout adapter_search_friend_fragment
 layout adapter_users_new_conversation
 layout chat_friend_row
 layout chat_user_row
@@ -141,6 +146,7 @@ mipmap ic_launcher_round
 string action_sign_in
 string activity_login_title
 string activity_settings_title
+string already_registered
 string app_name
 string apply
 string avatar_choice
@@ -166,6 +172,7 @@ string login
 string login_failed
 string login_with_email
 string message
+string name
 string no_pics_text
 string not_registered
 string password
@@ -177,6 +184,7 @@ string signup_with_email
 string time
 string user_profile_title
 string username
+string username_what_is_allowed
 string web_client_id
 string welcome
 style AppBarOverlay

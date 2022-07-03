@@ -21,16 +21,21 @@ public final class FragmentSettingsBinding implements ViewBinding {
   private final FrameLayout rootView;
 
   @NonNull
-  public final CircleImageView circleImageView;
+  public final CircleImageView settingsFragmentAvatar;
 
   @NonNull
-  public final TextView textView;
+  public final TextView settingsFragmentEditProfile;
+
+  @NonNull
+  public final TextView settingsFragmentUsername;
 
   private FragmentSettingsBinding(@NonNull FrameLayout rootView,
-      @NonNull CircleImageView circleImageView, @NonNull TextView textView) {
+      @NonNull CircleImageView settingsFragmentAvatar,
+      @NonNull TextView settingsFragmentEditProfile, @NonNull TextView settingsFragmentUsername) {
     this.rootView = rootView;
-    this.circleImageView = circleImageView;
-    this.textView = textView;
+    this.settingsFragmentAvatar = settingsFragmentAvatar;
+    this.settingsFragmentEditProfile = settingsFragmentEditProfile;
+    this.settingsFragmentUsername = settingsFragmentUsername;
   }
 
   @Override
@@ -60,19 +65,26 @@ public final class FragmentSettingsBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.circleImageView;
-      CircleImageView circleImageView = ViewBindings.findChildViewById(rootView, id);
-      if (circleImageView == null) {
+      id = R.id.settings_fragment_avatar;
+      CircleImageView settingsFragmentAvatar = ViewBindings.findChildViewById(rootView, id);
+      if (settingsFragmentAvatar == null) {
         break missingId;
       }
 
-      id = R.id.textView;
-      TextView textView = ViewBindings.findChildViewById(rootView, id);
-      if (textView == null) {
+      id = R.id.settings_fragment_edit_profile;
+      TextView settingsFragmentEditProfile = ViewBindings.findChildViewById(rootView, id);
+      if (settingsFragmentEditProfile == null) {
         break missingId;
       }
 
-      return new FragmentSettingsBinding((FrameLayout) rootView, circleImageView, textView);
+      id = R.id.settings_fragment_username;
+      TextView settingsFragmentUsername = ViewBindings.findChildViewById(rootView, id);
+      if (settingsFragmentUsername == null) {
+        break missingId;
+      }
+
+      return new FragmentSettingsBinding((FrameLayout) rootView, settingsFragmentAvatar,
+          settingsFragmentEditProfile, settingsFragmentUsername);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

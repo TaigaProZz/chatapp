@@ -29,4 +29,7 @@
     <string name="activity_settings_title">"Paramètre"</string>
     <string name="activity_login_title">Connexion</string>
     <string name="user_profile_title">Profil d\'utilisateur</string>
+    <string name="already_registered"><u>Déjà inscrit?</u></string>
+    <string name="name">Nom</string>
+    <string name="username_what_is_allowed">(Seuls les lettres minuscules et les chiffres sont autorisés pour le nom d\'utilisateur)</string>
 </resources>

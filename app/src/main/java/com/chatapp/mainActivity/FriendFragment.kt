@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import android.widget.EditText
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
 import androidx.core.widget.addTextChangedListener
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.RecyclerView
@@ -15,7 +16,6 @@ import com.bumptech.glide.Glide
 import com.chatapp.R
 import com.chatapp.conversation.ChatActivity
 import com.chatapp.conversation.NewConversationActivity
-import com.chatapp.conversation.NewConversationActivityAdapter
 import com.chatapp.mainActivity.MainActivity.Companion.currentUser
 import com.chatapp.mainActivity.MainActivity.Companion.db
 import com.chatapp.models.User
@@ -33,17 +33,11 @@ import com.xwray.groupie.Item
 
 class FriendFragment : Fragment() {
 
-
     private val friendAdapter = GroupieAdapter()
-
-
     private val db = MainActivity.db
-    val friendRef = db.getReference("${currentUser?.uid}/friends")
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
 
         fetchUsers()
     }
@@ -75,21 +69,20 @@ class FriendFragment : Fragment() {
             }
         }
 
-
         // Inflate the layout for this fragment
         return view
 
     }
 
     private fun userSearch(text: String) {
-        db.getReference("/users").orderByChild("username")
-            .equalTo(text)
+
+        db.getReference("/users").orderByChild("username").equalTo(text)
             .addListenerForSingleValueEvent(object : ValueEventListener {
                 override fun onDataChange(snapshot: DataSnapshot) {
                     snapshot.children.forEach {
                         val getAllUser = it.getValue<User>()
+                        friendAdapter.clear()
                         friendAdapter.add(FriendFragmentAdapter(getAllUser!!))
-
                     }
                 }
 
@@ -99,14 +92,12 @@ class FriendFragment : Fragment() {
     }
 
 
-    // get users from database and add it on the recycler view
+    // get friends from database and add it on the recycler view
     private fun fetchUsers() {
         val auth = Firebase.auth
         val ref = db.getReference("/users/${auth.uid}/friends").orderByChild("username")
         ref.addListenerForSingleValueEvent(object : ValueEventListener {
-
             override fun onDataChange(snapshot: DataSnapshot) {
-
                 snapshot.children.forEach {
                     val collectedUser = it.getValue<UserFriend>()
                     val collectedUid = collectedUser?.uid
@@ -114,11 +105,11 @@ class FriendFragment : Fragment() {
                     db.getReference("users/$collectedUid/").get()
                         .addOnSuccessListener { it1 ->
                             val user = it1.getValue(User::class.java)
-                            friendAdapter.add(NewConversationActivityAdapter(user!!))
+                            friendAdapter.add(FriendFragmentAdapter(user!!))
                             friendAdapter.setOnItemClickListener { item, view ->
-                                val userItem = item as NewConversationActivityAdapter
                                 val intent = Intent(view.context, ChatActivity::class.java)
-                                intent.putExtra(NewConversationActivity.USER_KEY, userItem.user)
+                                val row = item as FriendFragmentAdapter
+                                intent.putExtra(NewConversationActivity.USER_KEY, row.collectedUser)
                                 startActivity(intent)
                             }
                         }
@@ -132,17 +123,45 @@ class FriendFragment : Fragment() {
 
 }
 
-class FriendFragmentAdapter(private val collectedUser: User) : Item<GroupieViewHolder>() {
+class FriendFragmentAdapter(val collectedUser: User) : Item<GroupieViewHolder>() {
     override fun bind(viewHolder: GroupieViewHolder, position: Int) {
 
-        val avatar = viewHolder.itemView.findViewById<ImageView>(R.id.avatar_friend_adapter)
-        Glide.with(viewHolder.itemView).load(collectedUser.avatar).into(avatar)
-        viewHolder.itemView.findViewById<TextView>(R.id.friend_adapter_username).text = collectedUser.username
+        val view = viewHolder.itemView
 
-        viewHolder.itemView.findViewById<ImageView>(R.id.add_friend_btn_adapter).setOnClickListener {
-            addFriend(collectedUser.uid, collectedUser.username)
+        val avatar = view.findViewById<ImageView>(R.id.avatar_friend_adapter)
+        Glide.with(view).load(collectedUser.avatar).into(avatar)
+        view.findViewById<TextView>(R.id.friend_adapter_username).text = collectedUser.username
+
+        // start conversation btn
+        val startConvBtn = view.findViewById<ImageView>(R.id.start_conversation_btn_friend_adapter)
+        startConvBtn.setOnClickListener {
+            val intent = Intent(view.context, ChatActivity::class.java)
+            intent.putExtra(NewConversationActivity.USER_KEY, collectedUser)
+            view.context.startActivity(intent)
         }
 
+        // add btn
+        val addBtn = view.findViewById<ImageView>(R.id.add_btn_friend_adapter)
+            addBtn.setOnClickListener {
+            if (collectedUser.uid != currentUser?.uid) {
+                addFriend(collectedUser.uid, collectedUser.username)
+            } else {
+                Toast.makeText(
+                    view.context, "Tu ne peux pas t'ajouter toi même ><",
+                    Toast.LENGTH_SHORT
+                ).show()
+            }
+        }
+
+        db.getReference("users").child("${currentUser?.uid}")
+            .child("friends").child(collectedUser.uid).get().addOnSuccessListener {
+            if (it.exists()){
+                addBtn.visibility = View.INVISIBLE
+            } else {
+                addBtn.visibility = View.VISIBLE
+            }
+
+        }
 
     }
 
@@ -151,14 +170,29 @@ class FriendFragmentAdapter(private val collectedUser: User) : Item<GroupieViewH
     }
 
 
+    // add friend fun
     private fun addFriend(userUid: String, userUsername: String) {
-
         val currentUser = currentUser
         val friendRef = db.getReference("/users/${currentUser?.uid}/friends/${userUid}")
         val user = UserFriend(userUsername, userUid)
         friendRef.push()
         friendRef.setValue(user)
+
     }
 
+}
+
+class SearchFriendFragmentAdapter(private val collectedUser: User) : Item<GroupieViewHolder>() {
+    override fun bind(viewHolder: GroupieViewHolder, position: Int) {
+
+        val avatar = viewHolder.itemView.findViewById<ImageView>(R.id.avatar_friend_adapter)
+        Glide.with(viewHolder.itemView).load(collectedUser.avatar).into(avatar)
+        viewHolder.itemView.findViewById<TextView>(R.id.friend_adapter_username).text = collectedUser.username
+
+    }
+
+    override fun getLayout(): Int {
+        return R.layout.adapter_search_friend_fragment
+    }
 }
 

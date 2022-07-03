@@ -40,12 +40,12 @@
         "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-45:\\layout\\adapter_main_activity.xml"
     },
     {
-        "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-mergeDebugResources-42:\\layout\\fragment_main.xml",
-        "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-45:\\layout\\fragment_main.xml"
+        "merged": "com.chatapp-mergeDebugResources-42:/layout/fragment_settings.xml",
+        "source": "com.chatapp-main-45:/layout/fragment_settings.xml"
     },
     {
-        "merged": "com.chatapp-mergeDebugResources-42:/layout/adapter_friend_fragment.xml",
-        "source": "com.chatapp-main-45:/layout/adapter_friend_fragment.xml"
+        "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-mergeDebugResources-42:\\layout\\fragment_main.xml",
+        "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-45:\\layout\\fragment_main.xml"
     },
     {
         "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-mergeDebugResources-42:\\layout\\adapter_users_new_conversation.xml",
@@ -58,6 +58,10 @@
     {
         "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-mergeDebugResources-42:\\layout\\activity_new_conversation.xml",
         "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-45:\\layout\\activity_new_conversation.xml"
+    },
+    {
+        "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-mergeDebugResources-42:\\layout\\adapter_search_friend_fragment.xml",
+        "source": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-main-45:\\layout\\adapter_search_friend_fragment.xml"
     },
     {
         "merged": "C:\\Users\\tanki\\.gradle\\daemon\\7.4.2\\com.chatapp-mergeDebugResources-42:\\layout\\fragment_search_friend.xml",

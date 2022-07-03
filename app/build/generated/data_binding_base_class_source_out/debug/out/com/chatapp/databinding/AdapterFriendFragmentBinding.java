@@ -22,7 +22,7 @@ public final class AdapterFriendFragmentBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final ImageView addFriendBtnAdapter;
+  public final ImageView addBtnFriendAdapter;
 
   @NonNull
   public final CircleImageView avatarFriendAdapter;
@@ -30,13 +30,18 @@ public final class AdapterFriendFragmentBinding implements ViewBinding {
   @NonNull
   public final TextView friendAdapterUsername;
 
+  @NonNull
+  public final ImageView startConversationBtnFriendAdapter;
+
   private AdapterFriendFragmentBinding(@NonNull ConstraintLayout rootView,
-      @NonNull ImageView addFriendBtnAdapter, @NonNull CircleImageView avatarFriendAdapter,
-      @NonNull TextView friendAdapterUsername) {
+      @NonNull ImageView addBtnFriendAdapter, @NonNull CircleImageView avatarFriendAdapter,
+      @NonNull TextView friendAdapterUsername,
+      @NonNull ImageView startConversationBtnFriendAdapter) {
     this.rootView = rootView;
-    this.addFriendBtnAdapter = addFriendBtnAdapter;
+    this.addBtnFriendAdapter = addBtnFriendAdapter;
     this.avatarFriendAdapter = avatarFriendAdapter;
     this.friendAdapterUsername = friendAdapterUsername;
+    this.startConversationBtnFriendAdapter = startConversationBtnFriendAdapter;
   }
 
   @Override
@@ -66,9 +71,9 @@ public final class AdapterFriendFragmentBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.add_friend_btn_adapter;
-      ImageView addFriendBtnAdapter = ViewBindings.findChildViewById(rootView, id);
-      if (addFriendBtnAdapter == null) {
+      id = R.id.add_btn_friend_adapter;
+      ImageView addBtnFriendAdapter = ViewBindings.findChildViewById(rootView, id);
+      if (addBtnFriendAdapter == null) {
         break missingId;
       }
 
@@ -84,8 +89,14 @@ public final class AdapterFriendFragmentBinding implements ViewBinding {
         break missingId;
       }
 
-      return new AdapterFriendFragmentBinding((ConstraintLayout) rootView, addFriendBtnAdapter,
-          avatarFriendAdapter, friendAdapterUsername);
+      id = R.id.start_conversation_btn_friend_adapter;
+      ImageView startConversationBtnFriendAdapter = ViewBindings.findChildViewById(rootView, id);
+      if (startConversationBtnFriendAdapter == null) {
+        break missingId;
+      }
+
+      return new AdapterFriendFragmentBinding((ConstraintLayout) rootView, addBtnFriendAdapter,
+          avatarFriendAdapter, friendAdapterUsername, startConversationBtnFriendAdapter);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

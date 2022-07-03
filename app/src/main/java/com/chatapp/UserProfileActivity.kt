@@ -104,22 +104,23 @@ class UserProfileActivity : AppCompatActivity() {
         })
     }
 
-
+    // get avatar from firebase and display it
     private fun getAvatarFromFirebase() {
-        val avatarDisplay = findViewById<ImageView>(R.id.avatar_user_profile)
+        val avatar = findViewById<ImageView>(R.id.avatar_user_profile)
 
         db.getReference("users").child(uid!!).child("avatar")
             .get()
             .addOnSuccessListener {
 
                 val imageFromFirebase = it.value
-                Glide.with(applicationContext).load(imageFromFirebase).into(avatarDisplay)
+                Glide.with(applicationContext).load(imageFromFirebase).into(avatar!!)
 
             }
             .addOnFailureListener {
                 Log.d("TAG", "Can't get image from firebase")
             }
     }
+
 
     private fun getUsernameFromFirebase() {
         db.getReference("users").child(uid!!).child("username")
@@ -134,8 +135,6 @@ class UserProfileActivity : AppCompatActivity() {
             .addOnFailureListener {
                 Log.d("TAG", "Can't get username from firebase")
             }
-
-
     }
 
 }
