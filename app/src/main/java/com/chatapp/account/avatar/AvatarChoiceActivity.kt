@@ -7,11 +7,11 @@ import android.os.Bundle
 import android.provider.MediaStore
 import android.util.Log
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import com.chatapp.mainActivity.MainActivity
 import com.chatapp.R
-import com.chatapp.databinding.ActivityChoiceAvatarBinding
+import com.chatapp.mainActivity.MainActivity
 import com.chatapp.models.User
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.database.ktx.database
@@ -21,7 +21,6 @@ import de.hdodenhof.circleimageview.CircleImageView
 
 class AvatarChoiceActivity : AppCompatActivity() {
 
-    private lateinit var root: ActivityChoiceAvatarBinding
     private var db = Firebase.database("https://chat-app-84489-default-rtdb.europe-west1.firebasedatabase.app")
     val auth = Firebase.auth
     var mGoogleCode: String =""
@@ -42,15 +41,14 @@ class AvatarChoiceActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        root = ActivityChoiceAvatarBinding.inflate(layoutInflater)
-        val view = root.root
-        setContentView(view)
+
+        setContentView(R.layout.activity_choice_avatar)
 
         // toolbar settings
         supportActionBar?.title = "Avatar"
 
         // open photo gallery from avatar circle button
-        root.avatarCircle.setOnClickListener {
+        findViewById<ImageView>(R.id.avatar_circle).setOnClickListener {
             Log.d(TAG, "Try to show photo selector")
 
             val intent = Intent(Intent.ACTION_PICK)
@@ -61,7 +59,7 @@ class AvatarChoiceActivity : AppCompatActivity() {
 
         /*          BUTTONS           */
         // skip the avatar choice btn and set a default avatar
-        root.skipAvatarChoiceBtn.setOnClickListener {
+        findViewById<ImageView>(R.id.skip_avatar_choice_btn).setOnClickListener {
             val uid = auth.uid
             val ref = db.getReference("users/$uid")
             // set a default avatar
@@ -76,7 +74,7 @@ class AvatarChoiceActivity : AppCompatActivity() {
         }
 
         // confirm button avatar, and upload the image on firebase database
-        root.confirmAvatarButton.setOnClickListener {
+        findViewById<ImageView>(R.id.confirm_avatar_button).setOnClickListener {
             Log.d(TAG, "send image to firebase and go next activity")
 
             uploadAvatarToFirestore()

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="action_sign_in">Se connecter</string>
+    <string name="activity_login_title">Connexion</string>
+    <string name="activity_settings_title">"Paramètre"</string>
+    <string name="already_registered"><u>Déjà inscrit?</u></string>
+    <string name="apply">Appliquer</string>
+    <string name="avatar_choice">Choisis ton image de profil</string>
+    <string name="chat">Chat</string>
+    <string name="choose_pic_text">Choisir une photo</string>
+    <string name="delete">Supprimer</string>
+    <string name="edit_text_hint_chat">Entrez votre message</string>
+    <string name="email">Email</string>
+    <string name="friends">Amis</string>
+    <string name="invalid_password">Le mot de passe doit être >5 charactères</string>
+    <string name="invalid_username">Nom d\'utilisateur incorrect</string>
+    <string name="last_message_adapter">Dernier message....</string>
+    <string name="login">Connexion</string>
+    <string name="login_failed">Connexion echouée</string>
+    <string name="login_with_email">Se connecter par email</string>
+    <string name="message">Message</string>
+    <string name="name">Nom</string>
+    <string name="no_pics_text">Passer cette étape</string>
+    <string name="not_registered"><u>Pas encore inscrit ?</u></string>
+    <string name="password">Mot de passe</string>
+    <string name="settings">Paramètres</string>
+    <string name="sign_out">Déconnexion</string>
+    <string name="sign_up">Inscription</string>
+    <string name="signup_with_email">S\'inscrire par email</string>
+    <string name="time">Date</string>
+    <string name="user_profile_title">Profil d\'utilisateur</string>
+    <string name="username">Utilisateur</string>
+    <string name="username_what_is_allowed">(Seuls les lettres minuscules et les chiffres sont autorisés pour le nom d\'utilisateur)</string>
+    <string name="welcome">Bienvenue !</string>
+</resources>

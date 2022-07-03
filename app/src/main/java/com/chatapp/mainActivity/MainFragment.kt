@@ -2,7 +2,6 @@ package com.chatapp.mainActivity
 
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -15,7 +14,6 @@ import com.bumptech.glide.Glide
 import com.chatapp.R
 import com.chatapp.conversation.ChatActivity
 import com.chatapp.conversation.NewConversationActivity
-import com.chatapp.mainActivity.MainActivity.Companion.currentUser
 import com.chatapp.mainActivity.MainActivity.Companion.db
 import com.chatapp.models.ChatMessage
 import com.chatapp.models.User

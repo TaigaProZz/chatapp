@@ -12,7 +12,6 @@ import androidx.fragment.app.Fragment
 import com.bumptech.glide.Glide
 import com.chatapp.R
 import com.chatapp.UserProfileActivity
-import com.chatapp.databinding.UserProfileActivityBinding
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError

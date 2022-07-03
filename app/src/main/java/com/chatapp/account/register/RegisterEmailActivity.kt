@@ -2,18 +2,18 @@ package com.chatapp.account.register
 
 import android.content.Intent
 import android.os.Bundle
-import android.widget.*
+import android.widget.Button
+import android.widget.EditText
+import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.chatapp.R
-import com.chatapp.account.AccountMainActivity
-import com.chatapp.models.User
 import com.chatapp.account.avatar.AvatarChoiceActivity
 import com.chatapp.account.login.LoginEmailActivity
-import com.google.android.gms.common.SignInButton
+import com.chatapp.models.User
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
-import org.w3c.dom.Text
 
 class RegisterEmailActivity : AppCompatActivity() {
 

@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.chatapp-mergeDebugResources-41:/values-w480dp-port-v13/values-w480dp-port-v13.xml",
+            "outputFile": "com.chatapp-mergeDebugResources-43:/values-w480dp-port-v13/values-w480dp-port-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\tanki\\.gradle\\caches\\transforms-3\\ece3b2720ead26328c40967c771ddf7c\\transformed\\material-1.5.0\\res\\values-w480dp-port-v13\\values-w480dp-port-v13.xml",
+                    "source": "C:\\Users\\tanki\\.gradle\\caches\\transforms-3\\1b962f073c2818d91018483262bc3f40\\transformed\\material-1.6.1\\res\\values-w480dp-port-v13\\values-w480dp-port-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",
